@@ -16,8 +16,8 @@ Minimal design report.
 # Input
 
 User input is provided via an array of company objects in JavaScript Object Notation (JSON) format, stored in the
-`input` directory. Various assumptions are stored in `assumptions.ini`. Other settings relating to the operation of the
-program will be stored in a `config.ini`.
+`input` directory. Various assumptions are stored in `assumptions.toml`. Other settings relating to the operation of the
+program will be stored in a `settings.toml`.
 
 # Retrieval
 
