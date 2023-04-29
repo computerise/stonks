@@ -4,6 +4,7 @@ from configure import ApplicationSettings
 
 
 def intro(version, authors):
+    """Introduce the application."""
     print(f"Launching 'stonks' version {version}.\n")
     print(f"Authored by:\n")
     print(*authors, sep=", ")
