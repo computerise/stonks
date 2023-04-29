@@ -4,14 +4,13 @@ from dataclasses import dataclass
 
 @dataclass
 class Request:
-    url: str
-    content_type: str
+    base_url: str
 
 
 @dataclass
-class RapidAPI(Request):
+class RapidAPIRequest(Request):
     content_type: str = "application/octet-stream"
-    x_rapidapi_key: str = "Redacted"
+    x_rapidapi_key: str = "d3e6db282emsh4fafb3bbd7fde49p16dfb1jsn448c3b411a42"
     x_rapidapi_host: str = "yahoo-finance15.p.rapidapi.com"
 
     @property
@@ -24,5 +23,28 @@ class RapidAPI(Request):
 
 
 @dataclass
-class YahooFinance(RapidAPI):
-    url: str = "https://yahoo-finance15.p.rapidapi.com/api/yahoo/ne/news"
+class YahooFinanceRequest(RapidAPIRequest):
+    base_url: str = "https://yahoo-finance15.p.rapidapi.com/api/yahoo/"
+    query_parameters: tuple = (
+        "asset-profile",
+        "income-statement",
+        "balance-sheet",
+        "cashflow-statement",
+        "default-key-statistics",
+        "calendar-events",
+        "sec-filings",
+        "upgrade-downgrade-history",
+        "institution-ownership",
+        "fund-ownership",
+        "insider-transactions",
+        "insider-holders",
+        "earnings-history",
+    )
+
+    @staticmethod
+    def format_query_string(query_parameters: tuple) -> dict:
+        return {"module": ",".join(query_parameters)}
+
+    def overview(self, ticker_symbol: str, query_parameters: tuple) -> None:
+        self.format_query_string(query_parameters)
+        self.url = f"{self.base_url}mo/module/{ticker_symbol}"

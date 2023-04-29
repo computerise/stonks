@@ -9,4 +9,4 @@ class APIClient:
         pass
 
     def get(self, request: Request):
-        return requests.get(request.url, request.headers).json()
+        return requests.get(request.url, headers=request.headers).json()
