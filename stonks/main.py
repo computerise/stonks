@@ -1,6 +1,7 @@
 """Application entry point."""
 import time
-from configure import ApplicationSettings
+from configuration import ApplicationSettings
+from manager import ApplicationManager
 
 
 def intro(version, authors):
@@ -17,6 +18,8 @@ def main():
         app_settings.get("application").get("version"),
         app_settings.get("application").get("authors"),
     )
+    manager = ApplicationManager()
+    print(manager.start())
     time.sleep(5)
 
 
