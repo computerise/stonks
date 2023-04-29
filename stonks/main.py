@@ -1,6 +1,6 @@
 """Application entry point."""
 import time
-from configure import ApplicationData
+from configure import ApplicationSettings
 
 
 def intro(version, authors):
@@ -11,8 +11,11 @@ def intro(version, authors):
 
 def main():
     """Launch application."""
-    app_data = ApplicationData()
-    intro(app_data.version, app_data.authors)
+    app_settings = ApplicationSettings().load_config()
+    intro(
+        app_settings.get("application").get("version"),
+        app_settings.get("application").get("authors"),
+    )
     time.sleep(5)
 
 

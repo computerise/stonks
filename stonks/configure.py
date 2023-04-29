@@ -5,22 +5,16 @@ from dataclasses import dataclass
 
 
 class Configuration:
-    def load_config(config_path):
-        with open("pyproject.toml", "rb") as file:
+    def load_config(self):
+        with open(self.path, "rb") as file:
             return load(file)
 
 
+@dataclass
 class ApplicationSettings(Configuration):
-    # raise NotImplementedError
-    pass
-
-
-class MetricAssumptions(Configuration):
-    # raise NotImplementedError
-    pass
+    path: str = "settings.toml"
 
 
 @dataclass
-class ApplicationData:
-    settings: ApplicationSettings
-    assumptions: MetricAssumptions
+class MetricAssumptions(Configuration):
+    path: str = "assumptions.toml"
