@@ -4,7 +4,7 @@ from tomllib import load
 from dataclasses import dataclass
 
 
-class Configuration:
+class TOMLConfiguration:
     """Base class for all TOML configuration objects."""
 
     def load_config(self):
@@ -13,14 +13,14 @@ class Configuration:
 
 
 @dataclass
-class ApplicationSettings(Configuration):
+class ApplicationSettings(TOMLConfiguration):
     """All settings associated with the operation of the application."""
 
     path: str = "settings.toml"
 
 
 @dataclass
-class MetricAssumptions(Configuration):
+class MetricAssumptions(TOMLConfiguration):
     """All assumptions of metrics used to processing."""
 
     path: str = "assumptions.toml"

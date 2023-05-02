@@ -6,8 +6,7 @@ from manager import ApplicationManager
 
 def intro(version, authors):
     """Introduce the application."""
-    print(f"Launching 'stonks' version {version}.\n")
-    print(f"Authored by:\n")
+    print(f"Launching 'stonks' version {version}.\nAuthored by:\n")
     print(*authors, sep=", ")
 
 

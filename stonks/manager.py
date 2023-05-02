@@ -8,11 +8,10 @@ class ApplicationManager:
     """Controls the flow of the program."""
 
     def __init__(self):
+        """Initialise class instance."""
         self.client = APIClient()
 
     def start(self):
-        yf_request = YahooFinanceRequest()
-        yf_overview = yf_request.overview(
-            "AAPL", query_parameters=yf_request.query_parameters
-        )
-        return self.client.get(yf_overview)
+        """Start the application."""
+        yf_request = YahooFinanceRequest(ticker_symbol="GD")
+        return self.client.get(yf_request)
