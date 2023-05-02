@@ -8,6 +8,7 @@ To be migrated to GitHub Issues.
     - User settings file should be an array of different types of metrics, each containing a sub-array of values.
     - Configuration for other parameters relating to the operation of the program.
  - Define JSON schema for input files.
+ - Create install batch script.
 
 # Features
  - User input
