@@ -8,6 +8,7 @@ class TOMLConfiguration:
     """Base class for all TOML configuration objects."""
 
     def load_config(self):
+        """Load a TOML file."""
         with open(self.path, "rb") as file:
             return load(file)
 
