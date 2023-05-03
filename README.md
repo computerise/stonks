@@ -2,7 +2,7 @@
 
 ## Summary
 
-The quantitative analysis component of a [Value Investing](https://www.investopedia.com/terms/v/valueinvesting.asp) approach. See `DESIGN.md` for an overview of the current application design. See `TO DO.md` for a list of features, work items and issues.
+The quantitative analysis component of a [Value Investing](https://www.investopedia.com/terms/v/valueinvesting.asp) approach. See `DESIGN.md` for an overview of the current application design. See `TO DO.md` for a list of features, work items and issues (to be migrated to GitHub).
 
 ## Objectives
 
@@ -45,7 +45,7 @@ Instructions on how to set up and install python3.
 
 #### Windows
 
-To [install the latest version of python3](https://www.python.org/downloads/) and add the directory of `python.exe` and `pip.exe` to the [System Environment Variables `Path` field](https://learn.microsoft.com/en-us/previous-versions/office/developer/sharepoint-2010/ee537574(v=office.14)). Where `<username>` is the name of the windows user account, the default path for `python3.exe` is:
+Download and install the latest version of python3 [here](https://www.python.org/downloads/). Then add the parent directory of `python.exe` and `pip.exe` to the [System Environment Variables `Path` field](https://learn.microsoft.com/en-us/previous-versions/office/developer/sharepoint-2010/ee537574(v=office.14)). Where `<username>` is the name of the windows user account, the default path for `python3.exe` is:
 
 ```text
 C:\Users\<username>\AppData\Local\Programs\Python\Python311\
