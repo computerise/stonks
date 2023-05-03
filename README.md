@@ -112,5 +112,6 @@ pytest
 To see the code coverage report, execute:
 
 ```bash
+coverage run -m pytest test/
 coverage report --fail-under=80
 ```
