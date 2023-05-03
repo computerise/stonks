@@ -7,10 +7,10 @@ Minimal design report.
 ## Architecture
 
     input ---> retrieval ---> processing ---> report ---> output
-                                  ^
-                                  | 
-                                  v
-                               database
+                      ^        ^
+                      |        | 
+                      v        v
+                     data_storage
 
 ## Components
 
@@ -42,11 +42,11 @@ Implements a value investing staple; a [Discounted Cash Flow](https://www.invest
 
 Computes the [Intrinsic Value](https://www.investopedia.com/terms/i/intrinsicvalue.asp) of a company.
 
-### Database
+### Data Storage
 
-Stores computed data of interest, to keep a historical log of promising valuations.
+Stores requested and computed data of interest in JSON format, to keep a historical log of promising valuations.
 
-PostgreSQL or MySQL are the candidate database technologies. 
+PostgreSQL or MySQL are the candidate database technologies.
 
 ### Report
 

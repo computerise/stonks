@@ -2,6 +2,7 @@
 
 from stonks.retrieval.api_client import APIClient
 from stonks.retrieval.request_builder import YahooFinanceRequest
+from stonks.retrieval.response_handler import handle_response
 
 
 class ApplicationManager:
@@ -13,5 +14,7 @@ class ApplicationManager:
 
     def start(self):
         """Start the application."""
-        yf_request = YahooFinanceRequest(ticker_symbol="GD")
-        return self.client.get(yf_request).json()
+        ticker = "AAPL"
+        yf_request = YahooFinanceRequest(ticker_symbol=ticker)
+        response = self.client.get(yf_request)
+        handle_response(f"data/{ticker}.json", response)

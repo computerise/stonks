@@ -17,7 +17,7 @@ class TestAPIClient(TestCase):
         # Mock request
         self.request = Request("http://example.com/api/123", "application/json")
         self.request.url = self.request.base_url
-        self.request.headers = {"X-Foo": "Bar"}
+        self.request.headers = {"mock_header": "mock_value"}
         self.request.query_string = {"module": "query,string"}
 
     def test_instantiation(self):
