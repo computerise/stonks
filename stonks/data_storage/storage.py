@@ -19,6 +19,6 @@ class DataStorage:
             raise ValueError("Data to be written is not valid JSON.")
         try:
             with open(path, "w") as file:
-                dump(data, file)
+                dump(data, file, indent=4)
         except FileNotFoundError as exc:
             raise ValueError(f"Could not write JSON file to '{path}'.") from exc
