@@ -1,7 +1,7 @@
 """Application manager controlling the flow of the program."""
 
-from retrieval.api_client import APIClient
-from retrieval.request_builder import YahooFinanceRequest
+from stonks.retrieval.api_client import APIClient
+from stonks.retrieval.request_builder import YahooFinanceRequest
 
 
 class ApplicationManager:

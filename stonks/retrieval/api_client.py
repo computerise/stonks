@@ -1,7 +1,7 @@
 """API Clients."""
 
 import requests
-from retrieval.request_builder import Request
+from stonks.retrieval.request_builder import Request
 
 
 class APIClient:

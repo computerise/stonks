@@ -88,5 +88,19 @@ Launch the application by running `run.bat`.
 To execute from a CLI:
 
 ```bash
-python3 main.py
+python main.py
+```
+
+## Test
+
+To run unit tests, execute:
+
+```bash
+pytest
+```
+
+To see the code coverage report, execute:
+
+```bash
+coverage report --fail-under=80
 ```
