@@ -18,7 +18,7 @@ def main():
         app_settings.get("application").get("authors"),
     )
     manager = ApplicationManager()
-    print(manager.start())
+    manager.start()
     time.sleep(5)
 
 

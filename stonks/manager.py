@@ -14,4 +14,6 @@ class ApplicationManager:
     def start(self):
         """Start the application."""
         yf_request = YahooFinanceRequest(ticker_symbol="GD")
-        return self.client.get(yf_request).json()
+        response = self.client.get(yf_request)
+        if response.ok:
+            print("success")
