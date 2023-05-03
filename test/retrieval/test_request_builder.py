@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from stonks.retrieval.request_builder import RapidAPIRequest
+from stonks.retrieval.request_builder import RapidAPIRequest, YahooFinanceRequest
 
 
 class TestRapidAPIRequest(TestCase):
@@ -22,13 +22,28 @@ class TestRapidAPIRequest(TestCase):
             },
         )
 
+
+class TestYahooFinanceRequest(TestCase):
+    def __init__(self, *args, **kwargs):
+        super(TestYahooFinanceRequest, self).__init__(*args, **kwargs)
+        self.yahoo_finance_request = YahooFinanceRequest()
+
+    def test_instantiation(self):
+        self.assertTrue(isinstance(self.yahoo_finance_request, YahooFinanceRequest))
+
+    def test_format_query_string(self):
+        with self.assertRaises(ValueError):
+            self.yahoo_finance_request.format_query_string(
+                ("a", "b", "c", "d", "e", "f")
+            )
+
     def test_valid_query_parameters(self):
         # Test valid parameters.
         self.assertTrue(
-            self.rapid_api_request.valid_query_parameters(
+            self.yahoo_finance_request.valid_query_parameters(
                 ("cashflow-statement", "sec-filings", "balance-sheet")
             )
         )
         # Test invalid parameters.
         with self.assertRaises(ValueError):
-            self.rapid_api_request.valid_query_parameters(("bad_parameter",))
+            self.yahoo_finance_request.valid_query_parameters(("bad_parameter",))
