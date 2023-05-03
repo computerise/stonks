@@ -37,7 +37,7 @@ If it actually works, slap a WebUI on it and sell (tiers?) of subscription servi
 
 ## Requirements
 
-"stonks" requires an install  of python3 (tested on Python 3.11).
+"stonks" requires an installation of python3 (tested on Python 3.11.3).
 
 ### Python Install
 
@@ -59,9 +59,9 @@ C:\Users\<username>\AppData\Local\Programs\Python\Python311\Scripts\
 
 #### Linux
 
-python3 comes pre-installed on most modern distros.
+python3 comes pre-installed on most modern distributions.
 
-To install, execute:
+To manually install, execute:
 
 ```bash
 sudo apt-get install python3.11
@@ -77,9 +77,15 @@ To install from a Command Line Interface (CLI):
 pip3 install requirements.txt
 ```
 
+Create a file in the project root directory called `.env`. Acquire the respective API keys for each provider and save them in `.env` under the names, where `<key>` is replaced by your personal access key:
+
+```text
+RAPID_API_KEY=<[rapid-api-key](https://docs.rapidapi.com/docs/keys)>
+```
+
 ## Configuration
 
-Select user input file by naming `input`.py
+The user input file is named `input.json`. All necessary assumptions used for calculations are present in `assumptions.toml`. Application specific settings are in `settings.toml`.
 
 ## Usage
 
@@ -88,5 +94,19 @@ Launch the application by running `run.bat`.
 To execute from a CLI:
 
 ```bash
-python3 main.py
+python main.py
+```
+
+## Test
+
+To run unit tests, execute:
+
+```bash
+pytest
+```
+
+To see the code coverage report, execute:
+
+```bash
+coverage report --fail-under=80
 ```

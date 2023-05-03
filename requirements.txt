@@ -1,2 +1,9 @@
+# Project dependencies
 requests
 python-dotenv
+
+# Dev dependencies
+pytest
+pytest-cov
+coverage
+responses

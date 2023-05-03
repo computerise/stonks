@@ -1,7 +1,7 @@
 """Application entry point."""
 import time
-from configuration import ApplicationSettings
-from manager import ApplicationManager
+from stonks.configuration import ApplicationSettings
+from stonks.manager import ApplicationManager
 
 
 def intro(version, authors):
