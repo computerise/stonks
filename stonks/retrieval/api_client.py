@@ -15,4 +15,4 @@ class APIClient:
         """Get the specified request and return the response as a JSON object."""
         return requests.get(
             request.url, headers=request.headers, params=request.query_string
-        ).json()
+        )

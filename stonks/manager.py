@@ -14,4 +14,4 @@ class ApplicationManager:
     def start(self):
         """Start the application."""
         yf_request = YahooFinanceRequest(ticker_symbol="GD")
-        return self.client.get(yf_request)
+        return self.client.get(yf_request).json()
