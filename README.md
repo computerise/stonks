@@ -2,7 +2,7 @@
 
 ## Summary
 
-The quantitative analysis component of a [Value Investing](https://www.investopedia.com/terms/v/valueinvesting.asp) approach. See `DESIGN.md` for an overview of the current application design. See `TO DO.md` for a list of features, work items and issues (to be migrated to GitHub).
+The quantitative analysis component of a [Value Investing](https://www.investopedia.com/terms/v/valueinvesting.asp) approach. See `DESIGN.md` for an overview of the current application design.
 
 ## Objectives
 
