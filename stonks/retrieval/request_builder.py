@@ -32,9 +32,9 @@ class RapidAPIRequest(Request):
             "X-RapidAPI-Host": self.x_rapidapi_host,
         }
 
-    @property
-    def valid_query_parameters(self) -> tuple[str]:
-        return (
+    def valid_query_parameters(self, query_parameters: tuple[str]) -> bool:
+        """Raise and exception if any query parameters are invalid, otherwise return True."""
+        valid_query_parameters = (
             "asset-profile",
             "income-statement",
             "balance-sheet",
@@ -49,12 +49,11 @@ class RapidAPIRequest(Request):
             "insider-holders",
             "earnings-history",
         )
-
-    def validate_query_parameters(self, query_parameters: tuple[str]) -> bool:
-        """Raise and exception if any query parameters are invalid, otherwise return True."""
         for query in query_parameters:
-            if query not in self.valid_query_parameters:
-                raise ValueError(f"Invalid query parameter '{query}' was specified.")
+            if query not in valid_query_parameters:
+                raise ValueError(
+                    f"Invalid query parameter '{query}' was specified. Queries are limited to: {','.join(valid_query_parameters)}"
+                )
         return True
 
 
@@ -93,7 +92,7 @@ class YahooFinanceRequest(RapidAPIRequest):
     def format_query_string(self, query_parameters: tuple[str]) -> dict:
         """Format a maximum of 5 valid query parameters as a string."""
         if len(query_parameters) <= 5:
-            if self.validate_query_parameters(query_parameters):
+            if self.valid_query_parameters(query_parameters):
                 return {"module": ",".join(query_parameters)}
         else:
             raise ValueError(
