@@ -69,6 +69,8 @@ sudo apt-get install python3.11
 
 ## Install
 
+### Dependencies
+
 Install project dependencies by running `install.bat`.
 
 To install from a Command Line Interface (CLI):
@@ -76,6 +78,8 @@ To install from a Command Line Interface (CLI):
 ```bash
 pip3 install requirements.txt
 ```
+
+### Environment Variables
 
 Create a file in the project root directory called `.env`. Acquire the respective API keys for each provider and save them in `.env` under the names, where `<key>` is replaced by your personal access key:
 
