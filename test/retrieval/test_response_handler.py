@@ -1,7 +1,6 @@
 """Test response handler."""
 
 from unittest import TestCase
-from unittest.mock import patch, MagicMock
 from requests.models import Response
 
 from stonks.retrieval.response_handler import handle_response
