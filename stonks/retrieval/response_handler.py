@@ -1,15 +1,18 @@
 """Handle API responses."""
 
+import logging
 from requests.models import Response
 
+from stonks.error_handler import raise_error
 from stonks.data_storage.storage import DataStorage
 
 
-def handle_response(output_path, response: Response):
+def handle_response(output_path: str, response: Response, store: bool = True):
     if response.ok:
-        DataStorage.write_json(output_path, response.json())
-        print(f"Successfully wrote output to {output_path}.")
+        if store:
+            DataStorage.write_json(output_path, response.json())
+            logging.info(f"Successfully wrote output to {output_path}.")
     else:
-        raise ValueError(
+        raise_error(
             f"Endpoint {response.url} responded with non-200 status code '{response.status_code}'. Full response: {response.json()}"
         )

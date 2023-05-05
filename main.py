@@ -1,10 +1,13 @@
 """Application entry point."""
+
 import time
+import logging
+
 from stonks.configuration import ApplicationSettings
 from stonks.manager import ApplicationManager
 
 
-def intro(version, authors):
+def intro(version: str, authors: list[str]) -> None:
     """Introduce the application."""
     print(f"Launching 'stonks' version {version}.\nAuthored by:\n")
     print(*authors, sep=", ")
@@ -12,10 +15,11 @@ def intro(version, authors):
 
 def main():
     """Launch application."""
-    app_settings = ApplicationSettings().load_config()
+    app_settings = ApplicationSettings()
+    logging.info("Started Application.")
     intro(
-        app_settings.get("application").get("version"),
-        app_settings.get("application").get("authors"),
+        app_settings.version,
+        app_settings.authors,
     )
     manager = ApplicationManager()
     manager.start()
