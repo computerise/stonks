@@ -3,7 +3,7 @@ import os
 from dotenv import load_dotenv
 from requests import Request
 
-from stonks.error_handler import raise_error
+from stonks.error_handler import raise_fatal_error
 
 
 class RapidAPIRequest(Request):
@@ -71,7 +71,7 @@ class YahooFinanceRequest(RapidAPIRequest):
         if not query_parameters:
             query_parameters = default_queries
         if not type(query_parameters) is tuple:
-            raise_error(
+            raise_fatal_error(
                 f"Received non-tuple argument for queries: {query_parameters}. Queries should be a tuple of strings.",
                 new_exception=TypeError,
             )
@@ -87,7 +87,7 @@ class YahooFinanceRequest(RapidAPIRequest):
             if self.valid_query_parameters(query_parameters):
                 return {"module": ",".join(query_parameters)}
         else:
-            raise_error(
+            raise_fatal_error(
                 f"{number_of_params} query parameters specified; exceeds maximum of {max_query_parameters}."
             )
 
@@ -111,7 +111,7 @@ class YahooFinanceRequest(RapidAPIRequest):
         )
         for query in query_parameters:
             if query not in valid_query_parameters:
-                raise ValueError(
+                raise raise_fatal_error(
                     f"Invalid query parameter '{query}' was specified. Queries are limited to: {','.join(valid_query_parameters)}"
                 )
         return True
