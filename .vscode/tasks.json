@@ -4,7 +4,16 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "pytest-cov report",
+            "label": "Run coverage",
+            "type": "shell",
+            "command": "coverage run -m pytest test/",
+            "problemMatcher": [],
+            "group": {
+                "kind": "test",
+            }
+        },
+        {
+            "label": "Update coverage gutters",
             "type": "shell",
             "command": "pytest --cov=. test/ --cov-report xml:cov.xml",
             "problemMatcher": [],
