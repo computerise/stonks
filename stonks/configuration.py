@@ -46,7 +46,7 @@ def configure_logging(level: str, log_directory: Path) -> None:
 
 @dataclass
 class APIKeys:
-    """Dataclass for storing API Access Keys."""
+    """Data class for storing API Access Keys."""
 
     rapidapi_key: str
 
