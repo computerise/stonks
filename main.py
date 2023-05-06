@@ -16,12 +16,11 @@ def intro(version: str, authors: list[str]) -> None:
 def main():
     """Launch application."""
     app_settings = ApplicationSettings()
-    logging.info("Started Application.")
     intro(
         app_settings.version,
         app_settings.authors,
     )
-    manager = ApplicationManager()
+    manager = ApplicationManager(app_settings)
     manager.start()
     time.sleep(5)
 

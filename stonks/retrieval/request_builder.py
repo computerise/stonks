@@ -1,7 +1,7 @@
 """Definitions of the requests."""
 import os
 from dotenv import load_dotenv
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 
 # Load .env file.
 load_dotenv()
@@ -12,7 +12,7 @@ class Request:
     """Base class for all requests."""
 
     base_url: str
-    content_type: str
+    ticker_symbol: str = field(default=False, init=False)
 
 
 @dataclass
@@ -35,9 +35,9 @@ class RapidAPIRequest(Request):
 
 @dataclass
 class YahooFinanceRequest(RapidAPIRequest):
-    """Request object YahooFinance API (https://rapidapi.com/sparior/api/yahoo-finance15)."""
+    """Request object for YahooFinance API (https://rapidapi.com/sparior/api/yahoo-finance15)."""
 
-    ticker_symbol: str = "AAPL"
+    ticker_symbol: str
     segments: tuple[str] = ("mo/", "module/")
     base_url: str = "https://yahoo-finance15.p.rapidapi.com/api/yahoo/"
     query_parameters: tuple = (
@@ -69,6 +69,7 @@ class YahooFinanceRequest(RapidAPIRequest):
 
     def valid_query_parameters(self, query_parameters: tuple[str]) -> bool:
         """Raise and exception if any query parameters are invalid, otherwise return True."""
+        # Parameters like these could be stored in a configuration file for each endpoint.
         valid_query_parameters = (
             "asset-profile",
             "income-statement",
