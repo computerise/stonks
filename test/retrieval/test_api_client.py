@@ -15,7 +15,7 @@ class TestAPIClient(TestCase):
         self.api_client = APIClient()
 
         # Mock request
-        self.request = Request("http://example.com/api/123", "application/json")
+        self.request = Request("http://example.com/api/123")
         self.request.url = self.request.base_url
         self.request.headers = {"mock_header": "mock_value"}
         self.request.query_string = {"module": "query,string"}
@@ -31,7 +31,6 @@ class TestAPIClient(TestCase):
                 "url": self.request.url,
                 "body": '{"error": "reason"}',
                 "status": 404,
-                "content_type": self.request.content_type,
                 "adding_headers": self.request.headers,
             }
         )
