@@ -15,12 +15,13 @@ class CommandLineInterface:
 
     @classmethod
     def outro(cls, message: str) -> None:
+        """Class method for printing exit method."""
         print(
             message,
             f"\nTerminating application in {cls.outro_duration_seconds} seconds...",
         )
         for remaining_seconds in list(range(cls.outro_duration_seconds + 1))[::-1]:
-            if remaining_seconds is 0:
+            if remaining_seconds == 0:
                 print("Goodbye.")
                 break
             print(remaining_seconds)

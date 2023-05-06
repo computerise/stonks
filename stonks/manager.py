@@ -32,7 +32,7 @@ class ApplicationManager:
         """
 
         # Use tickers from user input JSON.
-        tickers = ["TEST"]
+        tickers = ["GOOGL"]
         for company in tickers:
             self.get_company_data(company)
 
