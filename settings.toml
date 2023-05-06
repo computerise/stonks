@@ -2,6 +2,8 @@
 version = "0.0.0"
 authors = ["Tom Ashley"]
 
+outro_duration_seconds=5
+
 log_level = "DEBUG"
 log_directory = "logs/"
 
@@ -9,5 +11,5 @@ input_directory = "input/"
 
 storage_directory = "data/"
 
-request_new_data = true
+request_new_data = false
 store_new_data = true

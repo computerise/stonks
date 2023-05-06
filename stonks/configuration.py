@@ -7,7 +7,7 @@ from tomllib import load
 from datetime import datetime
 from dataclasses import dataclass
 
-from stonks.error_handler import raise_error
+from stonks.error_handler import raise_fatal_error
 
 CREATED_DIRECTORY_MESSAGE = "Created directory at "
 
@@ -19,7 +19,7 @@ def create_directory(directory_path: Path) -> bool:
             makedirs(directory_path)
             return True
         except FileNotFoundError:
-            raise_error(
+            raise_fatal_error(
                 message=f"Failed to create directory at `{directory_path}`.",
                 from_exception=FileNotFoundError,
             )
@@ -34,7 +34,11 @@ def configure_logging(level: str, log_directory: Path) -> None:
         log_directory, f"{str(datetime.now().isoformat()).replace(':','-')[:-7]}.log"
     )
     logging.basicConfig(
-        filename=log_path, encoding="utf-8", level=logging.getLevelName(level)
+        filename=log_path,
+        encoding="utf-8",
+        level=logging.getLevelName(level),
+        datefmt="%Y-%m-%d %H:%M:%S",
+        format="%(asctime)s %(levelname)-8s %(message)s",
     )
     if created_directory:
         logging.info(f"{CREATED_DIRECTORY_MESSAGE}`{log_directory}`.")

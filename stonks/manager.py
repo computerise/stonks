@@ -3,9 +3,10 @@
 import logging
 from pathlib import Path
 
+from stonks.storage import DataStorage
+from stonks.configuration import ApplicationSettings, APIKeys
 from stonks.retrieval.api_client import APIClient
 from stonks.retrieval.response_handler import handle_response
-from stonks.configuration import ApplicationSettings, APIKeys
 
 
 class ApplicationManager:
@@ -31,12 +32,22 @@ class ApplicationManager:
         """
 
         # Use tickers from user input JSON.
-        tickers = ["AAPL"]
-        for ticker in tickers:
-            if self.settings.request_new_data:
-                response = self.client.retrieve(ticker)
-                handle_response(
-                    self.create_path(self.settings.storage_directory, ticker),
-                    response,
-                    store=self.settings.store_new_data,
-                )
+        tickers = ["TEST"]
+        for company in tickers:
+            self.get_company_data(company)
+
+    def get_company_data(self, ticker: str) -> None:
+        """Get data associated with a company."""
+        if self.settings.request_new_data:
+            response = self.client.retrieve(ticker)
+            handle_response(
+                self.create_path(self.settings.storage_directory, ticker),
+                response,
+                store=self.settings.store_new_data,
+            )
+        else:
+            self.read_company_data(ticker)
+
+    def read_company_data(self, ticker: str):
+        """Read data associated with a company."""
+        DataStorage.get_json(self.settings.storage_directory, ticker)

@@ -4,7 +4,7 @@ from sys import stdout, __stdout__
 from io import StringIO
 from unittest import TestCase
 
-from stonks.data_storage.storage import DataStorage
+from stonks.storage import DataStorage
 
 
 class TestDataStorage(TestCase):
