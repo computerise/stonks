@@ -1,4 +1,4 @@
-"""Test api_client.py."""
+"""Test API Client."""
 
 import responses
 from unittest import TestCase
