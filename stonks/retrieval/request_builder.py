@@ -1,74 +1,99 @@
 """Definitions of the requests."""
 import os
 from dotenv import load_dotenv
-from dataclasses import dataclass
+from requests import Request
 
-# Load .env file.
-load_dotenv()
-
-
-@dataclass
-class Request:
-    """Base class for all requests."""
-
-    base_url: str
-    content_type: str
+from stonks.error_handler import raise_error
 
 
-@dataclass
 class RapidAPIRequest(Request):
-    """Base class for all Rapid API (https://rapidapi.com/hub) requests."""
+    """Request for all Rapid API (https://rapidapi.com/hub) requests."""
 
-    content_type: str = "application/octet-stream"
-    x_rapidapi_key: str = os.getenv("RAPID_API_KEY")
-    x_rapidapi_host: str = "yahoo-finance15.p.rapidapi.com"
+    def __init__(
+        self,
+        ticker_symbol: str,
+        content_type: str = "application/octet-stream",
+        x_rapidapi_key: str = None,
+        x_rapidapi_host: str = "yahoo-finance15.p.rapidapi.com",
+        *args,
+        **kwargs,
+    ) -> None:
+        """Initialise RapidAPI request."""
+        super().__init__(self, *args, **kwargs)
+        self.method = "GET"
+        self.set_headers(content_type, x_rapidapi_key, x_rapidapi_host)
+        self.ticker_symbol = ticker_symbol
 
-    @property
-    def headers(self):
+    def set_headers(
+        self, content_type: str, x_rapidapi_key: str, x_rapidapi_host: str
+    ) -> None:
         """Format request headers as a dictionary."""
-        return {
-            "content-type": self.content_type,
-            "X-RapidAPI-Key": self.x_rapidapi_key,
-            "X-RapidAPI-Host": self.x_rapidapi_host,
+        self.headers = {
+            "content-type": content_type,
+            "X-RapidAPI-Key": x_rapidapi_key,
+            "X-RapidAPI-Host": x_rapidapi_host,
         }
 
 
-@dataclass
 class YahooFinanceRequest(RapidAPIRequest):
-    """Request object YahooFinance API (https://rapidapi.com/sparior/api/yahoo-finance15)."""
+    """Request for YahooFinance API (https://rapidapi.com/sparior/api/yahoo-finance15)."""
 
-    ticker_symbol: str = "AAPL"
-    segments: tuple[str] = ("mo/", "module/")
-    base_url: str = "https://yahoo-finance15.p.rapidapi.com/api/yahoo/"
-    query_parameters: tuple = (
-        "asset-profile",
-        "income-statement",
-        "balance-sheet",
-        "cashflow-statement",
-        "default-key-statistics",
-    )
+    def __init__(
+        self,
+        ticker_symbol: str,
+        segments: tuple[str] = ("mo/", "module/"),
+        base_url: str = "https://yahoo-finance15.p.rapidapi.com/api/yahoo/",
+        query_parameters: tuple[str] = None,
+        *args,
+        **kwargs,
+    ) -> None:
+        """Initialise Yahoo Finance Request."""
+        super().__init__(self, ticker_symbol, *args, **kwargs)
+        self.set_url(ticker_symbol, segments, base_url)
+        self.set_params(query_parameters)
 
-    def __post_init__(self) -> None:
-        """Post initialisation."""
-        self.url = self.build_url(self.ticker_symbol, self.segments)
-        self.query_string = self.format_query_string(self.query_parameters)
+    def set_url(self, ticker_symbol: str, segments: list[str], base_url: str) -> None:
+        """Format and set the request URL as an attribute."""
+        self.url = f"{base_url}{''.join(segments)}{ticker_symbol}"
 
-    def build_url(self, ticker_symbol: str, segments: list[str]) -> str:
-        """Format the request url."""
-        return f"{self.base_url}{''.join(segments)}{ticker_symbol}"
+    def set_params(
+        self,
+        query_parameters: tuple[str],
+        default_queries: tuple[str] = (
+            "asset-profile",
+            "income-statement",
+            "balance-sheet",
+            "cashflow-statement",
+            "default-key-statistics",
+        ),
+    ) -> None:
+        """Format and set query parameters for the request."""
+        if not query_parameters:
+            query_parameters = default_queries
+        if not type(query_parameters) is tuple:
+            raise_error(
+                f"Received non-tuple argument for queries: {query_parameters}. Queries should be a tuple of strings.",
+                new_exception=TypeError,
+            )
+        formatted_queries = self.format_queries(query_parameters)
+        self.params = formatted_queries
 
-    def format_query_string(self, query_parameters: tuple[str]) -> dict:
-        """Format a maximum of 5 valid query parameters as a string."""
-        if len(query_parameters) <= 5:
+    def format_queries(
+        self, query_parameters: tuple[str], max_query_parameters: int = 5
+    ) -> dict[str, str]:
+        """Format a maximum of 5 valid query parameters."""
+        number_of_params = len(query_parameters)
+        if number_of_params <= max_query_parameters:
             if self.valid_query_parameters(query_parameters):
                 return {"module": ",".join(query_parameters)}
         else:
-            raise ValueError(
-                f"{len(query_parameters)} query parameters specified; exceeds maximum of 5."
+            raise_error(
+                f"{number_of_params} query parameters specified; exceeds maximum of {max_query_parameters}."
             )
 
     def valid_query_parameters(self, query_parameters: tuple[str]) -> bool:
         """Raise and exception if any query parameters are invalid, otherwise return True."""
+        # Parameters like these could be stored in a configuration file for each endpoint.
         valid_query_parameters = (
             "asset-profile",
             "income-statement",

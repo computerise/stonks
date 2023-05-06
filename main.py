@@ -1,10 +1,14 @@
 """Application entry point."""
 
+import os
 import time
-import logging
+from dotenv import load_dotenv
 
-from stonks.configuration import ApplicationSettings
+from stonks.configuration import ApplicationSettings, APIKeys
 from stonks.manager import ApplicationManager
+
+# Load .env file.
+load_dotenv()
 
 
 def intro(version: str, authors: list[str]) -> None:
@@ -16,12 +20,13 @@ def intro(version: str, authors: list[str]) -> None:
 def main():
     """Launch application."""
     app_settings = ApplicationSettings()
-    logging.info("Started Application.")
     intro(
         app_settings.version,
         app_settings.authors,
     )
-    manager = ApplicationManager()
+    manager = ApplicationManager(
+        app_settings, api_keys=APIKeys(rapidapi_key=os.getenv("RAPIDAPI_KEY"))
+    )
     manager.start()
     time.sleep(5)
 

@@ -1,13 +1,14 @@
 """Handle API responses."""
 
 import logging
+from pathlib import Path
 from requests.models import Response
 
 from stonks.error_handler import raise_error
 from stonks.data_storage.storage import DataStorage
 
 
-def handle_response(output_path: str, response: Response, store: bool = True):
+def handle_response(output_path: Path, response: Response, store: bool = True):
     if response.ok:
         if store:
             DataStorage.write_json(output_path, response.json())

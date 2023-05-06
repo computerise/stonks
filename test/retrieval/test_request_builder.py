@@ -6,19 +6,26 @@ from stonks.retrieval.request_builder import RapidAPIRequest, YahooFinanceReques
 class TestRapidAPIRequest(TestCase):
     def __init__(self, *args, **kwargs):
         super(TestRapidAPIRequest, self).__init__(*args, **kwargs)
-        self.rapid_api_request = RapidAPIRequest(base_url="mock_url")
-        self.rapid_api_request.x_rapidapi_key = "mock_key"
+        self.content_type = "mock_content_type"
+        self.x_rapidapi_key = "mock_x_rapidapi_key"
+        self.x_rapidapi_host = "mock_x_rapidapi_host"
+        self.rapidapi_request = RapidAPIRequest(
+            ticker_symbol="MOCK",
+            content_type=self.content_type,
+            x_rapidapi_key=self.x_rapidapi_key,
+            x_rapidapi_host=self.x_rapidapi_host,
+        )
 
     def test_instantiation(self):
-        self.assertTrue(isinstance(self.rapid_api_request, RapidAPIRequest))
+        self.assertTrue(isinstance(self.rapidapi_request, RapidAPIRequest))
 
-    def test_headers(self):
+    def test_set_headers(self):
         self.assertEqual(
-            self.rapid_api_request.headers,
+            self.rapidapi_request.headers,
             {
-                "content-type": self.rapid_api_request.content_type,
-                "X-RapidAPI-Key": self.rapid_api_request.x_rapidapi_key,
-                "X-RapidAPI-Host": self.rapid_api_request.x_rapidapi_host,
+                "content-type": self.content_type,
+                "X-RapidAPI-Key": self.x_rapidapi_key,
+                "X-RapidAPI-Host": self.x_rapidapi_host,
             },
         )
 
@@ -26,15 +33,52 @@ class TestRapidAPIRequest(TestCase):
 class TestYahooFinanceRequest(TestCase):
     def __init__(self, *args, **kwargs):
         super(TestYahooFinanceRequest, self).__init__(*args, **kwargs)
-        self.yahoo_finance_request = YahooFinanceRequest()
+        self.yahoo_finance_request = YahooFinanceRequest(
+            "MOCK", x_rapidapi_key="mock_key"
+        )
+        self.default_query_parameters = (
+            "asset-profile",
+            "income-statement",
+            "balance-sheet",
+            "cashflow-statement",
+            "default-key-statistics",
+        )
+        self.params = {
+            "module": "asset-profile,income-statement,balance-sheet,cashflow-statement,default-key-statistics"
+        }
 
     def test_instantiation(self):
         self.assertTrue(isinstance(self.yahoo_finance_request, YahooFinanceRequest))
 
-    def test_format_query_string(self):
+    def test_set_url(self):
+        self.assertEqual(
+            self.yahoo_finance_request.url,
+            "https://yahoo-finance15.p.rapidapi.com/api/yahoo/mo/module/MOCK",
+        )
+
+    def test_set_params(self):
+        self.assertEqual(self.yahoo_finance_request.params, self.params)
+        with self.assertRaises(TypeError):
+            self.yahoo_finance_request.set_params(query_parameters="not_a_tuple")
+
+    def test_format_queries(self):
+        # Test correct formatting.
+
+        self.assertEqual(
+            self.yahoo_finance_request.format_queries(self.default_query_parameters),
+            self.params,
+        )
+        # Test too many parameters.
         with self.assertRaises(ValueError):
-            self.yahoo_finance_request.format_query_string(
-                ("a", "b", "c", "d", "e", "f")
+            self.yahoo_finance_request.format_queries(
+                (
+                    "asset-profile",
+                    "income-statement",
+                    "balance-sheet",
+                    "cashflow-statement",
+                    "default-key-statistics",
+                    "calendar-events",
+                )
             )
 
     def test_valid_query_parameters(self):
