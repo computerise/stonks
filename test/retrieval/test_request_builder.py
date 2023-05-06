@@ -33,7 +33,9 @@ class TestRapidAPIRequest(TestCase):
 class TestYahooFinanceRequest(TestCase):
     def __init__(self, *args, **kwargs):
         super(TestYahooFinanceRequest, self).__init__(*args, **kwargs)
-        self.yahoo_finance_request = YahooFinanceRequest("MOCK")
+        self.yahoo_finance_request = YahooFinanceRequest(
+            "MOCK", x_rapidapi_key="mock_key"
+        )
         self.default_query_parameters = (
             "asset-profile",
             "income-statement",
