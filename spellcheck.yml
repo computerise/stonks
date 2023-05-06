@@ -27,6 +27,10 @@ matrix:
     wordlists:
     - .wordlist.txt
     encoding: utf-8
+  pipeline:
+  - pyspelling.filters.python:
+      markdown_extensions:
+      - pymdownx.superfences
   sources:
   - '**/*.py'
   default_encoding: utf-8
