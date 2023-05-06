@@ -5,9 +5,6 @@ from requests import Request
 
 from stonks.error_handler import raise_error
 
-# Load .env file.
-load_dotenv()
-
 
 class RapidAPIRequest(Request):
     """Request for all Rapid API (https://rapidapi.com/hub) requests."""
@@ -16,7 +13,7 @@ class RapidAPIRequest(Request):
         self,
         ticker_symbol: str,
         content_type: str = "application/octet-stream",
-        x_rapidapi_key: str = os.getenv("RAPID_API_KEY"),
+        x_rapidapi_key: str = None,
         x_rapidapi_host: str = "yahoo-finance15.p.rapidapi.com",
         *args,
         **kwargs,

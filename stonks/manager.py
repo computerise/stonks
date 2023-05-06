@@ -5,15 +5,15 @@ from pathlib import Path
 
 from stonks.retrieval.api_client import APIClient
 from stonks.retrieval.response_handler import handle_response
-from stonks.configuration import ApplicationSettings
+from stonks.configuration import ApplicationSettings, APIKeys
 
 
 class ApplicationManager:
     """Controls the flow of the program."""
 
-    def __init__(self, application_settings: ApplicationSettings):
+    def __init__(self, application_settings: ApplicationSettings, api_keys: APIKeys):
         """Initialise class instance."""
-        self.client = APIClient()
+        self.client = APIClient(api_keys)
         self.settings = application_settings
         logging.info("Created Application Manager.")
 

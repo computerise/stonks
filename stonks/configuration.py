@@ -5,6 +5,7 @@ from os import makedirs
 from pathlib import Path
 from tomllib import load
 from datetime import datetime
+from dataclasses import dataclass
 
 from stonks.error_handler import raise_error
 
@@ -37,6 +38,13 @@ def configure_logging(level: str, log_directory: Path) -> None:
     )
     if created_directory:
         logging.info(f"{CREATED_DIRECTORY_MESSAGE}`{log_directory}`.")
+
+
+@dataclass
+class APIKeys:
+    """Dataclass for storing API Access Keys."""
+
+    rapidapi_key: str
 
 
 class TOMLConfiguration:

@@ -3,8 +3,8 @@
 import responses
 from unittest import TestCase
 
+from stonks.configuration import APIKeys
 from stonks.retrieval.api_client import APIClient
-from stonks.retrieval.request_builder import YahooFinanceRequest
 
 
 class TestAPIClient(TestCase):
@@ -12,7 +12,7 @@ class TestAPIClient(TestCase):
 
     def __init__(self, *args, **kwargs):
         super(TestAPIClient, self).__init__(*args, **kwargs)
-        self.api_client = APIClient()
+        self.api_client = APIClient(api_keys=APIKeys("mock_key"))
 
     def test_instantiation(self):
         self.assertTrue(isinstance(self.api_client, APIClient))
