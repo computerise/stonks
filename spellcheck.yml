@@ -1,7 +1,8 @@
 matrix:
 - name: Markdown
   aspell:
-    lang: en-GB
+    lang: en
+    d: en_GB
   dictionary:
     wordlists:
     - .wordlist.txt
@@ -20,7 +21,8 @@ matrix:
   default_encoding: utf-8
 - name: Python
   aspell:
-    lang: en-GB
+    lang: en
+    d: en_GB
   dictionary:
     wordlists:
     - .wordlist.txt
