@@ -7,6 +7,7 @@ from stonks.storage import DataStorage
 from stonks.configuration import ApplicationSettings, APIKeys
 from stonks.retrieval.api_client import APIClient
 from stonks.retrieval.response_handler import handle_response
+from stonks.processing.cash_flow import process_cash_flow
 
 
 class ApplicationManager:
@@ -32,9 +33,11 @@ class ApplicationManager:
         """
 
         # Use tickers from user input JSON.
-        tickers = ["GOOGL"]
+        tickers = ["MSFT"]
         for company in tickers:
-            self.get_company_data(company)
+            company_data = self.get_company_data(company)
+            discounted_cash_flow = process_cash_flow(company_data)
+            print(f"{discounted_cash_flow=:_}")
 
     def get_company_data(self, ticker: str) -> None:
         """Get data associated with a company."""
@@ -45,9 +48,6 @@ class ApplicationManager:
                 response,
                 store=self.settings.store_new_data,
             )
+            return response.json()
         else:
-            self.read_company_data(ticker)
-
-    def read_company_data(self, ticker: str):
-        """Read data associated with a company."""
-        DataStorage.get_json(self.settings.storage_directory, ticker)
+            return DataStorage.get_json(self.settings.storage_directory, ticker)
