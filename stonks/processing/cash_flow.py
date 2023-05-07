@@ -26,14 +26,13 @@ def historical_cash_flow(cash_flow_statements: list[dict[str, Any]]) -> dict:
 def historical_cash_flow_increase_rate(total_cash_flows: dict[str, float]) -> float:
     """Perform historical cash flow analysis to compute the average rate of cash flow increase over all periods."""
     # Assumes cash flow statements are ordered from most-recent to least-recent.
-    initial_cash_flow = None
-    previous_cash_flow = 0
+    previous_cash_flow = None
     cumulative_percentage_increases = []
     # Iterate through the cash flow periods from least-recent to most-recent.
     for cash_flow_amount in list(total_cash_flows.values())[::-1]:
-        if initial_cash_flow is not None:
+        if previous_cash_flow is not None:
             cash_flow_increase = cash_flow_amount - previous_cash_flow
-            percentage_increase = previous_cash_flow / cash_flow_increase
+            percentage_increase = cash_flow_increase / previous_cash_flow
             cumulative_percentage_increases.append(percentage_increase)
         # Update the cash previous cash flow
         previous_cash_flow = cash_flow_amount

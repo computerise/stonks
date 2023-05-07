@@ -33,7 +33,7 @@ class ApplicationManager:
         """
 
         # Use tickers from user input JSON.
-        tickers = ["MSFT"]
+        tickers = ["GOOGL"]
         for company in tickers:
             company_data = self.get_company_data(company)
             discounted_cash_flow = process_cash_flow(company_data)
