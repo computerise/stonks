@@ -1,11 +1,11 @@
 """Discounted Cash Flow valuation model."""
 
 
-def discounted_cash_flow(cash_flows: list[float], discount_rate: float):
+def discounted_cash_flow(future_cash_flows: list[float], discount_rate: float):
     """Calculate discounted cash flow."""
     dcf = 0
     year = 1
-    for yearly_cash_flow in cash_flows:
+    for yearly_cash_flow in future_cash_flows:
         dcf += yearly_cash_flow / (1 + discount_rate) ** year
         year += 1
     return dcf

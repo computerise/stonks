@@ -10,15 +10,18 @@ from stonks.retrieval.api_client import APIClient
 class TestAPIClient(TestCase):
     """Test API Client."""
 
-    def __init__(self, *args, **kwargs):
+    def __init__(self, *args, **kwargs) -> None:
+        """Initialise API client test."""
         super(TestAPIClient, self).__init__(*args, **kwargs)
         self.api_client = APIClient(api_keys=APIKeys("mock_key"))
 
     def test_instantiation(self):
+        """Test class instantiation."""
         self.assertTrue(isinstance(self.api_client, APIClient))
 
     @responses.activate
-    def test_retrieve(self):
+    def test_retrieve(self) -> None:
+        """Test method to retrieve company data."""
         responses.add(
             **{
                 "method": responses.GET,
