@@ -6,7 +6,7 @@ from pathlib import Path
 from stonks.storage import DataStorage
 from stonks.configuration import ApplicationSettings, APIKeys
 from stonks.retrieval.api_client import APIClient
-from stonks.retrieval.response_handler import handle_response
+from stonks.retrieval.response_handler import handle_response, YahooFinanceResponse
 from stonks.processing.valuation import discounted_cash_flow_valuation, filter_valuation
 
 
@@ -36,27 +36,15 @@ class ApplicationManager:
         tickers = DataStorage.read_json("input/input.json").keys()
         # FUTURE: Convert company_data to use Company class and assign calculated metrics as attributes.
         for company in tickers:
-            # FUTURE: Move to method to extract relevant parameters for each model.
-            try:
-                company_data = self.get_company_data(company)
-                cash_flow_statements = company_data.get("cashflowStatementHistory").get(
-                    "cashflowStatements"
-                )
-                shares_outstanding = (
-                    company_data.get("defaultKeyStatistics")
-                    .get("sharesOutstanding")
-                    .get("raw")
-                )
-                current_share_price = (
-                    company_data.get("financialData").get("currentPrice").get("raw")
-                )
-            except AttributeError:
+            company_data = self.get_company_data(company)
+            dcf_data = YahooFinanceResponse.get_data_for_discounted_cash_flow(
+                company_data
+            )
+            if not dcf_data:
                 logging.warning(f"Failed to extract metrics from `{company}`")
                 continue
             logging.info(f"Cash flow metrics for '{company}':")
-            dcf_valuation = discounted_cash_flow_valuation(
-                shares_outstanding, current_share_price, cash_flow_statements
-            )
+            dcf_valuation = discounted_cash_flow_valuation(*dcf_data)
             logging.info(
                 f"DCF valuation (price per share): {dcf_valuation.get('dcf_valuation_per_share')}"
             )
