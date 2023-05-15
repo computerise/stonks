@@ -64,6 +64,7 @@ class ApplicationSettings(TOMLConfiguration):
     """All settings associated with the operation of the application."""
 
     def __init__(self, path: str = "settings.toml") -> None:
+        """Initialise class instance."""
         self.__dict__ = self.load_config(path).get("application")
         self.log_directory = Path(self.log_directory)
         self.input_directory = Path(self.input_directory)
@@ -71,6 +72,7 @@ class ApplicationSettings(TOMLConfiguration):
         self.configure_application()
 
     def configure_application(self) -> None:
+        """Configure the application."""
         configure_logging(level=self.log_level, log_directory=self.log_directory)
         if create_directory(Path(self.input_directory)):
             logging.info(f"{CREATED_DIRECTORY_MESSAGE}`{self.input_directory}`.")
@@ -82,4 +84,5 @@ class MetricAssumptions(TOMLConfiguration):
     """All assumptions of metrics used to processing."""
 
     def __init__(self, path: str = "assumptions.toml") -> None:
+        """Initialise class instance."""
         self.__dict__ = self.load_config(path)

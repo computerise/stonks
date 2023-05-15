@@ -12,10 +12,12 @@ class APIClient:
 
     def __init__(self, api_keys: APIKeys) -> None:
         """Initialise class instance."""
-        logging.info("Created API Client.")
+        logging.info("Creating API Client...")
         self.start_session(api_keys)
+        logging.info("Created API Client.")
 
     def start_session(self, keys: APIKeys) -> None:
+        logging.info("Starting Session...")
         self.session = Session()
         self.session.api_keys = keys
         logging.info("Started Session.")

@@ -5,11 +5,10 @@ from typing import Any
 from copy import deepcopy
 
 from stonks.processing.cash_flow import (
-    historical_cash_flow,
+    historical_cash_flows,
     historical_cash_flow_increase_rate,
-    future_cash_flow,
+    future_cash_flows,
     most_recent_cash_flow,
-    process_cash_flow,
 )
 
 
@@ -47,7 +46,7 @@ class TestCashFlow(TestCase):
                 "maxAge": 86400,
             }
         }
-        self.sample_historical_cash_flow = historical_cash_flow(
+        self.sample_historical_cash_flow = historical_cash_flows(
             self.sample_cash_flow_statements
         )
 
@@ -66,10 +65,10 @@ class TestCashFlow(TestCase):
         self.assertEqual(
             self.sample_historical_cash_flow,
             {
-                "1": 110_951_000_000.0,
-                "2": 100_951_000_000.0,
-                "3": 90_951_000_000.0,
-                "4": 80_951_000_000.0,
+                "1": 100_907_000_000.0,
+                "2": 90_907_000_000.0,
+                "3": 80_907_000_000.0,
+                "4": 70_907_000_000.0,
             },
         )
 
@@ -77,13 +76,13 @@ class TestCashFlow(TestCase):
         """Test calculation of cash flow increase rate from historical cash flows."""
         self.assertEqual(
             historical_cash_flow_increase_rate(self.sample_historical_cash_flow),
-            0.1108462637484429,
+            0.1248770097988416,
         )
 
     def test_future_cash_flow(self) -> None:
         """Test calculation of future cash flow."""
         self.assertEqual(
-            future_cash_flow(100_000_000_000, 0.05, 5),
+            future_cash_flows(100_000_000_000, 0.05, 5),
             [
                 105000000000.0,
                 110250000000.0,
@@ -96,14 +95,5 @@ class TestCashFlow(TestCase):
     def test_most_recent_cash_flow(self) -> None:
         """Test getting the most recent cash flow."""
         self.assertEqual(
-            most_recent_cash_flow(self.sample_historical_cash_flow), 110_951_000_000.0
-        )
-
-    def test_process_cash_flow(self) -> None:
-        """Test full processing of cash flow data."""
-        self.assertEqual(
-            process_cash_flow(
-                self.sample_company_data,
-            ),
-            658_980_251_659.6094,
+            most_recent_cash_flow(self.sample_historical_cash_flow), 100_907_000_000.0
         )

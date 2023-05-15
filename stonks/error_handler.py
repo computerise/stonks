@@ -12,10 +12,7 @@ def raise_fatal_error(
     from_exception: Exception = None,
 ) -> None:
     """Log an error message and raise an exception."""
-    logging.critical(format_exc())
-    logging.critical(from_exception)
     logging.critical(message)
-
     CommandLineInterface.outro(
         f"Program execution cannot continue due to the fatal error:\n'{message}'"
     )

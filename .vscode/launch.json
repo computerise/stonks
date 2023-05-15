@@ -17,6 +17,7 @@
             "type": "python",
             "request": "launch",
             "program": "${file}",
+            "cwd": "${fileDirname}",
             "console": "integratedTerminal",
             "justMyCode": true
         }
