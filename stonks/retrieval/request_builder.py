@@ -60,7 +60,7 @@ class YahooFinanceRequest(RapidAPIRequest):
         self,
         query_parameters: tuple[str],
         default_queries: tuple[str] = (
-            "asset-profile",
+            "financial-data",
             "income-statement",
             "balance-sheet",
             "cashflow-statement",
@@ -108,6 +108,8 @@ class YahooFinanceRequest(RapidAPIRequest):
             "insider-transactions",
             "insider-holders",
             "earnings-history",
+            "financial-data",
+            "earnings",
         )
         for query in query_parameters:
             if query not in valid_query_parameters:

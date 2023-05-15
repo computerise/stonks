@@ -45,14 +45,14 @@ class TestYahooFinanceRequest(TestCase):
             "MOCK", x_rapidapi_key="mock_key"
         )
         self.default_query_parameters = (
-            "asset-profile",
+            "financial-data",
             "income-statement",
             "balance-sheet",
             "cashflow-statement",
             "default-key-statistics",
         )
         self.params = {
-            "module": "asset-profile,income-statement,balance-sheet,cashflow-statement,default-key-statistics"
+            "module": "financial-data,income-statement,balance-sheet,cashflow-statement,default-key-statistics"
         }
 
     def test_instantiation(self) -> None:
