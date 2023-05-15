@@ -33,34 +33,42 @@ class ApplicationManager:
         If `store_new_data` is `True`, upon a successful response the data will be stored. If `store_new_data` is `False` the data will be discarded.
         """
         candidates = {}
-        # FUTURE: Use tickers from user input JSON file.
-        tickers = ["MSFT", "AAPL", "GOOGL"]
+        tickers = DataStorage.read_json("input/input.json").keys()
         # FUTURE: Convert company_data to use Company class and assign calculated metrics as attributes.
         for company in tickers:
             # FUTURE: Move to method to extract relevant parameters for each model.
-            company_data = self.get_company_data(company)
-            cash_flow_statements = company_data.get("cashflowStatementHistory").get(
-                "cashflowStatements"
-            )
-            shares_outstanding = (
-                company_data.get("defaultKeyStatistics")
-                .get("sharesOutstanding")
-                .get("raw")
-            )
-            current_share_price = (
-                company_data.get("financialData").get("currentPrice").get("raw")
-            )
+            try:
+                company_data = self.get_company_data(company)
+                cash_flow_statements = company_data.get("cashflowStatementHistory").get(
+                    "cashflowStatements"
+                )
+                shares_outstanding = (
+                    company_data.get("defaultKeyStatistics")
+                    .get("sharesOutstanding")
+                    .get("raw")
+                )
+                current_share_price = (
+                    company_data.get("financialData").get("currentPrice").get("raw")
+                )
+            except AttributeError:
+                logging.warning(f"Failed to extract metrics from `{company}`")
+                continue
             logging.info(f"Cash flow metrics for '{company}':")
             dcf_valuation = discounted_cash_flow_valuation(
-                shares_outstanding, cash_flow_statements
+                shares_outstanding, current_share_price, cash_flow_statements
             )
             logging.info(
                 f"DCF valuation (price per share): {dcf_valuation.get('dcf_valuation_per_share')}"
             )
-            if filter_valuation(current_share_price, dcf_valuation):
+            if filter_valuation(dcf_valuation):
                 candidates[company] = dcf_valuation
+                logging.info(
+                    f"Added `{company}` to the candidates list with an absolute discount of `{dcf_valuation.get('dcf_discount_per_share')}` per share and a discount ratio of `{dcf_valuation.get('dcf_discount_ratio')}`."
+                )
+
         logging.info("Candidates:")
         logging.info(candidates)
+        DataStorage.write_json("data/candidates.json", candidates)
 
     def get_company_data(self, ticker: str) -> None:
         """Get data associated with a company."""

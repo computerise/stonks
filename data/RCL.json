@@ -1,0 +1,2579 @@
+{
+    "incomeStatementHistoryQuarterly": {
+        "incomeStatementHistory": [
+            {
+                "maxAge": 1,
+                "endDate": {
+                    "raw": 1680220800,
+                    "fmt": "2023-03-31"
+                },
+                "totalRevenue": {
+                    "raw": 0,
+                    "fmt": null,
+                    "longFmt": "0"
+                },
+                "costOfRevenue": {
+                    "raw": 0,
+                    "fmt": null,
+                    "longFmt": "0"
+                },
+                "grossProfit": {
+                    "raw": 0,
+                    "fmt": null,
+                    "longFmt": "0"
+                },
+                "researchDevelopment": [],
+                "sellingGeneralAdministrative": [],
+                "nonRecurring": [],
+                "otherOperatingExpenses": [],
+                "totalOperatingExpenses": {
+                    "raw": 0,
+                    "fmt": null,
+                    "longFmt": "0"
+                },
+                "operatingIncome": [],
+                "totalOtherIncomeExpenseNet": {
+                    "raw": 0,
+                    "fmt": null,
+                    "longFmt": "0"
+                },
+                "ebit": {
+                    "raw": 0,
+                    "fmt": null,
+                    "longFmt": "0"
+                },
+                "interestExpense": [],
+                "incomeBeforeTax": [],
+                "incomeTaxExpense": {
+                    "raw": 0,
+                    "fmt": null,
+                    "longFmt": "0"
+                },
+                "minorityInterest": [],
+                "netIncomeFromContinuingOps": [],
+                "discontinuedOperations": [],
+                "extraordinaryItems": [],
+                "effectOfAccountingCharges": [],
+                "otherItems": [],
+                "netIncome": {
+                    "raw": 0,
+                    "fmt": null,
+                    "longFmt": "0"
+                },
+                "netIncomeApplicableToCommonShares": []
+            },
+            {
+                "maxAge": 1,
+                "endDate": {
+                    "raw": 1672444800,
+                    "fmt": "2022-12-31"
+                },
+                "totalRevenue": {
+                    "raw": 2603992000,
+                    "fmt": "2.6B",
+                    "longFmt": "2,603,992,000"
+                },
+                "costOfRevenue": {
+                    "raw": 1727228000,
+                    "fmt": "1.73B",
+                    "longFmt": "1,727,228,000"
+                },
+                "grossProfit": {
+                    "raw": 876764000,
+                    "fmt": "876.76M",
+                    "longFmt": "876,764,000"
+                },
+                "researchDevelopment": [],
+                "sellingGeneralAdministrative": {
+                    "raw": 494395000,
+                    "fmt": "494.39M",
+                    "longFmt": "494,395,000"
+                },
+                "nonRecurring": [],
+                "otherOperatingExpenses": [],
+                "totalOperatingExpenses": {
+                    "raw": 2582218000,
+                    "fmt": "2.58B",
+                    "longFmt": "2,582,218,000"
+                },
+                "operatingIncome": {
+                    "raw": 21774000,
+                    "fmt": "21.77M",
+                    "longFmt": "21,774,000"
+                },
+                "totalOtherIncomeExpenseNet": {
+                    "raw": -517780000,
+                    "fmt": "-517.78M",
+                    "longFmt": "-517,780,000"
+                },
+                "ebit": {
+                    "raw": 21774000,
+                    "fmt": "21.77M",
+                    "longFmt": "21,774,000"
+                },
+                "interestExpense": {
+                    "raw": -431610000,
+                    "fmt": "-431.61M",
+                    "longFmt": "-431,610,000"
+                },
+                "incomeBeforeTax": {
+                    "raw": -496006000,
+                    "fmt": "-496.01M",
+                    "longFmt": "-496,006,000"
+                },
+                "incomeTaxExpense": {
+                    "raw": 4200000,
+                    "fmt": "4.2M",
+                    "longFmt": "4,200,000"
+                },
+                "minorityInterest": [],
+                "netIncomeFromContinuingOps": {
+                    "raw": -500206000,
+                    "fmt": "-500.21M",
+                    "longFmt": "-500,206,000"
+                },
+                "discontinuedOperations": [],
+                "extraordinaryItems": [],
+                "effectOfAccountingCharges": [],
+                "otherItems": [],
+                "netIncome": {
+                    "raw": -500206000,
+                    "fmt": "-500.21M",
+                    "longFmt": "-500,206,000"
+                },
+                "netIncomeApplicableToCommonShares": {
+                    "raw": -500206000,
+                    "fmt": "-500.21M",
+                    "longFmt": "-500,206,000"
+                }
+            },
+            {
+                "maxAge": 1,
+                "endDate": {
+                    "raw": 1664496000,
+                    "fmt": "2022-09-30"
+                },
+                "totalRevenue": {
+                    "raw": 2993075000,
+                    "fmt": "2.99B",
+                    "longFmt": "2,993,075,000"
+                },
+                "costOfRevenue": {
+                    "raw": 1923794000,
+                    "fmt": "1.92B",
+                    "longFmt": "1,923,794,000"
+                },
+                "grossProfit": {
+                    "raw": 1069281000,
+                    "fmt": "1.07B",
+                    "longFmt": "1,069,281,000"
+                },
+                "researchDevelopment": [],
+                "sellingGeneralAdministrative": {
+                    "raw": 401012000,
+                    "fmt": "401.01M",
+                    "longFmt": "401,012,000"
+                },
+                "nonRecurring": [],
+                "otherOperatingExpenses": [],
+                "totalOperatingExpenses": {
+                    "raw": 2679891000,
+                    "fmt": "2.68B",
+                    "longFmt": "2,679,891,000"
+                },
+                "operatingIncome": {
+                    "raw": 313184000,
+                    "fmt": "313.18M",
+                    "longFmt": "313,184,000"
+                },
+                "totalOtherIncomeExpenseNet": {
+                    "raw": -280216000,
+                    "fmt": "-280.22M",
+                    "longFmt": "-280,216,000"
+                },
+                "ebit": {
+                    "raw": 313184000,
+                    "fmt": "313.18M",
+                    "longFmt": "313,184,000"
+                },
+                "interestExpense": {
+                    "raw": -352187000,
+                    "fmt": "-352.19M",
+                    "longFmt": "-352,187,000"
+                },
+                "incomeBeforeTax": {
+                    "raw": 32968000,
+                    "fmt": "32.97M",
+                    "longFmt": "32,968,000"
+                },
+                "incomeTaxExpense": {
+                    "raw": 0,
+                    "fmt": null,
+                    "longFmt": "0"
+                },
+                "minorityInterest": [],
+                "netIncomeFromContinuingOps": {
+                    "raw": 32968000,
+                    "fmt": "32.97M",
+                    "longFmt": "32,968,000"
+                },
+                "discontinuedOperations": [],
+                "extraordinaryItems": [],
+                "effectOfAccountingCharges": [],
+                "otherItems": [],
+                "netIncome": {
+                    "raw": 32968000,
+                    "fmt": "32.97M",
+                    "longFmt": "32,968,000"
+                },
+                "netIncomeApplicableToCommonShares": {
+                    "raw": 32968000,
+                    "fmt": "32.97M",
+                    "longFmt": "32,968,000"
+                }
+            },
+            {
+                "maxAge": 1,
+                "endDate": {
+                    "raw": 1656547200,
+                    "fmt": "2022-06-30"
+                },
+                "totalRevenue": {
+                    "raw": 2184242000,
+                    "fmt": "2.18B",
+                    "longFmt": "2,184,242,000"
+                },
+                "costOfRevenue": {
+                    "raw": 1657346000,
+                    "fmt": "1.66B",
+                    "longFmt": "1,657,346,000"
+                },
+                "grossProfit": {
+                    "raw": 526896000,
+                    "fmt": "526.9M",
+                    "longFmt": "526,896,000"
+                },
+                "researchDevelopment": [],
+                "sellingGeneralAdministrative": {
+                    "raw": 404039000,
+                    "fmt": "404.04M",
+                    "longFmt": "404,039,000"
+                },
+                "nonRecurring": [],
+                "otherOperatingExpenses": [],
+                "totalOperatingExpenses": {
+                    "raw": 2412927000,
+                    "fmt": "2.41B",
+                    "longFmt": "2,412,927,000"
+                },
+                "operatingIncome": {
+                    "raw": -228685000,
+                    "fmt": "-228.69M",
+                    "longFmt": "-228,685,000"
+                },
+                "totalOtherIncomeExpenseNet": {
+                    "raw": -292897000,
+                    "fmt": "-292.9M",
+                    "longFmt": "-292,897,000"
+                },
+                "ebit": {
+                    "raw": -228685000,
+                    "fmt": "-228.69M",
+                    "longFmt": "-228,685,000"
+                },
+                "interestExpense": {
+                    "raw": -302706000,
+                    "fmt": "-302.71M",
+                    "longFmt": "-302,706,000"
+                },
+                "incomeBeforeTax": {
+                    "raw": -521582000,
+                    "fmt": "-521.58M",
+                    "longFmt": "-521,582,000"
+                },
+                "incomeTaxExpense": {
+                    "raw": 0,
+                    "fmt": null,
+                    "longFmt": "0"
+                },
+                "minorityInterest": [],
+                "netIncomeFromContinuingOps": {
+                    "raw": -521582000,
+                    "fmt": "-521.58M",
+                    "longFmt": "-521,582,000"
+                },
+                "discontinuedOperations": [],
+                "extraordinaryItems": [],
+                "effectOfAccountingCharges": [],
+                "otherItems": [],
+                "netIncome": {
+                    "raw": -521582000,
+                    "fmt": "-521.58M",
+                    "longFmt": "-521,582,000"
+                },
+                "netIncomeApplicableToCommonShares": {
+                    "raw": -521582000,
+                    "fmt": "-521.58M",
+                    "longFmt": "-521,582,000"
+                }
+            }
+        ],
+        "maxAge": 86400
+    },
+    "cashflowStatementHistory": {
+        "cashflowStatements": [
+            {
+                "maxAge": 1,
+                "endDate": {
+                    "raw": 1672444800,
+                    "fmt": "2022-12-31"
+                },
+                "netIncome": {
+                    "raw": -2155962000,
+                    "fmt": "-2.16B",
+                    "longFmt": "-2,155,962,000"
+                },
+                "depreciation": {
+                    "raw": 1406689000,
+                    "fmt": "1.41B",
+                    "longFmt": "1,406,689,000"
+                },
+                "changeToNetincome": {
+                    "raw": 95076000,
+                    "fmt": "95.08M",
+                    "longFmt": "95,076,000"
+                },
+                "changeToAccountReceivables": {
+                    "raw": -234348000,
+                    "fmt": "-234.35M",
+                    "longFmt": "-234,348,000"
+                },
+                "changeToLiabilities": {
+                    "raw": 74657000,
+                    "fmt": "74.66M",
+                    "longFmt": "74,657,000"
+                },
+                "changeToInventory": {
+                    "raw": -73792000,
+                    "fmt": "-73.79M",
+                    "longFmt": "-73,792,000"
+                },
+                "changeToOperatingActivities": {
+                    "raw": 1206769000,
+                    "fmt": "1.21B",
+                    "longFmt": "1,206,769,000"
+                },
+                "totalCashFromOperatingActivities": {
+                    "raw": 481857000,
+                    "fmt": "481.86M",
+                    "longFmt": "481,857,000"
+                },
+                "capitalExpenditures": {
+                    "raw": -2710063000,
+                    "fmt": "-2.71B",
+                    "longFmt": "-2,710,063,000"
+                },
+                "otherCashflowsFromInvestingActivities": {
+                    "raw": -278124000,
+                    "fmt": "-278.12M",
+                    "longFmt": "-278,124,000"
+                },
+                "totalCashflowsFromInvestingActivities": {
+                    "raw": -2987766000,
+                    "fmt": "-2.99B",
+                    "longFmt": "-2,987,766,000"
+                },
+                "netBorrowings": {
+                    "raw": 2058598000,
+                    "fmt": "2.06B",
+                    "longFmt": "2,058,598,000"
+                },
+                "otherCashflowsFromFinancingActivities": {
+                    "raw": -317625000,
+                    "fmt": "-317.62M",
+                    "longFmt": "-317,625,000"
+                },
+                "totalCashFromFinancingActivities": {
+                    "raw": 1740973000,
+                    "fmt": "1.74B",
+                    "longFmt": "1,740,973,000"
+                },
+                "effectOfExchangeRate": {
+                    "raw": -1829000,
+                    "fmt": "-1.83M",
+                    "longFmt": "-1,829,000"
+                },
+                "changeInCash": {
+                    "raw": -766765000,
+                    "fmt": "-766.76M",
+                    "longFmt": "-766,765,000"
+                }
+            },
+            {
+                "maxAge": 1,
+                "endDate": {
+                    "raw": 1640908800,
+                    "fmt": "2021-12-31"
+                },
+                "netIncome": {
+                    "raw": -5260499000,
+                    "fmt": "-5.26B",
+                    "longFmt": "-5,260,499,000"
+                },
+                "depreciation": {
+                    "raw": 1292878000,
+                    "fmt": "1.29B",
+                    "longFmt": "1,292,878,000"
+                },
+                "changeToNetincome": {
+                    "raw": 359639000,
+                    "fmt": "359.64M",
+                    "longFmt": "359,639,000"
+                },
+                "changeToAccountReceivables": {
+                    "raw": -181707000,
+                    "fmt": "-181.71M",
+                    "longFmt": "-181,707,000"
+                },
+                "changeToLiabilities": {
+                    "raw": 188518000,
+                    "fmt": "188.52M",
+                    "longFmt": "188,518,000"
+                },
+                "changeToInventory": {
+                    "raw": -34527000,
+                    "fmt": "-34.53M",
+                    "longFmt": "-34,527,000"
+                },
+                "changeToOperatingActivities": {
+                    "raw": 1509328000,
+                    "fmt": "1.51B",
+                    "longFmt": "1,509,328,000"
+                },
+                "totalCashFromOperatingActivities": {
+                    "raw": -1877815000,
+                    "fmt": "-1.88B",
+                    "longFmt": "-1,877,815,000"
+                },
+                "capitalExpenditures": {
+                    "raw": -2229704000,
+                    "fmt": "-2.23B",
+                    "longFmt": "-2,229,704,000"
+                },
+                "investments": {
+                    "raw": -70228000,
+                    "fmt": "-70.23M",
+                    "longFmt": "-70,228,000"
+                },
+                "otherCashflowsFromInvestingActivities": {
+                    "raw": -20846000,
+                    "fmt": "-20.85M",
+                    "longFmt": "-20,846,000"
+                },
+                "totalCashflowsFromInvestingActivities": {
+                    "raw": -2144739000,
+                    "fmt": "-2.14B",
+                    "longFmt": "-2,144,739,000"
+                },
+                "netBorrowings": {
+                    "raw": 1756229000,
+                    "fmt": "1.76B",
+                    "longFmt": "1,756,229,000"
+                },
+                "otherCashflowsFromFinancingActivities": {
+                    "raw": -337512000,
+                    "fmt": "-337.51M",
+                    "longFmt": "-337,512,000"
+                },
+                "totalCashFromFinancingActivities": {
+                    "raw": 3040577000,
+                    "fmt": "3.04B",
+                    "longFmt": "3,040,577,000"
+                },
+                "effectOfExchangeRate": {
+                    "raw": -727000,
+                    "fmt": "-727k",
+                    "longFmt": "-727,000"
+                },
+                "changeInCash": {
+                    "raw": -982704000,
+                    "fmt": "-982.7M",
+                    "longFmt": "-982,704,000"
+                },
+                "issuanceOfStock": {
+                    "raw": 1621860000,
+                    "fmt": "1.62B",
+                    "longFmt": "1,621,860,000"
+                }
+            },
+            {
+                "maxAge": 1,
+                "endDate": {
+                    "raw": 1609372800,
+                    "fmt": "2020-12-31"
+                },
+                "netIncome": {
+                    "raw": -5797462000,
+                    "fmt": "-5.8B",
+                    "longFmt": "-5,797,462,000"
+                },
+                "depreciation": {
+                    "raw": 1279254000,
+                    "fmt": "1.28B",
+                    "longFmt": "1,279,254,000"
+                },
+                "changeToNetincome": {
+                    "raw": 1961605000,
+                    "fmt": "1.96B",
+                    "longFmt": "1,961,605,000"
+                },
+                "changeToAccountReceivables": {
+                    "raw": 121055000,
+                    "fmt": "121.06M",
+                    "longFmt": "121,055,000"
+                },
+                "changeToLiabilities": {
+                    "raw": -133815000,
+                    "fmt": "-133.81M",
+                    "longFmt": "-133,815,000"
+                },
+                "changeToInventory": {
+                    "raw": 27077000,
+                    "fmt": "27.08M",
+                    "longFmt": "27,077,000"
+                },
+                "changeToOperatingActivities": {
+                    "raw": -1345585000,
+                    "fmt": "-1.35B",
+                    "longFmt": "-1,345,585,000"
+                },
+                "totalCashFromOperatingActivities": {
+                    "raw": -3731653000,
+                    "fmt": "-3.73B",
+                    "longFmt": "-3,731,653,000"
+                },
+                "capitalExpenditures": {
+                    "raw": -1965131000,
+                    "fmt": "-1.97B",
+                    "longFmt": "-1,965,131,000"
+                },
+                "investments": {
+                    "raw": -100609000,
+                    "fmt": "-100.61M",
+                    "longFmt": "-100,609,000"
+                },
+                "otherCashflowsFromInvestingActivities": {
+                    "raw": -140622000,
+                    "fmt": "-140.62M",
+                    "longFmt": "-140,622,000"
+                },
+                "totalCashflowsFromInvestingActivities": {
+                    "raw": -2178566000,
+                    "fmt": "-2.18B",
+                    "longFmt": "-2,178,566,000"
+                },
+                "dividendsPaid": {
+                    "raw": -326421000,
+                    "fmt": "-326.42M",
+                    "longFmt": "-326,421,000"
+                },
+                "netBorrowings": {
+                    "raw": 8630237000,
+                    "fmt": "8.63B",
+                    "longFmt": "8,630,237,000"
+                },
+                "otherCashflowsFromFinancingActivities": {
+                    "raw": -385403000,
+                    "fmt": "-385.4M",
+                    "longFmt": "-385,403,000"
+                },
+                "totalCashFromFinancingActivities": {
+                    "raw": 9349788000,
+                    "fmt": "9.35B",
+                    "longFmt": "9,349,788,000"
+                },
+                "effectOfExchangeRate": {
+                    "raw": 1167000,
+                    "fmt": "1.17M",
+                    "longFmt": "1,167,000"
+                },
+                "changeInCash": {
+                    "raw": 3440736000,
+                    "fmt": "3.44B",
+                    "longFmt": "3,440,736,000"
+                },
+                "issuanceOfStock": {
+                    "raw": 1431375000,
+                    "fmt": "1.43B",
+                    "longFmt": "1,431,375,000"
+                }
+            },
+            {
+                "maxAge": 1,
+                "endDate": {
+                    "raw": 1577750400,
+                    "fmt": "2019-12-31"
+                },
+                "netIncome": {
+                    "raw": 1878887000,
+                    "fmt": "1.88B",
+                    "longFmt": "1,878,887,000"
+                },
+                "depreciation": {
+                    "raw": 1245942000,
+                    "fmt": "1.25B",
+                    "longFmt": "1,245,942,000"
+                },
+                "changeToNetincome": {
+                    "raw": 83242000,
+                    "fmt": "83.24M",
+                    "longFmt": "83,242,000"
+                },
+                "changeToAccountReceivables": {
+                    "raw": -9898000,
+                    "fmt": "-9.9M",
+                    "longFmt": "-9,898,000"
+                },
+                "changeToLiabilities": {
+                    "raw": 75281000,
+                    "fmt": "75.28M",
+                    "longFmt": "75,281,000"
+                },
+                "changeToInventory": {
+                    "raw": -8533000,
+                    "fmt": "-8.53M",
+                    "longFmt": "-8,533,000"
+                },
+                "changeToOperatingActivities": {
+                    "raw": 387838000,
+                    "fmt": "387.84M",
+                    "longFmt": "387,838,000"
+                },
+                "totalCashFromOperatingActivities": {
+                    "raw": 3716366000,
+                    "fmt": "3.72B",
+                    "longFmt": "3,716,366,000"
+                },
+                "capitalExpenditures": {
+                    "raw": -3024663000,
+                    "fmt": "-3.02B",
+                    "longFmt": "-3,024,663,000"
+                },
+                "investments": {
+                    "raw": -25569000,
+                    "fmt": "-25.57M",
+                    "longFmt": "-25,569,000"
+                },
+                "otherCashflowsFromInvestingActivities": {
+                    "raw": -41174000,
+                    "fmt": "-41.17M",
+                    "longFmt": "-41,174,000"
+                },
+                "totalCashflowsFromInvestingActivities": {
+                    "raw": -3091406000,
+                    "fmt": "-3.09B",
+                    "longFmt": "-3,091,406,000"
+                },
+                "dividendsPaid": {
+                    "raw": -602674000,
+                    "fmt": "-602.67M",
+                    "longFmt": "-602,674,000"
+                },
+                "netBorrowings": {
+                    "raw": 92749000,
+                    "fmt": "92.75M",
+                    "longFmt": "92,749,000"
+                },
+                "otherCashflowsFromFinancingActivities": {
+                    "raw": -60864000,
+                    "fmt": "-60.86M",
+                    "longFmt": "-60,864,000"
+                },
+                "totalCashFromFinancingActivities": {
+                    "raw": -670371000,
+                    "fmt": "-670.37M",
+                    "longFmt": "-670,371,000"
+                },
+                "effectOfExchangeRate": {
+                    "raw": 1297000,
+                    "fmt": "1.3M",
+                    "longFmt": "1,297,000"
+                },
+                "changeInCash": {
+                    "raw": -44114000,
+                    "fmt": "-44.11M",
+                    "longFmt": "-44,114,000"
+                },
+                "repurchaseOfStock": {
+                    "raw": -99582000,
+                    "fmt": "-99.58M",
+                    "longFmt": "-99,582,000"
+                },
+                "issuanceOfStock": {
+                    "raw": 1431375000,
+                    "fmt": "1.43B",
+                    "longFmt": "1,431,375,000"
+                }
+            }
+        ],
+        "maxAge": 86400
+    },
+    "cashflowStatementHistoryQuarterly": {
+        "cashflowStatements": [
+            {
+                "maxAge": 1,
+                "endDate": {
+                    "raw": 1680220800,
+                    "fmt": "2023-03-31"
+                },
+                "netIncome": {
+                    "raw": 0,
+                    "fmt": null,
+                    "longFmt": "0"
+                },
+                "changeToLiabilities": {
+                    "raw": 0,
+                    "fmt": null,
+                    "longFmt": "0"
+                }
+            },
+            {
+                "maxAge": 1,
+                "endDate": {
+                    "raw": 1672444800,
+                    "fmt": "2022-12-31"
+                },
+                "netIncome": {
+                    "raw": -500206000,
+                    "fmt": "-500.21M",
+                    "longFmt": "-500,206,000"
+                },
+                "depreciation": {
+                    "raw": 360595000,
+                    "fmt": "360.6M",
+                    "longFmt": "360,595,000"
+                },
+                "changeToNetincome": {
+                    "raw": 37127000,
+                    "fmt": "37.13M",
+                    "longFmt": "37,127,000"
+                },
+                "changeToAccountReceivables": {
+                    "raw": -60793000,
+                    "fmt": "-60.79M",
+                    "longFmt": "-60,793,000"
+                },
+                "changeToLiabilities": {
+                    "raw": -4592000,
+                    "fmt": "-4.59M",
+                    "longFmt": "-4,592,000"
+                },
+                "changeToInventory": {
+                    "raw": 13170000,
+                    "fmt": "13.17M",
+                    "longFmt": "13,170,000"
+                },
+                "changeToOperatingActivities": {
+                    "raw": 698486000,
+                    "fmt": "698.49M",
+                    "longFmt": "698,486,000"
+                },
+                "totalCashFromOperatingActivities": {
+                    "raw": 576598000,
+                    "fmt": "576.6M",
+                    "longFmt": "576,598,000"
+                },
+                "capitalExpenditures": {
+                    "raw": -166797000,
+                    "fmt": "-166.8M",
+                    "longFmt": "-166,797,000"
+                },
+                "investments": {
+                    "raw": 614000,
+                    "fmt": "614k",
+                    "longFmt": "614,000"
+                },
+                "otherCashflowsFromInvestingActivities": {
+                    "raw": 49013000,
+                    "fmt": "49.01M",
+                    "longFmt": "49,013,000"
+                },
+                "totalCashflowsFromInvestingActivities": {
+                    "raw": -116815000,
+                    "fmt": "-116.81M",
+                    "longFmt": "-116,815,000"
+                },
+                "netBorrowings": {
+                    "raw": -13645000,
+                    "fmt": "-13.64M",
+                    "longFmt": "-13,645,000"
+                },
+                "otherCashflowsFromFinancingActivities": {
+                    "raw": -78282000,
+                    "fmt": "-78.28M",
+                    "longFmt": "-78,282,000"
+                },
+                "totalCashFromFinancingActivities": {
+                    "raw": -91927000,
+                    "fmt": "-91.93M",
+                    "longFmt": "-91,927,000"
+                },
+                "effectOfExchangeRate": {
+                    "raw": 936000,
+                    "fmt": "936k",
+                    "longFmt": "936,000"
+                },
+                "changeInCash": {
+                    "raw": 368792000,
+                    "fmt": "368.79M",
+                    "longFmt": "368,792,000"
+                }
+            },
+            {
+                "maxAge": 1,
+                "endDate": {
+                    "raw": 1664496000,
+                    "fmt": "2022-09-30"
+                },
+                "netIncome": {
+                    "raw": 32968000,
+                    "fmt": "32.97M",
+                    "longFmt": "32,968,000"
+                },
+                "depreciation": {
+                    "raw": 355085000,
+                    "fmt": "355.08M",
+                    "longFmt": "355,085,000"
+                },
+                "changeToNetincome": {
+                    "raw": -7822000,
+                    "fmt": "-7.82M",
+                    "longFmt": "-7,822,000"
+                },
+                "changeToAccountReceivables": {
+                    "raw": 28050000,
+                    "fmt": "28.05M",
+                    "longFmt": "28,050,000"
+                },
+                "changeToLiabilities": {
+                    "raw": -142497000,
+                    "fmt": "-142.5M",
+                    "longFmt": "-142,497,000"
+                },
+                "changeToInventory": {
+                    "raw": -8078000,
+                    "fmt": "-8.08M",
+                    "longFmt": "-8,078,000"
+                },
+                "changeToOperatingActivities": {
+                    "raw": -347463000,
+                    "fmt": "-347.46M",
+                    "longFmt": "-347,463,000"
+                },
+                "totalCashFromOperatingActivities": {
+                    "raw": -44534000,
+                    "fmt": "-44.53M",
+                    "longFmt": "-44,534,000"
+                },
+                "capitalExpenditures": {
+                    "raw": -225519000,
+                    "fmt": "-225.52M",
+                    "longFmt": "-225,519,000"
+                },
+                "investments": {
+                    "raw": 614000,
+                    "fmt": "614k",
+                    "longFmt": "614,000"
+                },
+                "otherCashflowsFromInvestingActivities": {
+                    "raw": -117876000,
+                    "fmt": "-117.88M",
+                    "longFmt": "-117,876,000"
+                },
+                "totalCashflowsFromInvestingActivities": {
+                    "raw": -343404000,
+                    "fmt": "-343.4M",
+                    "longFmt": "-343,404,000"
+                },
+                "netBorrowings": {
+                    "raw": -52516000,
+                    "fmt": "-52.52M",
+                    "longFmt": "-52,516,000"
+                },
+                "otherCashflowsFromFinancingActivities": {
+                    "raw": -94347000,
+                    "fmt": "-94.35M",
+                    "longFmt": "-94,347,000"
+                },
+                "totalCashFromFinancingActivities": {
+                    "raw": -146863000,
+                    "fmt": "-146.86M",
+                    "longFmt": "-146,863,000"
+                },
+                "effectOfExchangeRate": {
+                    "raw": -1191000,
+                    "fmt": "-1.19M",
+                    "longFmt": "-1,191,000"
+                },
+                "changeInCash": {
+                    "raw": -535992000,
+                    "fmt": "-535.99M",
+                    "longFmt": "-535,992,000"
+                }
+            },
+            {
+                "maxAge": 1,
+                "endDate": {
+                    "raw": 1656547200,
+                    "fmt": "2022-06-30"
+                },
+                "netIncome": {
+                    "raw": -521582000,
+                    "fmt": "-521.58M",
+                    "longFmt": "-521,582,000"
+                },
+                "depreciation": {
+                    "raw": 351542000,
+                    "fmt": "351.54M",
+                    "longFmt": "351,542,000"
+                },
+                "changeToNetincome": {
+                    "raw": 24153000,
+                    "fmt": "24.15M",
+                    "longFmt": "24,153,000"
+                },
+                "changeToAccountReceivables": {
+                    "raw": -169369000,
+                    "fmt": "-169.37M",
+                    "longFmt": "-169,369,000"
+                },
+                "changeToLiabilities": {
+                    "raw": 109320000,
+                    "fmt": "109.32M",
+                    "longFmt": "109,320,000"
+                },
+                "changeToInventory": {
+                    "raw": -49642000,
+                    "fmt": "-49.64M",
+                    "longFmt": "-49,642,000"
+                },
+                "changeToOperatingActivities": {
+                    "raw": 692674000,
+                    "fmt": "692.67M",
+                    "longFmt": "692,674,000"
+                },
+                "totalCashFromOperatingActivities": {
+                    "raw": 478640000,
+                    "fmt": "478.64M",
+                    "longFmt": "478,640,000"
+                },
+                "capitalExpenditures": {
+                    "raw": -954661000,
+                    "fmt": "-954.66M",
+                    "longFmt": "-954,661,000"
+                },
+                "investments": {
+                    "raw": -614000,
+                    "fmt": "-614k",
+                    "longFmt": "-614,000"
+                },
+                "otherCashflowsFromInvestingActivities": {
+                    "raw": -129141000,
+                    "fmt": "-129.14M",
+                    "longFmt": "-129,141,000"
+                },
+                "totalCashflowsFromInvestingActivities": {
+                    "raw": -1084406000,
+                    "fmt": "-1.08B",
+                    "longFmt": "-1,084,406,000"
+                },
+                "netBorrowings": {
+                    "raw": 782422000,
+                    "fmt": "782.42M",
+                    "longFmt": "782,422,000"
+                },
+                "otherCashflowsFromFinancingActivities": {
+                    "raw": -40390000,
+                    "fmt": "-40.39M",
+                    "longFmt": "-40,390,000"
+                },
+                "totalCashFromFinancingActivities": {
+                    "raw": 742032000,
+                    "fmt": "742.03M",
+                    "longFmt": "742,032,000"
+                },
+                "effectOfExchangeRate": {
+                    "raw": -2565000,
+                    "fmt": "-2.56M",
+                    "longFmt": "-2,565,000"
+                },
+                "changeInCash": {
+                    "raw": 133701000,
+                    "fmt": "133.7M",
+                    "longFmt": "133,701,000"
+                }
+            }
+        ],
+        "maxAge": 86400
+    },
+    "balanceSheetHistoryQuarterly": {
+        "balanceSheetStatements": [
+            {
+                "maxAge": 1,
+                "endDate": {
+                    "raw": 1680220800,
+                    "fmt": "2023-03-31"
+                }
+            },
+            {
+                "maxAge": 1,
+                "endDate": {
+                    "raw": 1672444800,
+                    "fmt": "2022-12-31"
+                },
+                "cash": {
+                    "raw": 1935005000,
+                    "fmt": "1.94B",
+                    "longFmt": "1,935,005,000"
+                },
+                "netReceivables": {
+                    "raw": 531066000,
+                    "fmt": "531.07M",
+                    "longFmt": "531,066,000"
+                },
+                "inventory": {
+                    "raw": 224016000,
+                    "fmt": "224.02M",
+                    "longFmt": "224,016,000"
+                },
+                "otherCurrentAssets": {
+                    "raw": 59083000,
+                    "fmt": "59.08M",
+                    "longFmt": "59,083,000"
+                },
+                "totalCurrentAssets": {
+                    "raw": 3205006000,
+                    "fmt": "3.21B",
+                    "longFmt": "3,205,006,000"
+                },
+                "longTermInvestments": {
+                    "raw": 115049000,
+                    "fmt": "115.05M",
+                    "longFmt": "115,049,000"
+                },
+                "propertyPlantEquipment": {
+                    "raw": 28084004000,
+                    "fmt": "28.08B",
+                    "longFmt": "28,084,004,000"
+                },
+                "goodWill": {
+                    "raw": 809277000,
+                    "fmt": "809.28M",
+                    "longFmt": "809,277,000"
+                },
+                "intangibleAssets": {
+                    "raw": 426378000,
+                    "fmt": "426.38M",
+                    "longFmt": "426,378,000"
+                },
+                "otherAssets": {
+                    "raw": 1136647000,
+                    "fmt": "1.14B",
+                    "longFmt": "1,136,647,000"
+                },
+                "totalAssets": {
+                    "raw": 33776361000,
+                    "fmt": "33.78B",
+                    "longFmt": "33,776,361,000"
+                },
+                "accountsPayable": {
+                    "raw": 646727000,
+                    "fmt": "646.73M",
+                    "longFmt": "646,727,000"
+                },
+                "shortLongTermDebt": {
+                    "raw": 2053557000,
+                    "fmt": "2.05B",
+                    "longFmt": "2,053,557,000"
+                },
+                "otherCurrentLiab": {
+                    "raw": 4299309000,
+                    "fmt": "4.3B",
+                    "longFmt": "4,299,309,000"
+                },
+                "longTermDebt": {
+                    "raw": 20986302000,
+                    "fmt": "20.99B",
+                    "longFmt": "20,986,302,000"
+                },
+                "otherLiab": {
+                    "raw": 507599000,
+                    "fmt": "507.6M",
+                    "longFmt": "507,599,000"
+                },
+                "totalCurrentLiabilities": {
+                    "raw": 8573464000,
+                    "fmt": "8.57B",
+                    "longFmt": "8,573,464,000"
+                },
+                "totalLiab": {
+                    "raw": 30907549000,
+                    "fmt": "30.91B",
+                    "longFmt": "30,907,549,000"
+                },
+                "commonStock": {
+                    "raw": 2832000,
+                    "fmt": "2.83M",
+                    "longFmt": "2,832,000"
+                },
+                "retainedEarnings": {
+                    "raw": -1707429000,
+                    "fmt": "-1.71B",
+                    "longFmt": "-1,707,429,000"
+                },
+                "treasuryStock": {
+                    "raw": -2711443000,
+                    "fmt": "-2.71B",
+                    "longFmt": "-2,711,443,000"
+                },
+                "capitalSurplus": {
+                    "raw": 7284852000,
+                    "fmt": "7.28B",
+                    "longFmt": "7,284,852,000"
+                },
+                "otherStockholderEquity": {
+                    "raw": -643214000,
+                    "fmt": "-643.21M",
+                    "longFmt": "-643,214,000"
+                },
+                "totalStockholderEquity": {
+                    "raw": 2868812000,
+                    "fmt": "2.87B",
+                    "longFmt": "2,868,812,000"
+                },
+                "netTangibleAssets": {
+                    "raw": 1633157000,
+                    "fmt": "1.63B",
+                    "longFmt": "1,633,157,000"
+                }
+            },
+            {
+                "maxAge": 1,
+                "endDate": {
+                    "raw": 1664496000,
+                    "fmt": "2022-09-30"
+                },
+                "cash": {
+                    "raw": 1566213000,
+                    "fmt": "1.57B",
+                    "longFmt": "1,566,213,000"
+                },
+                "netReceivables": {
+                    "raw": 534414000,
+                    "fmt": "534.41M",
+                    "longFmt": "534,414,000"
+                },
+                "inventory": {
+                    "raw": 237186000,
+                    "fmt": "237.19M",
+                    "longFmt": "237,186,000"
+                },
+                "otherCurrentAssets": {
+                    "raw": 63524000,
+                    "fmt": "63.52M",
+                    "longFmt": "63,524,000"
+                },
+                "totalCurrentAssets": {
+                    "raw": 2837046000,
+                    "fmt": "2.84B",
+                    "longFmt": "2,837,046,000"
+                },
+                "longTermInvestments": {
+                    "raw": 115495000,
+                    "fmt": "115.5M",
+                    "longFmt": "115,495,000"
+                },
+                "propertyPlantEquipment": {
+                    "raw": 28247664000,
+                    "fmt": "28.25B",
+                    "longFmt": "28,247,664,000"
+                },
+                "goodWill": {
+                    "raw": 809201000,
+                    "fmt": "809.2M",
+                    "longFmt": "809,201,000"
+                },
+                "otherAssets": {
+                    "raw": 1454784000,
+                    "fmt": "1.45B",
+                    "longFmt": "1,454,784,000"
+                },
+                "totalAssets": {
+                    "raw": 33464190000,
+                    "fmt": "33.46B",
+                    "longFmt": "33,464,190,000"
+                },
+                "accountsPayable": {
+                    "raw": 623565000,
+                    "fmt": "623.57M",
+                    "longFmt": "623,565,000"
+                },
+                "shortLongTermDebt": {
+                    "raw": 3933602000,
+                    "fmt": "3.93B",
+                    "longFmt": "3,933,602,000"
+                },
+                "otherCurrentLiab": {
+                    "raw": 4017147000,
+                    "fmt": "4.02B",
+                    "longFmt": "4,017,147,000"
+                },
+                "longTermDebt": {
+                    "raw": 18993542000,
+                    "fmt": "18.99B",
+                    "longFmt": "18,993,542,000"
+                },
+                "otherLiab": {
+                    "raw": 537970000,
+                    "fmt": "537.97M",
+                    "longFmt": "537,970,000"
+                },
+                "totalCurrentLiabilities": {
+                    "raw": 9793994000,
+                    "fmt": "9.79B",
+                    "longFmt": "9,793,994,000"
+                },
+                "totalLiab": {
+                    "raw": 30258766000,
+                    "fmt": "30.26B",
+                    "longFmt": "30,258,766,000"
+                },
+                "commonStock": {
+                    "raw": 2832000,
+                    "fmt": "2.83M",
+                    "longFmt": "2,832,000"
+                },
+                "retainedEarnings": {
+                    "raw": -1207223000,
+                    "fmt": "-1.21B",
+                    "longFmt": "-1,207,223,000"
+                },
+                "treasuryStock": {
+                    "raw": -2860706000,
+                    "fmt": "-2.86B",
+                    "longFmt": "-2,860,706,000"
+                },
+                "capitalSurplus": {
+                    "raw": 7270521000,
+                    "fmt": "7.27B",
+                    "longFmt": "7,270,521,000"
+                },
+                "otherStockholderEquity": {
+                    "raw": -792477000,
+                    "fmt": "-792.48M",
+                    "longFmt": "-792,477,000"
+                },
+                "totalStockholderEquity": {
+                    "raw": 3205424000,
+                    "fmt": "3.21B",
+                    "longFmt": "3,205,424,000"
+                },
+                "netTangibleAssets": {
+                    "raw": 2396223000,
+                    "fmt": "2.4B",
+                    "longFmt": "2,396,223,000"
+                }
+            },
+            {
+                "maxAge": 1,
+                "endDate": {
+                    "raw": 1656547200,
+                    "fmt": "2022-06-30"
+                },
+                "cash": {
+                    "raw": 2102205000,
+                    "fmt": "2.1B",
+                    "longFmt": "2,102,205,000"
+                },
+                "netReceivables": {
+                    "raw": 565014000,
+                    "fmt": "565.01M",
+                    "longFmt": "565,014,000"
+                },
+                "inventory": {
+                    "raw": 229108000,
+                    "fmt": "229.11M",
+                    "longFmt": "229,108,000"
+                },
+                "otherCurrentAssets": {
+                    "raw": 172276000,
+                    "fmt": "172.28M",
+                    "longFmt": "172,276,000"
+                },
+                "totalCurrentAssets": {
+                    "raw": 3560888000,
+                    "fmt": "3.56B",
+                    "longFmt": "3,560,888,000"
+                },
+                "longTermInvestments": {
+                    "raw": 56579000,
+                    "fmt": "56.58M",
+                    "longFmt": "56,579,000"
+                },
+                "propertyPlantEquipment": {
+                    "raw": 28125884000,
+                    "fmt": "28.13B",
+                    "longFmt": "28,125,884,000"
+                },
+                "goodWill": {
+                    "raw": 809298000,
+                    "fmt": "809.3M",
+                    "longFmt": "809,298,000"
+                },
+                "otherAssets": {
+                    "raw": 1390596000,
+                    "fmt": "1.39B",
+                    "longFmt": "1,390,596,000"
+                },
+                "totalAssets": {
+                    "raw": 33943245000,
+                    "fmt": "33.94B",
+                    "longFmt": "33,943,245,000"
+                },
+                "accountsPayable": {
+                    "raw": 760864000,
+                    "fmt": "760.86M",
+                    "longFmt": "760,864,000"
+                },
+                "shortLongTermDebt": {
+                    "raw": 5428380000,
+                    "fmt": "5.43B",
+                    "longFmt": "5,428,380,000"
+                },
+                "otherCurrentLiab": {
+                    "raw": 4255927000,
+                    "fmt": "4.26B",
+                    "longFmt": "4,255,927,000"
+                },
+                "longTermDebt": {
+                    "raw": 17361934000,
+                    "fmt": "17.36B",
+                    "longFmt": "17,361,934,000"
+                },
+                "otherLiab": {
+                    "raw": 517884000,
+                    "fmt": "517.88M",
+                    "longFmt": "517,884,000"
+                },
+                "totalCurrentLiabilities": {
+                    "raw": 11719382000,
+                    "fmt": "11.72B",
+                    "longFmt": "11,719,382,000"
+                },
+                "totalLiab": {
+                    "raw": 30545147000,
+                    "fmt": "30.55B",
+                    "longFmt": "30,545,147,000"
+                },
+                "commonStock": {
+                    "raw": 2831000,
+                    "fmt": "2.83M",
+                    "longFmt": "2,831,000"
+                },
+                "retainedEarnings": {
+                    "raw": -1240191000,
+                    "fmt": "-1.24B",
+                    "longFmt": "-1,240,191,000"
+                },
+                "treasuryStock": {
+                    "raw": -2619481000,
+                    "fmt": "-2.62B",
+                    "longFmt": "-2,619,481,000"
+                },
+                "capitalSurplus": {
+                    "raw": 7254939000,
+                    "fmt": "7.25B",
+                    "longFmt": "7,254,939,000"
+                },
+                "otherStockholderEquity": {
+                    "raw": -551252000,
+                    "fmt": "-551.25M",
+                    "longFmt": "-551,252,000"
+                },
+                "totalStockholderEquity": {
+                    "raw": 3398098000,
+                    "fmt": "3.4B",
+                    "longFmt": "3,398,098,000"
+                },
+                "netTangibleAssets": {
+                    "raw": 2588800000,
+                    "fmt": "2.59B",
+                    "longFmt": "2,588,800,000"
+                }
+            }
+        ],
+        "maxAge": 86400
+    },
+    "defaultKeyStatistics": {
+        "maxAge": 1,
+        "priceHint": {
+            "raw": 2,
+            "fmt": "2",
+            "longFmt": "2"
+        },
+        "enterpriseValue": {
+            "raw": 40202973184,
+            "fmt": "40.2B",
+            "longFmt": "40,202,973,184"
+        },
+        "forwardPE": {
+            "raw": 11.019452,
+            "fmt": "11.02"
+        },
+        "profitMargins": {
+            "raw": -0.097200006,
+            "fmt": "-9.72%"
+        },
+        "floatShares": {
+            "raw": 226777830,
+            "fmt": "226.78M",
+            "longFmt": "226,777,830"
+        },
+        "sharesOutstanding": {
+            "raw": 255736992,
+            "fmt": "255.74M",
+            "longFmt": "255,736,992"
+        },
+        "sharesShort": {
+            "raw": 18493610,
+            "fmt": "18.49M",
+            "longFmt": "18,493,610"
+        },
+        "sharesShortPriorMonth": {
+            "raw": 17828101,
+            "fmt": "17.83M",
+            "longFmt": "17,828,101"
+        },
+        "sharesShortPreviousMonthDate": {
+            "raw": 1680220800,
+            "fmt": "2023-03-31"
+        },
+        "dateShortInterest": {
+            "raw": 1682640000,
+            "fmt": "2023-04-28"
+        },
+        "sharesPercentSharesOut": {
+            "raw": 0.0723,
+            "fmt": "7.23%"
+        },
+        "heldPercentInsiders": {
+            "raw": 0.13206,
+            "fmt": "13.21%"
+        },
+        "heldPercentInstitutions": {
+            "raw": 0.74808,
+            "fmt": "74.81%"
+        },
+        "shortRatio": {
+            "raw": 6.54,
+            "fmt": "6.54"
+        },
+        "shortPercentOfFloat": {
+            "raw": 0.10560001,
+            "fmt": "10.56%"
+        },
+        "beta": {
+            "raw": 2.443349,
+            "fmt": "2.44"
+        },
+        "impliedSharesOutstanding": {
+            "raw": 0,
+            "fmt": null,
+            "longFmt": "0"
+        },
+        "morningStarOverallRating": [],
+        "morningStarRiskRating": [],
+        "category": null,
+        "bookValue": {
+            "raw": 11.151,
+            "fmt": "11.15"
+        },
+        "priceToBook": {
+            "raw": 6.858129,
+            "fmt": "6.86"
+        },
+        "annualReportExpenseRatio": [],
+        "ytdReturn": [],
+        "beta3Year": [],
+        "totalAssets": [],
+        "yield": [],
+        "fundFamily": null,
+        "fundInceptionDate": [],
+        "legalType": null,
+        "threeYearAverageReturn": [],
+        "fiveYearAverageReturn": [],
+        "priceToSalesTrailing12Months": [],
+        "lastFiscalYearEnd": {
+            "raw": 1672444800,
+            "fmt": "2022-12-31"
+        },
+        "nextFiscalYearEnd": {
+            "raw": 1703980800,
+            "fmt": "2023-12-31"
+        },
+        "mostRecentQuarter": {
+            "raw": 1680220800,
+            "fmt": "2023-03-31"
+        },
+        "earningsQuarterlyGrowth": [],
+        "revenueQuarterlyGrowth": [],
+        "netIncomeToCommon": {
+            "raw": -1036729984,
+            "fmt": "-1.04B",
+            "longFmt": "-1,036,729,984"
+        },
+        "trailingEps": {
+            "raw": -4,
+            "fmt": "-4.00"
+        },
+        "forwardEps": {
+            "raw": 6.94,
+            "fmt": "6.94"
+        },
+        "pegRatio": {
+            "raw": -0.1,
+            "fmt": "-0.10"
+        },
+        "lastSplitFactor": "2:1",
+        "lastSplitDate": {
+            "raw": 902102400,
+            "fmt": "1998-08-03"
+        },
+        "enterpriseToRevenue": {
+            "raw": 3.769,
+            "fmt": "3.77"
+        },
+        "enterpriseToEbitda": {
+            "raw": 22.657,
+            "fmt": "22.66"
+        },
+        "52WeekChange": {
+            "raw": 0.22348917,
+            "fmt": "22.35%"
+        },
+        "SandP52WeekChange": {
+            "raw": 0.028959513,
+            "fmt": "2.90%"
+        },
+        "lastDividendValue": {
+            "raw": 0.78,
+            "fmt": "0.78"
+        },
+        "lastDividendDate": {
+            "raw": 1583366400,
+            "fmt": "2020-03-05"
+        },
+        "lastCapGain": [],
+        "annualHoldingsTurnover": []
+    },
+    "balanceSheetHistory": {
+        "balanceSheetStatements": [
+            {
+                "maxAge": 1,
+                "endDate": {
+                    "raw": 1672444800,
+                    "fmt": "2022-12-31"
+                },
+                "cash": {
+                    "raw": 1935005000,
+                    "fmt": "1.94B",
+                    "longFmt": "1,935,005,000"
+                },
+                "netReceivables": {
+                    "raw": 531066000,
+                    "fmt": "531.07M",
+                    "longFmt": "531,066,000"
+                },
+                "inventory": {
+                    "raw": 224016000,
+                    "fmt": "224.02M",
+                    "longFmt": "224,016,000"
+                },
+                "otherCurrentAssets": {
+                    "raw": 59083000,
+                    "fmt": "59.08M",
+                    "longFmt": "59,083,000"
+                },
+                "totalCurrentAssets": {
+                    "raw": 3205006000,
+                    "fmt": "3.21B",
+                    "longFmt": "3,205,006,000"
+                },
+                "longTermInvestments": {
+                    "raw": 115049000,
+                    "fmt": "115.05M",
+                    "longFmt": "115,049,000"
+                },
+                "propertyPlantEquipment": {
+                    "raw": 28084004000,
+                    "fmt": "28.08B",
+                    "longFmt": "28,084,004,000"
+                },
+                "goodWill": {
+                    "raw": 809277000,
+                    "fmt": "809.28M",
+                    "longFmt": "809,277,000"
+                },
+                "intangibleAssets": {
+                    "raw": 426378000,
+                    "fmt": "426.38M",
+                    "longFmt": "426,378,000"
+                },
+                "otherAssets": {
+                    "raw": 1136647000,
+                    "fmt": "1.14B",
+                    "longFmt": "1,136,647,000"
+                },
+                "totalAssets": {
+                    "raw": 33776361000,
+                    "fmt": "33.78B",
+                    "longFmt": "33,776,361,000"
+                },
+                "accountsPayable": {
+                    "raw": 646727000,
+                    "fmt": "646.73M",
+                    "longFmt": "646,727,000"
+                },
+                "shortLongTermDebt": {
+                    "raw": 2053557000,
+                    "fmt": "2.05B",
+                    "longFmt": "2,053,557,000"
+                },
+                "otherCurrentLiab": {
+                    "raw": 4299309000,
+                    "fmt": "4.3B",
+                    "longFmt": "4,299,309,000"
+                },
+                "longTermDebt": {
+                    "raw": 20986302000,
+                    "fmt": "20.99B",
+                    "longFmt": "20,986,302,000"
+                },
+                "otherLiab": {
+                    "raw": 507599000,
+                    "fmt": "507.6M",
+                    "longFmt": "507,599,000"
+                },
+                "totalCurrentLiabilities": {
+                    "raw": 8573464000,
+                    "fmt": "8.57B",
+                    "longFmt": "8,573,464,000"
+                },
+                "totalLiab": {
+                    "raw": 30907549000,
+                    "fmt": "30.91B",
+                    "longFmt": "30,907,549,000"
+                },
+                "commonStock": {
+                    "raw": 2832000,
+                    "fmt": "2.83M",
+                    "longFmt": "2,832,000"
+                },
+                "retainedEarnings": {
+                    "raw": -1707429000,
+                    "fmt": "-1.71B",
+                    "longFmt": "-1,707,429,000"
+                },
+                "treasuryStock": {
+                    "raw": -2711443000,
+                    "fmt": "-2.71B",
+                    "longFmt": "-2,711,443,000"
+                },
+                "capitalSurplus": {
+                    "raw": 7284852000,
+                    "fmt": "7.28B",
+                    "longFmt": "7,284,852,000"
+                },
+                "otherStockholderEquity": {
+                    "raw": -643214000,
+                    "fmt": "-643.21M",
+                    "longFmt": "-643,214,000"
+                },
+                "totalStockholderEquity": {
+                    "raw": 2868812000,
+                    "fmt": "2.87B",
+                    "longFmt": "2,868,812,000"
+                },
+                "netTangibleAssets": {
+                    "raw": 1633157000,
+                    "fmt": "1.63B",
+                    "longFmt": "1,633,157,000"
+                }
+            },
+            {
+                "maxAge": 1,
+                "endDate": {
+                    "raw": 1640908800,
+                    "fmt": "2021-12-31"
+                },
+                "cash": {
+                    "raw": 2701770000,
+                    "fmt": "2.7B",
+                    "longFmt": "2,701,770,000"
+                },
+                "netReceivables": {
+                    "raw": 408067000,
+                    "fmt": "408.07M",
+                    "longFmt": "408,067,000"
+                },
+                "inventory": {
+                    "raw": 150224000,
+                    "fmt": "150.22M",
+                    "longFmt": "150,224,000"
+                },
+                "otherCurrentAssets": {
+                    "raw": 47706000,
+                    "fmt": "47.71M",
+                    "longFmt": "47,706,000"
+                },
+                "totalCurrentAssets": {
+                    "raw": 3600271000,
+                    "fmt": "3.6B",
+                    "longFmt": "3,600,271,000"
+                },
+                "propertyPlantEquipment": {
+                    "raw": 26450077000,
+                    "fmt": "26.45B",
+                    "longFmt": "26,450,077,000"
+                },
+                "goodWill": {
+                    "raw": 809383000,
+                    "fmt": "809.38M",
+                    "longFmt": "809,383,000"
+                },
+                "intangibleAssets": {
+                    "raw": 434556000,
+                    "fmt": "434.56M",
+                    "longFmt": "434,556,000"
+                },
+                "otherAssets": {
+                    "raw": 964068000,
+                    "fmt": "964.07M",
+                    "longFmt": "964,068,000"
+                },
+                "totalAssets": {
+                    "raw": 32258355000,
+                    "fmt": "32.26B",
+                    "longFmt": "32,258,355,000"
+                },
+                "accountsPayable": {
+                    "raw": 545978000,
+                    "fmt": "545.98M",
+                    "longFmt": "545,978,000"
+                },
+                "shortLongTermDebt": {
+                    "raw": 2191661000,
+                    "fmt": "2.19B",
+                    "longFmt": "2,191,661,000"
+                },
+                "otherCurrentLiab": {
+                    "raw": 3288103000,
+                    "fmt": "3.29B",
+                    "longFmt": "3,288,103,000"
+                },
+                "longTermDebt": {
+                    "raw": 18488484000,
+                    "fmt": "18.49B",
+                    "longFmt": "18,488,484,000"
+                },
+                "otherLiab": {
+                    "raw": 443101000,
+                    "fmt": "443.1M",
+                    "longFmt": "443,101,000"
+                },
+                "totalCurrentLiabilities": {
+                    "raw": 7285683000,
+                    "fmt": "7.29B",
+                    "longFmt": "7,285,683,000"
+                },
+                "totalLiab": {
+                    "raw": 27172799000,
+                    "fmt": "27.17B",
+                    "longFmt": "27,172,799,000"
+                },
+                "commonStock": {
+                    "raw": 2827000,
+                    "fmt": "2.83M",
+                    "longFmt": "2,827,000"
+                },
+                "retainedEarnings": {
+                    "raw": 302276000,
+                    "fmt": "302.28M",
+                    "longFmt": "302,276,000"
+                },
+                "treasuryStock": {
+                    "raw": -2776844000,
+                    "fmt": "-2.78B",
+                    "longFmt": "-2,776,844,000"
+                },
+                "capitalSurplus": {
+                    "raw": 7557297000,
+                    "fmt": "7.56B",
+                    "longFmt": "7,557,297,000"
+                },
+                "otherStockholderEquity": {
+                    "raw": -710885000,
+                    "fmt": "-710.88M",
+                    "longFmt": "-710,885,000"
+                },
+                "totalStockholderEquity": {
+                    "raw": 5085556000,
+                    "fmt": "5.09B",
+                    "longFmt": "5,085,556,000"
+                },
+                "netTangibleAssets": {
+                    "raw": 3841617000,
+                    "fmt": "3.84B",
+                    "longFmt": "3,841,617,000"
+                }
+            },
+            {
+                "maxAge": 1,
+                "endDate": {
+                    "raw": 1609372800,
+                    "fmt": "2020-12-31"
+                },
+                "cash": {
+                    "raw": 3684474000,
+                    "fmt": "3.68B",
+                    "longFmt": "3,684,474,000"
+                },
+                "netReceivables": {
+                    "raw": 284149000,
+                    "fmt": "284.15M",
+                    "longFmt": "284,149,000"
+                },
+                "inventory": {
+                    "raw": 118703000,
+                    "fmt": "118.7M",
+                    "longFmt": "118,703,000"
+                },
+                "otherCurrentAssets": {
+                    "raw": 69821000,
+                    "fmt": "69.82M",
+                    "longFmt": "69,821,000"
+                },
+                "totalCurrentAssets": {
+                    "raw": 4311747000,
+                    "fmt": "4.31B",
+                    "longFmt": "4,311,747,000"
+                },
+                "longTermInvestments": {
+                    "raw": 17271000,
+                    "fmt": "17.27M",
+                    "longFmt": "17,271,000"
+                },
+                "propertyPlantEquipment": {
+                    "raw": 25846580000,
+                    "fmt": "25.85B",
+                    "longFmt": "25,846,580,000"
+                },
+                "goodWill": {
+                    "raw": 809480000,
+                    "fmt": "809.48M",
+                    "longFmt": "809,480,000"
+                },
+                "intangibleAssets": {
+                    "raw": 444854000,
+                    "fmt": "444.85M",
+                    "longFmt": "444,854,000"
+                },
+                "otherAssets": {
+                    "raw": 1035255000,
+                    "fmt": "1.04B",
+                    "longFmt": "1,035,255,000"
+                },
+                "totalAssets": {
+                    "raw": 32465187000,
+                    "fmt": "32.47B",
+                    "longFmt": "32,465,187,000"
+                },
+                "accountsPayable": {
+                    "raw": 353422000,
+                    "fmt": "353.42M",
+                    "longFmt": "353,422,000"
+                },
+                "shortLongTermDebt": {
+                    "raw": 909912000,
+                    "fmt": "909.91M",
+                    "longFmt": "909,912,000"
+                },
+                "otherCurrentLiab": {
+                    "raw": 1841517000,
+                    "fmt": "1.84B",
+                    "longFmt": "1,841,517,000"
+                },
+                "longTermDebt": {
+                    "raw": 17941100000,
+                    "fmt": "17.94B",
+                    "longFmt": "17,941,100,000"
+                },
+                "otherLiab": {
+                    "raw": 500912000,
+                    "fmt": "500.91M",
+                    "longFmt": "500,912,000"
+                },
+                "totalCurrentLiabilities": {
+                    "raw": 4537121000,
+                    "fmt": "4.54B",
+                    "longFmt": "4,537,121,000"
+                },
+                "totalLiab": {
+                    "raw": 23704518000,
+                    "fmt": "23.7B",
+                    "longFmt": "23,704,518,000"
+                },
+                "commonStock": {
+                    "raw": 2652000,
+                    "fmt": "2.65M",
+                    "longFmt": "2,652,000"
+                },
+                "retainedEarnings": {
+                    "raw": 5562775000,
+                    "fmt": "5.56B",
+                    "longFmt": "5,562,775,000"
+                },
+                "treasuryStock": {
+                    "raw": -2803332000,
+                    "fmt": "-2.8B",
+                    "longFmt": "-2,803,332,000"
+                },
+                "capitalSurplus": {
+                    "raw": 5998574000,
+                    "fmt": "6B",
+                    "longFmt": "5,998,574,000"
+                },
+                "otherStockholderEquity": {
+                    "raw": -739341000,
+                    "fmt": "-739.34M",
+                    "longFmt": "-739,341,000"
+                },
+                "totalStockholderEquity": {
+                    "raw": 8760669000,
+                    "fmt": "8.76B",
+                    "longFmt": "8,760,669,000"
+                },
+                "netTangibleAssets": {
+                    "raw": 7506335000,
+                    "fmt": "7.51B",
+                    "longFmt": "7,506,335,000"
+                }
+            },
+            {
+                "maxAge": 1,
+                "endDate": {
+                    "raw": 1577750400,
+                    "fmt": "2019-12-31"
+                },
+                "cash": {
+                    "raw": 243738000,
+                    "fmt": "243.74M",
+                    "longFmt": "243,738,000"
+                },
+                "netReceivables": {
+                    "raw": 305821000,
+                    "fmt": "305.82M",
+                    "longFmt": "305,821,000"
+                },
+                "inventory": {
+                    "raw": 162107000,
+                    "fmt": "162.11M",
+                    "longFmt": "162,107,000"
+                },
+                "otherCurrentAssets": {
+                    "raw": 21751000,
+                    "fmt": "21.75M",
+                    "longFmt": "21,751,000"
+                },
+                "totalCurrentAssets": {
+                    "raw": 1162628000,
+                    "fmt": "1.16B",
+                    "longFmt": "1,162,628,000"
+                },
+                "longTermInvestments": {
+                    "raw": 11000,
+                    "fmt": "11k",
+                    "longFmt": "11,000"
+                },
+                "propertyPlantEquipment": {
+                    "raw": 26154363000,
+                    "fmt": "26.15B",
+                    "longFmt": "26,154,363,000"
+                },
+                "goodWill": {
+                    "raw": 1385644000,
+                    "fmt": "1.39B",
+                    "longFmt": "1,385,644,000"
+                },
+                "intangibleAssets": {
+                    "raw": 488575000,
+                    "fmt": "488.57M",
+                    "longFmt": "488,575,000"
+                },
+                "otherAssets": {
+                    "raw": 1129063000,
+                    "fmt": "1.13B",
+                    "longFmt": "1,129,063,000"
+                },
+                "totalAssets": {
+                    "raw": 30320284000,
+                    "fmt": "30.32B",
+                    "longFmt": "30,320,284,000"
+                },
+                "accountsPayable": {
+                    "raw": 563706000,
+                    "fmt": "563.71M",
+                    "longFmt": "563,706,000"
+                },
+                "shortLongTermDebt": {
+                    "raw": 1153025000,
+                    "fmt": "1.15B",
+                    "longFmt": "1,153,025,000"
+                },
+                "otherCurrentLiab": {
+                    "raw": 3523013000,
+                    "fmt": "3.52B",
+                    "longFmt": "3,523,013,000"
+                },
+                "longTermDebt": {
+                    "raw": 8281581000,
+                    "fmt": "8.28B",
+                    "longFmt": "8,281,581,000"
+                },
+                "otherLiab": {
+                    "raw": 553642000,
+                    "fmt": "553.64M",
+                    "longFmt": "553,642,000"
+                },
+                "minorityInterest": {
+                    "raw": 569981000,
+                    "fmt": "569.98M",
+                    "longFmt": "569,981,000"
+                },
+                "totalCurrentLiabilities": {
+                    "raw": 7952896000,
+                    "fmt": "7.95B",
+                    "longFmt": "7,952,896,000"
+                },
+                "totalLiab": {
+                    "raw": 17586457000,
+                    "fmt": "17.59B",
+                    "longFmt": "17,586,457,000"
+                },
+                "commonStock": {
+                    "raw": 2365000,
+                    "fmt": "2.37M",
+                    "longFmt": "2,365,000"
+                },
+                "retainedEarnings": {
+                    "raw": 11523326000,
+                    "fmt": "11.52B",
+                    "longFmt": "11,523,326,000"
+                },
+                "treasuryStock": {
+                    "raw": -2855804000,
+                    "fmt": "-2.86B",
+                    "longFmt": "-2,855,804,000"
+                },
+                "capitalSurplus": {
+                    "raw": 3493959000,
+                    "fmt": "3.49B",
+                    "longFmt": "3,493,959,000"
+                },
+                "otherStockholderEquity": {
+                    "raw": -797713000,
+                    "fmt": "-797.71M",
+                    "longFmt": "-797,713,000"
+                },
+                "totalStockholderEquity": {
+                    "raw": 12163846000,
+                    "fmt": "12.16B",
+                    "longFmt": "12,163,846,000"
+                },
+                "netTangibleAssets": {
+                    "raw": 10289627000,
+                    "fmt": "10.29B",
+                    "longFmt": "10,289,627,000"
+                }
+            }
+        ],
+        "maxAge": 86400
+    },
+    "incomeStatementHistory": {
+        "incomeStatementHistory": [
+            {
+                "maxAge": 1,
+                "endDate": {
+                    "raw": 1672444800,
+                    "fmt": "2022-12-31"
+                },
+                "totalRevenue": {
+                    "raw": 8840540000,
+                    "fmt": "8.84B",
+                    "longFmt": "8,840,540,000"
+                },
+                "costOfRevenue": {
+                    "raw": 6464936000,
+                    "fmt": "6.46B",
+                    "longFmt": "6,464,936,000"
+                },
+                "grossProfit": {
+                    "raw": 2375604000,
+                    "fmt": "2.38B",
+                    "longFmt": "2,375,604,000"
+                },
+                "researchDevelopment": [],
+                "sellingGeneralAdministrative": {
+                    "raw": 1720704000,
+                    "fmt": "1.72B",
+                    "longFmt": "1,720,704,000"
+                },
+                "nonRecurring": [],
+                "otherOperatingExpenses": [],
+                "totalOperatingExpenses": {
+                    "raw": 9592329000,
+                    "fmt": "9.59B",
+                    "longFmt": "9,592,329,000"
+                },
+                "operatingIncome": {
+                    "raw": -751789000,
+                    "fmt": "-751.79M",
+                    "longFmt": "-751,789,000"
+                },
+                "totalOtherIncomeExpenseNet": {
+                    "raw": -1399973000,
+                    "fmt": "-1.4B",
+                    "longFmt": "-1,399,973,000"
+                },
+                "ebit": {
+                    "raw": -751789000,
+                    "fmt": "-751.79M",
+                    "longFmt": "-751,789,000"
+                },
+                "interestExpense": {
+                    "raw": -1364162000,
+                    "fmt": "-1.36B",
+                    "longFmt": "-1,364,162,000"
+                },
+                "incomeBeforeTax": {
+                    "raw": -2151762000,
+                    "fmt": "-2.15B",
+                    "longFmt": "-2,151,762,000"
+                },
+                "incomeTaxExpense": {
+                    "raw": 4200000,
+                    "fmt": "4.2M",
+                    "longFmt": "4,200,000"
+                },
+                "minorityInterest": [],
+                "netIncomeFromContinuingOps": {
+                    "raw": -2155962000,
+                    "fmt": "-2.16B",
+                    "longFmt": "-2,155,962,000"
+                },
+                "discontinuedOperations": [],
+                "extraordinaryItems": [],
+                "effectOfAccountingCharges": [],
+                "otherItems": [],
+                "netIncome": {
+                    "raw": -2155962000,
+                    "fmt": "-2.16B",
+                    "longFmt": "-2,155,962,000"
+                },
+                "netIncomeApplicableToCommonShares": {
+                    "raw": -2155962000,
+                    "fmt": "-2.16B",
+                    "longFmt": "-2,155,962,000"
+                }
+            },
+            {
+                "maxAge": 1,
+                "endDate": {
+                    "raw": 1640908800,
+                    "fmt": "2021-12-31"
+                },
+                "totalRevenue": {
+                    "raw": 1532133000,
+                    "fmt": "1.53B",
+                    "longFmt": "1,532,133,000"
+                },
+                "costOfRevenue": {
+                    "raw": 2615391000,
+                    "fmt": "2.62B",
+                    "longFmt": "2,615,391,000"
+                },
+                "grossProfit": {
+                    "raw": -1083258000,
+                    "fmt": "-1.08B",
+                    "longFmt": "-1,083,258,000"
+                },
+                "researchDevelopment": [],
+                "sellingGeneralAdministrative": {
+                    "raw": 1410366000,
+                    "fmt": "1.41B",
+                    "longFmt": "1,410,366,000"
+                },
+                "nonRecurring": [],
+                "otherOperatingExpenses": [],
+                "totalOperatingExpenses": {
+                    "raw": 5318635000,
+                    "fmt": "5.32B",
+                    "longFmt": "5,318,635,000"
+                },
+                "operatingIncome": {
+                    "raw": -3786502000,
+                    "fmt": "-3.79B",
+                    "longFmt": "-3,786,502,000"
+                },
+                "totalOtherIncomeExpenseNet": {
+                    "raw": -1519197000,
+                    "fmt": "-1.52B",
+                    "longFmt": "-1,519,197,000"
+                },
+                "ebit": {
+                    "raw": -3786502000,
+                    "fmt": "-3.79B",
+                    "longFmt": "-3,786,502,000"
+                },
+                "interestExpense": {
+                    "raw": -1291753000,
+                    "fmt": "-1.29B",
+                    "longFmt": "-1,291,753,000"
+                },
+                "incomeBeforeTax": {
+                    "raw": -5305699000,
+                    "fmt": "-5.31B",
+                    "longFmt": "-5,305,699,000"
+                },
+                "incomeTaxExpense": {
+                    "raw": -45200000,
+                    "fmt": "-45.2M",
+                    "longFmt": "-45,200,000"
+                },
+                "minorityInterest": [],
+                "netIncomeFromContinuingOps": {
+                    "raw": -5260499000,
+                    "fmt": "-5.26B",
+                    "longFmt": "-5,260,499,000"
+                },
+                "discontinuedOperations": [],
+                "extraordinaryItems": [],
+                "effectOfAccountingCharges": [],
+                "otherItems": [],
+                "netIncome": {
+                    "raw": -5260499000,
+                    "fmt": "-5.26B",
+                    "longFmt": "-5,260,499,000"
+                },
+                "netIncomeApplicableToCommonShares": {
+                    "raw": -5260499000,
+                    "fmt": "-5.26B",
+                    "longFmt": "-5,260,499,000"
+                }
+            },
+            {
+                "maxAge": 1,
+                "endDate": {
+                    "raw": 1609372800,
+                    "fmt": "2020-12-31"
+                },
+                "totalRevenue": {
+                    "raw": 2208805000,
+                    "fmt": "2.21B",
+                    "longFmt": "2,208,805,000"
+                },
+                "costOfRevenue": {
+                    "raw": 2695804000,
+                    "fmt": "2.7B",
+                    "longFmt": "2,695,804,000"
+                },
+                "grossProfit": {
+                    "raw": -486999000,
+                    "fmt": "-487M",
+                    "longFmt": "-486,999,000"
+                },
+                "researchDevelopment": [],
+                "sellingGeneralAdministrative": {
+                    "raw": 1217071000,
+                    "fmt": "1.22B",
+                    "longFmt": "1,217,071,000"
+                },
+                "nonRecurring": [],
+                "otherOperatingExpenses": [],
+                "totalOperatingExpenses": {
+                    "raw": 5192129000,
+                    "fmt": "5.19B",
+                    "longFmt": "5,192,129,000"
+                },
+                "operatingIncome": {
+                    "raw": -2983324000,
+                    "fmt": "-2.98B",
+                    "longFmt": "-2,983,324,000"
+                },
+                "totalOtherIncomeExpenseNet": {
+                    "raw": -2806806000,
+                    "fmt": "-2.81B",
+                    "longFmt": "-2,806,806,000"
+                },
+                "ebit": {
+                    "raw": -2983324000,
+                    "fmt": "-2.98B",
+                    "longFmt": "-2,983,324,000"
+                },
+                "interestExpense": {
+                    "raw": -844238000,
+                    "fmt": "-844.24M",
+                    "longFmt": "-844,238,000"
+                },
+                "incomeBeforeTax": {
+                    "raw": -5790130000,
+                    "fmt": "-5.79B",
+                    "longFmt": "-5,790,130,000"
+                },
+                "incomeTaxExpense": {
+                    "raw": -15000000,
+                    "fmt": "-15M",
+                    "longFmt": "-15,000,000"
+                },
+                "minorityInterest": [],
+                "netIncomeFromContinuingOps": {
+                    "raw": -5775130000,
+                    "fmt": "-5.78B",
+                    "longFmt": "-5,775,130,000"
+                },
+                "discontinuedOperations": [],
+                "extraordinaryItems": [],
+                "effectOfAccountingCharges": [],
+                "otherItems": [],
+                "netIncome": {
+                    "raw": -5797462000,
+                    "fmt": "-5.8B",
+                    "longFmt": "-5,797,462,000"
+                },
+                "netIncomeApplicableToCommonShares": {
+                    "raw": -5797462000,
+                    "fmt": "-5.8B",
+                    "longFmt": "-5,797,462,000"
+                }
+            },
+            {
+                "maxAge": 1,
+                "endDate": {
+                    "raw": 1577750400,
+                    "fmt": "2019-12-31"
+                },
+                "totalRevenue": {
+                    "raw": 10950661000,
+                    "fmt": "10.95B",
+                    "longFmt": "10,950,661,000"
+                },
+                "costOfRevenue": {
+                    "raw": 5958671000,
+                    "fmt": "5.96B",
+                    "longFmt": "5,958,671,000"
+                },
+                "grossProfit": {
+                    "raw": 4991990000,
+                    "fmt": "4.99B",
+                    "longFmt": "4,991,990,000"
+                },
+                "researchDevelopment": [],
+                "sellingGeneralAdministrative": {
+                    "raw": 1663347000,
+                    "fmt": "1.66B",
+                    "longFmt": "1,663,347,000"
+                },
+                "nonRecurring": [],
+                "otherOperatingExpenses": [],
+                "totalOperatingExpenses": {
+                    "raw": 8867960000,
+                    "fmt": "8.87B",
+                    "longFmt": "8,867,960,000"
+                },
+                "operatingIncome": {
+                    "raw": 2082701000,
+                    "fmt": "2.08B",
+                    "longFmt": "2,082,701,000"
+                },
+                "totalOtherIncomeExpenseNet": {
+                    "raw": -142501000,
+                    "fmt": "-142.5M",
+                    "longFmt": "-142,501,000"
+                },
+                "ebit": {
+                    "raw": 2082701000,
+                    "fmt": "2.08B",
+                    "longFmt": "2,082,701,000"
+                },
+                "interestExpense": {
+                    "raw": -408513000,
+                    "fmt": "-408.51M",
+                    "longFmt": "-408,513,000"
+                },
+                "incomeBeforeTax": {
+                    "raw": 1940200000,
+                    "fmt": "1.94B",
+                    "longFmt": "1,940,200,000"
+                },
+                "incomeTaxExpense": {
+                    "raw": 32600000,
+                    "fmt": "32.6M",
+                    "longFmt": "32,600,000"
+                },
+                "minorityInterest": {
+                    "raw": 569981000,
+                    "fmt": "569.98M",
+                    "longFmt": "569,981,000"
+                },
+                "netIncomeFromContinuingOps": {
+                    "raw": 1907600000,
+                    "fmt": "1.91B",
+                    "longFmt": "1,907,600,000"
+                },
+                "discontinuedOperations": [],
+                "extraordinaryItems": [],
+                "effectOfAccountingCharges": [],
+                "otherItems": [],
+                "netIncome": {
+                    "raw": 1878887000,
+                    "fmt": "1.88B",
+                    "longFmt": "1,878,887,000"
+                },
+                "netIncomeApplicableToCommonShares": {
+                    "raw": 1878887000,
+                    "fmt": "1.88B",
+                    "longFmt": "1,878,887,000"
+                }
+            }
+        ],
+        "maxAge": 86400
+    },
+    "financialData": {
+        "maxAge": 86400,
+        "currentPrice": {
+            "raw": 76.475,
+            "fmt": "76.47"
+        },
+        "targetHighPrice": {
+            "raw": 104,
+            "fmt": "104.00"
+        },
+        "targetLowPrice": {
+            "raw": 55,
+            "fmt": "55.00"
+        },
+        "targetMeanPrice": {
+            "raw": 83.54,
+            "fmt": "83.54"
+        },
+        "targetMedianPrice": {
+            "raw": 85,
+            "fmt": "85.00"
+        },
+        "recommendationMean": {
+            "raw": 2.1,
+            "fmt": "2.10"
+        },
+        "recommendationKey": "buy",
+        "numberOfAnalystOpinions": {
+            "raw": 13,
+            "fmt": "13",
+            "longFmt": "13"
+        },
+        "totalCash": {
+            "raw": 1226871040,
+            "fmt": "1.23B",
+            "longFmt": "1,226,871,040"
+        },
+        "totalCashPerShare": {
+            "raw": 4.797,
+            "fmt": "4.8"
+        },
+        "ebitda": {
+            "raw": 1774435968,
+            "fmt": "1.77B",
+            "longFmt": "1,774,435,968"
+        },
+        "totalDebt": {
+            "raw": 22048026624,
+            "fmt": "22.05B",
+            "longFmt": "22,048,026,624"
+        },
+        "quickRatio": {
+            "raw": 0.17,
+            "fmt": "0.17"
+        },
+        "currentRatio": {
+            "raw": 0.256,
+            "fmt": "0.26"
+        },
+        "totalRevenue": {
+            "raw": 10666455040,
+            "fmt": "10.67B",
+            "longFmt": "10,666,455,040"
+        },
+        "debtToEquity": {
+            "raw": 728.759,
+            "fmt": "728.76"
+        },
+        "revenuePerShare": {
+            "raw": 41.801,
+            "fmt": "41.80"
+        },
+        "returnOnAssets": {
+            "raw": 0.0070599997,
+            "fmt": "0.71%"
+        },
+        "returnOnEquity": {
+            "raw": -0.2956,
+            "fmt": "-29.56%"
+        },
+        "grossProfits": {
+            "raw": 2375604000,
+            "fmt": "2.38B",
+            "longFmt": "2,375,604,000"
+        },
+        "freeCashflow": {
+            "raw": 1300369920,
+            "fmt": "1.3B",
+            "longFmt": "1,300,369,920"
+        },
+        "operatingCashflow": {
+            "raw": 2320622080,
+            "fmt": "2.32B",
+            "longFmt": "2,320,622,080"
+        },
+        "earningsGrowth": [],
+        "revenueGrowth": {
+            "raw": 1.724,
+            "fmt": "172.40%"
+        },
+        "grossMargins": {
+            "raw": 0.33623,
+            "fmt": "33.62%"
+        },
+        "ebitdaMargins": {
+            "raw": 0.16635999,
+            "fmt": "16.64%"
+        },
+        "operatingMargins": {
+            "raw": 0.03486,
+            "fmt": "3.49%"
+        },
+        "profitMargins": {
+            "raw": -0.097200006,
+            "fmt": "-9.72%"
+        },
+        "financialCurrency": "USD"
+    }
+}

@@ -11,6 +11,7 @@ from stonks.processing.models.discounted_cash_flow import discounted_cash_flow
 
 def discounted_cash_flow_valuation(
     shares_outstanding: int,
+    current_share_price: float,
     cash_flow_statements: list[dict[str, Any]],
     discount_rate: float = 0.05,
 ):
@@ -26,18 +27,21 @@ def discounted_cash_flow_valuation(
     return {
         "cash_flow_increase_rate": cash_flow_increase_rate,
         "dcf_valuation_per_share": dcf_valuation_per_share,
+        "dcf_discount_per_share": dcf_valuation_per_share - current_share_price,
+        "dcf_discount_ratio": dcf_valuation_per_share / current_share_price,
     }
 
 
 def filter_valuation(
-    current_share_price: float,
     dcf_valuation: dict,
-    cash_flow_growth_threshold: float = 1,
+    cash_flow_growth_lower_bound: float = 0,
+    cash_flow_growth_upper_bound: float = 1,
     price_ratio_criterion: float = 1,
 ) -> bool:
     """Filter a valuation based on eligibility criteria."""
     return (
-        dcf_valuation.get("cash_flow_increase_rate") <= cash_flow_growth_threshold
-        and dcf_valuation.get("dcf_valuation_per_share") / current_share_price
-        >= price_ratio_criterion
+        cash_flow_growth_lower_bound
+        <= dcf_valuation.get("cash_flow_increase_rate")
+        <= cash_flow_growth_upper_bound
+        and dcf_valuation.get("dcf_discount_ratio") >= price_ratio_criterion
     )
