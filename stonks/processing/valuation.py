@@ -6,7 +6,7 @@ from stonks.processing.cash_flow import (
     historical_cash_flow_increase_rate,
     future_cash_flows,
 )
-from stonks.processing.models.discounted_cash_flow import discounted_cash_flow
+from stonks.processing.models import discounted_cash_flow
 
 
 def discounted_cash_flow_valuation(

@@ -40,6 +40,11 @@ class ApplicationManager:
             dcf_data = YahooFinanceResponse.get_data_for_discounted_cash_flow(
                 company_data
             )
+            wacc_data = (
+                YahooFinanceResponse.get_data_for_weighted_average_cost_of_capital(
+                    company_data
+                )
+            )
             if not dcf_data:
                 logging.warning(f"Failed to extract metrics from `{company}`")
                 continue

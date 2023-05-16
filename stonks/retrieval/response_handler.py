@@ -38,4 +38,10 @@ class YahooFinanceResponse:
             )
             return shares_outstanding, current_share_price, cash_flow_statements
         except AttributeError:
-            logging.warning(f"Failed to extract get a company data attribute")
+            logging.warning(f"Failed to extract a company data attribute.")
+
+    def get_data_for_weighted_average_cost_of_capital(company_data: dict[str, Any]):
+        try:
+            pass
+        except AttributeError:
+            logging.warning(f"Failed to extract a company data attribute.")
