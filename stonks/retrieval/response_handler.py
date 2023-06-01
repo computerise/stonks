@@ -9,7 +9,7 @@ from stonks.error_handler import raise_fatal_error
 from stonks.storage import DataStorage
 
 
-def handle_response(output_path: Path, response: Response, store: bool = True):
+def handle_response(output_path: Path, response: Response, store: bool = True) -> None:
     if response.ok:
         if store:
             DataStorage.write_json(output_path, response.json())
@@ -23,25 +23,19 @@ def handle_response(output_path: Path, response: Response, store: bool = True):
 class YahooFinanceResponse:
     """Response object for YahooFinance API (https://rapidapi.com/sparior/api/yahoo-finance15)."""
 
-    def get_data_for_discounted_cash_flow(company_data: dict[str, Any]):
-        try:
-            shares_outstanding = (
-                company_data.get("defaultKeyStatistics")
-                .get("sharesOutstanding")
-                .get("raw")
-            )
-            current_share_price = (
-                company_data.get("financialData").get("currentPrice").get("raw")
-            )
-            cash_flow_statements = company_data.get("cashflowStatementHistory").get(
-                "cashflowStatements"
-            )
-            return shares_outstanding, current_share_price, cash_flow_statements
-        except AttributeError:
-            logging.warning(f"Failed to extract a company data attribute.")
+    def get_data_for_discounted_cash_flow(
+        company_data: dict[str, Any]
+    ) -> tuple[dict[str, Any], dict[str, Any], dict[str, Any]]:
+        shares_outstanding = (
+            company_data.get("defaultKeyStatistics").get("sharesOutstanding").get("raw")
+        )
+        current_share_price = (
+            company_data.get("financialData").get("currentPrice").get("raw")
+        )
+        cash_flow_statements = company_data.get("cashflowStatementHistory").get(
+            "cashflowStatements"
+        )
+        return shares_outstanding, current_share_price, cash_flow_statements
 
     def get_data_for_weighted_average_cost_of_capital(company_data: dict[str, Any]):
-        try:
-            pass
-        except AttributeError:
-            logging.warning(f"Failed to extract a company data attribute.")
+        pass
