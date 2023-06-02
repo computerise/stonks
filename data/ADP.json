@@ -1450,6 +1450,7 @@
             "longFmt": "2"
         },
         "enterpriseValue": {
+<<<<<<< Updated upstream
             "raw": 87899021312,
             "fmt": "87.9B",
             "longFmt": "87,899,021,312"
@@ -1457,6 +1458,15 @@
         "forwardPE": {
             "raw": 23.691277,
             "fmt": "23.69"
+=======
+            "raw": 89064030208,
+            "fmt": "89.06B",
+            "longFmt": "89,064,030,208"
+        },
+        "forwardPE": {
+            "raw": 24.21924,
+            "fmt": "24.22"
+>>>>>>> Stashed changes
         },
         "profitMargins": {
             "raw": 0.18462,
@@ -1527,8 +1537,13 @@
             "fmt": "8.93"
         },
         "priceToBook": {
+<<<<<<< Updated upstream
             "raw": 23.70984,
             "fmt": "23.71"
+=======
+            "raw": 24.23822,
+            "fmt": "24.24"
+>>>>>>> Stashed changes
         },
         "annualReportExpenseRatio": [],
         "ytdReturn": [],
@@ -1581,6 +1596,7 @@
             "fmt": "2014-10-01"
         },
         "enterpriseToRevenue": {
+<<<<<<< Updated upstream
             "raw": 4.977,
             "fmt": "4.98"
         },
@@ -1595,6 +1611,22 @@
         "SandP52WeekChange": {
             "raw": 0.00072062016,
             "fmt": "0.07%"
+=======
+            "raw": 5.043,
+            "fmt": "5.04"
+        },
+        "enterpriseToEbitda": {
+            "raw": 18.259,
+            "fmt": "18.26"
+        },
+        "52WeekChange": {
+            "raw": -0.040193975,
+            "fmt": "-4.02%"
+        },
+        "SandP52WeekChange": {
+            "raw": 0.027377129,
+            "fmt": "2.74%"
+>>>>>>> Stashed changes
         },
         "lastDividendValue": {
             "raw": 1.25,
@@ -2483,8 +2515,13 @@
     "financialData": {
         "maxAge": 86400,
         "currentPrice": {
+<<<<<<< Updated upstream
             "raw": 211.8,
             "fmt": "211.80"
+=======
+            "raw": 216.52,
+            "fmt": "216.52"
+>>>>>>> Stashed changes
         },
         "targetHighPrice": {
             "raw": 275,

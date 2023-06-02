@@ -1514,6 +1514,7 @@
             "longFmt": "2"
         },
         "enterpriseValue": {
+<<<<<<< Updated upstream
             "raw": 35680649216,
             "fmt": "35.68B",
             "longFmt": "35,680,649,216"
@@ -1521,15 +1522,30 @@
         "forwardPE": {
             "raw": 19.062092,
             "fmt": "19.06"
+=======
+            "raw": 36056391680,
+            "fmt": "36.06B",
+            "longFmt": "36,056,391,680"
+        },
+        "forwardPE": {
+            "raw": 19.316994,
+            "fmt": "19.32"
+>>>>>>> Stashed changes
         },
         "profitMargins": {
             "raw": 0.1919,
             "fmt": "19.19%"
         },
         "floatShares": {
+<<<<<<< Updated upstream
             "raw": 294050100,
             "fmt": "294.05M",
             "longFmt": "294,050,100"
+=======
+            "raw": 294421754,
+            "fmt": "294.42M",
+            "longFmt": "294,421,754"
+>>>>>>> Stashed changes
         },
         "sharesOutstanding": {
             "raw": 295376000,
@@ -1587,12 +1603,21 @@
         "morningStarRiskRating": [],
         "category": null,
         "bookValue": {
+<<<<<<< Updated upstream
             "raw": 19.597,
             "fmt": "19.60"
         },
         "priceToBook": {
             "raw": 5.952952,
             "fmt": "5.95"
+=======
+            "raw": 19.579,
+            "fmt": "19.58"
+        },
+        "priceToBook": {
+            "raw": 6.038102,
+            "fmt": "6.04"
+>>>>>>> Stashed changes
         },
         "annualReportExpenseRatio": [],
         "ytdReturn": [],
@@ -1628,16 +1653,26 @@
             "longFmt": "1,351,000,064"
         },
         "trailingEps": {
+<<<<<<< Updated upstream
             "raw": 4.54,
             "fmt": "4.54"
+=======
+            "raw": 4.55,
+            "fmt": "4.55"
+>>>>>>> Stashed changes
         },
         "forwardEps": {
             "raw": 6.12,
             "fmt": "6.12"
         },
         "pegRatio": {
+<<<<<<< Updated upstream
             "raw": 1.77,
             "fmt": "1.77"
+=======
+            "raw": 1.78,
+            "fmt": "1.78"
+>>>>>>> Stashed changes
         },
         "lastSplitFactor": "1398:1000",
         "lastSplitDate": {
@@ -1645,6 +1680,7 @@
             "fmt": "2014-11-03"
         },
         "enterpriseToRevenue": {
+<<<<<<< Updated upstream
             "raw": 5.068,
             "fmt": "5.07"
         },
@@ -1659,6 +1695,22 @@
         "SandP52WeekChange": {
             "raw": 0.00072062016,
             "fmt": "0.07%"
+=======
+            "raw": 5.122,
+            "fmt": "5.12"
+        },
+        "enterpriseToEbitda": {
+            "raw": 17.512,
+            "fmt": "17.51"
+        },
+        "52WeekChange": {
+            "raw": -0.09518248,
+            "fmt": "-9.52%"
+        },
+        "SandP52WeekChange": {
+            "raw": 0.027377129,
+            "fmt": "2.74%"
+>>>>>>> Stashed changes
         },
         "lastDividendValue": {
             "raw": 0.225,
@@ -2573,8 +2625,13 @@
     "financialData": {
         "maxAge": 86400,
         "currentPrice": {
+<<<<<<< Updated upstream
             "raw": 116.66,
             "fmt": "116.66"
+=======
+            "raw": 118.22,
+            "fmt": "118.22"
+>>>>>>> Stashed changes
         },
         "targetHighPrice": {
             "raw": 170,
@@ -2608,6 +2665,7 @@
             "longFmt": "1,175,000,064"
         },
         "totalCashPerShare": {
+<<<<<<< Updated upstream
             "raw": 3.983,
             "fmt": "3.98"
         },
@@ -2620,6 +2678,20 @@
             "raw": 2732999936,
             "fmt": "2.73B",
             "longFmt": "2,732,999,936"
+=======
+            "raw": 3.978,
+            "fmt": "3.98"
+        },
+        "ebitda": {
+            "raw": 2059000064,
+            "fmt": "2.06B",
+            "longFmt": "2,059,000,064"
+        },
+        "totalDebt": {
+            "raw": 2891000064,
+            "fmt": "2.89B",
+            "longFmt": "2,891,000,064"
+>>>>>>> Stashed changes
         },
         "quickRatio": {
             "raw": 1.546,
@@ -2635,16 +2707,26 @@
             "longFmt": "7,040,000,000"
         },
         "debtToEquity": {
+<<<<<<< Updated upstream
             "raw": 47.276,
             "fmt": "47.28"
+=======
+            "raw": 50.009,
+            "fmt": "50.01"
+>>>>>>> Stashed changes
         },
         "revenuePerShare": {
             "raw": 23.704,
             "fmt": "23.70"
         },
         "returnOnAssets": {
+<<<<<<< Updated upstream
             "raw": 0.10296,
             "fmt": "10.30%"
+=======
+            "raw": 0.10401,
+            "fmt": "10.40%"
+>>>>>>> Stashed changes
         },
         "returnOnEquity": {
             "raw": 0.24781999,
@@ -2656,9 +2738,15 @@
             "longFmt": "3,722,000,000"
         },
         "freeCashflow": {
+<<<<<<< Updated upstream
             "raw": 855875008,
             "fmt": "855.88M",
             "longFmt": "855,875,008"
+=======
+            "raw": 867124992,
+            "fmt": "867.12M",
+            "longFmt": "867,124,992"
+>>>>>>> Stashed changes
         },
         "operatingCashflow": {
             "raw": 1468000000,
@@ -2678,12 +2766,21 @@
             "fmt": "54.59%"
         },
         "ebitdaMargins": {
+<<<<<<< Updated upstream
             "raw": 0.28991,
             "fmt": "28.99%"
         },
         "operatingMargins": {
             "raw": 0.24858,
             "fmt": "24.86%"
+=======
+            "raw": 0.29247,
+            "fmt": "29.25%"
+        },
+        "operatingMargins": {
+            "raw": 0.25114,
+            "fmt": "25.11%"
+>>>>>>> Stashed changes
         },
         "profitMargins": {
             "raw": 0.1919,

@@ -1615,6 +1615,7 @@
             "longFmt": "2"
         },
         "enterpriseValue": {
+<<<<<<< Updated upstream
             "raw": 299169415168,
             "fmt": "299.17B",
             "longFmt": "299,169,415,168"
@@ -1622,6 +1623,15 @@
         "forwardPE": {
             "raw": 12.038844,
             "fmt": "12.04"
+=======
+            "raw": 291194830848,
+            "fmt": "291.19B",
+            "longFmt": "291,194,830,848"
+        },
+        "forwardPE": {
+            "raw": 12.364047,
+            "fmt": "12.36"
+>>>>>>> Stashed changes
         },
         "profitMargins": {
             "raw": 0.13368,
@@ -1692,8 +1702,13 @@
             "fmt": "7.53"
         },
         "priceToBook": {
+<<<<<<< Updated upstream
             "raw": 17.710299,
             "fmt": "17.71"
+=======
+            "raw": 18.188704,
+            "fmt": "18.19"
+>>>>>>> Stashed changes
         },
         "annualReportExpenseRatio": [],
         "ytdReturn": [],
@@ -1737,12 +1752,18 @@
             "fmt": "11.07"
         },
         "pegRatio": {
+<<<<<<< Updated upstream
             "raw": -3.02,
             "fmt": "-3.02"
+=======
+            "raw": -2.92,
+            "fmt": "-2.92"
+>>>>>>> Stashed changes
         },
         "lastSplitFactor": null,
         "lastSplitDate": [],
         "enterpriseToRevenue": {
+<<<<<<< Updated upstream
             "raw": 5.273,
             "fmt": "5.27"
         },
@@ -1757,6 +1778,22 @@
         "SandP52WeekChange": {
             "raw": 0.00072062016,
             "fmt": "0.07%"
+=======
+            "raw": 5.132,
+            "fmt": "5.13"
+        },
+        "enterpriseToEbitda": {
+            "raw": 9.863,
+            "fmt": "9.86"
+        },
+        "52WeekChange": {
+            "raw": -0.09329349,
+            "fmt": "-9.33%"
+        },
+        "SandP52WeekChange": {
+            "raw": 0.027377129,
+            "fmt": "2.74%"
+>>>>>>> Stashed changes
         },
         "lastDividendValue": {
             "raw": 1.48,
@@ -2728,8 +2765,13 @@
     "financialData": {
         "maxAge": 86400,
         "currentPrice": {
+<<<<<<< Updated upstream
             "raw": 133.27,
             "fmt": "133.27"
+=======
+            "raw": 136.87,
+            "fmt": "136.87"
+>>>>>>> Stashed changes
         },
         "targetHighPrice": {
             "raw": 195,
@@ -2740,12 +2782,21 @@
             "fmt": "135.00"
         },
         "targetMeanPrice": {
+<<<<<<< Updated upstream
             "raw": 165.17,
             "fmt": "165.17"
         },
         "targetMedianPrice": {
             "raw": 163.5,
             "fmt": "163.50"
+=======
+            "raw": 165.08,
+            "fmt": "165.08"
+        },
+        "targetMedianPrice": {
+            "raw": 162.5,
+            "fmt": "162.50"
+>>>>>>> Stashed changes
         },
         "recommendationMean": {
             "raw": 2.4,

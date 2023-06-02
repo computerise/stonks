@@ -1623,6 +1623,7 @@
             "longFmt": "2"
         },
         "enterpriseValue": {
+<<<<<<< Updated upstream
             "raw": 68844871680,
             "fmt": "68.84B",
             "longFmt": "68,844,871,680"
@@ -1630,6 +1631,15 @@
         "forwardPE": {
             "raw": 21.749998,
             "fmt": "21.75"
+=======
+            "raw": 68644962304,
+            "fmt": "68.64B",
+            "longFmt": "68,644,962,304"
+        },
+        "forwardPE": {
+            "raw": 22.304762,
+            "fmt": "22.30"
+>>>>>>> Stashed changes
         },
         "profitMargins": {
             "raw": 0.16577,
@@ -1700,8 +1710,13 @@
             "fmt": "63.29"
         },
         "priceToBook": {
+<<<<<<< Updated upstream
             "raw": 4.3299994,
             "fmt": "4.33"
+=======
+            "raw": 4.440442,
+            "fmt": "4.44"
+>>>>>>> Stashed changes
         },
         "annualReportExpenseRatio": [],
         "ytdReturn": [],
@@ -1737,16 +1752,21 @@
             "longFmt": "2,164,600,064"
         },
         "trailingEps": {
-            "raw": 9.73,
-            "fmt": "9.73"
+            "raw": 9.72,
+            "fmt": "9.72"
         },
         "forwardEps": {
             "raw": 12.6,
             "fmt": "12.6"
         },
         "pegRatio": {
+<<<<<<< Updated upstream
             "raw": 2.52,
             "fmt": "2.52"
+=======
+            "raw": 2.56,
+            "fmt": "2.56"
+>>>>>>> Stashed changes
         },
         "lastSplitFactor": "1081:1000",
         "lastSplitDate": {
@@ -1754,6 +1774,7 @@
             "fmt": "2016-10-03"
         },
         "enterpriseToRevenue": {
+<<<<<<< Updated upstream
             "raw": 5.242,
             "fmt": "5.24"
         },
@@ -1768,6 +1789,22 @@
         "SandP52WeekChange": {
             "raw": 0.00072062016,
             "fmt": "0.07%"
+=======
+            "raw": 5.226,
+            "fmt": "5.23"
+        },
+        "enterpriseToEbitda": {
+            "raw": 17.44,
+            "fmt": "17.44"
+        },
+        "52WeekChange": {
+            "raw": 0.082847714,
+            "fmt": "8.28%"
+        },
+        "SandP52WeekChange": {
+            "raw": 0.027377129,
+            "fmt": "2.74%"
+>>>>>>> Stashed changes
         },
         "lastDividendValue": {
             "raw": 1.75,
@@ -2785,8 +2822,13 @@
     "financialData": {
         "maxAge": 86400,
         "currentPrice": {
+<<<<<<< Updated upstream
             "raw": 274.05,
             "fmt": "274.05"
+=======
+            "raw": 281.04,
+            "fmt": "281.04"
+>>>>>>> Stashed changes
         },
         "targetHighPrice": {
             "raw": 385,

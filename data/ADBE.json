@@ -1617,6 +1617,7 @@
             "longFmt": "2"
         },
         "enterpriseValue": {
+<<<<<<< Updated upstream
             "raw": 189847224320,
             "fmt": "189.85B",
             "longFmt": "189,847,224,320"
@@ -1624,6 +1625,15 @@
         "forwardPE": {
             "raw": 24.386364,
             "fmt": "24.39"
+=======
+            "raw": 194223226880,
+            "fmt": "194.22B",
+            "longFmt": "194,223,226,880"
+        },
+        "forwardPE": {
+            "raw": 24.793749,
+            "fmt": "24.79"
+>>>>>>> Stashed changes
         },
         "profitMargins": {
             "raw": 0.26318002,
@@ -1694,8 +1704,13 @@
             "fmt": "30.95"
         },
         "priceToBook": {
+<<<<<<< Updated upstream
             "raw": 13.867528,
             "fmt": "13.87"
+=======
+            "raw": 14.099192,
+            "fmt": "14.10"
+>>>>>>> Stashed changes
         },
         "annualReportExpenseRatio": [],
         "ytdReturn": [],
@@ -1731,8 +1746,13 @@
             "longFmt": "4,736,999,936"
         },
         "trailingEps": {
+<<<<<<< Updated upstream
             "raw": 10.18,
             "fmt": "10.18"
+=======
+            "raw": 10.37,
+            "fmt": "10.37"
+>>>>>>> Stashed changes
         },
         "forwardEps": {
             "raw": 17.6,
@@ -1748,6 +1768,7 @@
             "fmt": "2005-05-24"
         },
         "enterpriseToRevenue": {
+<<<<<<< Updated upstream
             "raw": 10.548,
             "fmt": "10.55"
         },
@@ -1762,6 +1783,22 @@
         "SandP52WeekChange": {
             "raw": 0.00072062016,
             "fmt": "0.07%"
+=======
+            "raw": 10.791,
+            "fmt": "10.79"
+        },
+        "enterpriseToEbitda": {
+            "raw": 28.898,
+            "fmt": "28.90"
+        },
+        "52WeekChange": {
+            "raw": -0.0070039034,
+            "fmt": "-0.70%"
+        },
+        "SandP52WeekChange": {
+            "raw": 0.027377129,
+            "fmt": "2.74%"
+>>>>>>> Stashed changes
         },
         "lastDividendValue": {
             "raw": 0.0065,
@@ -2656,8 +2693,13 @@
     "financialData": {
         "maxAge": 86400,
         "currentPrice": {
+<<<<<<< Updated upstream
             "raw": 429.2,
             "fmt": "429.20"
+=======
+            "raw": 436.37,
+            "fmt": "436.37"
+>>>>>>> Stashed changes
         },
         "targetHighPrice": {
             "raw": 480,
@@ -2668,12 +2710,21 @@
             "fmt": "321.00"
         },
         "targetMeanPrice": {
+<<<<<<< Updated upstream
             "raw": 402.93,
             "fmt": "402.93"
         },
         "targetMedianPrice": {
             "raw": 410.5,
             "fmt": "410.50"
+=======
+            "raw": 407.52,
+            "fmt": "407.52"
+        },
+        "targetMedianPrice": {
+            "raw": 415,
+            "fmt": "415.00"
+>>>>>>> Stashed changes
         },
         "recommendationMean": {
             "raw": 2.2,
@@ -2681,9 +2732,9 @@
         },
         "recommendationKey": "buy",
         "numberOfAnalystOpinions": {
-            "raw": 30,
-            "fmt": "30",
-            "longFmt": "30"
+            "raw": 29,
+            "fmt": "29",
+            "longFmt": "29"
         },
         "totalCash": {
             "raw": 5653000192,

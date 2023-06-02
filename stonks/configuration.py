@@ -11,7 +11,8 @@ from typing import Any
 
 from stonks.error_handler import raise_fatal_error
 
-CREATED_DIRECTORY_MESSAGE = "Created directory at "
+SUCCESS_CREATE_DIRECTORY_MESSAGE = "Created directory at "
+FAIL_CREATE_DIRECTORY_MESSAGE = "Failed to create directory at "
 
 
 def create_directory(directory_path: Path) -> bool:
@@ -22,7 +23,7 @@ def create_directory(directory_path: Path) -> bool:
             return True
         except FileNotFoundError:
             raise_fatal_error(
-                message=f"Failed to create directory at `{directory_path}`.",
+                message=f"{FAIL_CREATE_DIRECTORY_MESSAGE}`{directory_path}`.",
                 from_exception=FileNotFoundError,
             )
     return False
@@ -32,9 +33,7 @@ def configure_logging(level: str, log_directory: Path) -> None:
     """Configure log level and log file name."""
     created_directory = create_directory(log_directory)
     # Save to `logs` directory, ISO format to remove space, remove colons, remove microseconds.
-    log_path = Path(
-        log_directory, f"{str(datetime.now().isoformat()).replace(':','-')[:-7]}.log"
-    )
+    log_path = Path(log_directory, f"{str(datetime.now().isoformat()).replace(':','-')[:-7]}.log")
     file_handler = logging.FileHandler(log_path)
     stdout_handler = logging.StreamHandler(stdout)
     logging.basicConfig(
@@ -45,14 +44,7 @@ def configure_logging(level: str, log_directory: Path) -> None:
         handlers=(file_handler, stdout_handler),
     )
     if created_directory:
-        logging.info(f"{CREATED_DIRECTORY_MESSAGE}`{log_directory}`.")
-
-
-@dataclass
-class APIKeys:
-    """Data class for storing API Access Keys."""
-
-    rapidapi_key: str
+        logging.info(f"{SUCCESS_CREATE_DIRECTORY_MESSAGE}`{log_directory}`.")
 
 
 class TOMLConfiguration:
@@ -78,10 +70,19 @@ class ApplicationSettings(TOMLConfiguration):
     def configure_application(self) -> None:
         """Configure the application."""
         configure_logging(level=self.log_level, log_directory=self.log_directory)
+        self.set_api_keys()
         if create_directory(Path(self.input_directory)):
-            logging.info(f"{CREATED_DIRECTORY_MESSAGE}`{self.input_directory}`.")
+            logging.info(f"{SUCCESS_CREATE_DIRECTORY_MESSAGE}`{self.input_directory}`.")
         if create_directory(Path(self.storage_directory)):
-            logging.info(f"{CREATED_DIRECTORY_MESSAGE}`{self.storage_directory}`.")
+            logging.info(f"{SUCCESS_CREATE_DIRECTORY_MESSAGE}`{self.storage_directory}`.")
+
+    def set_api_keys(self) -> None:
+        self.api_keys = {}
+        for api_key in self.api_key_names:
+            try:
+                self.api_keys[api_key] = config(api_key)
+            except Exception as exc:
+                print(exc)
 
 
 class MetricAssumptions(TOMLConfiguration):

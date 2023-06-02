@@ -4,7 +4,7 @@ import logging
 from pathlib import Path
 
 from stonks.storage import DataStorage
-from stonks.configuration import ApplicationSettings, APIKeys
+from stonks.configuration import ApplicationSettings
 from stonks.retrieval.api_client import APIClient
 from stonks.retrieval.response_handler import handle_response, YahooFinanceResponse
 from stonks.processing.valuation import discounted_cash_flow_valuation, filter_valuation
@@ -13,10 +13,10 @@ from stonks.processing.valuation import discounted_cash_flow_valuation, filter_v
 class ApplicationManager:
     """Controls the flow of the program."""
 
-    def __init__(self, application_settings: ApplicationSettings, api_keys: APIKeys):
+    def __init__(self, application_settings: ApplicationSettings):
         """Initialise class instance."""
         logging.info("Creating Application Manager...")
-        self.client = APIClient(api_keys)
+        self.client = APIClient(application_settings.api_keys)
         self.settings = application_settings
         logging.info("Created Application Manager.")
 
@@ -39,25 +39,15 @@ class ApplicationManager:
             company_data = self.get_company_data(company)
             # Move to retrieval.response_handler.
             try:
-                dcf_data = YahooFinanceResponse.get_data_for_discounted_cash_flow(
-                    company_data
-                )
-                wacc_data = (
-                    YahooFinanceResponse.get_data_for_weighted_average_cost_of_capital(
-                        company_data
-                    )
-                )
+                dcf_data = YahooFinanceResponse.get_data_for_discounted_cash_flow(company_data)
+                wacc_data = YahooFinanceResponse.get_data_for_weighted_average_cost_of_capital(company_data)
             except AttributeError:
-                logging.warning(
-                    f"Failed to extract a company data attribute for `{company}`."
-                )
+                logging.warning(f"Failed to extract a company data attribute for `{company}`.")
                 continue
 
             logging.info(f"Cash flow metrics for '{company}':")
             dcf_valuation = discounted_cash_flow_valuation(*dcf_data)
-            logging.info(
-                f"DCF valuation (price per share): {dcf_valuation.get('dcf_valuation_per_share')}"
-            )
+            logging.info(f"DCF valuation (price per share): {dcf_valuation.get('dcf_valuation_per_share')}")
             if filter_valuation(dcf_valuation):
                 candidates[company] = dcf_valuation
                 logging.info(

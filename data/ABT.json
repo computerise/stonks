@@ -1773,6 +1773,7 @@
             "longFmt": "2"
         },
         "enterpriseValue": {
+<<<<<<< Updated upstream
             "raw": 184584273920,
             "fmt": "184.58B",
             "longFmt": "184,584,273,920"
@@ -1780,6 +1781,15 @@
         "forwardPE": {
             "raw": 22.190475,
             "fmt": "22.19"
+=======
+            "raw": 186514505728,
+            "fmt": "186.51B",
+            "longFmt": "186,514,505,728"
+        },
+        "forwardPE": {
+            "raw": 22.554113,
+            "fmt": "22.55"
+>>>>>>> Stashed changes
         },
         "profitMargins": {
             "raw": 0.13984,
@@ -1850,8 +1860,13 @@
             "fmt": "21.28"
         },
         "priceToBook": {
+<<<<<<< Updated upstream
             "raw": 4.81699,
             "fmt": "4.82"
+=======
+            "raw": 4.895926,
+            "fmt": "4.90"
+>>>>>>> Stashed changes
         },
         "annualReportExpenseRatio": [],
         "ytdReturn": [],
@@ -1895,8 +1910,13 @@
             "fmt": "4.62"
         },
         "pegRatio": {
+<<<<<<< Updated upstream
             "raw": -8.56,
             "fmt": "-8.56"
+=======
+            "raw": -8.66,
+            "fmt": "-8.66"
+>>>>>>> Stashed changes
         },
         "lastSplitFactor": "10000:4798",
         "lastSplitDate": {
@@ -1904,6 +1924,7 @@
             "fmt": "2013-01-02"
         },
         "enterpriseToRevenue": {
+<<<<<<< Updated upstream
             "raw": 4.447,
             "fmt": "4.45"
         },
@@ -1918,6 +1939,22 @@
         "SandP52WeekChange": {
             "raw": 0.00072062016,
             "fmt": "0.07%"
+=======
+            "raw": 4.494,
+            "fmt": "4.49"
+        },
+        "enterpriseToEbitda": {
+            "raw": 17.397,
+            "fmt": "17.40"
+        },
+        "52WeekChange": {
+            "raw": -0.11795485,
+            "fmt": "-11.80%"
+        },
+        "SandP52WeekChange": {
+            "raw": 0.027377129,
+            "fmt": "2.74%"
+>>>>>>> Stashed changes
         },
         "lastDividendValue": {
             "raw": 0.51,
@@ -2881,8 +2918,13 @@
     "financialData": {
         "maxAge": 86400,
         "currentPrice": {
+<<<<<<< Updated upstream
             "raw": 102.52,
             "fmt": "102.52"
+=======
+            "raw": 104.2,
+            "fmt": "104.20"
+>>>>>>> Stashed changes
         },
         "targetHighPrice": {
             "raw": 144,
