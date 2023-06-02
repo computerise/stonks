@@ -23,9 +23,7 @@ def handle_response(output_path: Path, response: Response, store: bool = True) -
 class YahooFinanceResponse:
     """Response object for YahooFinance API (https://rapidapi.com/sparior/api/yahoo-finance15)."""
 
-    def get_data_for_discounted_cash_flow(
-        company_data: dict[str, Any]
-    ) -> tuple[dict[str, Any], dict[str, Any], dict[str, Any]]:
+    def get_data_for_discounted_cash_flow(company_data: dict[str, Any]) -> tuple[dict[str, Any], dict[str, Any], dict[str, Any]]:
         shares_outstanding = company_data.get("defaultKeyStatistics").get("sharesOutstanding").get("raw")
         current_share_price = company_data.get("financialData").get("currentPrice").get("raw")
         cash_flow_statements = company_data.get("cashflowStatementHistory").get("cashflowStatements")

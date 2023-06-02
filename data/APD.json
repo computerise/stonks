@@ -1623,6 +1623,7 @@
             "longFmt": "2"
         },
         "enterpriseValue": {
+<<<<<<< HEAD
             "raw": 68644962304,
             "fmt": "68.64B",
             "longFmt": "68,644,962,304"
@@ -1630,6 +1631,15 @@
         "forwardPE": {
             "raw": 22.304762,
             "fmt": "22.30"
+=======
+            "raw": 68844871680,
+            "fmt": "68.84B",
+            "longFmt": "68,844,871,680"
+        },
+        "forwardPE": {
+            "raw": 21.749998,
+            "fmt": "21.75"
+>>>>>>> 307f37929864269c7b478f0a759af815c24a7cbf
         },
         "profitMargins": {
             "raw": 0.16577,
@@ -1700,8 +1710,13 @@
             "fmt": "63.29"
         },
         "priceToBook": {
+<<<<<<< HEAD
             "raw": 4.440442,
             "fmt": "4.44"
+=======
+            "raw": 4.3299994,
+            "fmt": "4.33"
+>>>>>>> 307f37929864269c7b478f0a759af815c24a7cbf
         },
         "annualReportExpenseRatio": [],
         "ytdReturn": [],
@@ -1745,8 +1760,13 @@
             "fmt": "12.6"
         },
         "pegRatio": {
+<<<<<<< HEAD
             "raw": 2.56,
             "fmt": "2.56"
+=======
+            "raw": 2.52,
+            "fmt": "2.52"
+>>>>>>> 307f37929864269c7b478f0a759af815c24a7cbf
         },
         "lastSplitFactor": "1081:1000",
         "lastSplitDate": {
@@ -1754,6 +1774,7 @@
             "fmt": "2016-10-03"
         },
         "enterpriseToRevenue": {
+<<<<<<< HEAD
             "raw": 5.226,
             "fmt": "5.23"
         },
@@ -1768,6 +1789,22 @@
         "SandP52WeekChange": {
             "raw": 0.027377129,
             "fmt": "2.74%"
+=======
+            "raw": 5.242,
+            "fmt": "5.24"
+        },
+        "enterpriseToEbitda": {
+            "raw": 17.491,
+            "fmt": "17.49"
+        },
+        "52WeekChange": {
+            "raw": 0.06442559,
+            "fmt": "6.44%"
+        },
+        "SandP52WeekChange": {
+            "raw": 0.00072062016,
+            "fmt": "0.07%"
+>>>>>>> 307f37929864269c7b478f0a759af815c24a7cbf
         },
         "lastDividendValue": {
             "raw": 1.75,
@@ -2785,8 +2822,13 @@
     "financialData": {
         "maxAge": 86400,
         "currentPrice": {
+<<<<<<< HEAD
             "raw": 281.04,
             "fmt": "281.04"
+=======
+            "raw": 274.05,
+            "fmt": "274.05"
+>>>>>>> 307f37929864269c7b478f0a759af815c24a7cbf
         },
         "targetHighPrice": {
             "raw": 385,

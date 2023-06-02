@@ -29,7 +29,10 @@ class DataStorage:
 
     def write_json(path: Path, data: dict[str, Any]) -> None:
         """Write valid JSON data to a JSON file."""
-        if type(data) not in (dict, list, str, int, float, bool) or data is None:
+        if (
+            type(data) not in (dict[str, Any], list, str, int, float, bool)
+            or data is None
+        ):
             raise_fatal_error("Data to be written is not valid JSON.")
         try:
             with open(path, "w") as file:
