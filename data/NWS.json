@@ -1474,42 +1474,46 @@
             "longFmt": "2"
         },
         "enterpriseValue": {
-            "raw": 10634204160,
-            "fmt": "10.63B",
-            "longFmt": "10,634,204,160"
+            "raw": 14250992640,
+            "fmt": "14.25B",
+            "longFmt": "14,250,992,640"
         },
         "forwardPE": [],
         "profitMargins": {
-            "raw": 0,
-            "fmt": "0.00%"
+            "raw": 0.02638,
+            "fmt": "2.64%"
         },
-        "floatShares": [],
+        "floatShares": {
+            "raw": 492891966,
+            "fmt": "492.89M",
+            "longFmt": "492,891,966"
+        },
         "sharesOutstanding": {
-            "raw": 192520992,
-            "fmt": "192.52M",
-            "longFmt": "192,520,992"
+            "raw": 192282000,
+            "fmt": "192.28M",
+            "longFmt": "192,282,000"
         },
         "sharesShort": {
-            "raw": 2013177,
-            "fmt": "2.01M",
-            "longFmt": "2,013,177"
+            "raw": 2338715,
+            "fmt": "2.34M",
+            "longFmt": "2,338,715"
         },
         "sharesShortPriorMonth": {
-            "raw": 1588119,
-            "fmt": "1.59M",
-            "longFmt": "1,588,119"
+            "raw": 1748863,
+            "fmt": "1.75M",
+            "longFmt": "1,748,863"
         },
         "sharesShortPreviousMonthDate": {
-            "raw": 1680220800,
-            "fmt": "2023-03-31"
+            "raw": 1681430400,
+            "fmt": "2023-04-14"
         },
         "dateShortInterest": {
-            "raw": 1682640000,
-            "fmt": "2023-04-28"
+            "raw": 1684108800,
+            "fmt": "2023-05-15"
         },
         "sharesPercentSharesOut": {
-            "raw": 0.0034999999,
-            "fmt": "0.35%"
+            "raw": 0.0041,
+            "fmt": "0.41%"
         },
         "heldPercentInsiders": {
             "raw": 0.40195,
@@ -1520,14 +1524,17 @@
             "fmt": "39.82%"
         },
         "shortRatio": {
-            "raw": 2.68,
-            "fmt": "2.68"
+            "raw": 3.09,
+            "fmt": "3.09"
         },
         "shortPercentOfFloat": {
-            "raw": 0.0175,
-            "fmt": "1.75%"
+            "raw": 0.020399999,
+            "fmt": "2.04%"
         },
-        "beta": [],
+        "beta": {
+            "raw": 1.319141,
+            "fmt": "1.32"
+        },
         "impliedSharesOutstanding": {
             "raw": 0,
             "fmt": null,
@@ -1537,12 +1544,12 @@
         "morningStarRiskRating": [],
         "category": null,
         "bookValue": {
-            "raw": 14.07,
-            "fmt": "14.07"
+            "raw": 14.057,
+            "fmt": "14.06"
         },
         "priceToBook": {
-            "raw": 1.3390192,
-            "fmt": "1.34"
+            "raw": 1.3523512,
+            "fmt": "1.35"
         },
         "annualReportExpenseRatio": [],
         "ytdReturn": [],
@@ -1567,26 +1574,39 @@
             "raw": 1680220800,
             "fmt": "2023-03-31"
         },
-        "earningsQuarterlyGrowth": [],
+        "earningsQuarterlyGrowth": {
+            "raw": -0.39,
+            "fmt": "-39.00%"
+        },
         "revenueQuarterlyGrowth": [],
-        "netIncomeToCommon": [],
+        "netIncomeToCommon": {
+            "raw": 267000000,
+            "fmt": "267M",
+            "longFmt": "267,000,000"
+        },
         "trailingEps": {
-            "raw": 0.51,
-            "fmt": "0.51"
+            "raw": 0.46,
+            "fmt": "0.46"
         },
         "forwardEps": [],
         "pegRatio": [],
         "lastSplitFactor": null,
         "lastSplitDate": [],
-        "enterpriseToRevenue": [],
-        "enterpriseToEbitda": [],
+        "enterpriseToRevenue": {
+            "raw": 1.408,
+            "fmt": "1.41"
+        },
+        "enterpriseToEbitda": {
+            "raw": 12.425,
+            "fmt": "12.43"
+        },
         "52WeekChange": {
-            "raw": 0.024649858,
-            "fmt": "2.46%"
+            "raw": 0.080709815,
+            "fmt": "8.07%"
         },
         "SandP52WeekChange": {
-            "raw": 0.028959513,
-            "fmt": "2.90%"
+            "raw": 0.027377129,
+            "fmt": "2.74%"
         },
         "lastDividendValue": {
             "raw": 0.1,
@@ -2536,8 +2556,8 @@
     "financialData": {
         "maxAge": 86400,
         "currentPrice": {
-            "raw": 18.84,
-            "fmt": "18.84"
+            "raw": 19.01,
+            "fmt": "19.01"
         },
         "targetHighPrice": [],
         "targetLowPrice": [],
@@ -2546,44 +2566,92 @@
         "recommendationMean": [],
         "recommendationKey": "none",
         "numberOfAnalystOpinions": [],
-        "totalCash": [],
-        "totalCashPerShare": [],
-        "ebitda": [],
-        "totalDebt": [],
-        "quickRatio": [],
-        "currentRatio": [],
-        "totalRevenue": [],
-        "debtToEquity": [],
-        "revenuePerShare": {
-            "raw": 17.617,
-            "fmt": "17.62"
+        "totalCash": {
+            "raw": 1676000000,
+            "fmt": "1.68B",
+            "longFmt": "1,676,000,000"
         },
-        "returnOnAssets": [],
-        "returnOnEquity": [],
+        "totalCashPerShare": {
+            "raw": 2.923,
+            "fmt": "2.92"
+        },
+        "ebitda": {
+            "raw": 1147000064,
+            "fmt": "1.15B",
+            "longFmt": "1,147,000,064"
+        },
+        "totalDebt": {
+            "raw": 4192999936,
+            "fmt": "4.19B",
+            "longFmt": "4,192,999,936"
+        },
+        "quickRatio": {
+            "raw": 1.004,
+            "fmt": "1.00"
+        },
+        "currentRatio": {
+            "raw": 1.258,
+            "fmt": "1.26"
+        },
+        "totalRevenue": {
+            "raw": 10119999488,
+            "fmt": "10.12B",
+            "longFmt": "10,119,999,488"
+        },
+        "debtToEquity": {
+            "raw": 46.672,
+            "fmt": "46.67"
+        },
+        "revenuePerShare": {
+            "raw": 17.463,
+            "fmt": "17.46"
+        },
+        "returnOnAssets": {
+            "raw": 0.02507,
+            "fmt": "2.51%"
+        },
+        "returnOnEquity": {
+            "raw": 0.037609998,
+            "fmt": "3.76%"
+        },
         "grossProfits": {
             "raw": 5309000000,
             "fmt": "5.31B",
             "longFmt": "5,309,000,000"
         },
-        "freeCashflow": [],
-        "operatingCashflow": [],
-        "earningsGrowth": [],
-        "revenueGrowth": [],
+        "freeCashflow": {
+            "raw": 490500000,
+            "fmt": "490.5M",
+            "longFmt": "490,500,000"
+        },
+        "operatingCashflow": {
+            "raw": 994000000,
+            "fmt": "994M",
+            "longFmt": "994,000,000"
+        },
+        "earningsGrowth": {
+            "raw": -0.376,
+            "fmt": "-37.60%"
+        },
+        "revenueGrowth": {
+            "raw": -0.018,
+            "fmt": "-1.80%"
+        },
         "grossMargins": {
-            "raw": 0,
-            "fmt": "0.00%"
+            "raw": 0.49012002,
+            "fmt": "49.01%"
         },
         "ebitdaMargins": {
-            "raw": 0,
-            "fmt": "0.00%"
+            "raw": 0.11334,
+            "fmt": "11.33%"
         },
         "operatingMargins": {
-            "raw": 0,
-            "fmt": "0.00%"
+            "raw": 0.068280004,
+            "fmt": "6.83%"
         },
         "profitMargins": {
-            "raw": 0,
-            "fmt": "0.00%"
+            "raw": 0.02638,
+            "fmt": "2.64%"
         },
         "financialCurrency": "USD"
     }

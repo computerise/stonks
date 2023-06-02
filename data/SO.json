@@ -1680,22 +1680,22 @@
             "longFmt": "2"
         },
         "enterpriseValue": {
-            "raw": 143512027136,
-            "fmt": "143.51B",
-            "longFmt": "143,512,027,136"
+            "raw": 138965041152,
+            "fmt": "138.97B",
+            "longFmt": "138,965,041,152"
         },
         "forwardPE": {
-            "raw": 17.977665,
-            "fmt": "17.98"
+            "raw": 17.27612,
+            "fmt": "17.28"
         },
         "profitMargins": {
             "raw": 0.11521,
             "fmt": "11.52%"
         },
         "floatShares": {
-            "raw": 1087207661,
+            "raw": 1087262181,
             "fmt": "1.09B",
-            "longFmt": "1,087,207,661"
+            "longFmt": "1,087,262,181"
         },
         "sharesOutstanding": {
             "raw": 1090400000,
@@ -1703,26 +1703,26 @@
             "longFmt": "1,090,400,000"
         },
         "sharesShort": {
-            "raw": 15103110,
-            "fmt": "15.1M",
-            "longFmt": "15,103,110"
+            "raw": 17202914,
+            "fmt": "17.2M",
+            "longFmt": "17,202,914"
         },
         "sharesShortPriorMonth": {
-            "raw": 15663593,
-            "fmt": "15.66M",
-            "longFmt": "15,663,593"
+            "raw": 15719075,
+            "fmt": "15.72M",
+            "longFmt": "15,719,075"
         },
         "sharesShortPreviousMonthDate": {
-            "raw": 1680220800,
-            "fmt": "2023-03-31"
+            "raw": 1681430400,
+            "fmt": "2023-04-14"
         },
         "dateShortInterest": {
-            "raw": 1682640000,
-            "fmt": "2023-04-28"
+            "raw": 1684108800,
+            "fmt": "2023-05-15"
         },
         "sharesPercentSharesOut": {
-            "raw": 0.0139,
-            "fmt": "1.39%"
+            "raw": 0.015800001,
+            "fmt": "1.58%"
         },
         "heldPercentInsiders": {
             "raw": 0.00166,
@@ -1733,12 +1733,12 @@
             "fmt": "64.19%"
         },
         "shortRatio": {
-            "raw": 3.95,
-            "fmt": "3.95"
+            "raw": 4.66,
+            "fmt": "4.66"
         },
         "shortPercentOfFloat": {
-            "raw": 0.0139,
-            "fmt": "1.39%"
+            "raw": 0.015800001,
+            "fmt": "1.58%"
         },
         "beta": {
             "raw": 0.506333,
@@ -1757,8 +1757,8 @@
             "fmt": "28.00"
         },
         "priceToBook": {
-            "raw": 2.5877771,
-            "fmt": "2.59"
+            "raw": 2.4806228,
+            "fmt": "2.48"
         },
         "annualReportExpenseRatio": [],
         "ytdReturn": [],
@@ -1794,16 +1794,16 @@
             "longFmt": "3,353,999,872"
         },
         "trailingEps": {
-            "raw": 3.03,
-            "fmt": "3.03"
+            "raw": 3.08,
+            "fmt": "3.08"
         },
         "forwardEps": {
-            "raw": 4.03,
-            "fmt": "4.03"
+            "raw": 4.02,
+            "fmt": "4.02"
         },
         "pegRatio": {
-            "raw": 2.83,
-            "fmt": "2.83"
+            "raw": 2.62,
+            "fmt": "2.62"
         },
         "lastSplitFactor": "10000:6109",
         "lastSplitDate": {
@@ -1811,20 +1811,20 @@
             "fmt": "2001-04-03"
         },
         "enterpriseToRevenue": {
-            "raw": 4.93,
-            "fmt": "4.93"
+            "raw": 4.774,
+            "fmt": "4.77"
         },
         "enterpriseToEbitda": {
-            "raw": 13.878,
-            "fmt": "13.88"
+            "raw": 13.438,
+            "fmt": "13.44"
         },
         "52WeekChange": {
-            "raw": -0.012121201,
-            "fmt": "-1.21%"
+            "raw": -0.080786586,
+            "fmt": "-8.08%"
         },
         "SandP52WeekChange": {
-            "raw": 0.028959513,
-            "fmt": "2.90%"
+            "raw": 0.027377129,
+            "fmt": "2.74%"
         },
         "lastDividendValue": {
             "raw": 0.7,
@@ -2790,30 +2790,30 @@
     "financialData": {
         "maxAge": 86400,
         "currentPrice": {
-            "raw": 72.45,
-            "fmt": "72.45"
+            "raw": 69.45,
+            "fmt": "69.45"
         },
         "targetHighPrice": {
             "raw": 82,
             "fmt": "82.00"
         },
         "targetLowPrice": {
-            "raw": 63,
-            "fmt": "63.00"
+            "raw": 61,
+            "fmt": "61.00"
         },
         "targetMeanPrice": {
-            "raw": 73.38,
-            "fmt": "73.38"
+            "raw": 73.15,
+            "fmt": "73.15"
         },
         "targetMedianPrice": {
             "raw": 75,
             "fmt": "75.00"
         },
         "recommendationMean": {
-            "raw": 2.6,
-            "fmt": "2.60"
+            "raw": 2.5,
+            "fmt": "2.50"
         },
-        "recommendationKey": "hold",
+        "recommendationKey": "buy",
         "numberOfAnalystOpinions": {
             "raw": 13,
             "fmt": "13",

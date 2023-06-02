@@ -1591,7 +1591,6 @@
             "longFmt": "2"
         },
         "enterpriseValue": {
-<<<<<<< HEAD
             "raw": 8446284800,
             "fmt": "8.45B",
             "longFmt": "8,446,284,800"
@@ -1599,30 +1598,15 @@
         "forwardPE": {
             "raw": 8.330457,
             "fmt": "8.33"
-=======
-            "raw": 10403173376,
-            "fmt": "10.4B",
-            "longFmt": "10,403,173,376"
-        },
-        "forwardPE": {
-            "raw": 6.753196,
-            "fmt": "6.75"
->>>>>>> 307f37929864269c7b478f0a759af815c24a7cbf
         },
         "profitMargins": {
             "raw": 0.036140002,
             "fmt": "3.61%"
         },
         "floatShares": {
-<<<<<<< HEAD
             "raw": 59084797,
             "fmt": "59.08M",
             "longFmt": "59,084,797"
-=======
-            "raw": 58632486,
-            "fmt": "58.63M",
-            "longFmt": "58,632,486"
->>>>>>> 307f37929864269c7b478f0a759af815c24a7cbf
         },
         "sharesOutstanding": {
             "raw": 59433700,
@@ -1684,13 +1668,8 @@
             "fmt": "44.43"
         },
         "priceToBook": {
-<<<<<<< HEAD
             "raw": 1.5206283,
             "fmt": "1.52"
-=======
-            "raw": 1.5096165,
-            "fmt": "1.51"
->>>>>>> 307f37929864269c7b478f0a759af815c24a7cbf
         },
         "annualReportExpenseRatio": [],
         "ytdReturn": [],
@@ -1730,21 +1709,12 @@
             "fmt": "6.73"
         },
         "forwardEps": {
-<<<<<<< HEAD
             "raw": 8.11,
             "fmt": "8.11"
         },
         "pegRatio": {
             "raw": 3.4,
             "fmt": "3.40"
-=======
-            "raw": 10.17,
-            "fmt": "10.17"
-        },
-        "pegRatio": {
-            "raw": 2.37,
-            "fmt": "2.37"
->>>>>>> 307f37929864269c7b478f0a759af815c24a7cbf
         },
         "lastSplitFactor": "3:2",
         "lastSplitDate": {
@@ -1752,7 +1722,6 @@
             "fmt": "2005-09-26"
         },
         "enterpriseToRevenue": {
-<<<<<<< HEAD
             "raw": 0.754,
             "fmt": "0.75"
         },
@@ -1767,22 +1736,6 @@
         "SandP52WeekChange": {
             "raw": 0.027377129,
             "fmt": "2.74%"
-=======
-            "raw": 0.933,
-            "fmt": "0.93"
-        },
-        "enterpriseToEbitda": {
-            "raw": 10.026,
-            "fmt": "10.03"
-        },
-        "52WeekChange": {
-            "raw": -0.61855674,
-            "fmt": "-61.86%"
-        },
-        "SandP52WeekChange": {
-            "raw": 0.00072062016,
-            "fmt": "0.07%"
->>>>>>> 307f37929864269c7b478f0a759af815c24a7cbf
         },
         "lastDividendValue": {
             "raw": 1.5,
@@ -2641,20 +2594,14 @@
     "financialData": {
         "maxAge": 86400,
         "currentPrice": {
-<<<<<<< HEAD
             "raw": 67.56,
             "fmt": "67.56"
-=======
-            "raw": 68.68,
-            "fmt": "68.68"
->>>>>>> 307f37929864269c7b478f0a759af815c24a7cbf
         },
         "targetHighPrice": {
             "raw": 135.7,
             "fmt": "135.70"
         },
         "targetLowPrice": {
-<<<<<<< HEAD
             "raw": 57,
             "fmt": "57.00"
         },
@@ -2665,18 +2612,6 @@
         "targetMedianPrice": {
             "raw": 80,
             "fmt": "80.00"
-=======
-            "raw": 67,
-            "fmt": "67.00"
-        },
-        "targetMeanPrice": {
-            "raw": 123.63,
-            "fmt": "123.63"
-        },
-        "targetMedianPrice": {
-            "raw": 131,
-            "fmt": "131.00"
->>>>>>> 307f37929864269c7b478f0a759af815c24a7cbf
         },
         "recommendationMean": {
             "raw": 2.9,
