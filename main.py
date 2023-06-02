@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """Application entry point."""
 
 import os
