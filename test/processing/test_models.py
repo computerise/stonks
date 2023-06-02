@@ -2,7 +2,7 @@
 
 from unittest import TestCase
 
-from stonks.processing.models.discounted_cash_flow import (
+from stonks.processing.models import (
     discounted_cash_flow,
     weighted_average_cost_of_capital,
 )

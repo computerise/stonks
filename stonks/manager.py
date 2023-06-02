@@ -37,12 +37,22 @@ class ApplicationManager:
         # FUTURE: Convert company_data to use Company class and assign calculated metrics as attributes.
         for company in tickers:
             company_data = self.get_company_data(company)
-            dcf_data = YahooFinanceResponse.get_data_for_discounted_cash_flow(
-                company_data
-            )
-            if not dcf_data:
-                logging.warning(f"Failed to extract metrics from `{company}`")
+            # Move to retrieval.response_handler.
+            try:
+                dcf_data = YahooFinanceResponse.get_data_for_discounted_cash_flow(
+                    company_data
+                )
+                wacc_data = (
+                    YahooFinanceResponse.get_data_for_weighted_average_cost_of_capital(
+                        company_data
+                    )
+                )
+            except AttributeError:
+                logging.warning(
+                    f"Failed to extract a company data attribute for `{company}`."
+                )
                 continue
+
             logging.info(f"Cash flow metrics for '{company}':")
             dcf_valuation = discounted_cash_flow_valuation(*dcf_data)
             logging.info(

@@ -2,10 +2,12 @@
 
 import logging
 from os import makedirs
+from sys import stdout
 from pathlib import Path
 from tomllib import load
 from datetime import datetime
 from dataclasses import dataclass
+from typing import Any
 
 from stonks.error_handler import raise_fatal_error
 
@@ -33,12 +35,14 @@ def configure_logging(level: str, log_directory: Path) -> None:
     log_path = Path(
         log_directory, f"{str(datetime.now().isoformat()).replace(':','-')[:-7]}.log"
     )
+    file_handler = logging.FileHandler(log_path)
+    stdout_handler = logging.StreamHandler(stdout)
     logging.basicConfig(
-        filename=log_path,
         encoding="utf-8",
         level=logging.getLevelName(level),
         datefmt="%Y-%m-%d %H:%M:%S",
         format="%(asctime)s %(levelname)-8s %(message)s",
+        handlers=(file_handler, stdout_handler),
     )
     if created_directory:
         logging.info(f"{CREATED_DIRECTORY_MESSAGE}`{log_directory}`.")
@@ -54,7 +58,7 @@ class APIKeys:
 class TOMLConfiguration:
     """Base class for all TOML configuration objects."""
 
-    def load_config(self, path) -> dict:
+    def load_config(self, path) -> dict[str, Any]:
         """Load a TOML file."""
         with open(path, "rb") as file:
             return load(file)

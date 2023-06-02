@@ -26,7 +26,7 @@ def historical_cash_flows(
         "repurchaseOfStock",
         "issuanceOfStock",
     ],
-) -> dict:
+) -> dict[str, Any]:
     """Compute historical total cash flow."""
     total_cash_flows = {}
     # Iterate over cash flow statements for each period.
