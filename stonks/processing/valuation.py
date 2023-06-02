@@ -40,8 +40,6 @@ def filter_valuation(
 ) -> bool:
     """Filter a valuation based on eligibility criteria."""
     return (
-        cash_flow_growth_lower_bound
-        <= dcf_valuation.get("cash_flow_increase_rate")
-        <= cash_flow_growth_upper_bound
+        cash_flow_growth_lower_bound <= dcf_valuation.get("cash_flow_increase_rate") <= cash_flow_growth_upper_bound
         and dcf_valuation.get("dcf_discount_ratio") >= price_ratio_criterion
     )

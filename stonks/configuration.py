@@ -3,10 +3,10 @@
 import logging
 from os import makedirs
 from sys import stdout
+from decouple import config
 from pathlib import Path
 from tomllib import load
 from datetime import datetime
-from dataclasses import dataclass
 from typing import Any
 
 from stonks.error_handler import raise_fatal_error
@@ -77,6 +77,7 @@ class ApplicationSettings(TOMLConfiguration):
             logging.info(f"{SUCCESS_CREATE_DIRECTORY_MESSAGE}`{self.storage_directory}`.")
 
     def set_api_keys(self) -> None:
+        """Set API Keys from environment variables, named in settings.toml."""
         self.api_keys = {}
         for api_key in self.api_key_names:
             try:

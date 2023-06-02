@@ -2,9 +2,7 @@ from csv import DictReader
 from json import dump
 
 
-def convert_csv_to_json(
-    input_csv_path: str = "raw.csv", output_json_path: str = "input.json"
-):
+def convert_csv_to_json(input_csv_path: str = "raw.csv", output_json_path: str = "input.json"):
     snake_cased = {}
     with open(input_csv_path) as csv_file:
         dict_reader = DictReader(csv_file)

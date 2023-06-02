@@ -106,5 +106,7 @@ class YahooFinanceRequest(RapidAPIRequest):
         )
         for query in query_parameters:
             if query not in valid_query_parameters:
-                raise raise_fatal_error(f"Invalid query parameter '{query}' was specified. Queries are limited to: {','.join(valid_query_parameters)}")
+                raise raise_fatal_error(
+                    f"Invalid query parameter '{query}' was specified. Queries are limited to: {','.join(valid_query_parameters)}"
+                )
         return True

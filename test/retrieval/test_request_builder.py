@@ -41,9 +41,7 @@ class TestYahooFinanceRequest(TestCase):
     def __init__(self, *args, **kwargs) -> None:
         """Initialise Yahoo Finance request test."""
         super(TestYahooFinanceRequest, self).__init__(*args, **kwargs)
-        self.yahoo_finance_request = YahooFinanceRequest(
-            "MOCK", x_rapidapi_key="mock_key"
-        )
+        self.yahoo_finance_request = YahooFinanceRequest("MOCK", x_rapidapi_key="mock_key")
         self.default_query_parameters = (
             "financial-data",
             "income-statement",
@@ -51,9 +49,7 @@ class TestYahooFinanceRequest(TestCase):
             "cashflow-statement",
             "default-key-statistics",
         )
-        self.params = {
-            "module": "financial-data,income-statement,balance-sheet,cashflow-statement,default-key-statistics"
-        }
+        self.params = {"module": "financial-data,income-statement,balance-sheet,cashflow-statement,default-key-statistics"}
 
     def test_instantiation(self) -> None:
         """Test class instantiation."""
@@ -93,9 +89,7 @@ class TestYahooFinanceRequest(TestCase):
     def test_valid_query_parameters(self) -> None:
         """Test valid and invalid query parameters."""
         self.assertTrue(
-            self.yahoo_finance_request.valid_query_parameters(
-                ("cashflow-statement", "sec-filings", "balance-sheet")
-            )
+            self.yahoo_finance_request.valid_query_parameters(("cashflow-statement", "sec-filings", "balance-sheet"))
         )
         with self.assertRaises(ValueError):
             self.yahoo_finance_request.valid_query_parameters(("bad_parameter",))

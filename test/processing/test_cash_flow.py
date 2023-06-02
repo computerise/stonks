@@ -37,25 +37,19 @@ class TestCashFlow(TestCase):
                 "longFmt": "10,044,000,000",
             },
         }
-        self.sample_cash_flow_statements = self.generate_sample_cash_flow_statements(
-            self.sample_cash_flow_statement
-        )
+        self.sample_cash_flow_statements = self.generate_sample_cash_flow_statements(self.sample_cash_flow_statement)
         self.sample_company_data = {
             "cashflowStatementHistory": {
                 "cashflowStatements": self.sample_cash_flow_statements,
                 "maxAge": 86400,
             }
         }
-        self.sample_historical_cash_flow = historical_cash_flows(
-            self.sample_cash_flow_statements
-        )
+        self.sample_historical_cash_flow = historical_cash_flows(self.sample_cash_flow_statements)
 
     def generate_sample_cash_flow_statements(
         self, cash_flow_statement: dict[str, Any], periods: int = 4
     ) -> list[dict[str, Any]]:
-        sample_cash_flow_statements = [
-            deepcopy(cash_flow_statement) for _ in range(periods)
-        ]
+        sample_cash_flow_statements = [deepcopy(cash_flow_statement) for _ in range(periods)]
         for period, statement in enumerate(sample_cash_flow_statements):
             statement["endDate"]["fmt"] = str(period + 1)
             statement["netIncome"]["raw"] -= (period + 1) * 1e10
@@ -94,6 +88,4 @@ class TestCashFlow(TestCase):
 
     def test_most_recent_cash_flow(self) -> None:
         """Test getting the most recent cash flow."""
-        self.assertEqual(
-            most_recent_cash_flow(self.sample_historical_cash_flow), 100_907_000_000.0
-        )
+        self.assertEqual(most_recent_cash_flow(self.sample_historical_cash_flow), 100_907_000_000.0)
