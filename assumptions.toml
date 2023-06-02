@@ -1,9 +1,4 @@
-title = "Metric assumptions. For example only."
+title = "Metric assumptions"
 
-[usa.inflation]
-cpi = 0.11
-rpi = 0.13
-
-[uk.inflation]
-cpi = 0.09
-rpi = 0.12
+[usa.sp500]
+rate_of_return = 0.10

@@ -2,6 +2,8 @@
 version = "0.0.1"
 authors = ["Tom Ashley"]
 
+api_key_names = ["RAPIDAPI_KEY"]
+
 outro_duration_seconds=5
 
 log_level = "DEBUG"

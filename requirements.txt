@@ -1,8 +1,10 @@
 # Project dependencies
 requests
-python-dotenv
+python-decouple
 
 # Dev dependencies
+black
+flake8
 pytest
 pytest-cov
 coverage

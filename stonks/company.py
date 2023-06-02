@@ -1,5 +1,6 @@
 """Representation of a company."""
 from dataclasses import dataclass
+from typing import Any
 
 
 @dataclass
@@ -13,7 +14,7 @@ class Company:
     industry: str
     market_cap: float
 
-    def set_data_attributes(self, company_data: dict) -> None:
+    def set_data_attributes(self, company_data: dict[str, Any]) -> None:
         """Set each dictionary key and value as an instance attribute and value."""
         # Potentially a good use case for recursion to set all nested parameters as attributes.
         for attribute, value in company_data.items():

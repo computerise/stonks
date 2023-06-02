@@ -26,7 +26,7 @@ def historical_cash_flows(
         "repurchaseOfStock",
         "issuanceOfStock",
     ],
-) -> dict:
+) -> dict[str, Any]:
     """Compute historical total cash flow."""
     total_cash_flows = {}
     # Iterate over cash flow statements for each period.
@@ -59,13 +59,9 @@ def historical_cash_flow_increase_rate(total_cash_flows: dict[str, float]) -> fl
         previous_cash_flow = cash_flow_amount
     # Take the average percentage increase.
     cumulative_percentage_increase = sum(percentage_increases)
-    mean_cash_flow_increase_percentage = cumulative_percentage_increase / len(
-        percentage_increases
-    )
+    mean_cash_flow_increase_percentage = cumulative_percentage_increase / len(percentage_increases)
     logging.info(f"Cash flow percentage increases: {percentage_increases}")
-    logging.info(
-        f"Mean cash flow increase percentage: {mean_cash_flow_increase_percentage:,}"
-    )
+    logging.info(f"Mean cash flow increase percentage: {mean_cash_flow_increase_percentage:,}")
     return mean_cash_flow_increase_percentage
 
 
