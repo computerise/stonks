@@ -74,13 +74,19 @@ Add `pip` to path by adding the line to `~/.bashrc`, where `<path-to-pip>` is th
 export PATH=$PATH:<path-to-pip>
 ```
 
-## Install
+## Installation
 
 ### Dependencies
 
-Install project dependencies by running `install.bat`.
+On Windows the application is installed by doubling clicking on `install.bat` or executing:
 
-To install from a Command Line Interface (CLI):
+```cmd
+./install.bat
+```
+
+If Windows raises the warning `Windows protected your PC`, select `More info` then `Run anyway`.
+
+To install from a Command Line Interface (CLI) on Windows or Linux, execute:
 
 ```bash
 pip3 install -r requirements.txt
