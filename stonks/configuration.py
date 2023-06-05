@@ -85,8 +85,10 @@ class ApplicationSettings(TOMLConfiguration):
         for api_key_name in self.api_key_names:
             try:
                 self.api_keys[api_key_name] = config(api_key_name)
-            except UndefinedValueError:
-                raise_fatal_error(f"Environment variable `{api_key_name}` is not set.")
+            except UndefinedValueError as exc:
+                raise_fatal_error(
+                    f"Environment variable `{api_key_name}` is not set. Declare it in a `.env` file as described in `README.md`", from_exception=exc
+                )
 
 
 class MetricAssumptions(TOMLConfiguration):
