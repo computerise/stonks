@@ -59,24 +59,37 @@ C:\Users\<username>\AppData\Local\Programs\Python\Python311\Scripts\
 
 #### Linux
 
-python3 comes pre-installed on most modern distributions.
+`python3` comes pre-installed on most modern distributions.
 
-To manually install, execute:
+To manually install `python3.11`, execute:
 
 ```bash
-sudo apt-get install python3.11
+sudo add-apt-repository -y 'ppa:deadsnakes/ppa'
+sudo apt-get install python3.11 python3.11-pip
 ```
 
-## Install
+Add `pip` to path by adding the line to `~/.bashrc`, where `<path-to-pip>` is the absolute file path to the `pip` binary:
+
+```bash
+export PATH=$PATH:<path-to-pip>
+```
+
+## Installation
 
 ### Dependencies
 
-Install project dependencies by running `install.bat`.
+On Windows the application is installed by doubling clicking on `install.bat` or executing:
 
-To install from a Command Line Interface (CLI):
+```cmd
+./install.bat
+```
+
+If Windows raises the warning `Windows protected your PC`, select `More info` then `Run anyway`.
+
+To install from a Command Line Interface (CLI) on Windows or Linux, execute:
 
 ```bash
-pip3 install requirements.txt
+pip3 install -r requirements.txt
 ```
 
 ### Environment Variables
@@ -84,7 +97,7 @@ pip3 install requirements.txt
 Create a file in the project root directory called `.env`. Acquire the respective API keys for each provider and save them in `.env` under the names, where `<key>` is replaced by your personal access key:
 
 ```text
-RAPID_API_KEY=<[rapid-api-key](https://docs.rapidapi.com/docs/keys)>
+RAPIDAPI_KEY=<[rapid-api-key](https://docs.rapidapi.com/docs/keys)>
 ```
 
 ## Configuration
