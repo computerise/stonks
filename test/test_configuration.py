@@ -6,7 +6,7 @@ from stonks.configuration import ApplicationSettings
 
 
 class TestApplicationSettings(TestCase):
-    """Test Applicaiton Settings."""
+    """Test Application Settings."""
 
     @classmethod
     def setUpClass(cls) -> None:
