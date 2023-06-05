@@ -9,10 +9,10 @@ from stonks.retrieval.api_client import APIClient
 class TestAPIClient(TestCase):
     """Test API Client."""
 
-    def __init__(self, *args, **kwargs) -> None:
-        """Initialise API client test."""
-        super(TestAPIClient, self).__init__(*args, **kwargs)
-        self.api_client = APIClient(api_keys={"RAPIDAPI_KEY": "mock_key"})
+    @classmethod
+    def setUpClass(cls) -> None:
+        """Set up API Client test class."""
+        cls.api_client = APIClient(api_keys={"RAPIDAPI_KEY": "mock_key"})
 
     def test_instantiation(self):
         """Test class instantiation."""

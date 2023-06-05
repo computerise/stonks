@@ -6,17 +6,17 @@ from stonks.retrieval.request_builder import RapidAPIRequest, YahooFinanceReques
 class TestRapidAPIRequest(TestCase):
     """Test RapidAPI Request class."""
 
-    def __init__(self, *args, **kwargs) -> None:
-        """Initialise RapidAPI Request test."""
-        super(TestRapidAPIRequest, self).__init__(*args, **kwargs)
-        self.content_type = "mock_content_type"
-        self.x_rapidapi_key = "mock_x_rapidapi_key"
-        self.x_rapidapi_host = "mock_x_rapidapi_host"
-        self.rapidapi_request = RapidAPIRequest(
+    @classmethod
+    def setUpClass(cls) -> None:
+        """Set up RapidAPIRequest test class."""
+        cls.content_type = "mock_content_type"
+        cls.x_rapidapi_key = "mock_x_rapidapi_key"
+        cls.x_rapidapi_host = "mock_x_rapidapi_host"
+        cls.rapidapi_request = RapidAPIRequest(
             ticker_symbol="MOCK",
-            content_type=self.content_type,
-            x_rapidapi_key=self.x_rapidapi_key,
-            x_rapidapi_host=self.x_rapidapi_host,
+            content_type=cls.content_type,
+            x_rapidapi_key=cls.x_rapidapi_key,
+            x_rapidapi_host=cls.x_rapidapi_host,
         )
 
     def test_instantiation(self) -> None:
@@ -88,8 +88,6 @@ class TestYahooFinanceRequest(TestCase):
 
     def test_valid_query_parameters(self) -> None:
         """Test valid and invalid query parameters."""
-        self.assertTrue(
-            self.yahoo_finance_request.valid_query_parameters(("cashflow-statement", "sec-filings", "balance-sheet"))
-        )
+        self.assertTrue(self.yahoo_finance_request.valid_query_parameters(("cashflow-statement", "sec-filings", "balance-sheet")))
         with self.assertRaises(ValueError):
             self.yahoo_finance_request.valid_query_parameters(("bad_parameter",))
