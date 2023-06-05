@@ -3,13 +3,14 @@
 import logging
 from os import makedirs
 from sys import stdout
-from decouple import config
+from decouple import config, UndefinedValueError
 from pathlib import Path
 from tomllib import load
 from datetime import datetime
 from typing import Any
 
 from stonks.error_handler import raise_fatal_error
+from stonks.command_line_interface import CommandLineInterface
 
 SUCCESS_CREATE_DIRECTORY_MESSAGE = "Created directory at "
 FAIL_CREATE_DIRECTORY_MESSAGE = "Failed to create directory at "
@@ -71,6 +72,7 @@ class ApplicationSettings(TOMLConfiguration):
     def configure_application(self) -> None:
         """Configure the application."""
         configure_logging(level=self.log_level, log_directory=self.log_directory)
+        CommandLineInterface.outro_duration_seconds = self.outro_duration_seconds
         self.set_api_keys()
         if create_directory(Path(self.input_directory)):
             logging.info(f"{SUCCESS_CREATE_DIRECTORY_MESSAGE}`{self.input_directory}`.")
@@ -80,11 +82,11 @@ class ApplicationSettings(TOMLConfiguration):
     def set_api_keys(self) -> None:
         """Set API Keys from environment variables, named in settings.toml."""
         self.api_keys = {}
-        for api_key in self.api_key_names:
+        for api_key_name in self.api_key_names:
             try:
-                self.api_keys[api_key] = config(api_key)
-            except Exception as exc:
-                print(exc)
+                self.api_keys[api_key_name] = config(api_key_name)
+            except UndefinedValueError:
+                raise_fatal_error(f"Environment variable `{api_key_name}` is not set.")
 
 
 class MetricAssumptions(TOMLConfiguration):
