@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "stonks"
+version = "1.0.0a0"
+description = "A quantitative analysis tool."
+authors = ["Thomas Ashley <tom.daniel.ashley@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "stonks" }]
+repository = "https://github.com/computerise/stonks"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+python-decouple = "^3.8"
+requests = "^2.31"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3"
+flake8 = "^6.0"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.3"
+pytest-cov = "^4.1"
+coverage = "^7.2"
+responses = "^0.23"
+
+# Only used in github actions
+[tool.poetry.group.github-actions]
+optional = true
+[tool.poetry.group.github-actions.dependencies]
+pytest-github-actions-annotate-failures = "^0.1.7"
+
+[tool.poetry.scripts]
+stonks = "main:main"
+
+[build-system]
+requires = ["poetry-core>=1.6.0"]
+build-backend = "poetry.core.masonry.api"

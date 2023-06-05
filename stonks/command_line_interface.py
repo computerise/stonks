@@ -10,7 +10,7 @@ class CommandLineInterface:
 
     def intro(version: str, authors: list[str]) -> None:
         """Introduce the application."""
-        print(f"Launching 'stonks' version {version}.\nAuthored by:\n")
+        print(f"\nLaunching `stonks` version `{version}`.\n\nAuthored by:\n")
         print(*authors, sep=", ", end="\n\n")
 
     @classmethod

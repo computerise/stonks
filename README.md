@@ -57,7 +57,7 @@ and for `pip.exe` is:
 C:\Users\<username>\AppData\Local\Programs\Python\Python311\Scripts\
 ```
 
-#### Linux
+#### Debian-based Linux Distributions
 
 `python3` comes pre-installed on most modern distributions.
 
@@ -65,7 +65,7 @@ To manually install `python3.11`, execute:
 
 ```bash
 sudo add-apt-repository -y 'ppa:deadsnakes/ppa'
-sudo apt-get install python3.11 python3.11-pip
+sudo apt-get install python3.11 python3.11-pip python3.11-venv python3.11-distutils
 ```
 
 Add `pip` to path by adding the line to `~/.bashrc`, where `<path-to-pip>` is the absolute file path to the `pip` binary:

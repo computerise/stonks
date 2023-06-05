@@ -32,7 +32,7 @@ def create_directory(directory_path: Path) -> bool:
 def configure_logging(level: str, log_directory: Path) -> None:
     """Configure log level and log file name."""
     created_directory = create_directory(log_directory)
-    # Save to `logs` directory, ISO format to remove space, remove colons, remove microseconds.
+    # Save to log directory, ISO format to remove space, remove colons, remove microseconds.
     log_path = Path(log_directory, f"{str(datetime.now().isoformat()).replace(':','-')[:-7]}.log")
     file_handler = logging.FileHandler(log_path)
     stdout_handler = logging.StreamHandler(stdout)
@@ -62,6 +62,7 @@ class ApplicationSettings(TOMLConfiguration):
     def __init__(self, path: str = "settings.toml") -> None:
         """Initialise class instance."""
         self.__dict__ = self.load_config(path).get("application")
+        self.__dict__.update(self.load_config("pyproject.toml").get("tool").get("poetry"))
         self.log_directory = Path(self.log_directory)
         self.input_directory = Path(self.input_directory)
         self.storage_directory = Path(self.storage_directory)
