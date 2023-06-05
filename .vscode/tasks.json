@@ -6,7 +6,7 @@
         {
             "label": "Run coverage",
             "type": "shell",
-            "command": "coverage run -m pytest test/",
+            "command": "poetry run coverage run -m pytest test/",
             "problemMatcher": [],
             "group": {
                 "kind": "test",
@@ -15,7 +15,7 @@
         {
             "label": "Update coverage gutters",
             "type": "shell",
-            "command": "pytest --cov=. test/ --cov-report xml:cov.xml",
+            "command": "poetry run pytest --cov=. test/ --cov-report xml:cov.xml",
             "problemMatcher": [],
             "group": {
                 "kind": "build",

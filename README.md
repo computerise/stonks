@@ -35,46 +35,54 @@ The tricky part here is drawing the lines between undervalued and very undervalu
 
 If it actually works, slap a WebUI on it and sell (tiers?) of subscription service.
 
-## Requirements
+## Requirements Installation
 
-"stonks" requires an installation of python3 (tested on Python 3.11.3).
+"stonks" requires an installation of python3.11 (tested on Python 3.11.3) and poetry (tested on Poetry 1.5.1).
 
-### Python Install
+### Python Installation
 
 Instructions on how to set up and install python3.
 
-#### Windows
+#### Windows Python Installation
 
-Download and install the latest version of python3 [here](https://www.python.org/downloads/). Then add the parent directory of `python.exe` and `pip.exe` to the [System Environment Variables `Path` field](https://learn.microsoft.com/en-us/previous-versions/office/developer/sharepoint-2010/ee537574(v=office.14)). Where `<username>` is the name of the windows user account, the default path for `python3.exe` is:
+Download and install the python3.11 [here](https://www.python.org/downloads/). Then add the parent directory of `python.exe` and `pip.exe` to the [System Environment Variables `Path` field](https://learn.microsoft.com/en-us/previous-versions/office/developer/sharepoint-2010/ee537574(v=office.14)). Where `<username>` is the name of the Windows user account, the default path for `python3.exe` is:
 
 ```text
 C:\Users\<username>\AppData\Local\Programs\Python\Python311\
 ```
 
-and for `pip.exe` is:
-
-```text
-C:\Users\<username>\AppData\Local\Programs\Python\Python311\Scripts\
-```
-
-#### Debian-based Linux Distributions
+#### Debian-Based Linux Distribution Installation
 
 `python3` comes pre-installed on most modern distributions.
 
-To manually install `python3.11`, execute:
+To manually install `python3.11` execute:
 
 ```bash
 sudo add-apt-repository -y 'ppa:deadsnakes/ppa'
-sudo apt-get install python3.11 python3.11-pip python3.11-venv python3.11-distutils
+sudo apt-get install python3.11
 ```
 
-Add `pip` to path by adding the line to `~/.bashrc`, where `<path-to-pip>` is the absolute file path to the `pip` binary:
+### Poetry Installation
+
+Instructions for installing poetry for dependency management and packaging.
+
+#### Windows Poetry Installation
+
+To install poetry on Windows open PowerShell and execute:
+
+```PowerShell
+(Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | python -
+```
+
+#### Linux Installation
+
+To install poetry on Linux execute:
 
 ```bash
-export PATH=$PATH:<path-to-pip>
+curl -sSL https://install.python-poetry.org | python3 -
 ```
 
-## Installation
+## Application Installation
 
 ### Dependencies
 
@@ -89,7 +97,7 @@ If Windows raises the warning `Windows protected your PC`, select `More info` th
 To install from a Command Line Interface (CLI) on Windows or Linux, execute:
 
 ```bash
-pip3 install -r requirements.txt
+poetry install
 ```
 
 ### Environment Variables
@@ -108,21 +116,39 @@ The user input file is named `input.json`. All necessary assumptions used for ca
 
 Launch the application by running `run.bat`.
 
-To execute from a CLI:
+To execute the application from a CLI, first activate a poetry virtual environment by executing:
 
-```bash
-python main.py
+```shell
+poetry shell
+```
+
+Then launch the application by executing:
+
+```shell
+stonks
+```
+
+The poetry shell session is exited by executing:
+
+```shell
+deactivate
+```
+
+Note that `stonks` can be executed without entering a poetry shell session by prefixing all commands with (where `<command>` is any command stated in `Usage` or `Test`):
+
+```shell
+poetry run <command>
 ```
 
 ## Test
 
-To run unit tests, execute:
+To run unit tests from within a poetry shell session execute:
 
-```bash
+```shell
 pytest
 ```
 
-To see the code coverage report, execute:
+To see the code coverage report from within a poetry shell session execute:
 
 ```bash
 coverage run -m pytest test/
