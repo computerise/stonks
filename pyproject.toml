@@ -25,8 +25,9 @@ responses = "^0.23"
 # Only used in github actions
 [tool.poetry.group.github-actions]
 optional = true
+
 [tool.poetry.group.github-actions.dependencies]
-pytest-github-actions-annotate-failures = "^0.1.7"
+pytest-github-actions-annotate-failures = "^0.2"
 
 [tool.poetry.scripts]
 stonks = "main:main"
