@@ -7,6 +7,8 @@ from stonks.retrieval.response_handler import handle_response
 
 
 class TestResponseHandler(TestCase):
+    """Test Response Handler."""
+
     def build_mock_response(self, url: str, ok: bool, status_code: int, json_value: dict) -> Response:
         """Build a mock Response object."""
         response = Response

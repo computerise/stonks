@@ -1,6 +1,4 @@
 [application]
-version = "1.0.0-pre-alpha"
-authors = ["Thomas Ashley"]
 
 api_key_names = ["RAPIDAPI_KEY"]
 
@@ -10,6 +8,7 @@ log_level = "DEBUG"
 log_directory = "logs/"
 
 input_directory = "input/"
+input_file = "input.json"
 
 storage_directory = "data/"
 

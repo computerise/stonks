@@ -12,13 +12,22 @@ from stonks.processing.cash_flow import (
 )
 
 
+def generate_mock_cash_flow_statements(cash_flow_statement: dict[str, Any], periods: int = 4) -> list[dict[str, Any]]:
+    """Generate mock cash flow statements for test data."""
+    sample_cash_flow_statements = [deepcopy(cash_flow_statement) for _ in range(periods)]
+    for period, statement in enumerate(sample_cash_flow_statements):
+        statement["endDate"]["fmt"] = str(period + 1)
+        statement["netIncome"]["raw"] -= (period + 1) * 1e10
+    return sample_cash_flow_statements
+
+
 class TestCashFlow(TestCase):
     """Test cash flow calculations."""
 
-    def __init__(self, *args, **kwargs) -> None:
-        """Initialise cash flow tests."""
-        super(TestCashFlow, self).__init__(*args, **kwargs)
-        self.sample_cash_flow_statement = {
+    @classmethod
+    def setUpClass(cls) -> None:
+        """Set up Cash Flow test class."""
+        cls.sample_cash_flow_statement = {
             "maxAge": 1,
             "endDate": {"raw": 1663977600, "fmt": "2022-09-24"},
             "netIncome": {
@@ -37,23 +46,14 @@ class TestCashFlow(TestCase):
                 "longFmt": "10,044,000,000",
             },
         }
-        self.sample_cash_flow_statements = self.generate_sample_cash_flow_statements(self.sample_cash_flow_statement)
-        self.sample_company_data = {
+        cls.sample_cash_flow_statements = generate_mock_cash_flow_statements(cls.sample_cash_flow_statement)
+        cls.sample_company_data = {
             "cashflowStatementHistory": {
-                "cashflowStatements": self.sample_cash_flow_statements,
+                "cashflowStatements": cls.sample_cash_flow_statements,
                 "maxAge": 86400,
             }
         }
-        self.sample_historical_cash_flow = historical_cash_flows(self.sample_cash_flow_statements)
-
-    def generate_sample_cash_flow_statements(
-        self, cash_flow_statement: dict[str, Any], periods: int = 4
-    ) -> list[dict[str, Any]]:
-        sample_cash_flow_statements = [deepcopy(cash_flow_statement) for _ in range(periods)]
-        for period, statement in enumerate(sample_cash_flow_statements):
-            statement["endDate"]["fmt"] = str(period + 1)
-            statement["netIncome"]["raw"] -= (period + 1) * 1e10
-        return sample_cash_flow_statements
+        cls.sample_historical_cash_flow = historical_cash_flows(cls.sample_cash_flow_statements)
 
     def test_historical_cash_flow(self) -> None:
         self.assertEqual(

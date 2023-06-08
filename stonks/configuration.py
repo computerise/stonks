@@ -3,13 +3,14 @@
 import logging
 from os import makedirs
 from sys import stdout
-from decouple import config
+from decouple import config, UndefinedValueError
 from pathlib import Path
 from tomllib import load
 from datetime import datetime
 from typing import Any
 
 from stonks.error_handler import raise_fatal_error
+from stonks.command_line_interface import CommandLineInterface
 
 SUCCESS_CREATE_DIRECTORY_MESSAGE = "Created directory at "
 FAIL_CREATE_DIRECTORY_MESSAGE = "Failed to create directory at "
@@ -32,7 +33,7 @@ def create_directory(directory_path: Path) -> bool:
 def configure_logging(level: str, log_directory: Path) -> None:
     """Configure log level and log file name."""
     created_directory = create_directory(log_directory)
-    # Save to `logs` directory, ISO format to remove space, remove colons, remove microseconds.
+    # Save to log directory, ISO format to remove space, remove colons, remove microseconds.
     log_path = Path(log_directory, f"{str(datetime.now().isoformat()).replace(':','-')[:-7]}.log")
     file_handler = logging.FileHandler(log_path)
     stdout_handler = logging.StreamHandler(stdout)
@@ -47,6 +48,22 @@ def configure_logging(level: str, log_directory: Path) -> None:
         logging.info(f"{SUCCESS_CREATE_DIRECTORY_MESSAGE}`{log_directory}`.")
 
 
+class APIKeys:
+    def __init__(self, api_key_names: list[str]) -> None:
+        self.set_api_keys(api_key_names)
+
+    def set_api_keys(self, api_key_names: list[str]) -> None:
+        """Set API Keys from environment variables, named in settings.toml."""
+        api_keys = {}
+        for name in api_key_names:
+            try:
+                api_keys[name] = config(name)
+            except UndefinedValueError as exc:
+                raise_fatal_error(f"Environment variable `{name}` is not set. Declare it in a `.env` file as described in `README.md`", from_exception=exc)
+        self.__dict__ = api_keys
+        logging.info("Loaded API Keys.")
+
+
 class TOMLConfiguration:
     """Base class for all TOML configuration objects."""
 
@@ -59,36 +76,33 @@ class TOMLConfiguration:
 class ApplicationSettings(TOMLConfiguration):
     """All settings associated with the operation of the application."""
 
-    def __init__(self, path: str = "settings.toml") -> None:
+    def __init__(self, settings_path: str = "settings.toml") -> None:
         """Initialise class instance."""
-        self.__dict__ = self.load_config(path).get("application")
+        self.__dict__ = self.load_config(settings_path).get("application")
+        self.__dict__.update(self.load_config("pyproject.toml").get("tool").get("poetry"))
+        self.set_paths()
+        self.configure_application()
+
+    def set_paths(self) -> None:
         self.log_directory = Path(self.log_directory)
         self.input_directory = Path(self.input_directory)
+        self.input_file = Path(self.input_directory, self.input_file)
         self.storage_directory = Path(self.storage_directory)
-        self.configure_application()
 
     def configure_application(self) -> None:
         """Configure the application."""
         configure_logging(level=self.log_level, log_directory=self.log_directory)
-        self.set_api_keys()
+        self.api_keys = APIKeys(self.api_key_names)
+        CommandLineInterface.outro_duration_seconds = self.outro_duration_seconds
         if create_directory(Path(self.input_directory)):
             logging.info(f"{SUCCESS_CREATE_DIRECTORY_MESSAGE}`{self.input_directory}`.")
         if create_directory(Path(self.storage_directory)):
             logging.info(f"{SUCCESS_CREATE_DIRECTORY_MESSAGE}`{self.storage_directory}`.")
 
-    def set_api_keys(self) -> None:
-        """Set API Keys from environment variables, named in settings.toml."""
-        self.api_keys = {}
-        for api_key in self.api_key_names:
-            try:
-                self.api_keys[api_key] = config(api_key)
-            except Exception as exc:
-                print(exc)
-
 
 class MetricAssumptions(TOMLConfiguration):
     """All assumptions of metrics used to processing."""
 
-    def __init__(self, path: str = "assumptions.toml") -> None:
+    def __init__(self, assumptions_path: str = "assumptions.toml") -> None:
         """Initialise class instance."""
-        self.__dict__ = self.load_config(path)
+        self.__dict__ = self.load_config(assumptions_path)

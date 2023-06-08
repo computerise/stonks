@@ -33,7 +33,7 @@ class ApplicationManager:
         If `store_new_data` is `True`, upon a successful response the data will be stored. If `store_new_data` is `False` the data will be discarded.
         """
         candidates = {}
-        tickers = DataStorage.read_json("input/input.json").keys()
+        tickers = DataStorage.read_json(self.settings.input_file).keys()
         # FUTURE: Convert company_data to use Company class and assign calculated metrics as attributes.
         for company in tickers:
             company_data = self.get_company_data(company)

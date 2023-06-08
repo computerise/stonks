@@ -8,7 +8,10 @@ from stonks.storage import DataStorage
 class TestDataStorage(TestCase):
     """Test data storage."""
 
-    invalid_path: str = "/invalid/file/path"
+    @classmethod
+    def setUpClass(cls) -> None:
+        """Set up Data Storage test class."""
+        cls.invalid_path: str = "/invalid/file/path"
 
     def test_read_json(self) -> None:
         """Test that an invalid path raises a ValueError."""
