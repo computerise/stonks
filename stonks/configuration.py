@@ -80,10 +80,14 @@ class ApplicationSettings(TOMLConfiguration):
         """Initialise class instance."""
         self.__dict__ = self.load_config(settings_path).get("application")
         self.__dict__.update(self.load_config("pyproject.toml").get("tool").get("poetry"))
+        self.set_paths()
+        self.configure_application()
+
+    def set_paths(self) -> None:
         self.log_directory = Path(self.log_directory)
         self.input_directory = Path(self.input_directory)
+        self.input_file = Path(self.input_directory, self.input_file)
         self.storage_directory = Path(self.storage_directory)
-        self.configure_application()
 
     def configure_application(self) -> None:
         """Configure the application."""
