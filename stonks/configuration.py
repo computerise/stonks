@@ -92,8 +92,8 @@ class ApplicationSettings(TOMLConfiguration):
     def configure_application(self) -> None:
         """Configure the application."""
         configure_logging(level=self.log_level, log_directory=self.log_directory)
-        self.api_keys = APIKeys(self.api_key_names)
         CommandLineInterface.outro_duration_seconds = self.outro_duration_seconds
+        self.api_keys = APIKeys(self.api_key_names)
         if create_directory(Path(self.input_directory)):
             logging.info(f"{SUCCESS_CREATE_DIRECTORY_MESSAGE}`{self.input_directory}`.")
         if create_directory(Path(self.storage_directory)):
