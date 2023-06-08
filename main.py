@@ -3,7 +3,7 @@
 
 from sys import exit
 
-from stonks.configuration import ApplicationSettings
+from stonks.configuration import ApplicationSettings, APIKeys
 from stonks.manager import ApplicationManager
 from stonks.command_line_interface import CommandLineInterface
 

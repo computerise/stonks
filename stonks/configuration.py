@@ -48,6 +48,22 @@ def configure_logging(level: str, log_directory: Path) -> None:
         logging.info(f"{SUCCESS_CREATE_DIRECTORY_MESSAGE}`{log_directory}`.")
 
 
+class APIKeys:
+    def __init__(self, api_key_names: list[str]) -> None:
+        self.set_api_keys(api_key_names)
+
+    def set_api_keys(self, api_key_names: list[str]) -> None:
+        """Set API Keys from environment variables, named in settings.toml."""
+        api_keys = {}
+        for name in api_key_names:
+            try:
+                api_keys[name] = config(name)
+            except UndefinedValueError as exc:
+                raise_fatal_error(f"Environment variable `{name}` is not set. Declare it in a `.env` file as described in `README.md`", from_exception=exc)
+        self.__dict__ = api_keys
+        logging.info("Loaded API Keys.")
+
+
 class TOMLConfiguration:
     """Base class for all TOML configuration objects."""
 
@@ -60,9 +76,9 @@ class TOMLConfiguration:
 class ApplicationSettings(TOMLConfiguration):
     """All settings associated with the operation of the application."""
 
-    def __init__(self, path: str = "settings.toml") -> None:
+    def __init__(self, settings_path: str = "settings.toml") -> None:
         """Initialise class instance."""
-        self.__dict__ = self.load_config(path).get("application")
+        self.__dict__ = self.load_config(settings_path).get("application")
         self.__dict__.update(self.load_config("pyproject.toml").get("tool").get("poetry"))
         self.log_directory = Path(self.log_directory)
         self.input_directory = Path(self.input_directory)
@@ -72,28 +88,17 @@ class ApplicationSettings(TOMLConfiguration):
     def configure_application(self) -> None:
         """Configure the application."""
         configure_logging(level=self.log_level, log_directory=self.log_directory)
+        self.api_keys = APIKeys(self.api_key_names)
         CommandLineInterface.outro_duration_seconds = self.outro_duration_seconds
-        self.set_api_keys()
         if create_directory(Path(self.input_directory)):
             logging.info(f"{SUCCESS_CREATE_DIRECTORY_MESSAGE}`{self.input_directory}`.")
         if create_directory(Path(self.storage_directory)):
             logging.info(f"{SUCCESS_CREATE_DIRECTORY_MESSAGE}`{self.storage_directory}`.")
 
-    def set_api_keys(self) -> None:
-        """Set API Keys from environment variables, named in settings.toml."""
-        self.api_keys = {}
-        for api_key_name in self.api_key_names:
-            try:
-                self.api_keys[api_key_name] = config(api_key_name)
-            except UndefinedValueError as exc:
-                raise_fatal_error(
-                    f"Environment variable `{api_key_name}` is not set. Declare it in a `.env` file as described in `README.md`", from_exception=exc
-                )
-
 
 class MetricAssumptions(TOMLConfiguration):
     """All assumptions of metrics used to processing."""
 
-    def __init__(self, path: str = "assumptions.toml") -> None:
+    def __init__(self, assumptions_path: str = "assumptions.toml") -> None:
         """Initialise class instance."""
-        self.__dict__ = self.load_config(path)
+        self.__dict__ = self.load_config(assumptions_path)

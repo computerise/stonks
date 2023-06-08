@@ -28,9 +28,10 @@ class APIClient:
         request_type: Request = YahooFinanceRequest,
     ) -> Response:
         """Retrieve data from a stock ticker, using default queries if none are specified."""
+        # This should clearly not use RAPIDAPI_KEY exclusively. APIKeys should be passed to future factory methods.
         prepared_request = request_type(
             ticker_symbol=ticker,
             query_parameters=queries,
-            x_rapidapi_key=self.api_keys.get("RAPIDAPI_KEY"),
+            x_rapidapi_key=self.api_keys.RAPIDAPI_KEY,
         ).prepare()
         return self.session.send(prepared_request)

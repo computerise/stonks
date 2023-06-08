@@ -2,12 +2,12 @@
 
 from unittest import TestCase
 
-from stonks.configuration import ApplicationSettings
+from stonks.configuration import APIKeys
 
 
-class TestApplicationSettings(TestCase):
+class TestAPIKeys(TestCase):
     """Test Application Settings."""
 
-    @classmethod
-    def setUpClass(cls) -> None:
-        cls.application_settings = ApplicationSettings()
+    def test_set_api_keys(self):
+        with self.assertRaises(ValueError):
+            APIKeys("SAMPLE_UNSET_ENVIRONMENT_VARIABLE")
