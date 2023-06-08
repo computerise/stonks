@@ -43,7 +43,7 @@ If it actually works, slap a WebUI on it and sell (tiers?) of subscription servi
 
 Instructions on how to set up and install python3.
 
-#### Windows Python Installation
+#### Python Installation on Windows
 
 Download and install the python3.11 [here](https://www.python.org/downloads/). Then add the parent directory of `python.exe` to the [System Environment Variables `Path` field](https://learn.microsoft.com/en-us/previous-versions/office/developer/sharepoint-2010/ee537574(v=office.14)). Where `<username>` is the name of the Windows user account, the default path for `python3.exe` is:
 
@@ -51,7 +51,7 @@ Download and install the python3.11 [here](https://www.python.org/downloads/). T
 C:\Users\<username>\AppData\Local\Programs\Python\Python311\
 ```
 
-#### Debian-Based Linux Distribution Installation
+#### Python Installation on Debian-Based Linux Distributions
 
 `python3` comes pre-installed on most modern distributions.
 
@@ -66,7 +66,7 @@ sudo apt-get install python3.11
 
 Instructions for installing poetry for dependency management and packaging.
 
-#### Windows Poetry Installation
+#### Poetry Installation on Windows
 
 To install poetry on Windows open PowerShell and execute:
 
@@ -80,7 +80,7 @@ Then add the parent directory of `poetry.exe` to the [System Environment Variabl
 C:\Users\<username>\AppData\Roaming\pypoetry\venv\Scripts\
 ```
 
-#### Linux Installation
+#### Poetry Installation on Linux
 
 To install poetry on Linux execute:
 
@@ -92,17 +92,11 @@ curl -sSL https://install.python-poetry.org | python3 -
 
 ### Dependencies
 
-On Windows the application is installed by doubling clicking on `install.bat` or executing:
+When using the launcher the application and dependencies are automatically installed.
 
-```cmd
-./install.bat
-```
+To manually install the application from a Command Line Interface (CLI) on Windows or Linux, execute:
 
-If Windows raises the warning `Windows protected your PC`, select `More info` then `Run anyway`.
-
-To install from a Command Line Interface (CLI) on Windows or Linux, execute:
-
-```bash
+```shell
 poetry install
 ```
 
@@ -116,13 +110,19 @@ RAPIDAPI_KEY=<[rapid-api-key](https://docs.rapidapi.com/docs/keys)>
 
 ## Configuration
 
-The user input file is named `input.json`. All necessary assumptions used for calculations are present in `assumptions.toml`. Application specific settings are in `settings.toml`.
+The user input file must be a JSON file specified in `settings.toml` as `input_file`. By default `input_file` is `input.json`. All other application specific settings are specified in `settings.toml`. All necessary assumptions used for calculations are specified in `assumptions.toml`.
 
 ## Usage
 
-Launch the application by running `run.bat`.
+Launch the application on Windows by double-clicking on `LAUNCH_WINDOWS.bat`. If Windows raises the warning `Windows protected your PC`, select `More info` then `Run anyway`.
 
-To execute the application from a CLI, first activate a poetry virtual environment by executing:
+Launch the application on Linux by executing:
+
+```bash
+./LAUNCH_LINUX.sh
+```
+
+To manually execute the application from a CLI, first activate a poetry virtual environment by executing:
 
 ```shell
 poetry shell
@@ -140,7 +140,7 @@ The poetry shell session is exited by executing:
 deactivate
 ```
 
-Note that `stonks` can be executed without entering a poetry shell session by prefixing all commands with (where `<command>` is any command stated in `Usage` or `Test`):
+Note that `stonks` can be executed without entering a poetry shell session by prefixing all commands (where `<command>` is any command stated in `Usage` or `Test`) with:
 
 ```shell
 poetry run <command>
