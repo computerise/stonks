@@ -3,13 +3,14 @@
 import logging
 from requests import Session, Response
 
+from stonks.configuration import APIKeys
 from stonks.retrieval.request_builder import Request, YahooFinanceRequest
 
 
 class APIClient:
     """API client used for sending requests."""
 
-    def __init__(self, api_keys: dict[str, str]) -> None:
+    def __init__(self, api_keys: APIKeys) -> None:
         """Initialise class instance."""
         logging.info("Creating API Client...")
         self.api_keys = api_keys
