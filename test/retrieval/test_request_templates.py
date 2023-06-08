@@ -1,3 +1,5 @@
+"""Test request templates."""
+
 from unittest import TestCase
 
 from stonks.retrieval.request_templates import RapidAPIRequest, YahooFinanceRequest

@@ -12,7 +12,7 @@ class RequestFactory:
         """Instantiate the request factory with the API key."""
         self.api_key = api_key
 
-    def construct_request() -> Request:
+    def construct_request(self) -> Request:
         """Construct a request."""
         raise NotImplementedError
 
@@ -24,9 +24,9 @@ class RapidAPIRequestFactory(RequestFactory):
         """Instantiate the RapidAPI request factory with the RapidAPI key."""
         super().__init__(api_key)
 
-    def construct_request(self, content_type: str) -> RapidAPIRequest:
+    def construct_request(self) -> RapidAPIRequest:
         """Construct a prepared RapidAPIRequest."""
-        return RapidAPIRequest(content_type, self.api_key).prepare()
+        return RapidAPIRequest(self.api_key).prepare()
 
 
 class YahooFinanceRequestFactory(RapidAPIRequestFactory):
@@ -51,4 +51,4 @@ class YahooFinanceRequestFactory(RapidAPIRequestFactory):
         query_parameters: tuple[str] = None,
     ) -> YahooFinanceRequest:
         """Construct a prepared Yahoo Finance API Request."""
-        return YahooFinanceRequest(ticker_symbol, self.segments, self.base_url, query_parameters, self.api_key).prepare()
+        return YahooFinanceRequest(ticker_symbol, query_parameters, self.segments, self.base_url, self.api_key).prepare()

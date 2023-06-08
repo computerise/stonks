@@ -17,6 +17,7 @@ class RapidAPIRequest(Request):
         """Initialise RapidAPI request."""
         super().__init__(self, *args, **kwargs)
         self.method = "GET"
+        self.url = "https://rapidapi.com/"
         self.set_headers(x_rapidapi_key)
 
     def set_headers(self, x_rapidapi_key: str) -> None:
@@ -30,9 +31,9 @@ class YahooFinanceRequest(RapidAPIRequest):
     def __init__(
         self,
         ticker_symbol: str,
+        query_parameters: tuple[str] = None,
         segments: tuple[str] = ("mo/", "module/"),
         base_url: str = "https://yahoo-finance15.p.rapidapi.com/api/yahoo/",
-        query_parameters: tuple[str] = None,
         *args,
         **kwargs,
     ) -> None:
