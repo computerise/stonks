@@ -1,4 +1,4 @@
-"""Definitions of the requests."""
+"""Templates for all request objects."""
 
 from requests import Request
 
@@ -10,26 +10,19 @@ class RapidAPIRequest(Request):
 
     def __init__(
         self,
-        ticker_symbol: str,
-        content_type: str = "application/octet-stream",
-        x_rapidapi_key: str = None,
-        x_rapidapi_host: str = "yahoo-finance15.p.rapidapi.com",
+        x_rapidapi_key: str,
         *args,
         **kwargs,
     ) -> None:
         """Initialise RapidAPI request."""
         super().__init__(self, *args, **kwargs)
         self.method = "GET"
-        self.set_headers(content_type, x_rapidapi_key, x_rapidapi_host)
-        self.ticker_symbol = ticker_symbol
+        self.url = "https://rapidapi.com/"
+        self.set_headers(x_rapidapi_key)
 
-    def set_headers(self, content_type: str, x_rapidapi_key: str, x_rapidapi_host: str) -> None:
+    def set_headers(self, x_rapidapi_key: str) -> None:
         """Format request headers as a dictionary."""
-        self.headers = {
-            "content-type": content_type,
-            "X-RapidAPI-Key": x_rapidapi_key,
-            "X-RapidAPI-Host": x_rapidapi_host,
-        }
+        self.headers = {"X-RapidAPI-Key": x_rapidapi_key}
 
 
 class YahooFinanceRequest(RapidAPIRequest):
@@ -38,14 +31,14 @@ class YahooFinanceRequest(RapidAPIRequest):
     def __init__(
         self,
         ticker_symbol: str,
+        query_parameters: tuple[str] = None,
         segments: tuple[str] = ("mo/", "module/"),
         base_url: str = "https://yahoo-finance15.p.rapidapi.com/api/yahoo/",
-        query_parameters: tuple[str] = None,
         *args,
         **kwargs,
     ) -> None:
         """Initialise Yahoo Finance Request."""
-        super().__init__(self, ticker_symbol, *args, **kwargs)
+        super().__init__(*args, **kwargs)
         self.set_url(ticker_symbol, segments, base_url)
         self.set_params(query_parameters)
 
@@ -106,7 +99,5 @@ class YahooFinanceRequest(RapidAPIRequest):
         )
         for query in query_parameters:
             if query not in valid_query_parameters:
-                raise raise_fatal_error(
-                    f"Invalid query parameter '{query}' was specified. Queries are limited to: {','.join(valid_query_parameters)}"
-                )
+                raise raise_fatal_error(f"Invalid query parameter '{query}' was specified. Queries are limited to: {','.join(valid_query_parameters)}")
         return True

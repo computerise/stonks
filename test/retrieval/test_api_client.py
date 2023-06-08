@@ -4,7 +4,6 @@ import responses
 from unittest import TestCase
 from unittest.mock import patch
 
-from stonks.configuration import APIKeys
 from stonks.retrieval.api_client import APIClient
 
 

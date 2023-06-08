@@ -50,9 +50,9 @@ def configure_logging(level: str, log_directory: Path) -> None:
 
 class APIKeys:
     def __init__(self, api_key_names: list[str]) -> None:
-        self.set_api_keys(api_key_names)
+        self._set_api_keys(api_key_names)
 
-    def set_api_keys(self, api_key_names: list[str]) -> None:
+    def _set_api_keys(self, api_key_names: list[str]) -> None:
         """Set API Keys from environment variables, named in settings.toml."""
         api_keys = {}
         for name in api_key_names:
@@ -92,8 +92,8 @@ class ApplicationSettings(TOMLConfiguration):
     def configure_application(self) -> None:
         """Configure the application."""
         configure_logging(level=self.log_level, log_directory=self.log_directory)
-        self.api_keys = APIKeys(self.api_key_names)
         CommandLineInterface.outro_duration_seconds = self.outro_duration_seconds
+        self.api_keys = APIKeys(self.api_key_names)
         if create_directory(Path(self.input_directory)):
             logging.info(f"{SUCCESS_CREATE_DIRECTORY_MESSAGE}`{self.input_directory}`.")
         if create_directory(Path(self.storage_directory)):
