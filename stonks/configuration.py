@@ -50,9 +50,9 @@ def configure_logging(level: str, log_directory: Path) -> None:
 
 class APIKeys:
     def __init__(self, api_key_names: list[str]) -> None:
-        self.set_api_keys(api_key_names)
+        self._set_api_keys(api_key_names)
 
-    def set_api_keys(self, api_key_names: list[str]) -> None:
+    def _set_api_keys(self, api_key_names: list[str]) -> None:
         """Set API Keys from environment variables, named in settings.toml."""
         api_keys = {}
         for name in api_key_names:

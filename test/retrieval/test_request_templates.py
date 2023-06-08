@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from stonks.retrieval.request_builder import RapidAPIRequest, YahooFinanceRequest
+from stonks.retrieval.request_templates import RapidAPIRequest, YahooFinanceRequest
 
 
 class TestRapidAPIRequest(TestCase):
@@ -9,15 +9,8 @@ class TestRapidAPIRequest(TestCase):
     @classmethod
     def setUpClass(cls) -> None:
         """Set up RapidAPIRequest test class."""
-        cls.content_type = "mock_content_type"
         cls.x_rapidapi_key = "mock_x_rapidapi_key"
-        cls.x_rapidapi_host = "mock_x_rapidapi_host"
-        cls.rapidapi_request = RapidAPIRequest(
-            ticker_symbol="MOCK",
-            content_type=cls.content_type,
-            x_rapidapi_key=cls.x_rapidapi_key,
-            x_rapidapi_host=cls.x_rapidapi_host,
-        )
+        cls.rapidapi_request = RapidAPIRequest(x_rapidapi_key=cls.x_rapidapi_key)
 
     def test_instantiation(self) -> None:
         """Test class instantiation."""
@@ -28,9 +21,7 @@ class TestRapidAPIRequest(TestCase):
         self.assertEqual(
             self.rapidapi_request.headers,
             {
-                "content-type": self.content_type,
                 "X-RapidAPI-Key": self.x_rapidapi_key,
-                "X-RapidAPI-Host": self.x_rapidapi_host,
             },
         )
 
