@@ -34,7 +34,7 @@ def weighted_average_cost_of_capital(
     return wacc
 
 
-def capital_asset_pricing_model(risk_free_rate: float, beta_of_investment: float, expected_return_of_market: float) -> float:
+def capital_asset_pricing_model(risk_free_rate_of_return: float, market_rate_of_return: float, beta_of_investment: float) -> float:
     """
     Calculate the expected return of an investment using the Capital Asset Pricing Model (CAPM).
 
@@ -43,6 +43,11 @@ def capital_asset_pricing_model(risk_free_rate: float, beta_of_investment: float
      - Arbitrage Pricing Theory (https://www.investopedia.com/terms/a/apt.asp)
      - Fama and French Three Factor Model (https://www.investopedia.com/terms/f/famaandfrenchthreefactormodel.asp)
     """
-    market_risk_premium = expected_return_of_market - risk_free_rate
-    expected_return_of_investment = risk_free_rate + beta_of_investment * market_risk_premium
+    market_risk_premium = market_rate_of_return - risk_free_rate_of_return
+    expected_return_of_investment = risk_free_rate_of_return + beta_of_investment * market_risk_premium
     return expected_return_of_investment
+
+
+def cost_of_debt(risk_free_rate: float, credit_spread: float, corporate_tax_rate: float):
+    """Calculate the cost of debt."""
+    return (risk_free_rate + credit_spread) * (1 - corporate_tax_rate)
