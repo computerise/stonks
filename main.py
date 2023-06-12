@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 """Application entry point."""
 
-from sys import exit
-
 from stonks.configuration import ApplicationSettings, MetricAssumptions
 from stonks.manager import ApplicationManager
 from stonks.command_line_interface import CommandLineInterface
@@ -16,7 +14,6 @@ def main():
     manager = ApplicationManager(app_settings, metric_assumptions)
     manager.start()
     CommandLineInterface.outro("Program executed successfully.")
-    exit(0)
 
 
 if __name__ == "__main__":
