@@ -1,0 +1,6314 @@
+{
+    "AZN": {
+        "name": "AstraZeneca",
+        "index": "FTSE 100",
+        "price": "11,498.00",
+        "market_cap": "178,199.8"
+    },
+    "SHEL": {
+        "name": "Shell",
+        "index": "FTSE 100",
+        "price": "2,282.00",
+        "market_cap": "156,919.7"
+    },
+    "HSBA": {
+        "name": "HSBC Holdings",
+        "index": "FTSE 100",
+        "price": "600.10",
+        "market_cap": "119,847.7"
+    },
+    "BHP": {
+        "name": "BHP Group Ltd",
+        "index": NaN,
+        "price": "2,249.00",
+        "market_cap": "113,828.0"
+    },
+    "ULVR": {
+        "name": "Unilever",
+        "index": "FTSE 100",
+        "price": "4,045.00",
+        "market_cap": "102,362.6"
+    },
+    "BP.": {
+        "name": "BP",
+        "index": "FTSE 100",
+        "price": "466.60",
+        "market_cap": "83,231.4"
+    },
+    "DGE": {
+        "name": "Diageo",
+        "index": "FTSE 100",
+        "price": "3,402.50",
+        "market_cap": "76,776.0"
+    },
+    "RIO": {
+        "name": "Rio Tinto",
+        "index": "FTSE 100",
+        "price": "4,839.50",
+        "market_cap": "60,534.0"
+    },
+    "BATS": {
+        "name": "British American Tobacco",
+        "index": "FTSE 100",
+        "price": "2,597.50",
+        "market_cap": "58,077.7"
+    },
+    "GSK": {
+        "name": "GSK",
+        "index": "FTSE 100",
+        "price": "1,371.00",
+        "market_cap": "56,141.5"
+    },
+    "GLEN": {
+        "name": "Glencore",
+        "index": "FTSE 100",
+        "price": "416.80",
+        "market_cap": "52,532.9"
+    },
+    "REL": {
+        "name": "RELX",
+        "index": "FTSE 100",
+        "price": "2,485.00",
+        "market_cap": "47,356.8"
+    },
+    "RKT": {
+        "name": "Reckitt Benckiser Group",
+        "index": "FTSE 100",
+        "price": "6,290.00",
+        "market_cap": "45,036.3"
+    },
+    "BNC": {
+        "name": "Banco Santander SA",
+        "index": NaN,
+        "price": "273.00",
+        "market_cap": "43,844.9"
+    },
+    "LSEG": {
+        "name": "London Stock Exchange Group",
+        "index": "FTSE 100",
+        "price": "8,480.00",
+        "market_cap": "42,613.9"
+    },
+    "NG.": {
+        "name": "National Grid",
+        "index": "FTSE 100",
+        "price": "1,100.00",
+        "market_cap": "40,440.5"
+    },
+    "CPG": {
+        "name": "Compass Group",
+        "index": "FTSE 100",
+        "price": "2,206.00",
+        "market_cap": "38,509.2"
+    },
+    "WDS": {
+        "name": "Woodside Energy Group Ltd",
+        "index": NaN,
+        "price": "1,809.00",
+        "market_cap": "34,348.4"
+    },
+    "PRU": {
+        "name": "Prudential",
+        "index": "FTSE 100",
+        "price": "1,125.00",
+        "market_cap": "30,933.8"
+    },
+    "AAL": {
+        "name": "Anglo American",
+        "index": "FTSE 100",
+        "price": "2,265.00",
+        "market_cap": "30,296.1"
+    },
+    "LLOY": {
+        "name": "Lloyds Banking Group",
+        "index": "FTSE 100",
+        "price": "45.22",
+        "market_cap": "30,231.1"
+    },
+    "HLN": {
+        "name": "Haleon",
+        "index": "FTSE 100",
+        "price": "321.80",
+        "market_cap": "29,716.9"
+    },
+    "CRH": {
+        "name": "CRH",
+        "index": "FTSE 100",
+        "price": "3,873.00",
+        "market_cap": "28,794.1"
+    },
+    "BA.": {
+        "name": "BAE Systems",
+        "index": "FTSE 100",
+        "price": "942.40",
+        "market_cap": "28,777.6"
+    },
+    "FLTR": {
+        "name": "Flutter Entertainment",
+        "index": "FTSE 100",
+        "price": "15,770.00",
+        "market_cap": "27,778.9"
+    },
+    "EXPN": {
+        "name": "Experian",
+        "index": "FTSE 100",
+        "price": "2,824.00",
+        "market_cap": "25,956.9"
+    },
+    "NWG": {
+        "name": "NatWest Group",
+        "index": "FTSE 100",
+        "price": "265.30",
+        "market_cap": "25,550.6"
+    },
+    "BARC": {
+        "name": "Barclays",
+        "index": "FTSE 100",
+        "price": "155.80",
+        "market_cap": "24,595.2"
+    },
+    "FERG": {
+        "name": "Ferguson",
+        "index": NaN,
+        "price": "11,950.00",
+        "market_cap": "24,566.1"
+    },
+    "AHT": {
+        "name": "Ashtead Group",
+        "index": "FTSE 100",
+        "price": "4,938.00",
+        "market_cap": "21,660.4"
+    },
+    "OTV2": {
+        "name": "Octopus Titan VCT",
+        "index": NaN,
+        "price": "1,553.47",
+        "market_cap": "21,250.6"
+    },
+    "VOD": {
+        "name": "Vodafone Group",
+        "index": "FTSE 100",
+        "price": "77.75",
+        "market_cap": "20,986.7"
+    },
+    "SSE": {
+        "name": "SSE",
+        "index": "FTSE 100",
+        "price": "1,858.50",
+        "market_cap": "20,263.1"
+    },
+    "TSCO": {
+        "name": "Tesco",
+        "index": "FTSE 100",
+        "price": "262.20",
+        "market_cap": "19,188.7"
+    },
+    "III": {
+        "name": "3i Group",
+        "index": "FTSE 100",
+        "price": "1,959.00",
+        "market_cap": "19,067.2"
+    },
+    "STAN": {
+        "name": "Standard Chartered",
+        "index": "FTSE 100",
+        "price": "643.20",
+        "market_cap": "18,276.2"
+    },
+    "WPM": {
+        "name": "Wheaton Precious Metals Corp",
+        "index": NaN,
+        "price": "3,650.00",
+        "market_cap": "16,509.6"
+    },
+    "RTO": {
+        "name": "Rentokil Initial",
+        "index": "FTSE 100",
+        "price": "633.20",
+        "market_cap": "15,956.9"
+    },
+    "IMB": {
+        "name": "Imperial Brands",
+        "index": "FTSE 100",
+        "price": "1,698.50",
+        "market_cap": "15,728.7"
+    },
+    "BT.A": {
+        "name": "BT Group",
+        "index": "FTSE 100",
+        "price": "145.90",
+        "market_cap": "14,490.2"
+    },
+    "ABF": {
+        "name": "Associated British Foods",
+        "index": "FTSE 100",
+        "price": "1,830.50",
+        "market_cap": "14,305.0"
+    },
+    "LGEN": {
+        "name": "Legal & General Group",
+        "index": "FTSE 100",
+        "price": "230.30",
+        "market_cap": "13,756.5"
+    },
+    "ANTO": {
+        "name": "Antofagasta",
+        "index": "FTSE 100",
+        "price": "1,363.00",
+        "market_cap": "13,437.2"
+    },
+    "RR.": {
+        "name": "Rolls-Royce Group",
+        "index": "FTSE 100",
+        "price": "144.40",
+        "market_cap": "12,082.8"
+    },
+    "AV.": {
+        "name": "Aviva",
+        "index": "FTSE 100",
+        "price": "405.10",
+        "market_cap": "11,343.1"
+    },
+    "BNZL": {
+        "name": "Bunzl",
+        "index": "FTSE 100",
+        "price": "3,158.00",
+        "market_cap": "10,664.1"
+    },
+    "SN.": {
+        "name": "Smith & Nephew",
+        "index": "FTSE 100",
+        "price": "1,215.00",
+        "market_cap": "10,611.3"
+    },
+    "INF": {
+        "name": "Informa",
+        "index": "FTSE 100",
+        "price": "703.80",
+        "market_cap": "9,869.4"
+    },
+    "SGRO": {
+        "name": "Segro",
+        "index": "FTSE 100",
+        "price": "798.00",
+        "market_cap": "9,647.8"
+    },
+    "S32": {
+        "name": "South32 Ltd",
+        "index": NaN,
+        "price": "209.50",
+        "market_cap": "9,575.2"
+    },
+    "SMT": {
+        "name": "Scottish Mortgage Investment Trust",
+        "index": "FTSE 100",
+        "price": "673.20",
+        "market_cap": "9,488.6"
+    },
+    "WPP": {
+        "name": "WPP Group",
+        "index": "FTSE 100",
+        "price": "877.60",
+        "market_cap": "9,398.5"
+    },
+    "IHG": {
+        "name": "InterContinental Hotels Group",
+        "index": "FTSE 100",
+        "price": "5,314.00",
+        "market_cap": "9,307.7"
+    },
+    "HLMA": {
+        "name": "Halma",
+        "index": "FTSE 100",
+        "price": "2,403.00",
+        "market_cap": "9,122.9"
+    },
+    "SGE": {
+        "name": "Sage Group",
+        "index": "FTSE 100",
+        "price": "856.80",
+        "market_cap": "8,775.5"
+    },
+    "CCH": {
+        "name": "Coca-Cola HBC AG",
+        "index": "FTSE 100",
+        "price": "2,384.00",
+        "market_cap": "8,746.1"
+    },
+    "AIBG": {
+        "name": "AIB Group",
+        "index": NaN,
+        "price": "320.00",
+        "market_cap": "8,555.0"
+    },
+    "CRDA": {
+        "name": "Croda International",
+        "index": "FTSE 100",
+        "price": "6,108.00",
+        "market_cap": "8,528.9"
+    },
+    "BRBY": {
+        "name": "Burberry Group",
+        "index": "FTSE 100",
+        "price": "2,208.00",
+        "market_cap": "8,351.0"
+    },
+    "NXT": {
+        "name": "Next",
+        "index": "FTSE 100",
+        "price": "6,380.00",
+        "market_cap": "8,217.2"
+    },
+    "SPX": {
+        "name": "Spirax-Sarco Engineering",
+        "index": "FTSE 100",
+        "price": "11,070.00",
+        "market_cap": "8,165.9"
+    },
+    "ENT": {
+        "name": "Entain",
+        "index": "FTSE 100",
+        "price": "1,374.50",
+        "market_cap": "8,093.7"
+    },
+    "JD.": {
+        "name": "JD Sports Fashion",
+        "index": "FTSE 100",
+        "price": "153.45",
+        "market_cap": "7,953.5"
+    },
+    "IAG": {
+        "name": "International Consolidated Airlines Group SA",
+        "index": "FTSE 100",
+        "price": "157.00",
+        "market_cap": "7,779.4"
+    },
+    "SKG": {
+        "name": "Smurfit Kappa Group",
+        "index": "FTSE 100",
+        "price": "2,920.00",
+        "market_cap": "7,596.4"
+    },
+    "SDR": {
+        "name": "Schroders",
+        "index": "FTSE 100",
+        "price": "460.10",
+        "market_cap": "7,417.3"
+    },
+    "ADM": {
+        "name": "Admiral Group",
+        "index": "FTSE 100",
+        "price": "2,336.00",
+        "market_cap": "7,083.6"
+    },
+    "SVT": {
+        "name": "Severn Trent",
+        "index": "FTSE 100",
+        "price": "2,757.00",
+        "market_cap": "6,935.4"
+    },
+    "UU.": {
+        "name": "United Utilities Group",
+        "index": "FTSE 100",
+        "price": "1,010.50",
+        "market_cap": "6,890.5"
+    },
+    "CNA": {
+        "name": "Centrica",
+        "index": "FTSE 100",
+        "price": "119.90",
+        "market_cap": "6,813.4"
+    },
+    "ITRK": {
+        "name": "Intertek Group",
+        "index": "FTSE 100",
+        "price": "4,195.00",
+        "market_cap": "6,770.4"
+    },
+    "WTB": {
+        "name": "Whitbread",
+        "index": "FTSE 100",
+        "price": "3,307.00",
+        "market_cap": "6,682.8"
+    },
+    "MRO": {
+        "name": "Melrose Industries",
+        "index": "FTSE 100",
+        "price": "477.80",
+        "market_cap": "6,457.3"
+    },
+    "SBRY": {
+        "name": "Sainsbury (J)",
+        "index": "FTSE 100",
+        "price": "271.50",
+        "market_cap": "6,367.8"
+    },
+    "MNDI": {
+        "name": "Mondi",
+        "index": "FTSE 100",
+        "price": "1,276.50",
+        "market_cap": "6,198.1"
+    },
+    "STJ": {
+        "name": "St James's Place",
+        "index": "FTSE 100",
+        "price": "1,128.00",
+        "market_cap": "6,180.0"
+    },
+    "PSON": {
+        "name": "Pearson",
+        "index": "FTSE 100",
+        "price": "807.00",
+        "market_cap": "5,779.1"
+    },
+    "SMIN": {
+        "name": "Smiths Group",
+        "index": "FTSE 100",
+        "price": "1,629.00",
+        "market_cap": "5,745.3"
+    },
+    "AUTO": {
+        "name": "Auto Trader Group",
+        "index": "FTSE 100",
+        "price": "621.40",
+        "market_cap": "5,708.8"
+    },
+    "PHNX": {
+        "name": "Phoenix Group Holdings",
+        "index": "FTSE 100",
+        "price": "562.00",
+        "market_cap": "5,622.1"
+    },
+    "WISE": {
+        "name": "Wise",
+        "index": NaN,
+        "price": "536.00",
+        "market_cap": "5,492.3"
+    },
+    "PSH": {
+        "name": "Pershing Square Holdings Ltd",
+        "index": "FTSE 100",
+        "price": "2,760.00",
+        "market_cap": "5,247.5"
+    },
+    "EDV": {
+        "name": "Endeavour Mining",
+        "index": "FTSE 100",
+        "price": "2,034.00",
+        "market_cap": "5,033.9"
+    },
+    "FRES": {
+        "name": "Fresnillo",
+        "index": "FTSE 100",
+        "price": "648.60",
+        "market_cap": "4,779.5"
+    },
+    "BME": {
+        "name": "B&M European Value Retail SA",
+        "index": "FTSE 100",
+        "price": "471.90",
+        "market_cap": "4,727.7"
+    },
+    "MNG": {
+        "name": "M&G",
+        "index": "FTSE 100",
+        "price": "198.30",
+        "market_cap": "4,680.1"
+    },
+    "BDEV": {
+        "name": "Barratt Developments",
+        "index": "FTSE 100",
+        "price": "473.00",
+        "market_cap": "4,668.7"
+    },
+    "FCIT": {
+        "name": "F&C Investment Trust",
+        "index": "FTSE 100",
+        "price": "894.00",
+        "market_cap": "4,634.6"
+    },
+    "DCC": {
+        "name": "DCC",
+        "index": "FTSE 100",
+        "price": "4,666.00",
+        "market_cap": "4,607.5"
+    },
+    "KGF": {
+        "name": "Kingfisher",
+        "index": "FTSE 100",
+        "price": "234.00",
+        "market_cap": "4,537.3"
+    },
+    "LAND": {
+        "name": "Land Securities Group",
+        "index": "FTSE 100",
+        "price": "605.40",
+        "market_cap": "4,489.3"
+    },
+    "AAF": {
+        "name": "Airtel Africa",
+        "index": "FTSE 100",
+        "price": "119.40",
+        "market_cap": "4,487.2"
+    },
+    "WEIR": {
+        "name": "Weir Group",
+        "index": "FTSE 100",
+        "price": "1,726.00",
+        "market_cap": "4,480.9"
+    },
+    "RMV": {
+        "name": "Rightmove",
+        "index": "FTSE 100",
+        "price": "524.80",
+        "market_cap": "4,321.7"
+    },
+    "BKG": {
+        "name": "Berkeley Group Holdings",
+        "index": "FTSE 100",
+        "price": "3,983.00",
+        "market_cap": "4,298.4"
+    },
+    "SMDS": {
+        "name": "DS Smith",
+        "index": "FTSE 100",
+        "price": "309.00",
+        "market_cap": "4,256.3"
+    },
+    "CTEC": {
+        "name": "ConvaTec Group",
+        "index": "FTSE 100",
+        "price": "206.00",
+        "market_cap": "4,210.4"
+    },
+    "IMI": {
+        "name": "IMI",
+        "index": "FTSE 250",
+        "price": "1,614.00",
+        "market_cap": "4,209.4"
+    },
+    "BEZ Beazley": {
+        "name": "FTSE 100",
+        "index": "612.50",
+        "price": "4,111.1",
+        "market_cap": NaN
+    },
+    "ABDN": {
+        "name": "abrdn",
+        "index": "FTSE 100",
+        "price": "204.70",
+        "market_cap": "4,097.9"
+    },
+    "HSX": {
+        "name": "Hiscox Ltd",
+        "index": "FTSE 100",
+        "price": "1,182.00",
+        "market_cap": "4,096.2"
+    },
+    "TW.": {
+        "name": "Taylor Wimpey",
+        "index": "FTSE 100",
+        "price": "115.60",
+        "market_cap": "4,083.0"
+    },
+    "ICP": {
+        "name": "Intermediate Capital Group",
+        "index": "FTSE 250",
+        "price": "1,401.00",
+        "market_cap": "4,071.3"
+    },
+    "DPLM": {
+        "name": "Diploma",
+        "index": "FTSE 250",
+        "price": "3,008.00",
+        "market_cap": "4,031.6"
+    },
+    "HIK": {
+        "name": "Hikma Pharmaceuticals",
+        "index": "FTSE 250",
+        "price": "1,798.00",
+        "market_cap": "3,960.3"
+    },
+    "PSN": {
+        "name": "Persimmon",
+        "index": "FTSE 100",
+        "price": "1,215.50",
+        "market_cap": "3,881.4"
+    },
+    "SXS": {
+        "name": "Spectris",
+        "index": "FTSE 250",
+        "price": "3,698.00",
+        "market_cap": "3,868.3"
+    },
+    "HL.": {
+        "name": "Hargreaves Lansdown",
+        "index": "FTSE 100",
+        "price": "814.60",
+        "market_cap": "3,863.8"
+    },
+    "DPH": {
+        "name": "Dechra Pharmaceuticals",
+        "index": "FTSE 250",
+        "price": "3,352.00",
+        "market_cap": "3,816.2"
+    },
+    "RS1": {
+        "name": "RS Group",
+        "index": "FTSE 100",
+        "price": "799.80",
+        "market_cap": "3,781.1"
+    },
+    "HWDN": {
+        "name": "Howden Joinery Group",
+        "index": "FTSE 250",
+        "price": "667.40",
+        "market_cap": "3,699.0"
+    },
+    "MDC": {
+        "name": "Mediclinic International",
+        "index": NaN,
+        "price": "501.00",
+        "market_cap": "3,693.6"
+    },
+    "EZJ": {
+        "name": "easyJet",
+        "index": "FTSE 250",
+        "price": "477.50",
+        "market_cap": "3,619.5"
+    },
+    "UTG": {
+        "name": "UNITE Group",
+        "index": "FTSE 100",
+        "price": "893.50",
+        "market_cap": "3,576.6"
+    },
+    "MKS": {
+        "name": "Marks & Spencer Group",
+        "index": "FTSE 250",
+        "price": "181.10",
+        "market_cap": "3,558.4"
+    },
+    "UKW": {
+        "name": "Greencoat UK Wind",
+        "index": "FTSE 250",
+        "price": "148.10",
+        "market_cap": "3,433.3"
+    },
+    "FRAS": {
+        "name": "Frasers Group",
+        "index": "FTSE 100",
+        "price": "690.00",
+        "market_cap": "3,256.2"
+    },
+    "OCDO": {
+        "name": "Ocado Group",
+        "index": "FTSE 100",
+        "price": "391.90",
+        "market_cap": "3,238.7"
+    },
+    "JMAT": {
+        "name": "Johnson Matthey",
+        "index": "FTSE 100",
+        "price": "1,741.50",
+        "market_cap": "3,194.8"
+    },
+    "INCH": {
+        "name": "Inchcape",
+        "index": "FTSE 250",
+        "price": "772.00",
+        "market_cap": "3,188.4"
+    },
+    "BLND": {
+        "name": "British Land Co",
+        "index": "FTSE 100",
+        "price": "343.40",
+        "market_cap": "3,183.5"
+    },
+    "TATE": {
+        "name": "Tate & Lyle",
+        "index": "FTSE 250",
+        "price": "781.50",
+        "market_cap": "3,138.6"
+    },
+    "GAW": {
+        "name": "Games Workshop Group",
+        "index": "FTSE 250",
+        "price": "9,410.00",
+        "market_cap": "3,097.1"
+    },
+    "TRIG": {
+        "name": "The Renewables Infrastructure Group Ltd",
+        "index": "FTSE 250",
+        "price": "119.40",
+        "market_cap": "2,964.5"
+    },
+    "WIZZ": {
+        "name": "Wizz Air Holding",
+        "index": "FTSE 250",
+        "price": "2,852.00",
+        "market_cap": "2,945.4"
+    },
+    "HICL": {
+        "name": "HICL Infrastructure",
+        "index": "FTSE 250",
+        "price": "144.20",
+        "market_cap": "2,929.4"
+    },
+    "ATST": {
+        "name": "Alliance Trust",
+        "index": "FTSE 250",
+        "price": "1,002.00",
+        "market_cap": "2,918.3"
+    },
+    "3IN": {
+        "name": "3i Infrastructure Ltd",
+        "index": "FTSE 250",
+        "price": "314.00",
+        "market_cap": "2,896.2"
+    },
+    "RCP": {
+        "name": "RIT Capital Partners",
+        "index": "FTSE 250",
+        "price": "1,852.00",
+        "market_cap": "2,863.8"
+    },
+    "ITV": {
+        "name": "ITV",
+        "index": "FTSE 250",
+        "price": "71.08",
+        "market_cap": "2,861.3"
+    },
+    "JET": {
+        "name": "Just Eat Takeaway.Com NV",
+        "index": NaN,
+        "price": "1,292.00",
+        "market_cap": "2,842.0"
+    },
+    "RSW": {
+        "name": "Renishaw",
+        "index": "FTSE 250",
+        "price": "3,904.00",
+        "market_cap": "2,841.7"
+    },
+    "PCT": {
+        "name": "Polar Capital Technology Trust",
+        "index": "FTSE 250",
+        "price": "2,225.00",
+        "market_cap": "2,825.0"
+    },
+    "IGG": {
+        "name": "IG Group Holdings",
+        "index": "FTSE 250",
+        "price": "684.00",
+        "market_cap": "2,820.3"
+    },
+    "BWY": {
+        "name": "Bellway",
+        "index": "FTSE 250",
+        "price": "2,276.00",
+        "market_cap": "2,810.6"
+    },
+    "ROR": {
+        "name": "Rotork",
+        "index": "FTSE 250",
+        "price": "319.20",
+        "market_cap": "2,747.8"
+    },
+    "EMG": {
+        "name": "Man Group",
+        "index": "FTSE 250",
+        "price": "223.20",
+        "market_cap": "2,727.5"
+    },
+    "GRG": {
+        "name": "Greggs",
+        "index": "FTSE 250",
+        "price": "2,668.00",
+        "market_cap": "2,724.6"
+    },
+    "SCT": {
+        "name": "Softcat",
+        "index": "FTSE 250",
+        "price": "1,351.00",
+        "market_cap": "2,695.6"
+    },
+    "CCC": {
+        "name": "Computacenter",
+        "index": "FTSE 250",
+        "price": "2,342.00",
+        "market_cap": "2,673.2"
+    },
+    "INPP": {
+        "name": "International Public Partnership Ltd",
+        "index": "FTSE 250",
+        "price": "139.60",
+        "market_cap": "2,668.1"
+    },
+    "INVP": {
+        "name": "Investec",
+        "index": "FTSE 250",
+        "price": "406.10",
+        "market_cap": "2,654.3"
+    },
+    "TUI": {
+        "name": "TUI AG",
+        "index": "FTSE 250",
+        "price": "519.00",
+        "market_cap": "2,633.5"
+    },
+    "BBOX": {
+        "name": "Tritax Big Box REIT",
+        "index": "FTSE 250",
+        "price": "139.00",
+        "market_cap": "2,597.7"
+    },
+    "JET2": {
+        "name": "Jet2",
+        "index": "FTSE AIM",
+        "price": "1,202.00",
+        "market_cap": "2,580.5"
+    },
+    "VTY": {
+        "name": "Vistry Group",
+        "index": "FTSE 250",
+        "price": "743.50",
+        "market_cap": "2,570.4"
+    },
+    "DLN": {
+        "name": "Derwent London",
+        "index": "FTSE 250",
+        "price": "2,154.00",
+        "market_cap": "2,418.7"
+    },
+    "SSON": {
+        "name": "Smithson Investment Trust",
+        "index": "FTSE 250",
+        "price": "1,416.00",
+        "market_cap": "2,397.4"
+    },
+    "DRX": {
+        "name": "Drax Group",
+        "index": "FTSE 250",
+        "price": "589.80",
+        "market_cap": "2,365.6"
+    },
+    "BUR": {
+        "name": "Burford Capital Ltd",
+        "index": "FTSE AIM",
+        "price": "1,072.00",
+        "market_cap": "2,364.7"
+    },
+    "SHC": {
+        "name": "Shaftesbury Capital",
+        "index": "FTSE 250",
+        "price": "118.90",
+        "market_cap": "2,322.3"
+    },
+    "KOS": {
+        "name": "Kosmos Energy Ltd",
+        "index": NaN,
+        "price": "505.00",
+        "market_cap": "2,320.9"
+    },
+    "MNKS": {
+        "name": "Monks Investment Trust",
+        "index": "FTSE 250",
+        "price": "985.00",
+        "market_cap": "2,298.8"
+    },
+    "BVIC": {
+        "name": "Britvic",
+        "index": "FTSE 250",
+        "price": "885.00",
+        "market_cap": "2,285.8"
+    },
+    "DNLM": {
+        "name": "Dunelm Group",
+        "index": "FTSE 250",
+        "price": "1,112.00",
+        "market_cap": "2,242.2"
+    },
+    "DLG": {
+        "name": "Direct Line Insurance Group",
+        "index": "FTSE 250",
+        "price": "168.95",
+        "market_cap": "2,215.6"
+    },
+    "ONT": {
+        "name": "Oxford Nanopore Technologies",
+        "index": NaN,
+        "price": "261.20",
+        "market_cap": "2,157.8"
+    },
+    "OSB": {
+        "name": "OSB Group",
+        "index": "FTSE 250",
+        "price": "498.80",
+        "market_cap": "2,145.7"
+    },
+    "BBY": {
+        "name": "Balfour Beatty",
+        "index": "FTSE 250",
+        "price": "369.80",
+        "market_cap": "2,119.6"
+    },
+    "SSPG": {
+        "name": "SSP Group",
+        "index": "FTSE 250",
+        "price": "264.40",
+        "market_cap": "2,105.3"
+    },
+    "BYG": {
+        "name": "Big Yellow Group",
+        "index": "FTSE 250",
+        "price": "1,132.00",
+        "market_cap": "2,085.9"
+    },
+    "QQ.": {
+        "name": "QinetiQ Group",
+        "index": "FTSE 250",
+        "price": "360.00",
+        "market_cap": "2,083.5"
+    },
+    "VMUK": {
+        "name": "Virgin Money UK",
+        "index": "FTSE 250",
+        "price": "150.50",
+        "market_cap": "2,054.4"
+    },
+    "PNN": {
+        "name": "Pennon Group",
+        "index": "FTSE 250",
+        "price": "779.50",
+        "market_cap": "2,036.9"
+    },
+    "SAFE": {
+        "name": "Safestore Holdings",
+        "index": "FTSE 250",
+        "price": "927.50",
+        "market_cap": "2,017.9"
+    },
+    "WWH": {
+        "name": "Worldwide Healthcare Trust",
+        "index": "FTSE 250",
+        "price": "3,190.00",
+        "market_cap": "2,007.0"
+    },
+    "SMWH": {
+        "name": "WH Smith",
+        "index": "FTSE 250",
+        "price": "1,528.00",
+        "market_cap": "2,000.3"
+    },
+    "INDV": {
+        "name": "Indivior",
+        "index": "FTSE 250",
+        "price": "1,461.00",
+        "market_cap": "1,991.6"
+    },
+    "NETW": {
+        "name": "Network International Holdings",
+        "index": "FTSE 250",
+        "price": "366.40",
+        "market_cap": "1,975.6"
+    },
+    "CTY": {
+        "name": "City of London Investment Trust",
+        "index": "FTSE 250",
+        "price": "403.50",
+        "market_cap": "1,969.2"
+    },
+    "ENOG": {
+        "name": "Energean",
+        "index": "FTSE 250",
+        "price": "1,098.00",
+        "market_cap": "1,954.9"
+    },
+    "TPK": {
+        "name": "Travis Perkins",
+        "index": "FTSE 250",
+        "price": "902.00",
+        "market_cap": "1,916.8"
+    },
+    "IDS": {
+        "name": "International Distributions Services",
+        "index": "FTSE 250",
+        "price": "199.05",
+        "market_cap": "1,903.3"
+    },
+    "HBR": {
+        "name": "Harbour Energy",
+        "index": "FTSE 250",
+        "price": "226.70",
+        "market_cap": "1,891.5"
+    },
+    "DARK": {
+        "name": "Darktrace",
+        "index": "FTSE 250",
+        "price": "265.60",
+        "market_cap": "1,891.2"
+    },
+    "DWL": {
+        "name": "Dowlais Group",
+        "index": "FTSE 250",
+        "price": "134.90",
+        "market_cap": "1,879.5"
+    },
+    "ROO": {
+        "name": "Deliveroo Holdings",
+        "index": NaN,
+        "price": "106.40",
+        "market_cap": "1,867.8"
+    },
+    "CLDN": {
+        "name": "Caledonia Investments",
+        "index": "FTSE 250",
+        "price": "3,400.00",
+        "market_cap": "1,858.6"
+    },
+    "FGT": {
+        "name": "Finsbury Growth & Income Trust",
+        "index": "FTSE 250",
+        "price": "886.00",
+        "market_cap": "1,850.1"
+    },
+    "PNL": {
+        "name": "Personal Assets Trust",
+        "index": "FTSE 250",
+        "price": "471.50",
+        "market_cap": "1,848.0"
+    },
+    "PTEC": {
+        "name": "Playtech",
+        "index": "FTSE 250",
+        "price": "602.50",
+        "market_cap": "1,845.8"
+    },
+    "GRI": {
+        "name": "Grainger",
+        "index": "FTSE 250",
+        "price": "247.20",
+        "market_cap": "1,833.1"
+    },
+    "HGT": {
+        "name": "HgCapital Trust",
+        "index": "FTSE 250",
+        "price": "400.00",
+        "market_cap": "1,830.9"
+    },
+    "PETS": {
+        "name": "Pets at Home Group",
+        "index": "FTSE 250",
+        "price": "376.40",
+        "market_cap": "1,818.8"
+    },
+    "AML": {
+        "name": "Aston Martin Lagonda Global Holdings",
+        "index": "FTSE 250",
+        "price": "259.20",
+        "market_cap": "1,811.2"
+    },
+    "GFTU": {
+        "name": "Grafton Group",
+        "index": "FTSE 250",
+        "price": "825.60",
+        "market_cap": "1,806.6"
+    },
+    "BPT": {
+        "name": "Bridgepoint Group",
+        "index": "FTSE 250",
+        "price": "218.40",
+        "market_cap": "1,789.5"
+    },
+    "JGGI": {
+        "name": "JPMorgan Global Growth & Income",
+        "index": "FTSE 250",
+        "price": "460.50",
+        "market_cap": "1,765.5"
+    },
+    "HAS": {
+        "name": "Hays",
+        "index": "FTSE 250",
+        "price": "109.90",
+        "market_cap": "1,754.0"
+    },
+    "CWK": {
+        "name": "Cranswick",
+        "index": "FTSE 250",
+        "price": "3,226.00",
+        "market_cap": "1,729.5"
+    },
+    "HVPE": {
+        "name": "Harbourvest Global Private Equity Ltd",
+        "index": "FTSE 250",
+        "price": "2,175.00",
+        "market_cap": "1,720.5"
+    },
+    "LMP": {
+        "name": "Londonmetric Property",
+        "index": "FTSE 250",
+        "price": "174.60",
+        "market_cap": "1,715.7"
+    },
+    "HCM": {
+        "name": "Hutchmed (China) Ltd",
+        "index": "FTSE AIM",
+        "price": "198.00",
+        "market_cap": "1,714.9"
+    },
+    "PHLL": {
+        "name": "Petershill Partners",
+        "index": "FTSE 250",
+        "price": "149.60",
+        "market_cap": "1,698.6"
+    },
+    "LXI": {
+        "name": "LXI REIT",
+        "index": "FTSE 250",
+        "price": "98.80",
+        "market_cap": "1,693.9"
+    },
+    "SRP": {
+        "name": "Serco Group",
+        "index": "FTSE 250",
+        "price": "143.90",
+        "market_cap": "1,648.4"
+    },
+    "MYI": {
+        "name": "Murray International Trust",
+        "index": "FTSE 250",
+        "price": "262.60",
+        "market_cap": "1,644.2"
+    },
+    "GNS": {
+        "name": "Genus",
+        "index": "FTSE 250",
+        "price": "2,496.00",
+        "market_cap": "1,641.7"
+    },
+    "FEVR": {
+        "name": "Fevertree Drinks",
+        "index": "FTSE AIM",
+        "price": "1,407.00",
+        "market_cap": "1,640.1"
+    },
+    "RDW": {
+        "name": "Redrow",
+        "index": "FTSE 250",
+        "price": "491.00",
+        "market_cap": "1,624.1"
+    },
+    "ASHM": {
+        "name": "Ashmore Group",
+        "index": "FTSE 250",
+        "price": "227.40",
+        "market_cap": "1,620.8"
+    },
+    "WOSG": {
+        "name": "Watches Of Switzerland Group",
+        "index": "FTSE 250",
+        "price": "669.50",
+        "market_cap": "1,603.9"
+    },
+    "DATA": {
+        "name": "GlobalData",
+        "index": NaN,
+        "price": "1,340.00",
+        "market_cap": "1,585.3"
+    },
+    "KNOS": {
+        "name": "Kainos Group Ltd",
+        "index": "FTSE 250",
+        "price": "1,266.00",
+        "market_cap": "1,577.4"
+    },
+    "MRC": {
+        "name": "Mercantile Investment Trust",
+        "index": "FTSE 250",
+        "price": "199.00",
+        "market_cap": "1,572.3"
+    },
+    "OXIG": {
+        "name": "Oxford Instruments",
+        "index": "FTSE 250",
+        "price": "2,720.00",
+        "market_cap": "1,569.6"
+    },
+    "BAB": {
+        "name": "Babcock International Group",
+        "index": "FTSE 250",
+        "price": "310.40",
+        "market_cap": "1,569.4"
+    },
+    "TEM": {
+        "name": "Templeton Emerging Markets Investment Trust",
+        "index": "FTSE 250",
+        "price": "146.40",
+        "market_cap": "1,545.9"
+    },
+    "DOCS": {
+        "name": "Dr. Martens",
+        "index": "FTSE 250",
+        "price": "153.10",
+        "market_cap": "1,532.2"
+    },
+    "BHMG": {
+        "name": "BH Macro Ltd",
+        "index": "FTSE 250",
+        "price": "409.00",
+        "market_cap": "1,530.8"
+    },
+    "ITH": {
+        "name": "Ithaca Energy",
+        "index": "FTSE 250",
+        "price": "152.00",
+        "market_cap": "1,527.8"
+    },
+    "KWS": {
+        "name": "Keywords Studios",
+        "index": "FTSE AIM",
+        "price": "1,941.00",
+        "market_cap": "1,526.7"
+    },
+    "WTAN": {
+        "name": "Witan Investment Trust",
+        "index": "FTSE 250",
+        "price": "228.50",
+        "market_cap": "1,525.6"
+    },
+    "LRE": {
+        "name": "Lancashire Holdings Ltd",
+        "index": "FTSE 250",
+        "price": "622.00",
+        "market_cap": "1,517.7"
+    },
+    "CVSG": {
+        "name": "CVS Group",
+        "index": "FTSE AIM",
+        "price": "2,108.00",
+        "market_cap": "1,507.6"
+    },
+    "CCL": {
+        "name": "Carnival",
+        "index": "FTSE 250",
+        "price": "796.40",
+        "market_cap": "1,487.7"
+    },
+    "IWG": {
+        "name": "IWG",
+        "index": "FTSE 250",
+        "price": "144.50",
+        "market_cap": "1,454.7"
+    },
+    "PAGE": {
+        "name": "PageGroup",
+        "index": "FTSE 250",
+        "price": "440.60",
+        "market_cap": "1,447.9"
+    },
+    "BGEO": {
+        "name": "Bank of Georgia Group",
+        "index": "FTSE 250",
+        "price": "3,070.00",
+        "market_cap": "1,447.3"
+    },
+    "PIN": {
+        "name": "Pantheon International",
+        "index": "FTSE 250",
+        "price": "271.50",
+        "market_cap": "1,442.1"
+    },
+    "FEV": {
+        "name": "Fidelity European Trust",
+        "index": "FTSE 250",
+        "price": "351.50",
+        "market_cap": "1,436.7"
+    },
+    "AGR": {
+        "name": "Assura",
+        "index": "FTSE 250",
+        "price": "47.78",
+        "market_cap": "1,414.6"
+    },
+    "SEQI": {
+        "name": "Sequoia Economic Infrastructure Income Fund Ltd",
+        "index": "FTSE 250",
+        "price": "80.00",
+        "market_cap": "1,391.4"
+    },
+    "CBG": {
+        "name": "Close Brothers Group",
+        "index": "FTSE 250",
+        "price": "911.00",
+        "market_cap": "1,369.9"
+    },
+    "JAM": {
+        "name": "JPMorgan American Investment Trust",
+        "index": "FTSE 250",
+        "price": "736.00",
+        "market_cap": "1,359.3"
+    },
+    "MONY": {
+        "name": "Moneysupermarket.com Group",
+        "index": "FTSE 250",
+        "price": "251.40",
+        "market_cap": "1,349.7"
+    },
+    "VCT": {
+        "name": "Victrex",
+        "index": "FTSE 250",
+        "price": "1,547.00",
+        "market_cap": "1,346.0"
+    },
+    "PHP": {
+        "name": "Primary Health Properties",
+        "index": "FTSE 250",
+        "price": "99.40",
+        "market_cap": "1,328.5"
+    },
+    "PLUS": {
+        "name": "Plus500 Ltd",
+        "index": "FTSE 250",
+        "price": "1,447.00",
+        "market_cap": "1,327.0"
+    },
+    "AJB": {
+        "name": "AJ Bell",
+        "index": "FTSE 250",
+        "price": "319.20",
+        "market_cap": "1,315.4"
+    },
+    "SVS": {
+        "name": "Savills",
+        "index": "FTSE 250",
+        "price": "907.50",
+        "market_cap": "1,310.0"
+    },
+    "SEPL": {
+        "name": "SEPLAT Petroleum Development Co",
+        "index": NaN,
+        "price": "116.00",
+        "market_cap": "1,298.6"
+    },
+    "TBCG": {
+        "name": "TBC Bank Group",
+        "index": "FTSE 250",
+        "price": "2,355.00",
+        "market_cap": "1,295.0"
+    },
+    "HMSO": {
+        "name": "Hammerson",
+        "index": "FTSE 250",
+        "price": "25.30",
+        "market_cap": "1,263.6"
+    },
+    "FOUR": {
+        "name": "4imprint Group",
+        "index": "FTSE 250",
+        "price": "4,485.00",
+        "market_cap": "1,259.6"
+    },
+    "GPE": {
+        "name": "Great Portland Estates",
+        "index": "FTSE 250",
+        "price": "492.40",
+        "market_cap": "1,250.0"
+    },
+    "BNKR": {
+        "name": "Bankers Investment Trust",
+        "index": "FTSE 250",
+        "price": "97.80",
+        "market_cap": "1,249.9"
+    },
+    "RAT": {
+        "name": "Rathbone Brothers",
+        "index": "FTSE 250",
+        "price": "1,966.00",
+        "market_cap": "1,246.9"
+    },
+    "BOY": {
+        "name": "Bodycote",
+        "index": "FTSE 250",
+        "price": "649.00",
+        "market_cap": "1,242.6"
+    },
+    "IEM": {
+        "name": "Impax Environmental Markets",
+        "index": "FTSE 250",
+        "price": "407.50",
+        "market_cap": "1,236.5"
+    },
+    "CGT": {
+        "name": "Capital Gearing Trust",
+        "index": "FTSE 250",
+        "price": "4,685.00",
+        "market_cap": "1,235.7"
+    },
+    "TRN": {
+        "name": "Trainline",
+        "index": "FTSE 250",
+        "price": "254.60",
+        "market_cap": "1,223.8"
+    },
+    "TEP": {
+        "name": "Telecom plus",
+        "index": "FTSE 250",
+        "price": "1,540.00",
+        "market_cap": "1,223.5"
+    },
+    "KAPE": {
+        "name": "Kape Technologies",
+        "index": "FTSE AIM",
+        "price": "285.00",
+        "market_cap": "1,221.9"
+    },
+    "MTO": {
+        "name": "Mitie Group",
+        "index": "FTSE 250",
+        "price": "89.00",
+        "market_cap": "1,215.0"
+    },
+    "TCAP": {
+        "name": "TP ICAP",
+        "index": "FTSE 250",
+        "price": "154.00",
+        "market_cap": "1,214.6"
+    },
+    "JMG": {
+        "name": "JPMorgan Emerging Markets Inv Trust",
+        "index": "FTSE 250",
+        "price": "104.00",
+        "market_cap": "1,206.9"
+    },
+    "EVR": {
+        "name": "Evraz",
+        "index": NaN,
+        "price": "82.68",
+        "market_cap": "1,206.0"
+    },
+    "MAB": {
+        "name": "Mitchells & Butlers",
+        "index": "FTSE 250",
+        "price": "201.80",
+        "market_cap": "1,205.5"
+    },
+    "RHIM": {
+        "name": "RHI Magnesita NV",
+        "index": "FTSE 250",
+        "price": "2,534.00",
+        "market_cap": "1,191.4"
+    },
+    "DOM": {
+        "name": "Domino's Pizza Group",
+        "index": "FTSE 250",
+        "price": "283.00",
+        "market_cap": "1,188.2"
+    },
+    "BYIT": {
+        "name": "Bytes Technology Group",
+        "index": "FTSE 250",
+        "price": "493.60",
+        "market_cap": "1,182.1"
+    },
+    "HILS": {
+        "name": "Hill & Smith Holdings",
+        "index": "FTSE 250",
+        "price": "1,474.00",
+        "market_cap": "1,180.4"
+    },
+    "BREE": {
+        "name": "Breedon Group",
+        "index": NaN,
+        "price": "347.00",
+        "market_cap": "1,176.0"
+    },
+    "QLT": {
+        "name": "Quilter",
+        "index": "FTSE 250",
+        "price": "83.15",
+        "market_cap": "1,167.5"
+    },
+    "CEY": {
+        "name": "Centamin",
+        "index": "FTSE 250",
+        "price": "100.20",
+        "market_cap": "1,158.8"
+    },
+    "PFD": {
+        "name": "Premier Foods",
+        "index": "FTSE 250",
+        "price": "133.00",
+        "market_cap": "1,153.9"
+    },
+    "VEIL": {
+        "name": "Vietnam Enterprise Investments Ltd",
+        "index": "FTSE 250",
+        "price": "548.00",
+        "market_cap": "1,129.8"
+    },
+    "BRWM": {
+        "name": "BlackRock World Mining Trust",
+        "index": "FTSE 250",
+        "price": "594.00",
+        "market_cap": "1,122.8"
+    },
+    "VSVS": {
+        "name": "Vesuvius",
+        "index": "FTSE 250",
+        "price": "412.80",
+        "market_cap": "1,119.6"
+    },
+    "GAMA": {
+        "name": "Gamma Communications",
+        "index": "FTSE AIM",
+        "price": "1,154.00",
+        "market_cap": "1,117.8"
+    },
+    "PAG": {
+        "name": "Paragon Banking Group",
+        "index": "FTSE 250",
+        "price": "493.00",
+        "market_cap": "1,117.5"
+    },
+    "SPT": {
+        "name": "Spirent Communications",
+        "index": "FTSE 250",
+        "price": "179.50",
+        "market_cap": "1,098.1"
+    },
+    "YOU": {
+        "name": "YouGov",
+        "index": "FTSE AIM",
+        "price": "980.00",
+        "market_cap": "1,092.5"
+    },
+    "COA": {
+        "name": "Coats Group",
+        "index": "FTSE 250",
+        "price": "68.20",
+        "market_cap": "1,089.7"
+    },
+    "HRI": {
+        "name": "Herald Investment Trust",
+        "index": "FTSE 250",
+        "price": "1,790.00",
+        "market_cap": "1,089.4"
+    },
+    "EDIN": {
+        "name": "Edinburgh Investment Trust",
+        "index": "FTSE 250",
+        "price": "656.00",
+        "market_cap": "1,086.9"
+    },
+    "JTC": {
+        "name": "JTC",
+        "index": "FTSE 250",
+        "price": "717.00",
+        "market_cap": "1,068.8"
+    },
+    "RICA": {
+        "name": "Ruffer Investment Company Ltd",
+        "index": "FTSE 250",
+        "price": "281.00",
+        "market_cap": "1,065.0"
+    },
+    "ASL": {
+        "name": "Aberforth Smaller Companies Trust",
+        "index": "FTSE 250",
+        "price": "1,250.00",
+        "market_cap": "1,061.4"
+    },
+    "IPX": {
+        "name": "IMPAX Asset Management Group",
+        "index": "FTSE AIM",
+        "price": "789.00",
+        "market_cap": "1,046.2"
+    },
+    "SMS": {
+        "name": "Smart Metering Systems",
+        "index": "FTSE AIM",
+        "price": "783.00",
+        "market_cap": "1,044.5"
+    },
+    "ATT": {
+        "name": "Allianz Technology Trust",
+        "index": "FTSE 250",
+        "price": "261.00",
+        "market_cap": "1,043.5"
+    },
+    "LWDB": {
+        "name": "Law Debenture Corp",
+        "index": "FTSE 250",
+        "price": "800.00",
+        "market_cap": "1,037.2"
+    },
+    "BBGI": {
+        "name": "Bilfinger Berger Global Infrastructure SICAV SA",
+        "index": "FTSE 250",
+        "price": "145.20",
+        "market_cap": "1,035.8"
+    },
+    "SYNC": {
+        "name": "Syncona Ltd",
+        "index": "FTSE 250",
+        "price": "153.60",
+        "market_cap": "1,028.1"
+    },
+    "FCSS": {
+        "name": "Fidelity China Special Situations",
+        "index": "FTSE 250",
+        "price": "208.00",
+        "market_cap": "1,017.8"
+    },
+    "N91": {
+        "name": "Ninety One",
+        "index": "FTSE 250",
+        "price": "162.10",
+        "market_cap": "1,009.2"
+    },
+    "SEIT": {
+        "name": "SDCL Energy Efficiency Income Trust",
+        "index": "FTSE 250",
+        "price": "90.70",
+        "market_cap": "1,005.6"
+    },
+    "ASCL": {
+        "name": "Ascential",
+        "index": "FTSE 250",
+        "price": "227.40",
+        "market_cap": "1,001.1"
+    },
+    "BOCH": {
+        "name": "Bank of Cyprus Holdings",
+        "index": NaN,
+        "price": "222.00",
+        "market_cap": "990.6"
+    },
+    "BPCP": {
+        "name": "BioPharma Credit",
+        "index": NaN,
+        "price": "74.90",
+        "market_cap": "987.7"
+    },
+    "SUPR": {
+        "name": "Supermarket Income Reit",
+        "index": "FTSE 250",
+        "price": "79.10",
+        "market_cap": "983.5"
+    },
+    "SONG+SONC": {
+        "name": "Hipgnosis Songs Fund Ltd",
+        "index": "FTSE 250",
+        "price": "80.70",
+        "market_cap": "975.8"
+    },
+    "WG.": {
+        "name": "Wood Group (John)",
+        "index": "FTSE 250",
+        "price": "140.30",
+        "market_cap": "970.7"
+    },
+    "ALPH": {
+        "name": "Alpha Group International",
+        "index": "FTSE AIM",
+        "price": "2,240.00",
+        "market_cap": "970.4"
+    },
+    "WKP": {
+        "name": "Workspace Group",
+        "index": "FTSE 250",
+        "price": "504.00",
+        "market_cap": "965.9"
+    },
+    "MUT": {
+        "name": "Murray Income Trust",
+        "index": "FTSE 250",
+        "price": "848.00",
+        "market_cap": "962.5"
+    },
+    "HTWS": {
+        "name": "Helios Towers",
+        "index": "FTSE 250",
+        "price": "90.00",
+        "market_cap": "945.9"
+    },
+    "SRE": {
+        "name": "Sirius Real Estate Ltd",
+        "index": "FTSE 250",
+        "price": "79.65",
+        "market_cap": "936.6"
+    },
+    "SAIN": {
+        "name": "Scottish American Investment Co",
+        "index": "FTSE 250",
+        "price": "525.00",
+        "market_cap": "927.9"
+    },
+    "JHD": {
+        "name": "James Halstead",
+        "index": "FTSE AIM",
+        "price": "214.00",
+        "market_cap": "926.2"
+    },
+    "JDW": {
+        "name": "Wetherspoon (JD)",
+        "index": "FTSE 250",
+        "price": "710.50",
+        "market_cap": "914.8"
+    },
+    "SPI": {
+        "name": "Spire Healthcare Group",
+        "index": "FTSE 250",
+        "price": "226.00",
+        "market_cap": "913.3"
+    },
+    "RWS": {
+        "name": "RWS Holdings",
+        "index": "FTSE AIM",
+        "price": "234.40",
+        "market_cap": "912.9"
+    },
+    "AGT": {
+        "name": "AVI Global Trust",
+        "index": "FTSE 250",
+        "price": "189.80",
+        "market_cap": "911.3"
+    },
+    "JUST": {
+        "name": "Just Group",
+        "index": "FTSE 250",
+        "price": "87.60",
+        "market_cap": "909.9"
+    },
+    "FUTR": {
+        "name": "Future",
+        "index": "FTSE 250",
+        "price": "752.50",
+        "market_cap": "909.5"
+    },
+    "POLY": {
+        "name": "Polymetal International",
+        "index": NaN,
+        "price": "190.00",
+        "market_cap": "899.9"
+    },
+    "TRY": {
+        "name": "TR Property Investment Trust",
+        "index": "FTSE 250",
+        "price": "282.50",
+        "market_cap": "896.5"
+    },
+    "ATG": {
+        "name": "Auction Technology Group",
+        "index": "FTSE 250",
+        "price": "740.00",
+        "market_cap": "896.4"
+    },
+    "FSV": {
+        "name": "Fidelity Special Values",
+        "index": "FTSE 250",
+        "price": "272.00",
+        "market_cap": "881.5"
+    },
+    "FAN": {
+        "name": "Volution Group",
+        "index": "FTSE 250",
+        "price": "443.20",
+        "market_cap": "876.1"
+    },
+    "CKN": {
+        "name": "Clarkson",
+        "index": "FTSE 250",
+        "price": "2,845.00",
+        "market_cap": "871.4"
+    },
+    "AWE": {
+        "name": "Alphawave IP Group",
+        "index": NaN,
+        "price": "124.00",
+        "market_cap": "867.8"
+    },
+    "MGNS": {
+        "name": "Morgan Sindall",
+        "index": "FTSE 250",
+        "price": "1,830.00",
+        "market_cap": "866.5"
+    },
+    "DAL": {
+        "name": "Dalata Hotel Group Ltd",
+        "index": NaN,
+        "price": "387.00",
+        "market_cap": "862.5"
+    },
+    "REDD": {
+        "name": "Redde Northgate",
+        "index": "FTSE 250",
+        "price": "374.50",
+        "market_cap": "858.4"
+    },
+    "BIG": {
+        "name": "Big Technologies",
+        "index": "FTSE AIM",
+        "price": "295.00",
+        "market_cap": "856.8"
+    },
+    "IHP": {
+        "name": "IntegraFin Holdings",
+        "index": "FTSE 250",
+        "price": "258.60",
+        "market_cap": "856.8"
+    },
+    "EMIS": {
+        "name": "EMIS Group",
+        "index": "FTSE AIM",
+        "price": "1,350.00",
+        "market_cap": "854.7"
+    },
+    "FGP": {
+        "name": "FirstGroup",
+        "index": "FTSE 250",
+        "price": "115.50",
+        "market_cap": "833.0"
+    },
+    "MGAM": {
+        "name": "Morgan Advanced Materials",
+        "index": "FTSE 250",
+        "price": "290.00",
+        "market_cap": "827.6"
+    },
+    "OCI": {
+        "name": "Oakley Capital Investments Ltd",
+        "index": NaN,
+        "price": "468.50",
+        "market_cap": "826.5"
+    },
+    "GRID": {
+        "name": "Gresham House Energy Storage Fund",
+        "index": NaN,
+        "price": "152.20",
+        "market_cap": "823.8"
+    },
+    "SQZ": {
+        "name": "Serica Energy",
+        "index": "FTSE AIM",
+        "price": "214.00",
+        "market_cap": "819.7"
+    },
+    "BBH": {
+        "name": "Bellevue Healthcare Trust",
+        "index": "FTSE 250",
+        "price": "149.00",
+        "market_cap": "818.7"
+    },
+    "CRE": {
+        "name": "Conduit Holdings Ltd",
+        "index": NaN,
+        "price": "495.50",
+        "market_cap": "815.0"
+    },
+    "DEC": {
+        "name": "Diversified Energy Company",
+        "index": "FTSE 250",
+        "price": "83.85",
+        "market_cap": "814.5"
+    },
+    "APAX": {
+        "name": "APAX Global Alpha Ltd",
+        "index": "FTSE 250",
+        "price": "165.20",
+        "market_cap": "811.3"
+    },
+    "BCG": {
+        "name": "Baltic Classifieds Group",
+        "index": "FTSE 250",
+        "price": "162.60",
+        "market_cap": "808.8"
+    },
+    "PZC": {
+        "name": "PZ Cussons",
+        "index": "FTSE 250",
+        "price": "188.00",
+        "market_cap": "806.0"
+    },
+    "THG": {
+        "name": "THG",
+        "index": NaN,
+        "price": "61.52",
+        "market_cap": "799.3"
+    },
+    "LTG": {
+        "name": "Learning Technologies Group",
+        "index": "FTSE AIM",
+        "price": "100.50",
+        "market_cap": "795.1"
+    },
+    "BSIF": {
+        "name": "Bluefield Solar Income Fund Ltd",
+        "index": "FTSE 250",
+        "price": "129.40",
+        "market_cap": "791.2"
+    },
+    "ICGT": {
+        "name": "ICG Enterprise Trust",
+        "index": "FTSE 250",
+        "price": "1,156.00",
+        "market_cap": "786.9"
+    },
+    "GEN": {
+        "name": "Genuit Group",
+        "index": "FTSE 250",
+        "price": "315.00",
+        "market_cap": "784.9"
+    },
+    "EOT": {
+        "name": "European Opportunities Trust",
+        "index": "FTSE 250",
+        "price": "780.00",
+        "market_cap": "784.8"
+    },
+    "YCA": {
+        "name": "Yellow Cake",
+        "index": "FTSE AIM",
+        "price": "395.00",
+        "market_cap": "782.5"
+    },
+    "MRCH": {
+        "name": "Merchants Trust",
+        "index": "FTSE 250",
+        "price": "550.00",
+        "market_cap": "781.2"
+    },
+    "JLEN": {
+        "name": "JLEN Environmental Assets Group Ltd",
+        "index": "FTSE 250",
+        "price": "117.00",
+        "market_cap": "774.0"
+    },
+    "SDP": {
+        "name": "Schroder AsiaPacific Fund",
+        "index": "FTSE 250",
+        "price": "490.50",
+        "market_cap": "773.7"
+    },
+    "UPR": {
+        "name": "Uniphar",
+        "index": "FTSE AIM",
+        "price": "284.00",
+        "market_cap": "770.5"
+    },
+    "DSCV": {
+        "name": "Discoverie Group",
+        "index": "FTSE 250",
+        "price": "788.00",
+        "market_cap": "759.3"
+    },
+    "MSLH": {
+        "name": "Marshalls",
+        "index": "FTSE 250",
+        "price": "299.80",
+        "market_cap": "758.4"
+    },
+    "GSCT": {
+        "name": "Global Smaller Companies Trust",
+        "index": "FTSE 250",
+        "price": "142.00",
+        "market_cap": "750.6"
+    },
+    "GBG": {
+        "name": "GB Group",
+        "index": "FTSE AIM",
+        "price": "295.00",
+        "market_cap": "744.9"
+    },
+    "NFG": {
+        "name": "Next 15 Group",
+        "index": "FTSE AIM",
+        "price": "746.00",
+        "market_cap": "740.0"
+    },
+    "JFJ": {
+        "name": "JPMorgan Japanese Investment Trust",
+        "index": "FTSE 250",
+        "price": "480.50",
+        "market_cap": "739.0"
+    },
+    "FDM": {
+        "name": "FDM Group Holdings",
+        "index": "FTSE 250",
+        "price": "674.00",
+        "market_cap": "736.0"
+    },
+    "CHG": {
+        "name": "Chemring Group",
+        "index": "FTSE 250",
+        "price": "259.00",
+        "market_cap": "734.5"
+    },
+    "GCP": {
+        "name": "GCP Infrastructure Investments Ltd",
+        "index": "FTSE 250",
+        "price": "82.60",
+        "market_cap": "730.4"
+    },
+    "NBPE": {
+        "name": "NB Private Equity Partners Ltd",
+        "index": "FTSE 250",
+        "price": "1,554.00",
+        "market_cap": "726.7"
+    },
+    "TFIF": {
+        "name": "TwentyFour Income Fund Ltd",
+        "index": "FTSE 250",
+        "price": "101.20",
+        "market_cap": "726.7"
+    },
+    "SNR": {
+        "name": "Senior",
+        "index": "FTSE 250",
+        "price": "172.40",
+        "market_cap": "723.1"
+    },
+    "TGA": {
+        "name": "Thungela Resources Ltd",
+        "index": NaN,
+        "price": "532.80",
+        "market_cap": "711.8"
+    },
+    "SFOR": {
+        "name": "S4 Capital",
+        "index": NaN,
+        "price": "122.80",
+        "market_cap": "705.3"
+    },
+    "TMPL": {
+        "name": "Temple Bar Investment Trust",
+        "index": "FTSE 250",
+        "price": "226.00",
+        "market_cap": "700.2"
+    },
+    "VOF": {
+        "name": "VinaCapital Vietnam Opportunity Fund Ltd",
+        "index": "FTSE 250",
+        "price": "434.00",
+        "market_cap": "698.3"
+    },
+    "ICGC": {
+        "name": "Irish Continental Group",
+        "index": NaN,
+        "price": "404.00",
+        "market_cap": "690.3"
+    },
+    "BGFD": {
+        "name": "Baillie Gifford Japan Trust",
+        "index": "FTSE 250",
+        "price": "731.00",
+        "market_cap": "684.4"
+    },
+    "UKCM": {
+        "name": "UK Commercial Property Reit Ltd",
+        "index": "FTSE 250",
+        "price": "52.00",
+        "market_cap": "675.7"
+    },
+    "APEO": {
+        "name": "Abrdn Private Equity Opportunities Trust",
+        "index": "FTSE 250",
+        "price": "434.00",
+        "market_cap": "667.3"
+    },
+    "TIFS": {
+        "name": "TI Fluid Systems",
+        "index": "FTSE 250",
+        "price": "127.80",
+        "market_cap": "664.9"
+    },
+    "WPS": {
+        "name": "W.A.G Payment Solutions",
+        "index": "FTSE 250",
+        "price": "95.80",
+        "market_cap": "660.0"
+    },
+    "HFG": {
+        "name": "Hilton Food Group",
+        "index": "FTSE 250",
+        "price": "730.00",
+        "market_cap": "653.4"
+    },
+    "SOI": {
+        "name": "Schroder Oriental Income Fund Ltd",
+        "index": "FTSE 250",
+        "price": "254.00",
+        "market_cap": "652.7"
+    },
+    "NEX": {
+        "name": "National Express Group",
+        "index": "FTSE 250",
+        "price": "105.70",
+        "market_cap": "649.1"
+    },
+    "FSFL": {
+        "name": "Foresight Solar Fund Ltd",
+        "index": "FTSE 250",
+        "price": "106.20",
+        "market_cap": "647.8"
+    },
+    "CORD": {
+        "name": "Cordiant Digital Infrastructure Ltd",
+        "index": NaN,
+        "price": "83.40",
+        "market_cap": "644.3"
+    },
+    "SHED": {
+        "name": "Urban Logistics REIT",
+        "index": "FTSE 250",
+        "price": "135.80",
+        "market_cap": "640.9"
+    },
+    "IBST": {
+        "name": "Ibstock",
+        "index": "FTSE 250",
+        "price": "162.60",
+        "market_cap": "638.8"
+    },
+    "BRSC": {
+        "name": "BlackRock Smaller Companies Trust",
+        "index": "FTSE 250",
+        "price": "1,308.00",
+        "market_cap": "636.8"
+    },
+    "ELM": {
+        "name": "Elementis",
+        "index": "FTSE 250",
+        "price": "108.60",
+        "market_cap": "634.3"
+    },
+    "PRTC": {
+        "name": "Puretech Health",
+        "index": "FTSE 250",
+        "price": "227.00",
+        "market_cap": "632.1"
+    },
+    "JEDT": {
+        "name": "JPMorgan European Discovery Trust",
+        "index": "FTSE 250",
+        "price": "401.00",
+        "market_cap": "631.5"
+    },
+    "CRST": {
+        "name": "Crest Nicholson Holdings Ltd",
+        "index": "FTSE 250",
+        "price": "244.80",
+        "market_cap": "628.9"
+    },
+    "ESCT": {
+        "name": "The European Smaller Companies Trust",
+        "index": "FTSE 250",
+        "price": "156.00",
+        "market_cap": "625.4"
+    },
+    "JII": {
+        "name": "JPMorgan Indian Investment Trust",
+        "index": "FTSE 250",
+        "price": "824.00",
+        "market_cap": "617.2"
+    },
+    "CRN": {
+        "name": "Cairn Homes",
+        "index": NaN,
+        "price": "89.50",
+        "market_cap": "613.3"
+    },
+    "YNGA": {
+        "name": "Young & Co's Brewery",
+        "index": "FTSE AIM",
+        "price": "1,185.00",
+        "market_cap": "605.9"
+    },
+    "YNGN": {
+        "name": "Young & Co's Brewery",
+        "index": "FTSE AIM",
+        "price": "807.00",
+        "market_cap": "605.9"
+    },
+    "JDG": {
+        "name": "Judges Scientific",
+        "index": "FTSE AIM",
+        "price": "9,440.00",
+        "market_cap": "601.8"
+    },
+    "NESF": {
+        "name": "NextEnergy Solar Fund Ltd",
+        "index": "FTSE 250",
+        "price": "102.00",
+        "market_cap": "601.7"
+    },
+    "IPO": {
+        "name": "IP Group",
+        "index": "FTSE 250",
+        "price": "57.90",
+        "market_cap": "599.4"
+    },
+    "THRG": {
+        "name": "Blackrock Throgmorton Trust",
+        "index": "FTSE 250",
+        "price": "586.00",
+        "market_cap": "592.0"
+    },
+    "HSL": {
+        "name": "Henderson Smaller Companies Investment Trust",
+        "index": "FTSE 250",
+        "price": "792.00",
+        "market_cap": "591.6"
+    },
+    "PEYS": {
+        "name": "Princess Private Equity Holding Ltd",
+        "index": NaN,
+        "price": "849.00",
+        "market_cap": "587.1"
+    },
+    "JUP": {
+        "name": "Jupiter Fund Management",
+        "index": "FTSE 250",
+        "price": "106.70",
+        "market_cap": "581.5"
+    },
+    "RNWH": {
+        "name": "Renew Holdings",
+        "index": "FTSE AIM",
+        "price": "733.00",
+        "market_cap": "580.1"
+    },
+    "CURY": {
+        "name": "Currys",
+        "index": "FTSE 250",
+        "price": "50.95",
+        "market_cap": "577.5"
+    },
+    "VCP": {
+        "name": "Victoria",
+        "index": "FTSE AIM",
+        "price": "502.00",
+        "market_cap": "577.3"
+    },
+    "EWI": {
+        "name": "Edinburgh Worldwide Investment Trust",
+        "index": "FTSE 250",
+        "price": "148.00",
+        "market_cap": "576.3"
+    },
+    "BCPT": {
+        "name": "Balanced Commercial Property Trust Ltd",
+        "index": "FTSE 250",
+        "price": "81.80",
+        "market_cap": "573.9"
+    },
+    "CWR": {
+        "name": "Ceres Power Holdings",
+        "index": "FTSE AIM",
+        "price": "297.80",
+        "market_cap": "573.5"
+    },
+    "BAG": {
+        "name": "Barr (AG)",
+        "index": "FTSE 250",
+        "price": "508.00",
+        "market_cap": "569.1"
+    },
+    "FTSE 250 automatic entry position": {
+        "name": NaN,
+        "index": NaN,
+        "price": NaN,
+        "market_cap": NaN
+    },
+    "FXPO": {
+        "name": "Ferrexpo",
+        "index": "FTSE 250",
+        "price": "94.25",
+        "market_cap": "563.7"
+    },
+    "CCR": {
+        "name": "C&C Group",
+        "index": "FTSE 250",
+        "price": "143.00",
+        "market_cap": "562.0"
+    },
+    "VANQ": {
+        "name": "Vanquis Banking Group",
+        "index": "FTSE 250",
+        "price": "221.00",
+        "market_cap": "561.0"
+    },
+    "ORIT": {
+        "name": "Octopus Renewables Infrastructure Trust",
+        "index": "FTSE 250",
+        "price": "98.90",
+        "market_cap": "558.7"
+    },
+    "ESNT": {
+        "name": "Essentra",
+        "index": "FTSE 250",
+        "price": "184.40",
+        "market_cap": "556.3"
+    },
+    "ESP": {
+        "name": "Empiric Student Property",
+        "index": "FTSE Small Cap",
+        "price": "91.80",
+        "market_cap": "553.9"
+    },
+    "CPI": {
+        "name": "Capita",
+        "index": "FTSE Small Cap",
+        "price": "32.88",
+        "market_cap": "553.8"
+    },
+    "TM17": {
+        "name": "Team17 Group",
+        "index": "FTSE AIM",
+        "price": "379.00",
+        "market_cap": "552.6"
+    },
+    "BRGE": {
+        "name": "BlackRock Greater Europe Investment Trust",
+        "index": "FTSE 250",
+        "price": "542.00",
+        "market_cap": "547.4"
+    },
+    "CLI": {
+        "name": "CLS Holdings",
+        "index": "FTSE 250",
+        "price": "137.40",
+        "market_cap": "545.8"
+    },
+    "AFM": {
+        "name": "Alpha Financial Markets Consulting",
+        "index": "FTSE AIM",
+        "price": "452.00",
+        "market_cap": "544.7"
+    },
+    "DGI9": {
+        "name": "Digital 9 Infrastructure",
+        "index": "FTSE 250",
+        "price": "62.70",
+        "market_cap": "542.5"
+    },
+    "TYMN": {
+        "name": "Tyman",
+        "index": "FTSE Small Cap",
+        "price": "273.50",
+        "market_cap": "536.9"
+    },
+    "BAKK": {
+        "name": "Bakkavor Group",
+        "index": "FTSE 250",
+        "price": "92.20",
+        "market_cap": "534.2"
+    },
+    "FEML": {
+        "name": "Fidelity Emerging Markets Ltd",
+        "index": "FTSE 250",
+        "price": "580.50",
+        "market_cap": "528.8"
+    },
+    "RSG": {
+        "name": "Resolute Mining Ltd",
+        "index": NaN,
+        "price": "24.80",
+        "market_cap": "528.0"
+    },
+    "MEGP": {
+        "name": "Me Group International",
+        "index": "FTSE Small Cap",
+        "price": "139.00",
+        "market_cap": "525.5"
+    },
+    "BOO": {
+        "name": "Boohoo Group",
+        "index": "FTSE AIM",
+        "price": "41.42",
+        "market_cap": "525.4"
+    },
+    "POLR": {
+        "name": "Polar Capital Holdings",
+        "index": "FTSE AIM",
+        "price": "514.00",
+        "market_cap": "520.1"
+    },
+    "KLR": {
+        "name": "Keller Group",
+        "index": "FTSE 250",
+        "price": "704.00",
+        "market_cap": "512.3"
+    },
+    "ERGO": {
+        "name": "Ergomed",
+        "index": "FTSE AIM",
+        "price": "1,004.00",
+        "market_cap": "509.8"
+    },
+    "FDP": {
+        "name": "FD Technologies",
+        "index": "FTSE AIM",
+        "price": "1,804.00",
+        "market_cap": "506.3"
+    },
+    "SOLG": {
+        "name": "SolGold",
+        "index": NaN,
+        "price": "16.84",
+        "market_cap": "505.5"
+    },
+    "STEM": {
+        "name": "SThree",
+        "index": "FTSE 250",
+        "price": "375.00",
+        "market_cap": "504.2"
+    },
+    "NAS": {
+        "name": "North Atlantic Smaller Companies Inv Trust",
+        "index": "FTSE Small Cap",
+        "price": "3,670.00",
+        "market_cap": "497.1"
+    },
+    "MRL": {
+        "name": "Marlowe",
+        "index": "FTSE AIM",
+        "price": "518.00",
+        "market_cap": "496.7"
+    },
+    "CMCX": {
+        "name": "CMC Markets",
+        "index": "FTSE 250",
+        "price": "177.00",
+        "market_cap": "495.3"
+    },
+    "THRL": {
+        "name": "Target Healthcare REIT Ltd",
+        "index": "FTSE 250",
+        "price": "79.50",
+        "market_cap": "493.1"
+    },
+    "GSF": {
+        "name": "Gore Street Energy Storage Fund",
+        "index": "FTSE Small Cap",
+        "price": "102.40",
+        "market_cap": "493.0"
+    },
+    "MLI": {
+        "name": "Industrials Reit Ltd",
+        "index": "FTSE Small Cap",
+        "price": "167.00",
+        "market_cap": "491.8"
+    },
+    "LIO": {
+        "name": "Liontrust Asset Management",
+        "index": "FTSE 250",
+        "price": "750.00",
+        "market_cap": "487.0"
+    },
+    "SHI": {
+        "name": "SIG",
+        "index": "FTSE Small Cap",
+        "price": "41.15",
+        "market_cap": "486.2"
+    },
+    "PHI": {
+        "name": "Pacific Horizon Investment Trust",
+        "index": "FTSE 250",
+        "price": "531.00",
+        "market_cap": "485.2"
+    },
+    "CSH": {
+        "name": "Civitas Social Housing",
+        "index": "FTSE Small Cap",
+        "price": "79.90",
+        "market_cap": "484.5"
+    },
+    "AMS": {
+        "name": "Advanced Medical Solutions Group",
+        "index": "FTSE AIM",
+        "price": "223.00",
+        "market_cap": "483.8"
+    },
+    "FSG": {
+        "name": "Foresight Group Holdings Ltd",
+        "index": "FTSE Small Cap",
+        "price": "416.00",
+        "market_cap": "483.7"
+    },
+    "EBOX": {
+        "name": "Tritax Eurobox",
+        "index": "FTSE 250",
+        "price": "59.90",
+        "market_cap": "483.2"
+    },
+    "PRSR": {
+        "name": "PRS REIT",
+        "index": "FTSE Small Cap",
+        "price": "86.80",
+        "market_cap": "476.8"
+    },
+    "ALFA": {
+        "name": "Alfa Financial Software Holdings",
+        "index": "FTSE Small Cap",
+        "price": "160.50",
+        "market_cap": "475.5"
+    },
+    "CRW": {
+        "name": "Craneware",
+        "index": "FTSE AIM",
+        "price": "1,320.00",
+        "market_cap": "467.5"
+    },
+    "MOON": {
+        "name": "Moonpig Group",
+        "index": "FTSE Small Cap",
+        "price": "134.90",
+        "market_cap": "461.5"
+    },
+    "ADT1": {
+        "name": "Adriatic Metals",
+        "index": NaN,
+        "price": "168.00",
+        "market_cap": "460.1"
+    },
+    "JSG": {
+        "name": "Johnson Service Group",
+        "index": "FTSE AIM",
+        "price": "109.00",
+        "market_cap": "460.0"
+    },
+    "PPH": {
+        "name": "PPHE Hotel Group Ltd",
+        "index": "FTSE Small Cap",
+        "price": "1,080.00",
+        "market_cap": "457.5"
+    },
+    "RNK": {
+        "name": "Rank Group",
+        "index": "FTSE Small Cap",
+        "price": "97.00",
+        "market_cap": "454.4"
+    },
+    "BOWL": {
+        "name": "Hollywood Bowl Group",
+        "index": "FTSE Small Cap",
+        "price": "263.00",
+        "market_cap": "451.6"
+    },
+    "MWY": {
+        "name": "Mid Wynd International Inv Trust",
+        "index": "FTSE Small Cap",
+        "price": "699.00",
+        "market_cap": "450.5"
+    },
+    "ABDP": {
+        "name": "AB Dynamics",
+        "index": "FTSE AIM",
+        "price": "1,965.00",
+        "market_cap": "450.0"
+    },
+    "GROW": {
+        "name": "Molten Ventures",
+        "index": "FTSE 250",
+        "price": "293.80",
+        "market_cap": "449.5"
+    },
+    "BUT": {
+        "name": "Brunner Investment Trust",
+        "index": "FTSE Small Cap",
+        "price": "1,052.50",
+        "market_cap": "449.3"
+    },
+    "ATYM": {
+        "name": "Atalaya Mining",
+        "index": "FTSE AIM",
+        "price": "321.00",
+        "market_cap": "449.0"
+    },
+    "PAC": {
+        "name": "Pacific Assets Trust",
+        "index": "FTSE Small Cap",
+        "price": "371.00",
+        "market_cap": "448.8"
+    },
+    "USA": {
+        "name": "Baillie Gifford US Growth Trust",
+        "index": "FTSE Small Cap",
+        "price": "146.60",
+        "market_cap": "447.4"
+    },
+    "PCFT": {
+        "name": "Polar Capital Global Financials Trust",
+        "index": "FTSE Small Cap",
+        "price": "137.60",
+        "market_cap": "445.0"
+    },
+    "UEM": {
+        "name": "Utilico Emerging Markets Ltd",
+        "index": "FTSE Small Cap",
+        "price": "220.00",
+        "market_cap": "444.9"
+    },
+    "HFD": {
+        "name": "Halfords Group",
+        "index": "FTSE Small Cap",
+        "price": "202.80",
+        "market_cap": "444.0"
+    },
+    "DGN": {
+        "name": "Asia Dragon Trust",
+        "index": "FTSE Small Cap",
+        "price": "378.00",
+        "market_cap": "441.8"
+    },
+    "POLN": {
+        "name": "Pollen Street",
+        "index": "FTSE Small Cap",
+        "price": "688.00",
+        "market_cap": "441.8"
+    },
+    "BGS": {
+        "name": "Baillie Gifford Shin Nippon",
+        "index": "FTSE Small Cap",
+        "price": "140.60",
+        "market_cap": "441.7"
+    },
+    "VLX": {
+        "name": "Volex Group",
+        "index": "FTSE AIM",
+        "price": "274.50",
+        "market_cap": "436.7"
+    },
+    "DIG": {
+        "name": "Dunedin Income Growth Inv Trust",
+        "index": "FTSE Small Cap",
+        "price": "294.00",
+        "market_cap": "435.9"
+    },
+    "BOKU": {
+        "name": "Boku Inc",
+        "index": "FTSE AIM",
+        "price": "146.00",
+        "market_cap": "434.8"
+    },
+    "MTVW": {
+        "name": "Mountview Estates",
+        "index": NaN,
+        "price": "11,100.00",
+        "market_cap": "432.8"
+    },
+    "RWI": {
+        "name": "Renewi",
+        "index": "FTSE Small Cap",
+        "price": "538.00",
+        "market_cap": "431.7"
+    },
+    "WHR": {
+        "name": "Warehouse REIT",
+        "index": "FTSE 250",
+        "price": "101.60",
+        "market_cap": "431.7"
+    },
+    "TFW": {
+        "name": "Thorpe (F W)",
+        "index": "FTSE AIM",
+        "price": "366.00",
+        "market_cap": "429.1"
+    },
+    "SYNT": {
+        "name": "Synthomer",
+        "index": "FTSE 250",
+        "price": "91.80",
+        "market_cap": "429.0"
+    },
+    "ATR": {
+        "name": "Schroder Asian Total Return Investment Company",
+        "index": "FTSE Small Cap",
+        "price": "412.00",
+        "market_cap": "428.8"
+    },
+    "PINT": {
+        "name": "Pantheon Infrastructure",
+        "index": "FTSE Small Cap",
+        "price": "89.20",
+        "market_cap": "428.2"
+    },
+    "FTSE 250 automatic exit position": {
+        "name": NaN,
+        "index": NaN,
+        "price": NaN,
+        "market_cap": NaN
+    },
+    "TET": {
+        "name": "Treatt",
+        "index": "FTSE Small Cap",
+        "price": "701.00",
+        "market_cap": "427.1"
+    },
+    "OXB": {
+        "name": "Oxford BioMedica",
+        "index": "FTSE Small Cap",
+        "price": "442.00",
+        "market_cap": "425.6"
+    },
+    "MPE": {
+        "name": "M.P. Evans Group",
+        "index": "FTSE AIM",
+        "price": "786.00",
+        "market_cap": "423.3"
+    },
+    "CSN": {
+        "name": "Chesnara",
+        "index": "FTSE Small Cap",
+        "price": "281.00",
+        "market_cap": "422.6"
+    },
+    "CGI": {
+        "name": "Canadian General Investments Ltd",
+        "index": NaN,
+        "price": "2,055.00",
+        "market_cap": "422.1"
+    },
+    "PCTN": {
+        "name": "Picton Property Income Ltd",
+        "index": "FTSE Small Cap",
+        "price": "76.70",
+        "market_cap": "420.0"
+    },
+    "MAB1": {
+        "name": "Mortgage Advice Bureau Holdings Ltd",
+        "index": "FTSE AIM",
+        "price": "728.00",
+        "market_cap": "415.9"
+    },
+    "XPP": {
+        "name": "XP Power Ltd",
+        "index": "FTSE Small Cap",
+        "price": "2,105.00",
+        "market_cap": "415.6"
+    },
+    "JEGI": {
+        "name": "JPMorgan European Growth & Income",
+        "index": "FTSE Small Cap",
+        "price": "95.80",
+        "market_cap": "414.1"
+    },
+    "MIDW": {
+        "name": "Midwich Group",
+        "index": "FTSE AIM",
+        "price": "454.00",
+        "market_cap": "414.0"
+    },
+    "ITM": {
+        "name": "ITM Power",
+        "index": "FTSE AIM",
+        "price": "67.04",
+        "market_cap": "413.1"
+    },
+    "GSEO": {
+        "name": "VH Global Sustainable Energy Opportunities",
+        "index": "FTSE Small Cap",
+        "price": "97.60",
+        "market_cap": "412.4"
+    },
+    "CHRY": {
+        "name": "Chrysalis Investment Ltd",
+        "index": "FTSE Small Cap",
+        "price": "69.10",
+        "market_cap": "411.2"
+    },
+    "KMR": {
+        "name": "Kenmare Resources",
+        "index": "FTSE Small Cap",
+        "price": "430.00",
+        "market_cap": "407.8"
+    },
+    "FORT": {
+        "name": "Forterra",
+        "index": "FTSE Small Cap",
+        "price": "191.40",
+        "market_cap": "407.3"
+    },
+    "IHR": {
+        "name": "Impact Healthcare REIT",
+        "index": "FTSE Small Cap",
+        "price": "98.20",
+        "market_cap": "406.9"
+    },
+    "PCGH": {
+        "name": "Polar Capital Global Healthcare Trust",
+        "index": "FTSE Small Cap",
+        "price": "333.50",
+        "market_cap": "404.4"
+    },
+    "SRC": {
+        "name": "SigmaRoc",
+        "index": "FTSE AIM",
+        "price": "58.20",
+        "market_cap": "403.8"
+    },
+    "TRMR": {
+        "name": "Tremor International Ltd",
+        "index": "FTSE AIM",
+        "price": "280.00",
+        "market_cap": "399.9"
+    },
+    "PTAL": {
+        "name": "PetroTal Corp",
+        "index": "FTSE AIM",
+        "price": "43.75",
+        "market_cap": "399.2"
+    },
+    "GNC": {
+        "name": "Greencore Group",
+        "index": "FTSE Small Cap",
+        "price": "79.05",
+        "market_cap": "396.4"
+    },
+    "HWG": {
+        "name": "Harworth Group",
+        "index": "FTSE Small Cap",
+        "price": "122.50",
+        "market_cap": "395.8"
+    },
+    "HFEL": {
+        "name": "Henderson Far East Income Ltd",
+        "index": "FTSE Small Cap",
+        "price": "246.50",
+        "market_cap": "391.6"
+    },
+    "AAS": {
+        "name": "Abrdn Asia Focus",
+        "index": "FTSE Small Cap",
+        "price": "249.00",
+        "market_cap": "390.7"
+    },
+    "JCH": {
+        "name": "JPMorgan Claverhouse Investment Trust",
+        "index": "FTSE Small Cap",
+        "price": "654.00",
+        "market_cap": "390.3"
+    },
+    "CREI": {
+        "name": "Custodian Reit",
+        "index": "FTSE Small Cap",
+        "price": "87.70",
+        "market_cap": "386.6"
+    },
+    "AUSC": {
+        "name": "Abrdn UK Smaller Companies Growth Trust",
+        "index": "FTSE Small Cap",
+        "price": "428.00",
+        "market_cap": "385.4"
+    },
+    "JEMI": {
+        "name": "JPMorgan Global Emerging Markets Income Trust",
+        "index": "FTSE Small Cap",
+        "price": "128.50",
+        "market_cap": "381.2"
+    },
+    "GGP": {
+        "name": "Greatland Gold",
+        "index": "FTSE AIM",
+        "price": "7.50",
+        "market_cap": "380.1"
+    },
+    "HTG": {
+        "name": "Hunting",
+        "index": "FTSE 250",
+        "price": "228.50",
+        "market_cap": "376.9"
+    },
+    "CER": {
+        "name": "Cerillion",
+        "index": "FTSE AIM",
+        "price": "1,275.00",
+        "market_cap": "376.3"
+    },
+    "NAIT": {
+        "name": "North American Income Trust",
+        "index": "FTSE Small Cap",
+        "price": "268.00",
+        "market_cap": "375.8"
+    },
+    "HOC": {
+        "name": "Hochschild Mining",
+        "index": "FTSE Small Cap",
+        "price": "72.75",
+        "market_cap": "373.8"
+    },
+    "AO.": {
+        "name": "AO World",
+        "index": "FTSE Small Cap",
+        "price": "63.85",
+        "market_cap": "368.4"
+    },
+    "PFC": {
+        "name": "Petrofac Ltd",
+        "index": "FTSE Small Cap",
+        "price": "70.50",
+        "market_cap": "368.0"
+    },
+    "NUM": {
+        "name": "Numis Corporation",
+        "index": "FTSE AIM",
+        "price": "334.00",
+        "market_cap": "367.4"
+    },
+    "SBRE": {
+        "name": "Sabre Insurance Group",
+        "index": "FTSE Small Cap",
+        "price": "146.60",
+        "market_cap": "366.5"
+    },
+    "FAS": {
+        "name": "Fidelity Asian Values",
+        "index": "FTSE Small Cap",
+        "price": "510.00",
+        "market_cap": "366.3"
+    },
+    "TLW": {
+        "name": "Tullow Oil",
+        "index": "FTSE 250",
+        "price": "25.14",
+        "market_cap": "362.3"
+    },
+    "HZM": {
+        "name": "Horizonte Minerals",
+        "index": "FTSE AIM",
+        "price": "134.00",
+        "market_cap": "360.2"
+    },
+    "INDI": {
+        "name": "Indus Gas Ltd",
+        "index": NaN,
+        "price": "195.00",
+        "market_cap": "356.8"
+    },
+    "KIE": {
+        "name": "Kier Group",
+        "index": "FTSE Small Cap",
+        "price": "79.90",
+        "market_cap": "356.6"
+    },
+    "ASC": {
+        "name": "ASOS",
+        "index": "FTSE 250",
+        "price": "356.00",
+        "market_cap": "356.1"
+    },
+    "NICL": {
+        "name": "Nichols",
+        "index": "FTSE AIM",
+        "price": "975.00",
+        "market_cap": "355.6"
+    },
+    "LSC": {
+        "name": "London Security",
+        "index": "FTSE AIM",
+        "price": "2,900.00",
+        "market_cap": "355.5"
+    },
+    "CGEO": {
+        "name": "Georgia Capital",
+        "index": NaN,
+        "price": "825.00",
+        "market_cap": "354.5"
+    },
+    "RCDO": {
+        "name": "Ricardo",
+        "index": "FTSE Small Cap",
+        "price": "566.00",
+        "market_cap": "352.2"
+    },
+    "AAIF": {
+        "name": "Abrdn Asian Income Fund Ltd",
+        "index": "FTSE Small Cap",
+        "price": "207.50",
+        "market_cap": "351.6"
+    },
+    "RTN": {
+        "name": "Restaurant Group",
+        "index": "FTSE Small Cap",
+        "price": "45.95",
+        "market_cap": "351.5"
+    },
+    "SWEF": {
+        "name": "Starwood European Real Estate Finance Ltd",
+        "index": "FTSE Small Cap",
+        "price": "88.40",
+        "market_cap": "349.7"
+    },
+    "FRAN": {
+        "name": "Franchise Brands",
+        "index": "FTSE AIM",
+        "price": "179.00",
+        "market_cap": "346.9"
+    },
+    "CAML": {
+        "name": "Central Asia Metals",
+        "index": "FTSE AIM",
+        "price": "190.40",
+        "market_cap": "345.8"
+    },
+    "CTPE": {
+        "name": "Ct Private Equity Trust",
+        "index": "FTSE Small Cap",
+        "price": "473.00",
+        "market_cap": "344.6"
+    },
+    "XPS": {
+        "name": "XPS Pensions Group",
+        "index": "FTSE Small Cap",
+        "price": "165.50",
+        "market_cap": "343.3"
+    },
+    "SAVE": {
+        "name": "Savannah Energy",
+        "index": "FTSE AIM",
+        "price": "26.25",
+        "market_cap": "342.9"
+    },
+    "MXCT": {
+        "name": "Maxcyte Inc",
+        "index": "FTSE AIM",
+        "price": "332.50",
+        "market_cap": "342.6"
+    },
+    "RST": {
+        "name": "Restore",
+        "index": "FTSE AIM",
+        "price": "250.00",
+        "market_cap": "342.3"
+    },
+    "HINT": {
+        "name": "Henderson International Income Trust",
+        "index": "FTSE Small Cap",
+        "price": "174.50",
+        "market_cap": "342.0"
+    },
+    "TRST": {
+        "name": "Trustpilot Group",
+        "index": "FTSE Small Cap",
+        "price": "82.10",
+        "market_cap": "341.8"
+    },
+    "EGY": {
+        "name": "VAALCO Energy Inc",
+        "index": NaN,
+        "price": "315.00",
+        "market_cap": "340.0"
+    },
+    "GDWN": {
+        "name": "Goodwin",
+        "index": NaN,
+        "price": "4,400.00",
+        "market_cap": "338.3"
+    },
+    "BMY": {
+        "name": "Bloomsbury Publishing",
+        "index": "FTSE Small Cap",
+        "price": "410.50",
+        "market_cap": "335.0"
+    },
+    "AEP": {
+        "name": "Anglo-Eastern Plantations",
+        "index": "FTSE Small Cap",
+        "price": "845.00",
+        "market_cap": "334.9"
+    },
+    "BGEU": {
+        "name": "Baillie Gifford European Growth Trust",
+        "index": "FTSE Small Cap",
+        "price": "92.95",
+        "market_cap": "333.4"
+    },
+    "APH": {
+        "name": "Alliance Pharma",
+        "index": "FTSE AIM",
+        "price": "61.60",
+        "market_cap": "332.7"
+    },
+    "JAGI": {
+        "name": "JPMorgan Asia Growth & Income",
+        "index": "FTSE Small Cap",
+        "price": "350.50",
+        "market_cap": "330.9"
+    },
+    "HEFT": {
+        "name": "Henderson European Focus Trust",
+        "index": "FTSE Small Cap",
+        "price": "155.00",
+        "market_cap": "329.8"
+    },
+    "AERS": {
+        "name": "Aquila European Renewables",
+        "index": NaN,
+        "price": "85.25",
+        "market_cap": "328.1"
+    },
+    "MTW": {
+        "name": "Mattioli Woods",
+        "index": "FTSE AIM",
+        "price": "635.00",
+        "market_cap": "327.9"
+    },
+    "LWI": {
+        "name": "Lowland Investment Co",
+        "index": "FTSE Small Cap",
+        "price": "120.00",
+        "market_cap": "324.2"
+    },
+    "RWA": {
+        "name": "Robert Walters",
+        "index": "FTSE Small Cap",
+        "price": "432.00",
+        "market_cap": "323.4"
+    },
+    "OAP3": {
+        "name": "Octopus Apollo VCT 3",
+        "index": NaN,
+        "price": "49.15",
+        "market_cap": "323.0"
+    },
+    "EAT": {
+        "name": "European Assets Trust NV",
+        "index": "FTSE Small Cap",
+        "price": "89.40",
+        "market_cap": "321.9"
+    },
+    "BIOG": {
+        "name": "Biotech Growth Trust",
+        "index": "FTSE Small Cap",
+        "price": "822.00",
+        "market_cap": "321.0"
+    },
+    "WIX": {
+        "name": "Wickes Group",
+        "index": "FTSE Small Cap",
+        "price": "123.60",
+        "market_cap": "320.9"
+    },
+    "IPEL": {
+        "name": "Impellam Group",
+        "index": "FTSE AIM",
+        "price": "712.50",
+        "market_cap": "320.8"
+    },
+    "HLCL": {
+        "name": "Helical",
+        "index": "FTSE Small Cap",
+        "price": "258.50",
+        "market_cap": "318.9"
+    },
+    "BOOT": {
+        "name": "Boot (Henry)",
+        "index": "FTSE Small Cap",
+        "price": "238.00",
+        "market_cap": "318.3"
+    },
+    "CTUK": {
+        "name": "Ct UK Capital And Income Investment Trust",
+        "index": "FTSE Small Cap",
+        "price": "299.50",
+        "market_cap": "318.0"
+    },
+    "CNIC": {
+        "name": "CentralNic Group",
+        "index": "FTSE AIM",
+        "price": "111.20",
+        "market_cap": "317.2"
+    },
+    "LOOK": {
+        "name": "Lookers",
+        "index": "FTSE Small Cap",
+        "price": "81.30",
+        "market_cap": "312.8"
+    },
+    "GENL": {
+        "name": "Genel Energy",
+        "index": NaN,
+        "price": "111.60",
+        "market_cap": "311.8"
+    },
+    "CARD": {
+        "name": "Card Factory",
+        "index": "FTSE Small Cap",
+        "price": "90.80",
+        "market_cap": "311.1"
+    },
+    "TKO": {
+        "name": "Taseko Mines Ltd",
+        "index": NaN,
+        "price": "107.50",
+        "market_cap": "310.0"
+    },
+    "VID": {
+        "name": "Videndum",
+        "index": "FTSE 250",
+        "price": "662.00",
+        "market_cap": "308.4"
+    },
+    "888": {
+        "name": "888 Holdings",
+        "index": "FTSE Small Cap",
+        "price": "69.10",
+        "market_cap": "308.4"
+    },
+    "ASLI": {
+        "name": "Abrdn European Logistics Income",
+        "index": "FTSE Small Cap",
+        "price": "74.80",
+        "market_cap": "308.3"
+    },
+    "SUS": {
+        "name": "S & U",
+        "index": "FTSE Small Cap",
+        "price": "2,520.00",
+        "market_cap": "306.2"
+    },
+    "WIN": {
+        "name": "Wincanton",
+        "index": "FTSE Small Cap",
+        "price": "243.50",
+        "market_cap": "303.3"
+    },
+    "BMK": {
+        "name": "Benchmark Holdings",
+        "index": "FTSE AIM",
+        "price": "41.00",
+        "market_cap": "303.1"
+    },
+    "ANII": {
+        "name": "abrdn New India Investment Trust",
+        "index": "FTSE Small Cap",
+        "price": "538.00",
+        "market_cap": "301.1"
+    },
+    "HOME": {
+        "name": "Home Reit",
+        "index": NaN,
+        "price": "38.05",
+        "market_cap": "300.8"
+    },
+    "DIVI": {
+        "name": "Diverse Income Trust",
+        "index": "FTSE Small Cap",
+        "price": "84.20",
+        "market_cap": "299.6"
+    },
+    "AT.": {
+        "name": "Ashtead Technology Holdings",
+        "index": "FTSE AIM",
+        "price": "374.00",
+        "market_cap": "299.0"
+    },
+    "SST": {
+        "name": "Scottish Oriental Smaller Companies Trust",
+        "index": "FTSE Small Cap",
+        "price": "1,210.00",
+        "market_cap": "298.7"
+    },
+    "BRK": {
+        "name": "Brooks Macdonald Group",
+        "index": "FTSE AIM",
+        "price": "1,830.00",
+        "market_cap": "297.7"
+    },
+    "PRV": {
+        "name": "Porvair",
+        "index": "FTSE Small Cap",
+        "price": "642.00",
+        "market_cap": "297.6"
+    },
+    "GABI": {
+        "name": "GCP Asset Backed Income Fund Ltd",
+        "index": "FTSE Small Cap",
+        "price": "69.20",
+        "market_cap": "296.3"
+    },
+    "TUNE": {
+        "name": "Focusrite",
+        "index": "FTSE AIM",
+        "price": "500.00",
+        "market_cap": "296.1"
+    },
+    "ACSO": {
+        "name": "Accesso Technology Group",
+        "index": "FTSE AIM",
+        "price": "715.00",
+        "market_cap": "296.0"
+    },
+    "OCN": {
+        "name": "Ocean Wilson Holdings",
+        "index": "FTSE Small Cap",
+        "price": "830.00",
+        "market_cap": "293.5"
+    },
+    "CNE": {
+        "name": "Capricorn Energy",
+        "index": "FTSE 250",
+        "price": "198.00",
+        "market_cap": "291.3"
+    },
+    "IDOX": {
+        "name": "IDOX",
+        "index": "FTSE AIM",
+        "price": "64.20",
+        "market_cap": "291.2"
+    },
+    "AVCT": {
+        "name": "Avacta Group",
+        "index": "FTSE AIM",
+        "price": "105.60",
+        "market_cap": "290.8"
+    },
+    "BOOK": {
+        "name": "Literacy Capital",
+        "index": NaN,
+        "price": "483.00",
+        "market_cap": "289.8"
+    },
+    "HNE": {
+        "name": "Henderson EuroTrust",
+        "index": "FTSE Small Cap",
+        "price": "136.25",
+        "market_cap": "288.7"
+    },
+    "TTG": {
+        "name": "TT Electronics",
+        "index": "FTSE Small Cap",
+        "price": "163.00",
+        "market_cap": "287.7"
+    },
+    "GHE": {
+        "name": "Gresham House",
+        "index": "FTSE AIM",
+        "price": "750.00",
+        "market_cap": "287.1"
+    },
+    "RECI": {
+        "name": "Real Estate Credit Investment PCC Ltd",
+        "index": "FTSE Small Cap",
+        "price": "124.75",
+        "market_cap": "286.1"
+    },
+    "ECOR": {
+        "name": "Ecora Resources",
+        "index": NaN,
+        "price": "110.80",
+        "market_cap": "285.7"
+    },
+    "BIPS": {
+        "name": "Invesco Bond Income Plus Ltd",
+        "index": "FTSE Small Cap",
+        "price": "162.00",
+        "market_cap": "285.7"
+    },
+    "PAY": {
+        "name": "PayPoint",
+        "index": "FTSE Small Cap",
+        "price": "393.50",
+        "market_cap": "285.5"
+    },
+    "NCC": {
+        "name": "NCC Group",
+        "index": "FTSE Small Cap",
+        "price": "91.00",
+        "market_cap": "283.9"
+    },
+    "GKP": {
+        "name": "Gulf Keystone Petroleum Ltd",
+        "index": NaN,
+        "price": "130.50",
+        "market_cap": "282.2"
+    },
+    "ENQ": {
+        "name": "EnQuest",
+        "index": "FTSE Small Cap",
+        "price": "14.94",
+        "market_cap": "281.8"
+    },
+    "RSE": {
+        "name": "Riverstone Energy Ltd",
+        "index": "FTSE Small Cap",
+        "price": "569.00",
+        "market_cap": "281.2"
+    },
+    "TRCS": {
+        "name": "Tracsis",
+        "index": "FTSE AIM",
+        "price": "935.00",
+        "market_cap": "279.9"
+    },
+    "FRP": {
+        "name": "FRP Advisory Group",
+        "index": "FTSE AIM",
+        "price": "111.00",
+        "market_cap": "276.8"
+    },
+    "TAM": {
+        "name": "Tatton Asset Management",
+        "index": "FTSE AIM",
+        "price": "461.00",
+        "market_cap": "276.8"
+    },
+    "DTY": {
+        "name": "Dignity",
+        "index": NaN,
+        "price": "549.00",
+        "market_cap": "275.2"
+    },
+    "DFS": {
+        "name": "DFS Furniture",
+        "index": "FTSE Small Cap",
+        "price": "117.00",
+        "market_cap": "273.9"
+    },
+    "ABD": {
+        "name": "Aberdeen New Dawn Investment Trust",
+        "index": "FTSE Small Cap",
+        "price": "258.00",
+        "market_cap": "271.6"
+    },
+    "LOK": {
+        "name": "Lok'nStore Group",
+        "index": "FTSE AIM",
+        "price": "902.00",
+        "market_cap": "271.3"
+    },
+    "SJG": {
+        "name": "Schroder Japan Growth Fund",
+        "index": "FTSE Small Cap",
+        "price": "221.00",
+        "market_cap": "268.8"
+    },
+    "BGLP": {
+        "name": "Blackstone Loan Financing Ltd",
+        "index": NaN,
+        "price": "60.50",
+        "market_cap": "267.9"
+    },
+    "RGL": {
+        "name": "Regional REIT Ltd",
+        "index": "FTSE Small Cap",
+        "price": "51.90",
+        "market_cap": "267.7"
+    },
+    "MER": {
+        "name": "Mears Group",
+        "index": "FTSE Small Cap",
+        "price": "241.00",
+        "market_cap": "267.6"
+    },
+    "LSL": {
+        "name": "LSL Property Services",
+        "index": "FTSE Small Cap",
+        "price": "256.00",
+        "market_cap": "266.2"
+    },
+    "IBT": {
+        "name": "International Biotechnology Trust",
+        "index": "FTSE Small Cap",
+        "price": "653.00",
+        "market_cap": "265.8"
+    },
+    "DOTD": {
+        "name": "Dotdigital Group",
+        "index": "FTSE AIM",
+        "price": "88.30",
+        "market_cap": "264.2"
+    },
+    "ADIG": {
+        "name": "abrdn Diversified Income & Growth",
+        "index": "FTSE Small Cap",
+        "price": "87.10",
+        "market_cap": "264.1"
+    },
+    "MTE": {
+        "name": "Montanaro European Smaller Companies Trust",
+        "index": "FTSE Small Cap",
+        "price": "138.80",
+        "market_cap": "262.9"
+    },
+    "NIOX": {
+        "name": "Niox Group",
+        "index": "FTSE AIM",
+        "price": "62.50",
+        "market_cap": "262.2"
+    },
+    "MNP": {
+        "name": "Martin Currie Global Portfolio Trust",
+        "index": "FTSE Small Cap",
+        "price": "351.00",
+        "market_cap": "261.1"
+    },
+    "VIC": {
+        "name": "Victorian Plumbing Group",
+        "index": "FTSE AIM",
+        "price": "80.20",
+        "market_cap": "260.8"
+    },
+    "LABS": {
+        "name": "Life Science Reit",
+        "index": "FTSE Small Cap",
+        "price": "74.20",
+        "market_cap": "259.7"
+    },
+    "AVON": {
+        "name": "Avon Protection",
+        "index": "FTSE Small Cap",
+        "price": "858.00",
+        "market_cap": "259.6"
+    },
+    "BRFI": {
+        "name": "Blackrock Frontiers Investment Trust",
+        "index": "FTSE Small Cap",
+        "price": "137.00",
+        "market_cap": "259.4"
+    },
+    "MGP": {
+        "name": "Medica Group",
+        "index": "FTSE Small Cap",
+        "price": "211.00",
+        "market_cap": "258.8"
+    },
+    "NRR": {
+        "name": "NewRiver REIT",
+        "index": "FTSE Small Cap",
+        "price": "83.30",
+        "market_cap": "258.6"
+    },
+    "PAF": {
+        "name": "Pan African Resources",
+        "index": "FTSE AIM",
+        "price": "13.24",
+        "market_cap": "253.7"
+    },
+    "HEIT": {
+        "name": "Harmony Energy Income Trust",
+        "index": NaN,
+        "price": "111.50",
+        "market_cap": "253.2"
+    },
+    "VP.": {
+        "name": "Vp",
+        "index": NaN,
+        "price": "630.00",
+        "market_cap": "253.0"
+    },
+    "THS": {
+        "name": "Tharisa",
+        "index": NaN,
+        "price": "88.50",
+        "market_cap": "252.3"
+    },
+    "WIL": {
+        "name": "Wilmington",
+        "index": NaN,
+        "price": "286.00",
+        "market_cap": "252.1"
+    },
+    "IPF": {
+        "name": "International Personal Finance",
+        "index": "FTSE Small Cap",
+        "price": "112.50",
+        "market_cap": "250.6"
+    },
+    "NCYF": {
+        "name": "CQS New City High Yield Fund Ltd",
+        "index": "FTSE Small Cap",
+        "price": "48.70",
+        "market_cap": "249.1"
+    },
+    "LTHM": {
+        "name": "Latham (James)",
+        "index": "FTSE AIM",
+        "price": "1,230.00",
+        "market_cap": "248.1"
+    },
+    "GLE": {
+        "name": "MJ Gleeson",
+        "index": "FTSE Small Cap",
+        "price": "425.00",
+        "market_cap": "248.0"
+    },
+    "PDG": {
+        "name": "Pendragon",
+        "index": "FTSE Small Cap",
+        "price": "17.72",
+        "market_cap": "247.5"
+    },
+    "BGUK": {
+        "name": "Baillie Gifford UK Growth Fund",
+        "index": "FTSE Small Cap",
+        "price": "164.00",
+        "market_cap": "246.9"
+    },
+    "ASY": {
+        "name": "Andrews Sykes Group",
+        "index": "FTSE AIM",
+        "price": "580.00",
+        "market_cap": "244.3"
+    },
+    "CGL": {
+        "name": "Castelnau Group Ltd",
+        "index": NaN,
+        "price": "75.00",
+        "market_cap": "239.0"
+    },
+    "SEE": {
+        "name": "Seeing Machines Ltd",
+        "index": "FTSE AIM",
+        "price": "5.70",
+        "market_cap": "236.9"
+    },
+    "RCH": {
+        "name": "Reach",
+        "index": "FTSE Small Cap",
+        "price": "73.55",
+        "market_cap": "233.2"
+    },
+    "JUSC": {
+        "name": "JPMorgan US Smaller Companies IT",
+        "index": "FTSE Small Cap",
+        "price": "360.00",
+        "market_cap": "232.7"
+    },
+    "EGL": {
+        "name": "Ecofin Global Utilities And Infrustructure Trust",
+        "index": "FTSE Small Cap",
+        "price": "204.50",
+        "market_cap": "232.4"
+    },
+    "FJV": {
+        "name": "Fidelity Japan Trust",
+        "index": "FTSE Small Cap",
+        "price": "178.00",
+        "market_cap": "230.3"
+    },
+    "KETL": {
+        "name": "Strix Group",
+        "index": "FTSE AIM",
+        "price": "103.00",
+        "market_cap": "225.3"
+    },
+    "SOHO": {
+        "name": "Triple Point Social Housing REIT",
+        "index": "FTSE Small Cap",
+        "price": "55.50",
+        "market_cap": "223.5"
+    },
+    "ELIX": {
+        "name": "Elixirr International",
+        "index": "FTSE AIM",
+        "price": "481.00",
+        "market_cap": "222.2"
+    },
+    "SLP": {
+        "name": "Sylvania Platinum Ltd",
+        "index": "FTSE AIM",
+        "price": "83.00",
+        "market_cap": "221.3"
+    },
+    "HHI": {
+        "name": "Henderson High Income Trust",
+        "index": "FTSE Small Cap",
+        "price": "170.00",
+        "market_cap": "220.7"
+    },
+    "IQE": {
+        "name": "IQE",
+        "index": "FTSE AIM",
+        "price": "22.85",
+        "market_cap": "219.6"
+    },
+    "FDEV": {
+        "name": "Frontier Developments",
+        "index": "FTSE AIM",
+        "price": "557.00",
+        "market_cap": "219.6"
+    },
+    "CLIG": {
+        "name": "City of London Investment Group",
+        "index": "FTSE Small Cap",
+        "price": "431.50",
+        "market_cap": "218.7"
+    },
+    "CCJI": {
+        "name": "CC Japan Income & Growth Trust",
+        "index": "FTSE Small Cap",
+        "price": "162.25",
+        "market_cap": "218.6"
+    },
+    "DWF": {
+        "name": "DWF Group Ltd",
+        "index": "FTSE Small Cap",
+        "price": "63.80",
+        "market_cap": "218.1"
+    },
+    "IAT": {
+        "name": "Invesco Asia Trust",
+        "index": "FTSE Small Cap",
+        "price": "325.00",
+        "market_cap": "217.3"
+    },
+    "GTLY": {
+        "name": "Gateley (Holdings)",
+        "index": "FTSE AIM",
+        "price": "171.50",
+        "market_cap": "217.1"
+    },
+    "HOTC": {
+        "name": "Hotel Chocolat Group Ltd",
+        "index": "FTSE AIM",
+        "price": "157.50",
+        "market_cap": "216.6"
+    },
+    "I3E": {
+        "name": "i3 Energy",
+        "index": "FTSE AIM",
+        "price": "18.00",
+        "market_cap": "216.3"
+    },
+    "STS": {
+        "name": "Securities Trust of Scotland",
+        "index": "FTSE Small Cap",
+        "price": "217.00",
+        "market_cap": "216.0"
+    },
+    "JCGI": {
+        "name": "JPMorgan China Growth & Income",
+        "index": "FTSE Small Cap",
+        "price": "259.00",
+        "market_cap": "215.5"
+    },
+    "VTU": {
+        "name": "Vertu Motors",
+        "index": "FTSE AIM",
+        "price": "61.90",
+        "market_cap": "214.6"
+    },
+    "RTWG": {
+        "name": "RTW Venture Fund Ltd",
+        "index": NaN,
+        "price": "100.50",
+        "market_cap": "213.5"
+    },
+    "SREI": {
+        "name": "Schroder Real Estate Investment Trust Ltd",
+        "index": "FTSE Small Cap",
+        "price": "43.60",
+        "market_cap": "213.3"
+    },
+    "CBP": {
+        "name": "Curtis Banks Group",
+        "index": "FTSE AIM",
+        "price": "318.00",
+        "market_cap": "212.7"
+    },
+    "AIE": {
+        "name": "Ashoka India Equity Investment Trust",
+        "index": "FTSE Small Cap",
+        "price": "188.75",
+        "market_cap": "212.6"
+    },
+    "FNX": {
+        "name": "Fonix Mobile",
+        "index": "FTSE AIM",
+        "price": "212.50",
+        "market_cap": "212.0"
+    },
+    "MARS": {
+        "name": "Marston's",
+        "index": "FTSE Small Cap",
+        "price": "32.00",
+        "market_cap": "211.3"
+    },
+    "VSL": {
+        "name": "VPC Specialty Lending Investments",
+        "index": "FTSE Small Cap",
+        "price": "75.60",
+        "market_cap": "210.4"
+    },
+    "JSE": {
+        "name": "Jadestone Energy Inc",
+        "index": "FTSE AIM",
+        "price": "47.10",
+        "market_cap": "210.4"
+    },
+    "MCON": {
+        "name": "Mincon Group",
+        "index": "FTSE AIM",
+        "price": "90.75",
+        "market_cap": "210.3"
+    },
+    "FSTA": {
+        "name": "Fuller Smith & Turner",
+        "index": "FTSE Small Cap",
+        "price": "538.00",
+        "market_cap": "208.9"
+    },
+    "JMI": {
+        "name": "JPMorgan Smaller Companies Investment Trust",
+        "index": "FTSE Small Cap",
+        "price": "267.50",
+        "market_cap": "208.8"
+    },
+    "SAA": {
+        "name": "M&C Saatchi",
+        "index": "FTSE AIM",
+        "price": "170.50",
+        "market_cap": "208.4"
+    },
+    "LBG": {
+        "name": "LBG Media",
+        "index": "FTSE AIM",
+        "price": "100.50",
+        "market_cap": "207.5"
+    },
+    "SUR": {
+        "name": "Sureserve Group",
+        "index": "FTSE AIM",
+        "price": "124.25",
+        "market_cap": "206.5"
+    },
+    "LTI": {
+        "name": "Lindsell Train Investment Trust",
+        "index": "FTSE Small Cap",
+        "price": "103,000.00",
+        "market_cap": "206.0"
+    },
+    "SCF": {
+        "name": "Schroder Income Growth Fund",
+        "index": "FTSE Small Cap",
+        "price": "296.00",
+        "market_cap": "205.6"
+    },
+    "FNTL": {
+        "name": "Fintel",
+        "index": "FTSE AIM",
+        "price": "197.50",
+        "market_cap": "204.7"
+    },
+    "BMD": {
+        "name": "Baronsmead Second Venture Trust",
+        "index": NaN,
+        "price": "59.00",
+        "market_cap": "203.9"
+    },
+    "LUCE": {
+        "name": "Luceco",
+        "index": "FTSE Small Cap",
+        "price": "126.60",
+        "market_cap": "203.6"
+    },
+    "CHRT": {
+        "name": "Cohort",
+        "index": "FTSE AIM",
+        "price": "490.50",
+        "market_cap": "203.4"
+    },
+    "JARA": {
+        "name": "JPMorgan Global Core Real Assets Ltd",
+        "index": "FTSE Small Cap",
+        "price": "92.20",
+        "market_cap": "202.3"
+    },
+    "ACIC": {
+        "name": "Abrdn China Investment Company Ltd",
+        "index": "FTSE Small Cap",
+        "price": "462.50",
+        "market_cap": "201.8"
+    },
+    "CMCL": {
+        "name": "Caledonia Mining Corp",
+        "index": "FTSE AIM",
+        "price": "1,040.00",
+        "market_cap": "201.1"
+    },
+    "RCN": {
+        "name": "Redcentric",
+        "index": "FTSE AIM",
+        "price": "127.25",
+        "market_cap": "198.8"
+    },
+    "PEMB": {
+        "name": "Pembroke VCT B",
+        "index": NaN,
+        "price": "109.50",
+        "market_cap": "198.2"
+    },
+    "SFR": {
+        "name": "Severfield",
+        "index": "FTSE Small Cap",
+        "price": "63.80",
+        "market_cap": "197.5"
+    },
+    "JLP": {
+        "name": "Jubilee Metals Group",
+        "index": "FTSE AIM",
+        "price": "7.20",
+        "market_cap": "197.1"
+    },
+    "LGRS": {
+        "name": "Loungers",
+        "index": "FTSE AIM",
+        "price": "190.00",
+        "market_cap": "197.0"
+    },
+    "W7L": {
+        "name": "Warpaint London",
+        "index": "FTSE AIM",
+        "price": "255.00",
+        "market_cap": "195.7"
+    },
+    "DORE": {
+        "name": "Downing Renewables & Infrastructure Trust",
+        "index": "FTSE Small Cap",
+        "price": "105.50",
+        "market_cap": "194.8"
+    },
+    "BVT": {
+        "name": "Baronsmead Venture Trust",
+        "index": NaN,
+        "price": "55.50",
+        "market_cap": "194.8"
+    },
+    "BVXP": {
+        "name": "Bioventix",
+        "index": "FTSE AIM",
+        "price": "3,725.00",
+        "market_cap": "194.4"
+    },
+    "JMF": {
+        "name": "JPMorgan Mid Cap Investment Trust",
+        "index": "FTSE Small Cap",
+        "price": "890.00",
+        "market_cap": "193.5"
+    },
+    "ALL": {
+        "name": "Atlantic Lithium Ltd",
+        "index": "FTSE AIM",
+        "price": "31.60",
+        "market_cap": "192.5"
+    },
+    "KIST": {
+        "name": "Kistos Holdings",
+        "index": "FTSE AIM",
+        "price": "232.00",
+        "market_cap": "192.2"
+    },
+    "HEAD": {
+        "name": "Headlam Group",
+        "index": "FTSE Small Cap",
+        "price": "238.00",
+        "market_cap": "191.9"
+    },
+    "API": {
+        "name": "Abrdn Property Income Trust Ltd",
+        "index": "FTSE Small Cap",
+        "price": "50.20",
+        "market_cap": "191.4"
+    },
+    "RQIH": {
+        "name": "R&Q Insurance Holdings Ltd",
+        "index": "FTSE AIM",
+        "price": "51.00",
+        "market_cap": "191.0"
+    },
+    "GFRD": {
+        "name": "Galliford Try Holdings",
+        "index": "FTSE Small Cap",
+        "price": "177.00",
+        "market_cap": "190.9"
+    },
+    "BEG": {
+        "name": "Begbies Traynor Group",
+        "index": "FTSE AIM",
+        "price": "123.00",
+        "market_cap": "190.5"
+    },
+    "APTD": {
+        "name": "Aptitude Software Group",
+        "index": "FTSE Small Cap",
+        "price": "330.00",
+        "market_cap": "189.2"
+    },
+    "FCH": {
+        "name": "Funding Circle Holdings",
+        "index": "FTSE Small Cap",
+        "price": "52.20",
+        "market_cap": "188.6"
+    },
+    "TEG": {
+        "name": "Ten Entertainment Group",
+        "index": "FTSE Small Cap",
+        "price": "275.00",
+        "market_cap": "188.4"
+    },
+    "BSV": {
+        "name": "British Smaller Companies VCT",
+        "index": NaN,
+        "price": "78.00",
+        "market_cap": "188.2"
+    },
+    "BRCK": {
+        "name": "Brickability Group",
+        "index": "FTSE AIM",
+        "price": "62.50",
+        "market_cap": "187.7"
+    },
+    "KITW": {
+        "name": "Kitwave Group",
+        "index": "FTSE AIM",
+        "price": "268.00",
+        "market_cap": "187.6"
+    },
+    "NET": {
+        "name": "Netcall",
+        "index": "FTSE AIM",
+        "price": "116.50",
+        "market_cap": "186.7"
+    },
+    "PSDL": {
+        "name": "Phoenix Spree Deutschland Ltd",
+        "index": "FTSE Small Cap",
+        "price": "203.00",
+        "market_cap": "186.5"
+    },
+    "SOM": {
+        "name": "Somero Enterprises Inc",
+        "index": "FTSE AIM",
+        "price": "332.50",
+        "market_cap": "185.6"
+    },
+    "FSJ": {
+        "name": "Fisher (James) & Sons",
+        "index": "FTSE Small Cap",
+        "price": "368.00",
+        "market_cap": "185.5"
+    },
+    "TIGT": {
+        "name": "Troy Income & Growth Trust",
+        "index": "FTSE Small Cap",
+        "price": "71.40",
+        "market_cap": "185.4"
+    },
+    "SCP": {
+        "name": "Schroder UK Mid Cap Fund",
+        "index": "FTSE Small Cap",
+        "price": "536.00",
+        "market_cap": "185.4"
+    },
+    "GEM": {
+        "name": "Gemfields Group Ltd",
+        "index": "FTSE AIM",
+        "price": "14.75",
+        "market_cap": "184.4"
+    },
+    "MNL": {
+        "name": "Manchester & London Investment Trust",
+        "index": "FTSE Small Cap",
+        "price": "457.00",
+        "market_cap": "184.0"
+    },
+    "SAG": {
+        "name": "Science Group",
+        "index": "FTSE AIM",
+        "price": "405.00",
+        "market_cap": "183.1"
+    },
+    "OIT": {
+        "name": "Odyssean Investment Trust",
+        "index": "FTSE Small Cap",
+        "price": "162.00",
+        "market_cap": "183.0"
+    },
+    "CTPT": {
+        "name": "Ct Property Trust Ltd",
+        "index": "FTSE Small Cap",
+        "price": "78.40",
+        "market_cap": "182.0"
+    },
+    "HAT": {
+        "name": "H&T Group",
+        "index": "FTSE AIM",
+        "price": "412.00",
+        "market_cap": "180.7"
+    },
+    "EQLS": {
+        "name": "Equals Group",
+        "index": "FTSE AIM",
+        "price": "99.00",
+        "market_cap": "180.0"
+    },
+    "CAPD": {
+        "name": "Capital Ltd",
+        "index": "FTSE Small Cap",
+        "price": "94.00",
+        "market_cap": "179.4"
+    },
+    "FTV": {
+        "name": "Foresight VCT",
+        "index": NaN,
+        "price": "80.50",
+        "market_cap": "179.2"
+    },
+    "FSF": {
+        "name": "Foresight Sustainable Forestry Company",
+        "index": "FTSE Small Cap",
+        "price": "104.00",
+        "market_cap": "178.9"
+    },
+    "NEOA": {
+        "name": "New Energy One Acquisition Corporation",
+        "index": NaN,
+        "price": "1,020.00",
+        "market_cap": "178.5"
+    },
+    "ZTF": {
+        "name": "Zotefoams",
+        "index": "FTSE Small Cap",
+        "price": "365.00",
+        "market_cap": "177.5"
+    },
+    "WJG": {
+        "name": "Watkin Jones",
+        "index": "FTSE AIM",
+        "price": "69.10",
+        "market_cap": "177.2"
+    },
+    "MTRO": {
+        "name": "Metro Bank Holdings",
+        "index": "FTSE Small Cap",
+        "price": "102.00",
+        "market_cap": "176.0"
+    },
+    "FARN": {
+        "name": "Faron Pharmaceuticals OY",
+        "index": "FTSE AIM",
+        "price": "275.00",
+        "market_cap": "174.6"
+    },
+    "AJOT": {
+        "name": "AVI Japan Opportunity Trust",
+        "index": "FTSE Small Cap",
+        "price": "124.00",
+        "market_cap": "174.0"
+    },
+    "AUGM": {
+        "name": "Augmentum Fintech",
+        "index": "FTSE Small Cap",
+        "price": "98.85",
+        "market_cap": "174.0"
+    },
+    "SMIF": {
+        "name": "TwentyFour Select Monthly Income Fund Ltd",
+        "index": "FTSE Small Cap",
+        "price": "71.30",
+        "market_cap": "173.8"
+    },
+    "MTU": {
+        "name": "Montanaro UK Smaller Companies Inv Tr",
+        "index": "FTSE Small Cap",
+        "price": "103.25",
+        "market_cap": "172.8"
+    },
+    "IOM": {
+        "name": "Iomart Group",
+        "index": "FTSE AIM",
+        "price": "154.80",
+        "market_cap": "171.2"
+    },
+    "MACF": {
+        "name": "Macfarlane Group",
+        "index": "FTSE Small Cap",
+        "price": "108.00",
+        "market_cap": "171.0"
+    },
+    "JSGI": {
+        "name": "Jpmorgan Japan Small Cap Growth & Income",
+        "index": "FTSE Small Cap",
+        "price": "313.00",
+        "market_cap": "170.6"
+    },
+    "GTE": {
+        "name": "Gran Tierra Energy Inc",
+        "index": NaN,
+        "price": "460.00",
+        "market_cap": "169.7"
+    },
+    "GYM": {
+        "name": "The Gym Group",
+        "index": "FTSE Small Cap",
+        "price": "95.00",
+        "market_cap": "169.4"
+    },
+    "OTB": {
+        "name": "On The Beach Group",
+        "index": "FTSE Small Cap",
+        "price": "101.60",
+        "market_cap": "169.3"
+    },
+    "REC": {
+        "name": "Record",
+        "index": "FTSE Small Cap",
+        "price": "84.20",
+        "market_cap": "167.6"
+    },
+    "AMAT": {
+        "name": "Amati AIM VCT",
+        "index": NaN,
+        "price": "110.50",
+        "market_cap": "167.1"
+    },
+    "TSTL": {
+        "name": "Tristel",
+        "index": "FTSE AIM",
+        "price": "353.00",
+        "market_cap": "166.8"
+    },
+    "GFM": {
+        "name": "Griffin Mining Ltd",
+        "index": "FTSE AIM",
+        "price": "86.40",
+        "market_cap": "166.6"
+    },
+    "OIG": {
+        "name": "Oryx International Growth Fund Ltd",
+        "index": "FTSE Small Cap",
+        "price": "1,190.00",
+        "market_cap": "166.6"
+    },
+    "CGS": {
+        "name": "Castings",
+        "index": NaN,
+        "price": "380.00",
+        "market_cap": "165.5"
+    },
+    "HHV": {
+        "name": "Hargreave Hale AIM VCT 1",
+        "index": NaN,
+        "price": "50.00",
+        "market_cap": "165.4"
+    },
+    "BGO": {
+        "name": "Bango",
+        "index": "FTSE AIM",
+        "price": "214.00",
+        "market_cap": "164.2"
+    },
+    "NAVF": {
+        "name": "Nippon Active Value Fund",
+        "index": NaN,
+        "price": "145.00",
+        "market_cap": "164.1"
+    },
+    "EYE": {
+        "name": "Eagle Eye",
+        "index": "FTSE AIM",
+        "price": "557.50",
+        "market_cap": "163.1"
+    },
+    "SRAD": {
+        "name": "Stelrad Group",
+        "index": NaN,
+        "price": "127.00",
+        "market_cap": "161.7"
+    },
+    "PANR": {
+        "name": "Pantheon Resources",
+        "index": "FTSE AIM",
+        "price": "18.27",
+        "market_cap": "161.4"
+    },
+    "GR1T": {
+        "name": "Grit Real Estate Income Group Ltd",
+        "index": NaN,
+        "price": "32.50",
+        "market_cap": "160.8"
+    },
+    "PEBB": {
+        "name": "The Pebble Group",
+        "index": "FTSE AIM",
+        "price": "96.00",
+        "market_cap": "160.8"
+    },
+    "SAGA": {
+        "name": "Saga",
+        "index": "FTSE Small Cap",
+        "price": "114.40",
+        "market_cap": "160.5"
+    },
+    "AXS": {
+        "name": "Accsys Technologies",
+        "index": "FTSE AIM",
+        "price": "73.00",
+        "market_cap": "160.1"
+    },
+    "FINS": {
+        "name": "Financials Acquisition Corp",
+        "index": NaN,
+        "price": "1,035.00",
+        "market_cap": "159.9"
+    },
+    "VTAS": {
+        "name": "Volta Finance Ltd",
+        "index": NaN,
+        "price": "437.00",
+        "market_cap": "159.9"
+    },
+    "SEC": {
+        "name": "Strategic Equity Capital",
+        "index": "FTSE Small Cap",
+        "price": "315.00",
+        "market_cap": "159.4"
+    },
+    "IQG": {
+        "name": "IQGEO Group",
+        "index": "FTSE AIM",
+        "price": "258.00",
+        "market_cap": "158.8"
+    },
+    "CHAR": {
+        "name": "Chariot Oil & Gas Ltd",
+        "index": "FTSE AIM",
+        "price": "16.36",
+        "market_cap": "157.7"
+    },
+    "BERI": {
+        "name": "BlackRock Energy and Resources Income Trust",
+        "index": "FTSE Small Cap",
+        "price": "116.00",
+        "market_cap": "157.3"
+    },
+    "TMO": {
+        "name": "Time Out Group",
+        "index": "FTSE AIM",
+        "price": "46.50",
+        "market_cap": "157.0"
+    },
+    "ARR": {
+        "name": "Aurora Investment Trust",
+        "index": "FTSE Small Cap",
+        "price": "205.00",
+        "market_cap": "156.0"
+    },
+    "SDY": {
+        "name": "Speedy Hire",
+        "index": "FTSE Small Cap",
+        "price": "33.60",
+        "market_cap": "155.2"
+    },
+    "HUR": {
+        "name": "Hurricane Energy",
+        "index": "FTSE AIM",
+        "price": "7.78",
+        "market_cap": "155.0"
+    },
+    "AEWU": {
+        "name": "AEW UK REIT",
+        "index": "FTSE Small Cap",
+        "price": "97.40",
+        "market_cap": "154.3"
+    },
+    "DX.": {
+        "name": "DX Group",
+        "index": "FTSE AIM",
+        "price": "25.50",
+        "market_cap": "154.2"
+    },
+    "NXR": {
+        "name": "Norcros",
+        "index": "FTSE Small Cap",
+        "price": "172.25",
+        "market_cap": "153.8"
+    },
+    "PGOO": {
+        "name": "ProVen Growth & Income VCT",
+        "index": NaN,
+        "price": "51.50",
+        "market_cap": "153.7"
+    },
+    "MUL": {
+        "name": "Mulberry Group",
+        "index": "FTSE AIM",
+        "price": "255.00",
+        "market_cap": "153.2"
+    },
+    "PVN": {
+        "name": "ProVen VCT",
+        "index": NaN,
+        "price": "61.50",
+        "market_cap": "152.3"
+    },
+    "PPS": {
+        "name": "Proton Motor Power Systems",
+        "index": "FTSE AIM",
+        "price": "9.75",
+        "market_cap": "151.5"
+    },
+    "CHH": {
+        "name": "Churchill China",
+        "index": "FTSE AIM",
+        "price": "1,375.00",
+        "market_cap": "151.2"
+    },
+    "AEI": {
+        "name": "Abrdn Equity Income Trust",
+        "index": "FTSE Small Cap",
+        "price": "316.00",
+        "market_cap": "149.7"
+    },
+    "PPHC": {
+        "name": "Public Policy Holding Company Inc",
+        "index": "FTSE AIM",
+        "price": "133.50",
+        "market_cap": "149.5"
+    },
+    "PBEE": {
+        "name": "Pensionbee Group",
+        "index": NaN,
+        "price": "66.80",
+        "market_cap": "149.0"
+    },
+    "NMT": {
+        "name": "Neometals Ltd",
+        "index": "FTSE AIM",
+        "price": "29.00",
+        "market_cap": "147.6"
+    },
+    "TRR": {
+        "name": "Trident Royalties",
+        "index": "FTSE AIM",
+        "price": "50.50",
+        "market_cap": "147.1"
+    },
+    "INS": {
+        "name": "Instem Life Science Systems",
+        "index": "FTSE AIM",
+        "price": "640.00",
+        "market_cap": "146.4"
+    },
+    "BRSA": {
+        "name": "BlackRock Sustainable American Income Trust",
+        "index": "FTSE Small Cap",
+        "price": "182.00",
+        "market_cap": "146.0"
+    },
+    "IPU": {
+        "name": "Invesco Perpetual UK Smaller Companies Investment Trust",
+        "index": "FTSE Small Cap",
+        "price": "429.00",
+        "market_cap": "145.1"
+    },
+    "SAAS": {
+        "name": "Microlise Group",
+        "index": "FTSE AIM",
+        "price": "122.50",
+        "market_cap": "142.0"
+    },
+    "COST": {
+        "name": "Costain Group",
+        "index": "FTSE Small Cap",
+        "price": "51.60",
+        "market_cap": "141.9"
+    },
+    "CASP": {
+        "name": "Caspian Sunrise",
+        "index": "FTSE AIM",
+        "price": "6.30",
+        "market_cap": "141.8"
+    },
+    "BASC": {
+        "name": "Brown Advisory US Smaller Companies",
+        "index": "FTSE Small Cap",
+        "price": "1,185.00",
+        "market_cap": "141.6"
+    },
+    "PMI": {
+        "name": "Premier Miton Group",
+        "index": "FTSE AIM",
+        "price": "89.50",
+        "market_cap": "141.3"
+    },
+    "ARBB": {
+        "name": "Arbuthnot Banking Group",
+        "index": "FTSE AIM",
+        "price": "942.50",
+        "market_cap": "141.1"
+    },
+    "PGHZ": {
+        "name": "PCGH ZDP",
+        "index": NaN,
+        "price": "115.50",
+        "market_cap": "140.1"
+    },
+    "KEYS": {
+        "name": "Keystone Law Group",
+        "index": "FTSE AIM",
+        "price": "446.50",
+        "market_cap": "140.1"
+    },
+    "HSW": {
+        "name": "Hostelworld Group",
+        "index": "FTSE Small Cap",
+        "price": "118.00",
+        "market_cap": "139.9"
+    },
+    "SDI": {
+        "name": "SDI Group",
+        "index": "FTSE AIM",
+        "price": "134.00",
+        "market_cap": "139.4"
+    },
+    "TXP": {
+        "name": "Touchstone Exploration Inc",
+        "index": "FTSE AIM",
+        "price": "58.50",
+        "market_cap": "138.5"
+    },
+    "XAR": {
+        "name": "Xaar",
+        "index": "FTSE Small Cap",
+        "price": "176.50",
+        "market_cap": "138.5"
+    },
+    "GHH": {
+        "name": "Gooch & Housego",
+        "index": "FTSE AIM",
+        "price": "550.00",
+        "market_cap": "137.8"
+    },
+    "IGR": {
+        "name": "IG Design Group",
+        "index": "FTSE AIM",
+        "price": "139.50",
+        "market_cap": "136.7"
+    },
+    "ARIX": {
+        "name": "Arix Bioscience",
+        "index": NaN,
+        "price": "105.50",
+        "market_cap": "136.3"
+    },
+    "CARR": {
+        "name": "Carr's Group",
+        "index": NaN,
+        "price": "144.75",
+        "market_cap": "136.1"
+    },
+    "ASIT": {
+        "name": "Aberforth Split Level Income Trust",
+        "index": "FTSE Small Cap",
+        "price": "71.40",
+        "market_cap": "135.8"
+    },
+    "CAM": {
+        "name": "Camellia",
+        "index": "FTSE AIM",
+        "price": "4,890.00",
+        "market_cap": "135.1"
+    },
+    "FTF": {
+        "name": "Foresight Enterprise VCT",
+        "index": NaN,
+        "price": "60.50",
+        "market_cap": "133.6"
+    },
+    "MMIT": {
+        "name": "Mobius Investment Trust",
+        "index": "FTSE Small Cap",
+        "price": "124.00",
+        "market_cap": "133.5"
+    },
+    "BGCG": {
+        "name": "Baillie Gifford China Growth Trust",
+        "index": "FTSE Small Cap",
+        "price": "213.50",
+        "market_cap": "132.4"
+    },
+    "AVG": {
+        "name": "Avingtrans",
+        "index": "FTSE AIM",
+        "price": "410.00",
+        "market_cap": "132.2"
+    },
+    "RESI": {
+        "name": "Residential Secure Income",
+        "index": "FTSE Small Cap",
+        "price": "71.40",
+        "market_cap": "132.2"
+    },
+    "EPIC": {
+        "name": "Ediston Property Investment Co",
+        "index": "FTSE Small Cap",
+        "price": "62.40",
+        "market_cap": "131.9"
+    },
+    "HUW": {
+        "name": "Helios Underwriting",
+        "index": "FTSE AIM",
+        "price": "170.00",
+        "market_cap": "131.4"
+    },
+    "SNWS": {
+        "name": "Smiths News",
+        "index": "FTSE Fledgling",
+        "price": "53.00",
+        "market_cap": "131.3"
+    },
+    "INOV": {
+        "name": "Schroders Capital Global Innovation Trust",
+        "index": "FTSE Small Cap",
+        "price": "14.48",
+        "market_cap": "130.7"
+    },
+    "PREM": {
+        "name": "Premier African Minerals Ltd",
+        "index": "FTSE AIM",
+        "price": "0.57",
+        "market_cap": "130.2"
+    },
+    "KPC": {
+        "name": "Keystone Positive Change Investment Trust",
+        "index": "FTSE Small Cap",
+        "price": "210.00",
+        "market_cap": "129.8"
+    },
+    "MGCI": {
+        "name": "M&G Credit Income Investment Trust",
+        "index": "FTSE Small Cap",
+        "price": "91.00",
+        "market_cap": "129.4"
+    },
+    "IGC": {
+        "name": "India Capital Growth Fund Ltd",
+        "index": "FTSE Fledgling",
+        "price": "134.00",
+        "market_cap": "129.3"
+    },
+    "BWNG": {
+        "name": "Brown (N) Group",
+        "index": "FTSE AIM",
+        "price": "28.00",
+        "market_cap": "128.9"
+    },
+    "ZOO": {
+        "name": "Zoo Digital Group",
+        "index": "FTSE AIM",
+        "price": "131.50",
+        "market_cap": "128.6"
+    },
+    "ECEL": {
+        "name": "Eurocell",
+        "index": NaN,
+        "price": "114.50",
+        "market_cap": "128.3"
+    },
+    "PEEL": {
+        "name": "Peel Hunt Ltd",
+        "index": "FTSE AIM",
+        "price": "104.50",
+        "market_cap": "128.3"
+    },
+    "NWF": {
+        "name": "NWF Group",
+        "index": "FTSE AIM",
+        "price": "259.50",
+        "market_cap": "128.2"
+    },
+    "EKF": {
+        "name": "EKF Diagnostics Holdings",
+        "index": "FTSE AIM",
+        "price": "28.25",
+        "market_cap": "128.2"
+    },
+    "AGFX": {
+        "name": "Argentex Group",
+        "index": "FTSE AIM",
+        "price": "113.00",
+        "market_cap": "127.9"
+    },
+    "GHT": {
+        "name": "Gresham Technologies",
+        "index": NaN,
+        "price": "153.00",
+        "market_cap": "127.7"
+    },
+    "SLE": {
+        "name": "San Leon Energy",
+        "index": "FTSE AIM",
+        "price": "28.25",
+        "market_cap": "127.1"
+    },
+    "DEVO": {
+        "name": "Devolver Digital Inc",
+        "index": "FTSE AIM",
+        "price": "28.50",
+        "market_cap": "126.8"
+    },
+    "PDL": {
+        "name": "Petra Diamonds Ltd",
+        "index": "FTSE Small Cap",
+        "price": "65.20",
+        "market_cap": "126.6"
+    },
+    "ROOF": {
+        "name": "Atrato Onsite Energy",
+        "index": "FTSE Small Cap",
+        "price": "84.40",
+        "market_cap": "126.6"
+    },
+    "DUKE": {
+        "name": "Duke Royalty Ltd",
+        "index": "FTSE AIM",
+        "price": "30.25",
+        "market_cap": "126.3"
+    },
+    "JZCP": {
+        "name": "JZ Capital Partners Ltd",
+        "index": "FTSE Small Cap",
+        "price": "162.50",
+        "market_cap": "125.9"
+    },
+    "SOLI": {
+        "name": "Solid State",
+        "index": "FTSE AIM",
+        "price": "1,110.00",
+        "market_cap": "125.7"
+    },
+    "AFC": {
+        "name": "AFC Energy",
+        "index": "FTSE AIM",
+        "price": "16.86",
+        "market_cap": "125.7"
+    },
+    "HSP": {
+        "name": "Hargreaves Services",
+        "index": "FTSE AIM",
+        "price": "386.00",
+        "market_cap": "125.6"
+    },
+    "CVCG": {
+        "name": "CVC Income & Growth Ltd",
+        "index": "FTSE Small Cap",
+        "price": "96.70",
+        "market_cap": "125.2"
+    },
+    "GPH": {
+        "name": "Global Ports Holding",
+        "index": NaN,
+        "price": "199.00",
+        "market_cap": "125.0"
+    },
+    "BPM": {
+        "name": "BP Marsh & Partners",
+        "index": "FTSE AIM",
+        "price": "334.00",
+        "market_cap": "124.9"
+    },
+    "WKOF": {
+        "name": "Weiss Korea Opportunity Fund Ltd",
+        "index": "FTSE AIM",
+        "price": "180.00",
+        "market_cap": "124.7"
+    },
+    "BSC": {
+        "name": "British Smaller Companies VCT 2",
+        "index": NaN,
+        "price": "54.50",
+        "market_cap": "124.6"
+    },
+    "HMA1": {
+        "name": "Hiro Metaverse Acquisitions I SA",
+        "index": NaN,
+        "price": "1,050.00",
+        "market_cap": "124.4"
+    },
+    "BLTG": {
+        "name": "Blancco Technology Group",
+        "index": "FTSE AIM",
+        "price": "163.50",
+        "market_cap": "123.8"
+    },
+    "HDIV": {
+        "name": "Henderson Diversified Income Trust",
+        "index": "FTSE Small Cap",
+        "price": "67.70",
+        "market_cap": "123.3"
+    },
+    "AATG": {
+        "name": "Albion Technology & General VCT",
+        "index": NaN,
+        "price": "74.00",
+        "market_cap": "123.0"
+    },
+    "SUP": {
+        "name": "Supreme",
+        "index": "FTSE AIM",
+        "price": "104.00",
+        "market_cap": "122.0"
+    },
+    "FUM": {
+        "name": "Futura Medical",
+        "index": "FTSE AIM",
+        "price": "41.50",
+        "market_cap": "121.4"
+    },
+    "FIF": {
+        "name": "Finsbury Food Group",
+        "index": "FTSE AIM",
+        "price": "93.00",
+        "market_cap": "121.3"
+    },
+    "QTX": {
+        "name": "Quartix Holdings",
+        "index": "FTSE AIM",
+        "price": "250.00",
+        "market_cap": "121.0"
+    },
+    "CYN": {
+        "name": "CQS Natural Resources Growth & Income",
+        "index": "FTSE Small Cap",
+        "price": "180.25",
+        "market_cap": "120.6"
+    },
+    "CCP": {
+        "name": "Celtic",
+        "index": "FTSE AIM",
+        "price": "127.50",
+        "market_cap": "120.6"
+    },
+    "AAZ": {
+        "name": "Anglo Asian Mining",
+        "index": "FTSE AIM",
+        "price": "105.50",
+        "market_cap": "120.5"
+    },
+    "UTL": {
+        "name": "UIL Ltd",
+        "index": NaN,
+        "price": "143.50",
+        "market_cap": "120.3"
+    },
+    "OMG": {
+        "name": "Oxford Metrics",
+        "index": "FTSE AIM",
+        "price": "92.00",
+        "market_cap": "119.8"
+    },
+    "SHG": {
+        "name": "Shanta Gold Ltd",
+        "index": "FTSE AIM",
+        "price": "11.38",
+        "market_cap": "119.7"
+    },
+    "STB": {
+        "name": "Secure Trust Bank",
+        "index": "FTSE Small Cap",
+        "price": "634.00",
+        "market_cap": "118.5"
+    },
+    "MERC": {
+        "name": "Mercia Asset Management",
+        "index": "FTSE AIM",
+        "price": "26.50",
+        "market_cap": "118.3"
+    },
+    "KOD": {
+        "name": "Kodal Minerals",
+        "index": "FTSE AIM",
+        "price": "0.69",
+        "market_cap": "117.5"
+    },
+    "SCLP": {
+        "name": "Scancell Holdings",
+        "index": "FTSE AIM",
+        "price": "14.25",
+        "market_cap": "116.6"
+    },
+    "RIII": {
+        "name": "Rights and Issues Inv Trust",
+        "index": NaN,
+        "price": "1,935.00",
+        "market_cap": "116.3"
+    },
+    "SPEC": {
+        "name": "Inspecs Group",
+        "index": "FTSE AIM",
+        "price": "114.00",
+        "market_cap": "115.9"
+    },
+    "MOTR": {
+        "name": "Motorpoint Group",
+        "index": "FTSE Small Cap",
+        "price": "128.50",
+        "market_cap": "115.9"
+    },
+    "STVG": {
+        "name": "STV Group",
+        "index": "FTSE Small Cap",
+        "price": "247.50",
+        "market_cap": "115.6"
+    },
+    "MVCT": {
+        "name": "Molten Ventures VCT",
+        "index": NaN,
+        "price": "47.40",
+        "market_cap": "115.4"
+    },
+    "INSE": {
+        "name": "Inspired Energy",
+        "index": "FTSE AIM",
+        "price": "11.75",
+        "market_cap": "115.0"
+    },
+    "MCT": {
+        "name": "Middlefield Canadian Income Trusts Investment Company PCC",
+        "index": NaN,
+        "price": "107.75",
+        "market_cap": "114.7"
+    },
+    "UPGS": {
+        "name": "UP Global Sourcing Holdings",
+        "index": "FTSE Small Cap",
+        "price": "128.00",
+        "market_cap": "114.3"
+    },
+    "AADV": {
+        "name": "Albion Development VCT",
+        "index": NaN,
+        "price": "88.50",
+        "market_cap": "114.3"
+    },
+    "IGV": {
+        "name": "Income and Growth VCT",
+        "index": NaN,
+        "price": "73.50",
+        "market_cap": "114.1"
+    },
+    "FOXT": {
+        "name": "Foxtons Group",
+        "index": "FTSE Small Cap",
+        "price": "37.40",
+        "market_cap": "113.5"
+    },
+    "PU13": {
+        "name": "Puma VCT 13",
+        "index": NaN,
+        "price": "127.50",
+        "market_cap": "113.5"
+    },
+    "KCT": {
+        "name": "Kin and Carta",
+        "index": "FTSE Small Cap",
+        "price": "63.60",
+        "market_cap": "113.2"
+    },
+    "AAEV": {
+        "name": "Albion Enterprise VCT",
+        "index": NaN,
+        "price": "120.50",
+        "market_cap": "113.1"
+    },
+    "NXQ": {
+        "name": "Nexteq",
+        "index": "FTSE AIM",
+        "price": "169.00",
+        "market_cap": "112.4"
+    },
+    "SERE": {
+        "name": "Schroder European Real Estate Investment Trust Ltd",
+        "index": "FTSE Small Cap",
+        "price": "83.80",
+        "market_cap": "112.1"
+    },
+    "LORD": {
+        "name": "Lords Group Trading",
+        "index": "FTSE AIM",
+        "price": "67.50",
+        "market_cap": "111.7"
+    },
+    "AQX": {
+        "name": "Aquis Exchange",
+        "index": "FTSE AIM",
+        "price": "406.00",
+        "market_cap": "111.7"
+    },
+    "BRLA": {
+        "name": "BlackRock Latin American Investment Trust",
+        "index": "FTSE Small Cap",
+        "price": "378.00",
+        "market_cap": "111.3"
+    },
+    "ACRL": {
+        "name": "Accrol Group Holdings",
+        "index": "FTSE AIM",
+        "price": "34.90",
+        "market_cap": "111.3"
+    },
+    "LINV": {
+        "name": "Lendinvest",
+        "index": "FTSE AIM",
+        "price": "79.00",
+        "market_cap": "110.3"
+    },
+    "ADVT": {
+        "name": "AdvancedAdvT Ltd",
+        "index": NaN,
+        "price": "82.50",
+        "market_cap": "109.9"
+    },
+    "BKY": {
+        "name": "Berkeley Energia Ltd",
+        "index": NaN,
+        "price": "24.50",
+        "market_cap": "109.2"
+    },
+    "SRT": {
+        "name": "SRT Marine Systems",
+        "index": "FTSE AIM",
+        "price": "60.00",
+        "market_cap": "108.9"
+    },
+    "THX": {
+        "name": "Thor Explorations Ltd",
+        "index": "FTSE AIM",
+        "price": "17.75",
+        "market_cap": "108.2"
+    },
+    "GRX": {
+        "name": "Greenx Metals Ltd",
+        "index": NaN,
+        "price": "42.50",
+        "market_cap": "107.8"
+    },
+    "ANCR": {
+        "name": "Animalcare Group",
+        "index": "FTSE AIM",
+        "price": "177.00",
+        "market_cap": "106.4"
+    },
+    "BSE": {
+        "name": "Base Resources Ltd",
+        "index": "FTSE AIM",
+        "price": "9.45",
+        "market_cap": "105.9"
+    },
+    "PODP": {
+        "name": "Pod Point Group Holdings",
+        "index": NaN,
+        "price": "68.70",
+        "market_cap": "105.8"
+    },
+    "MAJE": {
+        "name": "Majedie Investments",
+        "index": "FTSE Small Cap",
+        "price": "199.50",
+        "market_cap": "105.7"
+    },
+    "HUM": {
+        "name": "Hummingbird Resources",
+        "index": "FTSE AIM",
+        "price": "17.50",
+        "market_cap": "105.3"
+    },
+    "ANIC": {
+        "name": "Agronomics Ltd",
+        "index": "FTSE AIM",
+        "price": "10.60",
+        "market_cap": "105.3"
+    },
+    "TPT": {
+        "name": "Topps Tiles",
+        "index": "FTSE Small Cap",
+        "price": "53.50",
+        "market_cap": "105.2"
+    },
+    "HVO": {
+        "name": "Hvivo",
+        "index": "FTSE AIM",
+        "price": "15.50",
+        "market_cap": "105.2"
+    },
+    "BVC": {
+        "name": "BATM Advanced Communications Ltd",
+        "index": NaN,
+        "price": "24.00",
+        "market_cap": "104.6"
+    },
+    "FOG": {
+        "name": "Falcon Oil & Gas Ltd",
+        "index": "FTSE AIM",
+        "price": "9.50",
+        "market_cap": "104.6"
+    },
+    "NTN": {
+        "name": "Northern 3 VCT",
+        "index": NaN,
+        "price": "84.50",
+        "market_cap": "104.4"
+    },
+    "SVML": {
+        "name": "Sovereign Metals Ltd",
+        "index": "FTSE AIM",
+        "price": "22.50",
+        "market_cap": "103.5"
+    },
+    "ATS": {
+        "name": "Artemis Alpha Trust",
+        "index": "FTSE Small Cap",
+        "price": "314.00",
+        "market_cap": "103.2"
+    },
+    "SPR": {
+        "name": "Springfield Properties",
+        "index": "FTSE AIM",
+        "price": "87.00",
+        "market_cap": "103.1"
+    },
+    "PCA": {
+        "name": "Palace Capital",
+        "index": "FTSE Small Cap",
+        "price": "233.00",
+        "market_cap": "102.2"
+    },
+    "ETX": {
+        "name": "e-Therapeutics",
+        "index": "FTSE AIM",
+        "price": "17.53",
+        "market_cap": "102.2"
+    },
+    "CPC": {
+        "name": "City Pub Group",
+        "index": "FTSE AIM",
+        "price": "97.30",
+        "market_cap": "101.9"
+    },
+    "NTV": {
+        "name": "Northern 2 VCT",
+        "index": NaN,
+        "price": "54.50",
+        "market_cap": "101.5"
+    },
+    "KAY": {
+        "name": "Kings Arms Yard VCT",
+        "index": NaN,
+        "price": "20.30",
+        "market_cap": "100.8"
+    },
+    "SHOE": {
+        "name": "Shoe Zone",
+        "index": "FTSE AIM",
+        "price": "212.50",
+        "market_cap": "100.4"
+    },
+    "ECK": {
+        "name": "Eckoh",
+        "index": "FTSE AIM",
+        "price": "34.50",
+        "market_cap": "100.3"
+    },
+    "CAL": {
+        "name": "Capital & Regional",
+        "index": "FTSE Small Cap",
+        "price": "58.80",
+        "market_cap": "99.5"
+    },
+    "HSS": {
+        "name": "HSS Hire Group",
+        "index": "FTSE AIM",
+        "price": "14.10",
+        "market_cap": "99.4"
+    },
+    "TRI": {
+        "name": "Trifast",
+        "index": "FTSE Small Cap",
+        "price": "73.00",
+        "market_cap": "99.4"
+    },
+    "TPFG": {
+        "name": "Property Franchise Group",
+        "index": "FTSE AIM",
+        "price": "307.50",
+        "market_cap": "98.5"
+    },
+    "CHI+CHIB": {
+        "name": "Ct UK High Income Trust",
+        "index": "FTSE Fledgling",
+        "price": "82.50",
+        "market_cap": "98.0"
+    },
+    "EPWN": {
+        "name": "Epwin Group",
+        "index": "FTSE AIM",
+        "price": "67.50",
+        "market_cap": "97.8"
+    },
+    "ACC": {
+        "name": "Access Intelligence",
+        "index": "FTSE AIM",
+        "price": "76.50",
+        "market_cap": "97.7"
+    },
+    "PHAR": {
+        "name": "Pharos Energy",
+        "index": "FTSE Small Cap",
+        "price": "22.60",
+        "market_cap": "97.6"
+    },
+    "NBMI": {
+        "name": "NB Global Monthly Income Fund Ltd",
+        "index": "FTSE Small Cap",
+        "price": "73.25",
+        "market_cap": "97.0"
+    },
+    "WYN": {
+        "name": "Wynnstay Group",
+        "index": "FTSE AIM",
+        "price": "430.00",
+        "market_cap": "97.0"
+    },
+    "ENW": {
+        "name": "Enwell Energy",
+        "index": "FTSE AIM",
+        "price": "30.20",
+        "market_cap": "96.8"
+    },
+    "MANO": {
+        "name": "Manolete Partners",
+        "index": "FTSE AIM",
+        "price": "219.00",
+        "market_cap": "95.8"
+    },
+    "TBLD": {
+        "name": "tinyBuild Inc",
+        "index": "FTSE AIM",
+        "price": "47.00",
+        "market_cap": "95.8"
+    },
+    "WATR": {
+        "name": "Water Intelligence",
+        "index": "FTSE AIM",
+        "price": "445.00",
+        "market_cap": "95.8"
+    },
+    "AMRQ": {
+        "name": "Amaroq Minerals Ltd",
+        "index": "FTSE AIM",
+        "price": "40.00",
+        "market_cap": "95.6"
+    },
+    "CLX": {
+        "name": "Calnex Solutions",
+        "index": "FTSE AIM",
+        "price": "109.00",
+        "market_cap": "95.4"
+    },
+    "GOT": {
+        "name": "Global Opportunities Trust",
+        "index": "FTSE Small Cap",
+        "price": "324.00",
+        "market_cap": "94.7"
+    },
+    "BMS": {
+        "name": "Braemar",
+        "index": "FTSE Fledgling",
+        "price": "285.00",
+        "market_cap": "93.8"
+    },
+    "REDX": {
+        "name": "Redx Pharma Ltd",
+        "index": "FTSE AIM",
+        "price": "28.00",
+        "market_cap": "93.8"
+    },
+    "MIX": {
+        "name": "Mobeus Income & Growth VCT",
+        "index": NaN,
+        "price": "55.50",
+        "market_cap": "93.6"
+    },
+    "NVT": {
+        "name": "Northern Venture Trust",
+        "index": NaN,
+        "price": "56.50",
+        "market_cap": "93.3"
+    },
+    "SSIT": {
+        "name": "Seraphim Space Investment Trust",
+        "index": "FTSE Small Cap",
+        "price": "38.70",
+        "market_cap": "92.6"
+    },
+    "HAN+HANA": {
+        "name": "Hansa Investment Company Ltd",
+        "index": NaN,
+        "price": "166.00 / 163.00",
+        "market_cap": "92.5"
+    },
+    "TV1": {
+        "name": "Thames Ventures Vct 1",
+        "index": NaN,
+        "price": "51.50",
+        "market_cap": "92.4"
+    },
+    "ATM": {
+        "name": "Andrada Mining Ltd",
+        "index": "FTSE AIM",
+        "price": "6.00",
+        "market_cap": "92.3"
+    },
+    "ANX": {
+        "name": "Anexo Group",
+        "index": "FTSE AIM",
+        "price": "78.00",
+        "market_cap": "92.0"
+    },
+    "CEL": {
+        "name": "Celadon Pharmaceuticals",
+        "index": "FTSE AIM",
+        "price": "172.50",
+        "market_cap": "92.0"
+    },
+    "MRK": {
+        "name": "Marks Electrical Group",
+        "index": "FTSE AIM",
+        "price": "87.00",
+        "market_cap": "91.3"
+    },
+    "RMII": {
+        "name": "RM Infrastructure Income",
+        "index": "FTSE Fledgling",
+        "price": "76.50",
+        "market_cap": "90.0"
+    },
+    "PYX": {
+        "name": "Pyx Resources Ltd",
+        "index": NaN,
+        "price": "20.13",
+        "market_cap": "89.9"
+    },
+    "FTSE Small Cap entry level = 89.9": {
+        "name": NaN,
+        "index": NaN,
+        "price": NaN,
+        "market_cap": NaN
+    },
+    "VIP": {
+        "name": "Value & Indexed Property Income Trust",
+        "index": "FTSE Small Cap",
+        "price": "207.50",
+        "market_cap": "89.3"
+    },
+    "FEN": {
+        "name": "Frenkel Topping Group",
+        "index": "FTSE AIM",
+        "price": "70.00",
+        "market_cap": "89.2"
+    },
+    "FUL": {
+        "name": "The Fulham Shore",
+        "index": "FTSE AIM",
+        "price": "14.00",
+        "market_cap": "88.9"
+    },
+    "AVAP": {
+        "name": "Avation",
+        "index": NaN,
+        "price": "126.00",
+        "market_cap": "88.5"
+    },
+    "SDG": {
+        "name": "Sanderson Design Group",
+        "index": "FTSE AIM",
+        "price": "123.50",
+        "market_cap": "88.3"
+    },
+    "MBH": {
+        "name": "Michelmersh Brick Holdings",
+        "index": "FTSE AIM",
+        "price": "92.50",
+        "market_cap": "88.0"
+    },
+    "GMR": {
+        "name": "Gaming Realms",
+        "index": "FTSE AIM",
+        "price": "30.10",
+        "market_cap": "87.9"
+    },
+    "SCE": {
+        "name": "Surface Transforms",
+        "index": "FTSE AIM",
+        "price": "36.00",
+        "market_cap": "87.0"
+    },
+    "LIT": {
+        "name": "Litigation Capital Management Ltd",
+        "index": "FTSE AIM",
+        "price": "72.80",
+        "market_cap": "86.8"
+    },
+    "CREO": {
+        "name": "Creo Medical Group",
+        "index": "FTSE AIM",
+        "price": "24.60",
+        "market_cap": "86.3"
+    },
+    "ASAI": {
+        "name": "ASA International Group",
+        "index": "FTSE Fledgling",
+        "price": "86.00",
+        "market_cap": "86.0"
+    },
+    "NSI": {
+        "name": "New Star Investment Trust",
+        "index": "FTSE Fledgling",
+        "price": "120.00",
+        "market_cap": "85.2"
+    },
+    "88E": {
+        "name": "88 Energy Ltd",
+        "index": "FTSE AIM",
+        "price": "0.43",
+        "market_cap": "85.0"
+    },
+    "MAV4": {
+        "name": "Maven Income & Growth VCT4",
+        "index": NaN,
+        "price": "63.00",
+        "market_cap": "84.6"
+    },
+    "CRWN": {
+        "name": "Crown Place VCT",
+        "index": NaN,
+        "price": "31.50",
+        "market_cap": "84.6"
+    },
+    "OSEC": {
+        "name": "Octopus AIM VCT 2",
+        "index": NaN,
+        "price": "51.50",
+        "market_cap": "84.1"
+    },
+    "CRPR": {
+        "name": "Cropper (James)",
+        "index": "FTSE AIM",
+        "price": "880.00",
+        "market_cap": "84.1"
+    },
+    "TRB": {
+        "name": "Tribal Group",
+        "index": "FTSE AIM",
+        "price": "38.95",
+        "market_cap": "82.7"
+    },
+    "HGEN": {
+        "name": "Hydrogenone Capital Growth",
+        "index": "FTSE Fledgling",
+        "price": "64.10",
+        "market_cap": "82.6"
+    },
+    "RKH": {
+        "name": "Rockhopper Exploration",
+        "index": "FTSE AIM",
+        "price": "14.05",
+        "market_cap": "82.5"
+    },
+    "LDG": {
+        "name": "Logistics Development Group",
+        "index": "FTSE AIM",
+        "price": "14.85",
+        "market_cap": "82.4"
+    },
+    "RENX": {
+        "name": "Renalytix AI",
+        "index": "FTSE AIM",
+        "price": "87.50",
+        "market_cap": "82.1"
+    },
+    "KOO": {
+        "name": "Kooth",
+        "index": "FTSE AIM",
+        "price": "247.00",
+        "market_cap": "81.6"
+    },
+    "SBSI": {
+        "name": "Schroder Bsc Social Impact Trust",
+        "index": "FTSE Fledgling",
+        "price": "95.50",
+        "market_cap": "81.2"
+    },
+    "HOT": {
+        "name": "Henderson Opportunities Trust",
+        "index": "FTSE Fledgling",
+        "price": "1,027.50",
+        "market_cap": "81.2"
+    },
+    "MHN": {
+        "name": "Menhaden",
+        "index": "FTSE Fledgling",
+        "price": "102.00",
+        "market_cap": "80.8"
+    },
+    "AJIT": {
+        "name": "Abrdn Japan Investment Trust",
+        "index": "FTSE Fledgling",
+        "price": "647.50",
+        "market_cap": "80.5"
+    },
+    "BLV": {
+        "name": "Belvoir Group",
+        "index": "FTSE AIM",
+        "price": "214.00",
+        "market_cap": "79.8"
+    },
+    "SDRY": {
+        "name": "Superdry",
+        "index": "FTSE Small Cap",
+        "price": "81.40",
+        "market_cap": "79.7"
+    },
+    "MIGO": {
+        "name": "Migo Opportunities Trust",
+        "index": "FTSE Fledgling",
+        "price": "323.50",
+        "market_cap": "79.3"
+    },
+    "CGH": {
+        "name": "Chaarat Gold Holdings Ltd",
+        "index": "FTSE AIM",
+        "price": "11.50",
+        "market_cap": "79.3"
+    },
+    "WINE": {
+        "name": "Naked Wines",
+        "index": "FTSE AIM",
+        "price": "107.00",
+        "market_cap": "79.2"
+    },
+    "MSI": {
+        "name": "MS International",
+        "index": "FTSE AIM",
+        "price": "480.00",
+        "market_cap": "78.9"
+    },
+    "MIG4": {
+        "name": "Mobeus Income & Growth 4 VCT",
+        "index": NaN,
+        "price": "71.50",
+        "market_cap": "78.9"
+    },
+    "STCM": {
+        "name": "Steppe Cement Ltd",
+        "index": "FTSE AIM",
+        "price": "36.00",
+        "market_cap": "78.8"
+    },
+    "ARTL": {
+        "name": "Alpha Real Trust Ltd",
+        "index": NaN,
+        "price": "136.50",
+        "market_cap": "78.8"
+    },
+    "EUA": {
+        "name": "Eurasia Mining",
+        "index": "FTSE AIM",
+        "price": "2.75",
+        "market_cap": "78.6"
+    },
+    "NEXS": {
+        "name": "Nexus Infrastructure",
+        "index": "FTSE AIM",
+        "price": "170.00",
+        "market_cap": "78.5"
+    },
+    "SAR": {
+        "name": "Sareum Holdings",
+        "index": "FTSE AIM",
+        "price": "115.00",
+        "market_cap": "78.3"
+    },
+    "AREC": {
+        "name": "Arecor Therapeutics",
+        "index": "FTSE AIM",
+        "price": "255.00",
+        "market_cap": "78.1"
+    },
+    "AXI": {
+        "name": "Axiom European Financial Debt Ltd",
+        "index": "FTSE Fledgling",
+        "price": "85.00",
+        "market_cap": "78.1"
+    },
+    "SPSC": {
+        "name": "Spectra Systems Corp",
+        "index": "FTSE AIM",
+        "price": "170.00",
+        "market_cap": "77.7"
+    },
+    "SPSY": {
+        "name": "Spectra Systems Corp",
+        "index": "FTSE AIM",
+        "price": "172.50",
+        "market_cap": "77.7"
+    },
+    "SHRS": {
+        "name": "Shires Income",
+        "index": "FTSE Fledgling",
+        "price": "250.50",
+        "market_cap": "77.6"
+    },
+    "BKS": {
+        "name": "Beeks Financial Cloud Group",
+        "index": "FTSE AIM",
+        "price": "118.00",
+        "market_cap": "77.3"
+    },
+    "PRE": {
+        "name": "Pensana Rare Earths",
+        "index": NaN,
+        "price": "30.30",
+        "market_cap": "77.3"
+    },
+    "EAH": {
+        "name": "Eco Animal Health Group",
+        "index": "FTSE AIM",
+        "price": "113.50",
+        "market_cap": "76.9"
+    },
+    "YU.": {
+        "name": "Yu Group",
+        "index": "FTSE AIM",
+        "price": "460.00",
+        "market_cap": "76.7"
+    },
+    "KGH": {
+        "name": "Knights Group Holdings",
+        "index": "FTSE AIM",
+        "price": "89.00",
+        "market_cap": "76.4"
+    },
+    "DLAR": {
+        "name": "De La Rue",
+        "index": "FTSE Small Cap",
+        "price": "39.05",
+        "market_cap": "76.3"
+    },
+    "DIA": {
+        "name": "Dialight",
+        "index": "FTSE Fledgling",
+        "price": "230.00",
+        "market_cap": "75.8"
+    },
+    "ZAMZ": {
+        "name": "Zamaz",
+        "index": NaN,
+        "price": "10.50",
+        "market_cap": "74.7"
+    },
+    "RFX": {
+        "name": "Ramsdens Holdings",
+        "index": "FTSE AIM",
+        "price": "233.50",
+        "market_cap": "74.1"
+    },
+    "VNH": {
+        "name": "Vietnam Holding Ltd",
+        "index": "FTSE Fledgling",
+        "price": "260.50",
+        "market_cap": "74.0"
+    },
+    "RM.": {
+        "name": "RM",
+        "index": "FTSE Fledgling",
+        "price": "88.20",
+        "market_cap": "74.0"
+    },
+    "CPH2": {
+        "name": "Clean Power Hydrogen",
+        "index": "FTSE AIM",
+        "price": "27.50",
+        "market_cap": "73.8"
+    },
+    "CML": {
+        "name": "CML Microsystems",
+        "index": "FTSE AIM",
+        "price": "475.00",
+        "market_cap": "73.6"
+    },
+    "ASTO": {
+        "name": "AssetCo",
+        "index": "FTSE AIM",
+        "price": "52.00",
+        "market_cap": "73.3"
+    },
+    "D4T4": {
+        "name": "D4t4 Solutions",
+        "index": "FTSE AIM",
+        "price": "181.50",
+        "market_cap": "72.3"
+    },
+    "IKA": {
+        "name": "Ilika",
+        "index": "FTSE AIM",
+        "price": "45.50",
+        "market_cap": "72.1"
+    },
+    "HSD": {
+        "name": "Hansard Global",
+        "index": "FTSE Fledgling",
+        "price": "51.90",
+        "market_cap": "71.4"
+    },
+    "DPEU": {
+        "name": "DP Eurasia NV",
+        "index": "FTSE Fledgling",
+        "price": "49.00",
+        "market_cap": "71.4"
+    },
+    "SYME": {
+        "name": "Supply@Me Capital",
+        "index": NaN,
+        "price": "0.13",
+        "market_cap": "71.3"
+    },
+    "CAU": {
+        "name": "Centaur Media",
+        "index": "FTSE Fledgling",
+        "price": "48.50",
+        "market_cap": "71.2"
+    },
+    "4BB": {
+        "name": "4basebio",
+        "index": "FTSE AIM",
+        "price": "575.00",
+        "market_cap": "70.8"
+    },
+    "AEET": {
+        "name": "Aquila Energy Efficiency Trust",
+        "index": "FTSE Fledgling",
+        "price": "70.50",
+        "market_cap": "70.5"
+    },
+    "QRT": {
+        "name": "Quarto Group Inc",
+        "index": NaN,
+        "price": "172.00",
+        "market_cap": "70.3"
+    },
+    "MATE": {
+        "name": "JPMorgan Multi-Asset Trust",
+        "index": "FTSE Fledgling",
+        "price": "91.25",
+        "market_cap": "70.3"
+    },
+    "DXRX": {
+        "name": "Diaceutics",
+        "index": "FTSE AIM",
+        "price": "81.50",
+        "market_cap": "68.8"
+    },
+    "TENG": {
+        "name": "Ten Lifestyle Group",
+        "index": "FTSE AIM",
+        "price": "82.00",
+        "market_cap": "68.8"
+    },
+    "JIM": {
+        "name": "Jarvis Securities",
+        "index": "FTSE AIM",
+        "price": "152.50",
+        "market_cap": "68.2"
+    },
+    "ART": {
+        "name": "The Artisanal Spirits Company",
+        "index": "FTSE AIM",
+        "price": "97.50",
+        "market_cap": "68.0"
+    },
+    "IES": {
+        "name": "Invinity Energy Systems",
+        "index": "FTSE AIM",
+        "price": "35.50",
+        "market_cap": "67.8"
+    },
+    "ELCO": {
+        "name": "Eleco",
+        "index": "FTSE AIM",
+        "price": "81.50",
+        "market_cap": "67.8"
+    },
+    "IOF": {
+        "name": "Iofina",
+        "index": "FTSE AIM",
+        "price": "35.25",
+        "market_cap": "67.6"
+    },
+    "EJFI": {
+        "name": "EJF Investments Ltd",
+        "index": NaN,
+        "price": "110.50",
+        "market_cap": "67.6"
+    },
+    "JOG": {
+        "name": "Jersey Oil and Gas",
+        "index": "FTSE AIM",
+        "price": "207.50",
+        "market_cap": "67.6"
+    },
+    "CRS": {
+        "name": "Crystal Amber Fund Ltd",
+        "index": "FTSE AIM",
+        "price": "81.00",
+        "market_cap": "67.4"
+    },
+    "TOWN": {
+        "name": "Town Centre Securities",
+        "index": "FTSE Fledgling",
+        "price": "138.50",
+        "market_cap": "67.1"
+    },
+    "PGH": {
+        "name": "Personal Group Holdings",
+        "index": "FTSE AIM",
+        "price": "214.00",
+        "market_cap": "66.9"
+    },
+    "SMJ": {
+        "name": "J Smart & Co Contractors",
+        "index": "FTSE Fledgling",
+        "price": "164.50",
+        "market_cap": "66.7"
+    },
+    "SPE": {
+        "name": "Sopheon",
+        "index": "FTSE AIM",
+        "price": "625.00",
+        "market_cap": "66.5"
+    },
+    "DFCH": {
+        "name": "Distribution Finance Capital Holdings",
+        "index": "FTSE AIM",
+        "price": "37.00",
+        "market_cap": "66.4"
+    },
+    "FLO": {
+        "name": "Flowtech Fluidpower",
+        "index": "FTSE AIM",
+        "price": "107.75",
+        "market_cap": "66.3"
+    },
+    "CTO": {
+        "name": "TClarke",
+        "index": "FTSE Fledgling",
+        "price": "150.00",
+        "market_cap": "66.2"
+    },
+    "BEN": {
+        "name": "Bens Creek Group",
+        "index": "FTSE AIM",
+        "price": "16.50",
+        "market_cap": "65.9"
+    },
+    "DWHT": {
+        "name": "Dewhurst",
+        "index": "FTSE AIM",
+        "price": "1,075.00",
+        "market_cap": "65.4"
+    },
+    "DWHA": {
+        "name": "Dewhurst",
+        "index": "FTSE AIM",
+        "price": "625.00",
+        "market_cap": "65.4"
+    },
+    "EBQ": {
+        "name": "Ebiquity",
+        "index": "FTSE AIM",
+        "price": "48.00",
+        "market_cap": "65.4"
+    },
+    "CIC": {
+        "name": "Conygar Investment Company",
+        "index": "FTSE AIM",
+        "price": "109.50",
+        "market_cap": "65.3"
+    },
+    "TENT": {
+        "name": "Triple Point Energy Transition",
+        "index": NaN,
+        "price": "65.00",
+        "market_cap": "65.0"
+    },
+    "ZNWD": {
+        "name": "Zinnwald Lithium",
+        "index": "FTSE AIM",
+        "price": "13.70",
+        "market_cap": "64.9"
+    },
+    "TRU": {
+        "name": "TruFin",
+        "index": "FTSE AIM",
+        "price": "68.50",
+        "market_cap": "64.5"
+    },
+    "RNO": {
+        "name": "Renold",
+        "index": "FTSE AIM",
+        "price": "28.20",
+        "market_cap": "63.6"
+    },
+    "CHSS": {
+        "name": "World Chess",
+        "index": NaN,
+        "price": "9.50",
+        "market_cap": "63.4"
+    },
+    "LIV": {
+        "name": "Livermore Investments Group Ltd",
+        "index": "FTSE AIM",
+        "price": "38.00",
+        "market_cap": "62.8"
+    },
+    "ECO": {
+        "name": "Eco (Atlantic) Oil & Gas Ltd",
+        "index": "FTSE AIM",
+        "price": "17.50",
+        "market_cap": "62.8"
+    },
+    "SAV": {
+        "name": "Savannah Resources",
+        "index": "FTSE AIM",
+        "price": "3.68",
+        "market_cap": "62.2"
+    },
+    "AOM": {
+        "name": "ActiveOps",
+        "index": "FTSE AIM",
+        "price": "87.00",
+        "market_cap": "62.1"
+    },
+    "AAVC": {
+        "name": "Albion Venture Capital Trust",
+        "index": NaN,
+        "price": "47.60",
+        "market_cap": "62.0"
+    },
+    "MIG5": {
+        "name": "Maven Income & Growth VCT 5",
+        "index": NaN,
+        "price": "33.00",
+        "market_cap": "61.6"
+    },
+    "EMH": {
+        "name": "European Metals Holdings Ltd",
+        "index": "FTSE AIM",
+        "price": "32.00",
+        "market_cap": "61.6"
+    },
+    "SMD": {
+        "name": "Spectral MD Holdings Ltd",
+        "index": "FTSE AIM",
+        "price": "45.00",
+        "market_cap": "61.3"
+    },
+    "LIKE": {
+        "name": "Likewise Group",
+        "index": "FTSE AIM",
+        "price": "25.00",
+        "market_cap": "61.0"
+    },
+    "ALU": {
+        "name": "Alumasc Group",
+        "index": "FTSE AIM",
+        "price": "167.50",
+        "market_cap": "60.5"
+    },
+    "AET": {
+        "name": "Afentra",
+        "index": "FTSE AIM",
+        "price": "27.23",
+        "market_cap": "59.9"
+    },
+    "FTSE Small Cap exit level = 59.9": {
+        "name": NaN,
+        "index": NaN,
+        "price": NaN,
+        "market_cap": NaN
+    },
+    "MIND": {
+        "name": "Mind Gym",
+        "index": "FTSE AIM",
+        "price": "59.50",
+        "market_cap": "59.6"
+    },
+    "STAF": {
+        "name": "Staffline Group",
+        "index": "FTSE AIM",
+        "price": "35.95",
+        "market_cap": "59.6"
+    },
+    "PMP": {
+        "name": "Portmeirion Group",
+        "index": "FTSE AIM",
+        "price": "425.00",
+        "market_cap": "59.5"
+    },
+    "CUSN": {
+        "name": "Cornish Metals Inc",
+        "index": "FTSE AIM",
+        "price": "11.75",
+        "market_cap": "59.3"
+    },
+    "ZPHR": {
+        "name": "Zephyr Energy",
+        "index": "FTSE AIM",
+        "price": "3.70",
+        "market_cap": "59.1"
+    },
+    "REVB": {
+        "name": "Revolution Beauty Group",
+        "index": "FTSE AIM",
+        "price": "19.00",
+        "market_cap": "58.9"
+    },
+    "XPD": {
+        "name": "Xpediator",
+        "index": "FTSE AIM",
+        "price": "41.50",
+        "market_cap": "58.8"
+    },
+    "DPP": {
+        "name": "DP Poland",
+        "index": "FTSE AIM",
+        "price": "8.25",
+        "market_cap": "58.8"
+    },
+    "CCT": {
+        "name": "Character Group",
+        "index": "FTSE AIM",
+        "price": "304.00",
+        "market_cap": "58.7"
+    },
+    "MIG3": {
+        "name": "Maven Income & Growth VCT 3",
+        "index": NaN,
+        "price": "52.50",
+        "market_cap": "58.4"
+    },
+    "MIG1": {
+        "name": "Maven Income & Growth VCT",
+        "index": NaN,
+        "price": "41.00",
+        "market_cap": "58.3"
+    },
+    "NANO": {
+        "name": "Nanoco Group",
+        "index": "FTSE Small Cap",
+        "price": "18.00",
+        "market_cap": "58.0"
+    },
+    "BEMO": {
+        "name": "Baring Emerging EMEA Opportunities",
+        "index": "FTSE Fledgling",
+        "price": "489.00",
+        "market_cap": "57.8"
+    },
+    "EMAN": {
+        "name": "Everyman Media Group",
+        "index": "FTSE AIM",
+        "price": "63.00",
+        "market_cap": "57.4"
+    },
+    "ASCI": {
+        "name": "Aberdeen Smaller Companies Income Trust",
+        "index": "FTSE Fledgling",
+        "price": "259.00",
+        "market_cap": "57.3"
+    },
+    "SOS": {
+        "name": "Sosandar",
+        "index": "FTSE AIM",
+        "price": "23.00",
+        "market_cap": "57.1"
+    },
+    "AXL": {
+        "name": "Arrow Exploration Corp",
+        "index": "FTSE AIM",
+        "price": "23.75",
+        "market_cap": "56.8"
+    },
+    "AIRE": {
+        "name": "Alternative Income REIT",
+        "index": "FTSE Fledgling",
+        "price": "70.10",
+        "market_cap": "56.4"
+    },
+    "SCS": {
+        "name": "SCS Group",
+        "index": "FTSE Fledgling",
+        "price": "165.00",
+        "market_cap": "56.0"
+    },
+    "SPA": {
+        "name": "1Spatial Holdings",
+        "index": "FTSE AIM",
+        "price": "50.50",
+        "market_cap": "55.9"
+    },
+    "KBT": {
+        "name": "K3 Business Technology Group",
+        "index": "FTSE AIM",
+        "price": "125.00",
+        "market_cap": "55.9"
+    },
+    "HE1": {
+        "name": "Helium One Global Ltd",
+        "index": "FTSE AIM",
+        "price": "6.85",
+        "market_cap": "55.7"
+    },
+    "JEL": {
+        "name": "Jersey Electricity Company Ltd",
+        "index": "FTSE Fledgling",
+        "price": "477.00",
+        "market_cap": "55.5"
+    },
+    "MINI": {
+        "name": "Miton UK Microcap Trust",
+        "index": "FTSE Fledgling",
+        "price": "58.50",
+        "market_cap": "55.4"
+    },
+    "AURR": {
+        "name": "Aurrigo International",
+        "index": "FTSE AIM",
+        "price": "132.50",
+        "market_cap": "55.2"
+    },
+    "ETP": {
+        "name": "Eneraqua Technologies",
+        "index": "FTSE AIM",
+        "price": "165.00",
+        "market_cap": "54.8"
+    },
+    "MVI": {
+        "name": "Marwyn Value Investors Ltd",
+        "index": NaN,
+        "price": "96.00",
+        "market_cap": "54.5"
+    },
+    "CFX": {
+        "name": "Colefax Group",
+        "index": "FTSE AIM",
+        "price": "752.50",
+        "market_cap": "54.5"
+    },
+    "MATD": {
+        "name": "Petro Matad Ltd",
+        "index": "FTSE AIM",
+        "price": "4.85",
+        "market_cap": "54.0"
+    },
+    "OTMP": {
+        "name": "OnTheMarket",
+        "index": "FTSE AIM",
+        "price": "69.50",
+        "market_cap": "53.9"
+    },
+    "BOTB": {
+        "name": "Best of the Best",
+        "index": "FTSE AIM",
+        "price": "565.00",
+        "market_cap": "53.2"
+    },
+    "WEN": {
+        "name": "Wentworth Resources Ltd",
+        "index": "FTSE AIM",
+        "price": "30.25",
+        "market_cap": "53.2"
+    },
+    "ENSI": {
+        "name": "Ensilica",
+        "index": "FTSE AIM",
+        "price": "68.00",
+        "market_cap": "53.1"
+    },
+    "MCB": {
+        "name": "McBride",
+        "index": "FTSE Fledgling",
+        "price": "30.50",
+        "market_cap": "53.1"
+    },
+    "BOOM": {
+        "name": "AudioBoom Group",
+        "index": "FTSE AIM",
+        "price": "322.50",
+        "market_cap": "52.8"
+    },
+    "MPAC": {
+        "name": "Mpac Group",
+        "index": "FTSE AIM",
+        "price": "257.50",
+        "market_cap": "52.7"
+    },
+    "SED": {
+        "name": "Saietta Group",
+        "index": "FTSE AIM",
+        "price": "51.00",
+        "market_cap": "52.5"
+    },
+    "PNS": {
+        "name": "Panther Securities",
+        "index": "FTSE AIM",
+        "price": "300.00",
+        "market_cap": "52.4"
+    },
+    "BILN": {
+        "name": "Billington Holdings",
+        "index": "FTSE AIM",
+        "price": "405.00",
+        "market_cap": "52.4"
+    },
+    "ESKN": {
+        "name": "Esken Ltd",
+        "index": "FTSE Small Cap",
+        "price": "5.10",
+        "market_cap": "52.3"
+    },
+    "POLX": {
+        "name": "Polarean Imaging",
+        "index": "FTSE AIM",
+        "price": "24.50",
+        "market_cap": "52.2"
+    },
+    "RKW": {
+        "name": "Rockwood Realisation",
+        "index": NaN,
+        "price": "2,050.00",
+        "market_cap": "52.1"
+    },
+    "AFRK": {
+        "name": "Afarak Group",
+        "index": NaN,
+        "price": "20.00",
+        "market_cap": "52.0"
+    },
+    "RLE": {
+        "name": "Real Estate Investors",
+        "index": "FTSE AIM",
+        "price": "30.00",
+        "market_cap": "51.8"
+    },
+    "AURA": {
+        "name": "Aura Energy Ltd",
+        "index": "FTSE AIM",
+        "price": "9.06",
+        "market_cap": "51.2"
+    }
+}

@@ -43,16 +43,21 @@ class ApplicationManager:
             try:
                 dcf_data = YahooFinanceResponse.get_data_for_discounted_cash_flow(company_data)
                 wacc_data = YahooFinanceResponse.get_data_for_weighted_average_cost_of_capital(company_data)
-                capm_data = YahooFinanceResponse.get_data_for_capital_asset_pricing_model(company_data, self.assumptions, "sp500")
+                capm_data = YahooFinanceResponse.get_data_for_capital_asset_pricing_model(company_data, self.assumptions, "ftse_all_share")
             except AttributeError:
                 logging.warning(f"Failed to extract a company data attribute for `{company}`.")
                 continue
 
             logging.info(f"Cash flow metrics for '{company}':")
+            # debt_cost = cost_of_debt(
+            #     self.assumptions.usa.get("risk_free_rate_of_return"),
+            #     self.assumptions.usa.get("sp500").get("average_credit_spread"),
+            #     self.assumptions.usa.get("corporate_tax_rate"),
+            # )
             debt_cost = cost_of_debt(
-                self.assumptions.usa.get("risk_free_rate_of_return"),
-                self.assumptions.usa.get("sp500").get("average_credit_spread"),
-                self.assumptions.usa.get("corporate_tax_rate"),
+                self.assumptions.uk.get("risk_free_rate_of_return"),
+                self.assumptions.uk.get("ftse_all_share").get("average_credit_spread"),
+                self.assumptions.uk.get("corporate_tax_rate"),
             )
             capm = capital_asset_pricing_model(*capm_data)
             wacc = weighted_average_cost_of_capital(wacc_data[0], wacc_data[1], capm, debt_cost, self.assumptions.usa.get("corporate_tax_rate"))
@@ -66,7 +71,7 @@ class ApplicationManager:
 
         logging.info("Candidates:")
         logging.info(candidates)
-        DataStorage.write_json("data/candidates.json", candidates)
+        DataStorage.write_json(Path(self.settings.storage_directory, "candidates.json"), candidates)
 
     def get_company_data(self, ticker: str) -> None:
         """Get data associated with a company."""

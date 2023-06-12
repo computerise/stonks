@@ -1,5 +1,7 @@
 """Discounted Cash Flow (DCF) valuation model."""
 
+import logging
+
 
 def discounted_cash_flow(future_cash_flows: list[float], discount_rate: float) -> float:
     """
@@ -31,6 +33,7 @@ def weighted_average_cost_of_capital(
     weighted_value_of_equity_capital = cost_of_equity * equity_market_value / v
     weighted_value_of_debt_capital = (1 - corporate_tax_rate) * cost_of_debt * debt_market_value / v
     wacc = weighted_value_of_equity_capital + weighted_value_of_debt_capital
+    logging.debug(f"Weighted Average Cost of Capital: {wacc}")
     return wacc
 
 

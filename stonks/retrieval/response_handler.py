@@ -10,13 +10,16 @@ from stonks.storage import DataStorage
 
 
 def handle_response(output_path: Path, response: Response, store: bool = True) -> None:
-    if response.ok:
+    body = response.json()
+    if "error" in body:
+        logging.warning(f"Endpoint {response.url} responded with error `{body.get('error')}`.")
+    elif response.ok:
         if store:
-            DataStorage.write_json(output_path, response.json())
+            DataStorage.write_json(output_path, body)
             logging.info(f"Successfully wrote output to {output_path}.")
     else:
         raise_fatal_error(
-            f"Endpoint {response.url} responded with non-200 status code '{response.status_code}'.",
+            f"Endpoint {response.url} responded with non-200 status code `{response.status_code}`.",
         )
 
 
@@ -40,7 +43,10 @@ class YahooFinanceResponse:
             balance_sheet_history = "balanceSheetHistoryQuarterly"
         else:
             balance_sheet_history = "balanceSheetHistoryQuarterly"
-        balance_sheet = company_data.get(balance_sheet_history).get("balanceSheetStatements")[0]
+        balance_sheet_list = company_data.get(balance_sheet_history).get("balanceSheetStatements")
+        if not balance_sheet_list:
+            raise AttributeError
+        balance_sheet = balance_sheet_list[0]
         total_equity = balance_sheet.get("totalStockholderEquity").get("raw")
         total_debt = balance_sheet.get("longTermDebt").get("raw") + balance_sheet.get("shortLongTermDebt").get("raw")
 
@@ -48,11 +54,9 @@ class YahooFinanceResponse:
         # price = company_data.get("financialData").get("currentPrice").get("raw")
         return total_equity, total_debt
 
-    def get_data_for_capital_asset_pricing_model(
-        company_data: dict[str, Any], assumptions: dict[str, Any], exchange: str = "sp500"
-    ) -> tuple[float, float, float]:
+    def get_data_for_capital_asset_pricing_model(company_data: dict[str, Any], assumptions: dict[str, Any], exchange: str) -> tuple[float, float, float]:
         """Extract the relevant data for the Capital Asset Pricing model."""
         beta = company_data.get("defaultKeyStatistics").get("beta").get("raw")
-        risk_free_rate_of_return = assumptions.usa.get("risk_free_rate_of_return")
-        market_rate_of_return = assumptions.usa.get(exchange).get("rate_of_return")
+        risk_free_rate_of_return = assumptions.uk.get("risk_free_rate_of_return")
+        market_rate_of_return = assumptions.uk.get(exchange).get("rate_of_return")
         return risk_free_rate_of_return, market_rate_of_return, beta

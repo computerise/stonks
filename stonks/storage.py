@@ -1,4 +1,5 @@
 """Handle data storage."""
+import logging
 from pathlib import Path
 from json import load, dump
 from typing import Any
@@ -21,11 +22,8 @@ class DataStorage:
         try:
             with open(path, "r") as file:
                 return load(file)
-        except FileNotFoundError as exc:
-            raise_fatal_error(
-                f"JSON file at '{path}' could not be found.",
-                from_exception=exc,
-            )
+        except FileNotFoundError:
+            logging.warning(f"JSON file at '{path}' could not be found.")
 
     def write_json(path: Path, data: dict[str, Any]) -> None:
         """Write valid JSON data to a JSON file."""

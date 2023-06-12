@@ -60,8 +60,8 @@ def historical_cash_flow_increase_rate(total_cash_flows: dict[str, float]) -> fl
     # Take the average rate increase.
     cumulative_rate_increase = sum(rate_increases)
     mean_cash_flow_increase_rate = cumulative_rate_increase / len(rate_increases)
-    logging.info(f"Cash flow increase rates: {rate_increases}")
-    logging.info(f"Mean cash flow increase rate: {mean_cash_flow_increase_rate:,}")
+    logging.debug(f"Cash flow increase rates: {rate_increases}")
+    logging.debug(f"Mean cash flow increase rate: {mean_cash_flow_increase_rate:,}")
     return mean_cash_flow_increase_rate
 
 
@@ -74,7 +74,7 @@ def future_cash_flows(
     future_cash_flows = []
     current_cash_flow = initial_cash_flow
     for _ in range(number_of_periods):
-        current_cash_flow *= 1 + cash_flow_increase_rate
+        current_cash_flow *= 1 + abs(cash_flow_increase_rate)
         future_cash_flows.append(current_cash_flow)
     logging.info(f"Future cash flows: {future_cash_flows}")
     return future_cash_flows

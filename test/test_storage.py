@@ -13,11 +13,6 @@ class TestDataStorage(TestCase):
         """Set up Data Storage test class."""
         cls.invalid_path: str = "/invalid/file/path"
 
-    def test_read_json(self) -> None:
-        """Test that an invalid path raises a ValueError."""
-        with self.assertRaises(ValueError):
-            DataStorage.read_json(self.invalid_path)
-
     def test_write_json(self) -> None:
         """Test that invalid path and valid data, and invalid path and invalid data raise ValueError."""
         with self.assertRaises(ValueError):

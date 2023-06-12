@@ -7,3 +7,11 @@ corporate_tax_rate = 0.21
 [usa.sp500]
 rate_of_return = 0.101
 average_credit_spread = 0.04
+
+[uk]
+risk_free_rate_of_return = 0.04872
+corporate_tax_rate = 0.25
+
+[uk.ftse_all_share]
+rate_of_return = 0.0748
+average_credit_spread = 0.04

@@ -8,9 +8,9 @@ log_level = "DEBUG"
 log_directory = "logs/"
 
 input_directory = "input/"
-input_file = "input.json"
+input_file = "ftse_all_share.json"
 
-storage_directory = "data/"
+storage_directory = "data/ftse_all_share"
 
 request_new_data = false
 store_new_data = true
