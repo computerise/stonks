@@ -21,6 +21,7 @@ def create_directory(directory_path: Path) -> bool:
     if not directory_path.exists():
         try:
             makedirs(directory_path)
+            logging.info(f"{SUCCESS_CREATE_DIRECTORY_MESSAGE}`{directory_path}`.")
             return True
         except FileNotFoundError:
             raise_fatal_error(
@@ -54,6 +55,7 @@ class APIKeys:
 
     def _set_api_keys(self, api_key_names: list[str]) -> None:
         """Set API Keys from environment variables, named in settings.toml."""
+        logging.info("Loading API Keys...")
         api_keys = {}
         for name in api_key_names:
             try:
@@ -91,13 +93,11 @@ class ApplicationSettings(TOMLConfiguration):
 
     def configure_application(self) -> None:
         """Configure the application."""
-        configure_logging(level=self.log_level, log_directory=self.log_directory)
         CommandLineInterface.outro_duration_seconds = self.outro_duration_seconds
+        CommandLineInterface.intro(self.version, self.authors)
+        configure_logging(level=self.log_level, log_directory=self.log_directory)
         self.api_keys = APIKeys(self.api_key_names)
-        if create_directory(Path(self.input_directory)):
-            logging.info(f"{SUCCESS_CREATE_DIRECTORY_MESSAGE}`{self.input_directory}`.")
-        if create_directory(Path(self.storage_directory)):
-            logging.info(f"{SUCCESS_CREATE_DIRECTORY_MESSAGE}`{self.storage_directory}`.")
+        create_directory(Path(self.storage_directory))
 
 
 class MetricAssumptions(TOMLConfiguration):
