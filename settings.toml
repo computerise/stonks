@@ -8,9 +8,9 @@ log_level = "DEBUG"
 log_directory = "logs/"
 
 input_directory = "input/"
-input_file = "input.json"
+input_file = "s&p500.json"
 
-storage_directory = "data/"
+storage_directory = "data/s&p500"
 
 request_new_data = true
 store_new_data = true

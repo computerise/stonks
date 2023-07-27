@@ -7,20 +7,23 @@ readme = "README.md"
 packages = [{ include = "stonks" }]
 repository = "https://github.com/computerise/stonks"
 
+[tool.poetry.scripts]
+stonks = "main:main"
+
 [tool.poetry.dependencies]
 python = "^3.11"
 python-decouple = "^3.8"
-requests = "^2.31"
+requests = "^2.31.0"
 
 [tool.poetry.group.dev.dependencies]
-black = "^23.3"
-flake8 = "^6.0"
+black = "^23.7.0"
+flake8 = "^6.0.0"
 
 [tool.poetry.group.test.dependencies]
-pytest = "^7.3"
-pytest-cov = "^4.1"
-coverage = "^7.2"
-responses = "^0.23"
+pytest = "^7.4.0"
+pytest-cov = "^4.1.0"
+coverage = "^7.2.7"
+responses = "^0.23.2"
 
 # Only used in github actions
 [tool.poetry.group.github-actions]
@@ -28,9 +31,6 @@ optional = true
 
 [tool.poetry.group.github-actions.dependencies]
 pytest-github-actions-annotate-failures = "^0.2"
-
-[tool.poetry.scripts]
-stonks = "main:main"
 
 [build-system]
 requires = ["poetry-core>=1.6.0"]

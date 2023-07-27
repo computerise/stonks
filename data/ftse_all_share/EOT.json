@@ -1,0 +1,184 @@
+{
+    "incomeStatementHistoryQuarterly": {
+        "incomeStatementHistory": [],
+        "maxAge": 86400
+    },
+    "cashflowStatementHistory": {
+        "cashflowStatements": [],
+        "maxAge": 86400
+    },
+    "cashflowStatementHistoryQuarterly": {
+        "cashflowStatements": [],
+        "maxAge": 86400
+    },
+    "balanceSheetHistoryQuarterly": {
+        "balanceSheetStatements": [],
+        "maxAge": 86400
+    },
+    "defaultKeyStatistics": {
+        "maxAge": 1,
+        "priceHint": {
+            "raw": 2,
+            "fmt": "2",
+            "longFmt": "2"
+        },
+        "enterpriseValue": [],
+        "forwardPE": [],
+        "profitMargins": {
+            "raw": 0,
+            "fmt": "0.00%"
+        },
+        "floatShares": [],
+        "sharesOutstanding": {
+            "raw": 15624900,
+            "fmt": "15.62M",
+            "longFmt": "15,624,900"
+        },
+        "sharesShort": {
+            "raw": 36836,
+            "fmt": "36.84k",
+            "longFmt": "36,836"
+        },
+        "sharesShortPriorMonth": {
+            "raw": 26675,
+            "fmt": "26.68k",
+            "longFmt": "26,675"
+        },
+        "sharesShortPreviousMonthDate": {
+            "raw": 1682640000,
+            "fmt": "2023-04-28"
+        },
+        "dateShortInterest": {
+            "raw": 1685491200,
+            "fmt": "2023-05-31"
+        },
+        "sharesPercentSharesOut": {
+            "raw": 0.0023999999,
+            "fmt": "0.24%"
+        },
+        "heldPercentInsiders": {
+            "raw": 0,
+            "fmt": "0.00%"
+        },
+        "heldPercentInstitutions": {
+            "raw": 0.16495001,
+            "fmt": "16.50%"
+        },
+        "shortRatio": {
+            "raw": 1.82,
+            "fmt": "1.82"
+        },
+        "shortPercentOfFloat": [],
+        "beta": [],
+        "impliedSharesOutstanding": {
+            "raw": 0,
+            "fmt": null,
+            "longFmt": "0"
+        },
+        "morningStarOverallRating": [],
+        "morningStarRiskRating": [],
+        "category": null,
+        "bookValue": [],
+        "priceToBook": [],
+        "annualReportExpenseRatio": [],
+        "ytdReturn": [],
+        "beta3Year": [],
+        "totalAssets": [],
+        "yield": [],
+        "fundFamily": null,
+        "fundInceptionDate": [],
+        "legalType": null,
+        "threeYearAverageReturn": [],
+        "fiveYearAverageReturn": [],
+        "priceToSalesTrailing12Months": [],
+        "lastFiscalYearEnd": [],
+        "nextFiscalYearEnd": [],
+        "mostRecentQuarter": [],
+        "earningsQuarterlyGrowth": [],
+        "revenueQuarterlyGrowth": [],
+        "netIncomeToCommon": [],
+        "trailingEps": {
+            "raw": -1,
+            "fmt": "-1.00"
+        },
+        "forwardEps": [],
+        "pegRatio": [],
+        "lastSplitFactor": null,
+        "lastSplitDate": [],
+        "enterpriseToRevenue": [],
+        "enterpriseToEbitda": [],
+        "52WeekChange": {
+            "raw": 0.005730629,
+            "fmt": "0.57%"
+        },
+        "SandP52WeekChange": {
+            "raw": 0.14647579,
+            "fmt": "14.65%"
+        },
+        "lastDividendValue": {
+            "raw": 0.063,
+            "fmt": "0.06"
+        },
+        "lastDividendDate": {
+            "raw": 1684454400,
+            "fmt": "2023-05-19"
+        },
+        "lastCapGain": [],
+        "annualHoldingsTurnover": []
+    },
+    "balanceSheetHistory": {
+        "balanceSheetStatements": [],
+        "maxAge": 86400
+    },
+    "incomeStatementHistory": {
+        "incomeStatementHistory": [],
+        "maxAge": 86400
+    },
+    "financialData": {
+        "maxAge": 86400,
+        "currentPrice": {
+            "raw": 17.52,
+            "fmt": "17.52"
+        },
+        "targetHighPrice": [],
+        "targetLowPrice": [],
+        "targetMeanPrice": [],
+        "targetMedianPrice": [],
+        "recommendationMean": [],
+        "recommendationKey": "none",
+        "numberOfAnalystOpinions": [],
+        "totalCash": [],
+        "totalCashPerShare": [],
+        "ebitda": [],
+        "totalDebt": [],
+        "quickRatio": [],
+        "currentRatio": [],
+        "totalRevenue": [],
+        "debtToEquity": [],
+        "revenuePerShare": [],
+        "returnOnAssets": [],
+        "returnOnEquity": [],
+        "grossProfits": [],
+        "freeCashflow": [],
+        "operatingCashflow": [],
+        "earningsGrowth": [],
+        "revenueGrowth": [],
+        "grossMargins": {
+            "raw": 0,
+            "fmt": "0.00%"
+        },
+        "ebitdaMargins": {
+            "raw": 0,
+            "fmt": "0.00%"
+        },
+        "operatingMargins": {
+            "raw": 0,
+            "fmt": "0.00%"
+        },
+        "profitMargins": {
+            "raw": 0,
+            "fmt": "0.00%"
+        },
+        "financialCurrency": null
+    }
+}
