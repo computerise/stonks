@@ -13,7 +13,7 @@ Scrape company financial data to pick out the most undervalued publicly traded c
 1. Retrieve company financial data from various APIs.
 2. Process the financial data to compute derived metrics.
 3. Process the financial data and derived metrics to produce valuation metrics.
-4. Calculate an intrinsic value for the company with assumed metrics as variables. (current intrinsic value)
+4. Calculate an intrinsic value for the company with assumed metrics as variables (current intrinsic value).
 5. Employ valuation models to predict time-evolution of company valuation with assumed metrics as variables (growth, future intrinsic value).
 6. Build a report based on the valuation.
 7. Produce valuation reports for all publicly listed companies and filter out the best.
@@ -45,7 +45,7 @@ Instructions on how to set up and install python3.
 
 #### Python Installation on Windows
 
-Download and install the python3.11 [here](https://www.python.org/downloads/). Then add the parent directory of `python.exe` to the [System Environment Variables `Path` field](<https://learn.microsoft.com/en-us/previous-versions/office/developer/sharepoint-2010/ee537574(v=office.14)>). Where `<username>` is the name of the Windows user account, the default path for `python3.exe` is:
+Download and install python3.11 [here](https://www.python.org/downloads/). Then add the parent directory of `python.exe` to the [System Environment Variables `Path` field](<https://learn.microsoft.com/en-us/previous-versions/office/developer/sharepoint-2010/ee537574(v=office.14)>). Where `<username>` is the name of the Windows user account, the default path for `python3.exe` is:
 
 ```text
 C:\Users\<username>\AppData\Local\Programs\Python\Python311\
