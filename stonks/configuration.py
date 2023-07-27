@@ -86,7 +86,6 @@ class ApplicationSettings(TOMLConfiguration):
         self.__dict__ = self.load_config(settings_path).get("application")
         self.__dict__.update(self.load_config("pyproject.toml").get("tool").get("poetry"))
         self.set_paths()
-        self.configure_application()
 
     def set_paths(self) -> None:
         self.log_directory = Path(self.log_directory)
@@ -97,9 +96,7 @@ class ApplicationSettings(TOMLConfiguration):
     def configure_application(self) -> None:
         """Configure the application."""
         CommandLineInterface.outro_duration_seconds = self.outro_duration_seconds
-        CommandLineInterface.intro(self.version, self.authors)
         configure_logging(level=self.log_level, log_directory=self.log_directory)
-        self.api_keys = APIKeys(self.api_key_names)
         create_directory(Path(self.storage_directory))
 
 

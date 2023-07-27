@@ -4,7 +4,7 @@ import logging
 from pathlib import Path
 
 from stonks.storage import DataStorage
-from stonks.configuration import ApplicationSettings, MetricAssumptions
+from stonks.configuration import ApplicationSettings, MetricAssumptions, APIKeys
 from stonks.retrieval.api_client import APIClient
 from stonks.retrieval.response_handler import handle_response, YahooFinanceResponse
 from stonks.processing.valuation import discounted_cash_flow_valuation, filter_valuation
@@ -22,10 +22,11 @@ class ApplicationManager:
         self,
         application_settings: ApplicationSettings,
         metric_assumptions: MetricAssumptions,
+        api_keys: APIKeys,
     ):
         """Initialise class instance."""
         logging.info("Creating Application Manager...")
-        self.client = APIClient(application_settings.api_keys)
+        self.client = APIClient(api_keys)
         self.settings = application_settings
         self.assumptions = metric_assumptions
         logging.info("Created Application Manager.")
@@ -52,23 +53,13 @@ class ApplicationManager:
             company_data = self.get_company_data(company)
             # Move to retrieval.response_handler. Set required values as attributes of company.
             try:
-                dcf_data = YahooFinanceResponse.get_data_for_discounted_cash_flow(
-                    company_data
-                )
-                wacc_data = (
-                    YahooFinanceResponse.get_data_for_weighted_average_cost_of_capital(
-                        company_data
-                    )
-                )
-                capm_data = (
-                    YahooFinanceResponse.get_data_for_capital_asset_pricing_model(
-                        company_data, self.assumptions, "ftse_all_share"
-                    )
+                dcf_data = YahooFinanceResponse.get_data_for_discounted_cash_flow(company_data)
+                wacc_data = YahooFinanceResponse.get_data_for_weighted_average_cost_of_capital(company_data)
+                capm_data = YahooFinanceResponse.get_data_for_capital_asset_pricing_model(
+                    company_data, self.assumptions, "ftse_all_share"
                 )
             except AttributeError:
-                logging.warning(
-                    f"Failed to extract a company data attribute for `{company}`."
-                )
+                logging.warning(f"Failed to extract a company data attribute for `{company}`.")
                 continue
 
             logging.info(f"Cash flow metrics for '{company}':")
@@ -91,9 +82,7 @@ class ApplicationManager:
                 self.assumptions.usa.get("corporate_tax_rate"),
             )
             dcf_valuation = discounted_cash_flow_valuation(*dcf_data, wacc)
-            logging.info(
-                f"DCF valuation (price per share): {dcf_valuation.get('dcf_valuation_per_share')}"
-            )
+            logging.info(f"DCF valuation (price per share): {dcf_valuation.get('dcf_valuation_per_share')}")
             if filter_valuation(dcf_valuation):
                 candidates[company] = dcf_valuation
                 logging.info(
@@ -106,9 +95,7 @@ class ApplicationManager:
 
         logging.info("Candidates:")
         logging.info(candidates)
-        DataStorage.write_json(
-            Path(self.settings.storage_directory, "candidates.json"), candidates
-        )
+        DataStorage.write_json(Path(self.settings.storage_directory, "candidates.json"), candidates)
 
     def get_company_data(self, ticker: str) -> None:
         """Get data associated with a company."""
