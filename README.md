@@ -26,7 +26,7 @@ Scrape company financial data to pick out the most undervalued publicly traded c
 The tricky part here is drawing the lines between undervalued and very undervalued...
 
 |                  | Undervalued | Very undervalued |
-|------------------|-------------|------------------|
+| ---------------- | ----------- | ---------------- |
 | Poor Outlook     | NEUTRAL     | BUY              |
 | Neutral Outlook  | BUY         | STRONG BUY       |
 | Positive Outlook | STRONG BUY  | BARGAIN          |
@@ -35,7 +35,7 @@ The tricky part here is drawing the lines between undervalued and very undervalu
 
 If it actually works, slap a WebUI on it and sell (tiers?) of subscription service.
 
-## Requirements Installation
+## Dependency Installation
 
 "stonks" requires an installation of python3.11 (tested on Python 3.11.3) and poetry (tested on Poetry 1.5.1).
 
@@ -45,7 +45,7 @@ Instructions on how to set up and install python3.
 
 #### Python Installation on Windows
 
-Download and install the python3.11 [here](https://www.python.org/downloads/). Then add the parent directory of `python.exe` to the [System Environment Variables `Path` field](https://learn.microsoft.com/en-us/previous-versions/office/developer/sharepoint-2010/ee537574(v=office.14)). Where `<username>` is the name of the Windows user account, the default path for `python3.exe` is:
+Download and install the python3.11 [here](https://www.python.org/downloads/). Then add the parent directory of `python.exe` to the [System Environment Variables `Path` field](<https://learn.microsoft.com/en-us/previous-versions/office/developer/sharepoint-2010/ee537574(v=office.14)>). Where `<username>` is the name of the Windows user account, the default path for `python3.exe` is:
 
 ```text
 C:\Users\<username>\AppData\Local\Programs\Python\Python311\
@@ -74,7 +74,7 @@ To install poetry on Windows open PowerShell and execute:
 (Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | python -
 ```
 
-Then add the parent directory of `poetry.exe` to the [System Environment Variables `Path` field](https://learn.microsoft.com/en-us/previous-versions/office/developer/sharepoint-2010/ee537574(v=office.14)). Where `<username>` is the name of the Windows user account, the default path for `poetry.exe` is:
+Then add the parent directory of `poetry.exe` to the [System Environment Variables `Path` field](<https://learn.microsoft.com/en-us/previous-versions/office/developer/sharepoint-2010/ee537574(v=office.14)>). Where `<username>` is the name of the Windows user account, the default path for `poetry.exe` is:
 
 ```text
 C:\Users\<username>\AppData\Roaming\pypoetry\venv\Scripts\
