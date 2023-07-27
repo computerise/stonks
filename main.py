@@ -6,7 +6,7 @@ from stonks.manager import ApplicationManager
 from stonks.command_line_interface import CommandLineInterface
 
 
-def main():
+def main() -> None:
     """Launch application."""
     app_settings = ApplicationSettings()
     metric_assumptions = MetricAssumptions()
