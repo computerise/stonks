@@ -102,10 +102,10 @@ poetry install
 
 ### Environment Variables
 
-Create a file in the project root directory called `.env`. Acquire the respective API keys for each provider and save them in `.env` under the names, where `<key>` is replaced by your personal access key:
+Create a file in the project root directory called `.env`. Acquire the respective API keys for each provider and save them in `.env` under the names, where `<rapid_api_key>` is replaced by your [personal access key for RapidAPI](https://docs.rapidapi.com/docs/keys):
 
 ```text
-RAPIDAPI_KEY=<[rapid-api-key](https://docs.rapidapi.com/docs/keys)>
+RAPIDAPI_KEY=<rapid-api-key>
 ```
 
 ## Configuration
