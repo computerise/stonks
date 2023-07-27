@@ -15,10 +15,10 @@ Scrape company financial data to pick out the most undervalued publicly traded c
 3. Process the financial data and derived metrics to produce valuation metrics.
 4. Calculate an intrinsic value for the company with assumed metrics as variables (current intrinsic value).
 5. Employ valuation models to predict time-evolution of company valuation with assumed metrics as variables (growth, future intrinsic value).
-6. Build a report based on the valuation.
+6. Build a report based on the valuation and growth forecasts.
 7. Produce valuation reports for all publicly listed companies and filter out the best.
 8. After qualitative analysis, select a list of stocks for the watch-list.
-9. Perform current market research (including sentiment analysis?) to assess the market outlook on watch-list companies.
+9. Perform the qualitative analysis component by applying current market research (including sentiment analysis ) to assess the market outlook on watch-list companies.
 10. Buy companies according to the highly scientific "Buy Matrix".
 
 ### Buy Matrix
@@ -33,7 +33,7 @@ The tricky part here is drawing the lines between undervalued and very undervalu
 
 ### Future
 
-If it actually works, slap a WebUI on it and sell (tiers?) of subscription service.
+Once the approach is successful, provide a WebUI (or a REST API) to generate reports in-browser (or provide results via an REST API).
 
 ## Dependency Installation
 
