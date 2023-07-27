@@ -81,6 +81,8 @@ class TestYahooFinanceRequest(TestCase):
 
     def test_valid_query_parameters(self) -> None:
         """Test valid and invalid query parameters."""
-        self.assertTrue(self.yahoo_finance_request.valid_query_parameters(("cashflow-statement", "sec-filings", "balance-sheet")))
+        self.assertTrue(
+            self.yahoo_finance_request.valid_query_parameters(("cashflow-statement", "sec-filings", "balance-sheet"))
+        )
         with self.assertRaises(ValueError):
             self.yahoo_finance_request.valid_query_parameters(("bad_parameter",))

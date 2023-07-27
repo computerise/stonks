@@ -26,7 +26,9 @@ def handle_response(output_path: Path, response: Response, store: bool = True) -
 class YahooFinanceResponse:
     """Response object for YahooFinance API (https://rapidapi.com/sparior/api/yahoo-finance15)."""
 
-    def get_data_for_discounted_cash_flow(company_data: dict[str, Any], quarterly: bool = False) -> tuple[float, float, list[dict[str, Any]]]:
+    def get_data_for_discounted_cash_flow(
+        company_data: dict[str, Any], quarterly: bool = False
+    ) -> tuple[float, float, list[dict[str, Any]]]:
         """Extract the relevant data to compute Discounted Cash Flow."""
         if quarterly:
             cash_flow_statement_history = "cashflowStatementHistoryQuarterly"
@@ -37,7 +39,9 @@ class YahooFinanceResponse:
         cash_flow_statements = company_data.get(cash_flow_statement_history).get("cashflowStatements")
         return shares_outstanding, current_share_price, cash_flow_statements
 
-    def get_data_for_weighted_average_cost_of_capital(company_data: dict[str, Any], quarterly: bool = False) -> tuple[float, float]:
+    def get_data_for_weighted_average_cost_of_capital(
+        company_data: dict[str, Any], quarterly: bool = False
+    ) -> tuple[float, float]:
         """Extract the relevant data to compute Weighted Average Cost of Capital."""
         if quarterly:
             balance_sheet_history = "balanceSheetHistoryQuarterly"
@@ -54,7 +58,9 @@ class YahooFinanceResponse:
         # price = company_data.get("financialData").get("currentPrice").get("raw")
         return total_equity, total_debt
 
-    def get_data_for_capital_asset_pricing_model(company_data: dict[str, Any], assumptions: dict[str, Any], exchange: str) -> tuple[float, float, float]:
+    def get_data_for_capital_asset_pricing_model(
+        company_data: dict[str, Any], assumptions: dict[str, Any], exchange: str
+    ) -> tuple[float, float, float]:
         """Extract the relevant data for the Capital Asset Pricing model."""
         beta = company_data.get("defaultKeyStatistics").get("beta").get("raw")
         risk_free_rate_of_return = assumptions.uk.get("risk_free_rate_of_return")

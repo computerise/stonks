@@ -68,14 +68,18 @@ class YahooFinanceRequest(RapidAPIRequest):
         formatted_queries = self.format_queries(query_parameters)
         self.params = formatted_queries
 
-    def format_queries(self, query_parameters: tuple[str], max_query_parameters: int = 5) -> dict[str, str]:
+    def format_queries(
+        self, query_parameters: tuple[str], max_query_parameters: int = 5
+    ) -> dict[str, str]:
         """Format a maximum of 5 valid query parameters."""
         number_of_params = len(query_parameters)
         if number_of_params <= max_query_parameters:
             if self.valid_query_parameters(query_parameters):
                 return {"module": ",".join(query_parameters)}
         else:
-            raise_fatal_error(f"{number_of_params} query parameters specified; exceeds maximum of {max_query_parameters}.")
+            raise_fatal_error(
+                f"{number_of_params} query parameters specified; exceeds maximum of {max_query_parameters}."
+            )
 
     def valid_query_parameters(self, query_parameters: tuple[str]) -> bool:
         """Raise and exception if any query parameters are invalid, otherwise return True."""
@@ -99,5 +103,10 @@ class YahooFinanceRequest(RapidAPIRequest):
         )
         for query in query_parameters:
             if query not in valid_query_parameters:
-                raise raise_fatal_error(f"Invalid query parameter '{query}' was specified. Queries are limited to: {','.join(valid_query_parameters)}")
+                raise raise_fatal_error(
+                    f"""
+                    Invalid query parameter '{query}' was specified. Queries are limited to:
+                    {','.join(valid_query_parameters)}
+                    """
+                )
         return True

@@ -59,7 +59,10 @@ class APIKeys:
             try:
                 api_keys[name] = config(name)
             except UndefinedValueError as exc:
-                raise_fatal_error(f"Environment variable `{name}` is not set. Declare it in a `.env` file as described in `README.md`", from_exception=exc)
+                raise_fatal_error(
+                    f"Environment variable `{name}` is not set. Declare it in a `.env` file as described in `README.md`",
+                    from_exception=exc,
+                )
         self.__dict__ = api_keys
         logging.info("Loaded API Keys.")
 

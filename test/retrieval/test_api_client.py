@@ -2,7 +2,6 @@
 
 import responses
 from unittest import TestCase
-from unittest.mock import patch
 
 from stonks.retrieval.api_client import APIClient
 
@@ -27,15 +26,16 @@ class TestAPIClient(TestCase):
     @responses.activate
     def test_retrieve(self) -> None:
         """Test method to retrieve company data."""
-        responses.add(
-            **{
-                "method": responses.GET,
-                "url": "https://yahoo-finance15.p.rapidapi.com/api/yahoo/mo/module/MOCK?module=asset-profile%2Cincome-statement",
-                "body": '{"error": "reason"}',
-                "status": 404,
-                "adding_headers": {"mock_header": "mock_value"},
-            }
+        body = {
+            "method": responses.GET,
+            "url": "https://yahoo-finance15.p.rapidapi.com/api/yahoo/mo/module/MOCK?module=asset-profile%2Cincome-statement",
+            "body": '{"error": "reason"}',
+            "status": 404,
+            "adding_headers": {"mock_header": "mock_value"},
+        }
+        responses.add(**body)
+        response = self.api_client.retrieve(
+            "MOCK", ("asset-profile", "income-statement")
         )
-        response = self.api_client.retrieve("MOCK", ("asset-profile", "income-statement"))
         self.assertEqual({"error": "reason"}, response.json())
         self.assertEqual(404, response.status_code)

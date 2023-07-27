@@ -37,7 +37,9 @@ def weighted_average_cost_of_capital(
     return wacc
 
 
-def capital_asset_pricing_model(risk_free_rate_of_return: float, market_rate_of_return: float, beta_of_investment: float) -> float:
+def capital_asset_pricing_model(
+    risk_free_rate_of_return: float, market_rate_of_return: float, beta_of_investment: float
+) -> float:
     """
     Calculate the expected return of an investment using the Capital Asset Pricing Model (CAPM).
 
