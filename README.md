@@ -6,7 +6,7 @@ The quantitative analysis component of a [Value Investing](https://www.investope
 
 ## Objectives
 
-### Plan
+### Method
 
 Scrape company financial data to pick out the most undervalued publicly traded companies. Use the resulting shortlist to perform (manual) qualitative analysis on the best prospects.
 
