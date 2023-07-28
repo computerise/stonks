@@ -1,4 +1,9 @@
-# Example PR Headline
+---
+name: Feature request
+about: Suggest an idea for this project
+---
+
+# Example Pull Request Headline
 
 ## Features
 
