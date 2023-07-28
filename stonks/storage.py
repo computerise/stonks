@@ -6,7 +6,7 @@ from typing import Any
 from datetime import datetime
 from urllib.parse import urlparse
 
-from psycopg2 import connect, connection
+from psycopg2 import connect
 
 from stonks.error_handler import raise_fatal_error
 from stonks.companies import Company, CompanyCollection
@@ -62,8 +62,8 @@ class LocalDataStorage:
         companies = []
         for key in raw_companies_list:
             companies.append(Company(ticker=key, name=raw_companies_list["name"]))
-        company_collection = CompanyCollection("S&P500", "Standard and Poor's 500", companies)
-        cursor = self.database_connection.cursor()
+        company_collection = CompanyCollection("S&P500", "Standard and Poor's 500", companies)  # noqa
+        cursor = self.database_connection.cursor()  # noqa
         # cursor.execute("CREATE DATABASE companies (ticker varchar(5), name varchar(255), index varchar(16));")
 
     @staticmethod
@@ -78,7 +78,7 @@ class PostgreSQLDataStorage:
         """Initialise PostgreSQLDataStorage."""
         self.url = postgres_url
 
-    def connect(self, url: str) -> connection:
+    def connect(self, url: str) -> Any:
         """Connect to the database URL."""
         parsed = urlparse(url)
         return connect(
