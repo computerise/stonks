@@ -4,6 +4,7 @@ APIs
 capm
 cashflow
 CLI
+CompaniesCollection
 currentPrice
 dcf
 DCF
@@ -24,6 +25,8 @@ lastDividendValue
 levelname
 LucidChart
 maxAge
+noqa
+PostgreSQLDataStorage
 PowerShell
 pre
 rapidapi
@@ -39,11 +42,9 @@ UML
 usa
 usr
 ValueError
+varchar
 wacc
 WACC
 WebUI
 www
 YahooFinance
-PostgreSQLDataStorage
-CompaniesCollection
-varchar
