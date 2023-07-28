@@ -4,7 +4,7 @@
 
 - Implemented example feature in `example.module.Class`, closes #X
 
-## Improvements
+## General Improvements
 
 - Improved file, closes #X
 
