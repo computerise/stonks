@@ -34,9 +34,9 @@ class YahooFinanceResponse:
             cash_flow_statement_history = "cashflowStatementHistoryQuarterly"
         else:
             cash_flow_statement_history = "cashflowStatementHistory"
-        shares_outstanding = company_data.get("defaultKeyStatistics").get("sharesOutstanding").get("raw")
-        current_share_price = company_data.get("financialData").get("currentPrice").get("raw")
-        cash_flow_statements = company_data.get(cash_flow_statement_history).get("cashflowStatements")
+        shares_outstanding = company_data["defaultKeyStatistics"]["sharesOutstanding"]["raw"]
+        current_share_price = company_data["financialData"]["currentPrice"]["raw"]
+        cash_flow_statements = company_data[cash_flow_statement_history]["cashflowStatements"]
         return shares_outstanding, current_share_price, cash_flow_statements
 
     def get_data_for_weighted_average_cost_of_capital(
@@ -46,23 +46,25 @@ class YahooFinanceResponse:
         if quarterly:
             balance_sheet_history = "balanceSheetHistoryQuarterly"
         else:
-            balance_sheet_history = "balanceSheetHistoryQuarterly"
-        balance_sheet_list = company_data.get(balance_sheet_history).get("balanceSheetStatements")
-        if not balance_sheet_list:
-            raise AttributeError
+            balance_sheet_history = "balanceSheetHistory"
+        balance_sheet_list = company_data[balance_sheet_history]["balanceSheetStatements"]
         balance_sheet = balance_sheet_list[0]
-        total_equity = balance_sheet.get("totalStockholderEquity").get("raw")
-        total_debt = balance_sheet.get("longTermDebt").get("raw") + balance_sheet.get("shortLongTermDebt").get("raw")
-
-        # dividend = company_data.get("defaultKeyStatistics").get("lastDividendValue").get("raw") * 4
-        # price = company_data.get("financialData").get("currentPrice").get("raw")
+        total_equity = balance_sheet["totalStockholderEquity"]["raw"]
+        total_debt = balance_sheet["longTermDebt"]["raw"] + balance_sheet["shortLongTermDebt"]["raw"]
         return total_equity, total_debt
 
     def get_data_for_capital_asset_pricing_model(
         company_data: dict[str, Any], assumptions: dict[str, Any], exchange: str
     ) -> tuple[float, float, float]:
-        """Extract the relevant data for the Capital Asset Pricing model."""
-        beta = company_data.get("defaultKeyStatistics").get("beta").get("raw")
-        risk_free_rate_of_return = assumptions.uk.get("risk_free_rate_of_return")
-        market_rate_of_return = assumptions.uk.get(exchange).get("rate_of_return")
+        """
+        Extract the relevant data for the Capital Asset Pricing model.
+
+        Refactor to supply only the relevant assumptions for this company, not all assumptions.
+        """
+        try:
+            beta = company_data["defaultKeyStatistics"]["beta"]["raw"]
+        except TypeError:
+            raise TypeError('"raw" value for "beta" is invalid.')
+        risk_free_rate_of_return = assumptions.usa.get("risk_free_rate_of_return")
+        market_rate_of_return = assumptions.usa.get(exchange).get("rate_of_return")
         return risk_free_rate_of_return, market_rate_of_return, beta

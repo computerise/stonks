@@ -56,10 +56,11 @@ class ApplicationManager:
                 dcf_data = YahooFinanceResponse.get_data_for_discounted_cash_flow(company_data)
                 wacc_data = YahooFinanceResponse.get_data_for_weighted_average_cost_of_capital(company_data)
                 capm_data = YahooFinanceResponse.get_data_for_capital_asset_pricing_model(
-                    company_data, self.assumptions, "ftse_all_share"
+                    company_data, self.assumptions, "sp500"
                 )
-            except AttributeError:
+            except (KeyError, TypeError) as exc:
                 logging.warning(f"Failed to extract a company data attribute for `{company}`.")
+                logging.debug(exc)
                 continue
 
             logging.info(f"Cash flow metrics for '{company}':")

@@ -81,28 +81,26 @@ class TOMLConfiguration:
 class ApplicationSettings(TOMLConfiguration):
     """All settings associated with the operation of the application."""
 
-    def __init__(self, settings_path: str = "settings.toml") -> None:
+    def __init__(self, settings_path: str) -> None:
         """Initialise class instance."""
-        self.__dict__ = self.load_config(settings_path).get("application")
+        settings = self.load_config(settings_path).get("application")
+        for key, value in settings.items():
+            if key in ("input_file", "log_directory", "storage_directory", "output_directory"):
+                settings[key] = Path(value)
+        self.__dict__.update(settings)
         self.__dict__.update(self.load_config("pyproject.toml").get("tool").get("poetry"))
-        self.set_paths()
-
-    def set_paths(self) -> None:
-        self.log_directory = Path(self.log_directory)
-        self.input_directory = Path(self.input_directory)
-        self.input_file = Path(self.input_directory, self.input_file)
-        self.storage_directory = Path(self.storage_directory)
 
     def configure_application(self) -> None:
         """Configure the application."""
         CommandLineInterface.outro_duration_seconds = self.outro_duration_seconds
         configure_logging(level=self.log_level, log_directory=self.log_directory)
         create_directory(Path(self.storage_directory))
+        create_directory(Path(self.output_directory))
 
 
 class MetricAssumptions(TOMLConfiguration):
     """All assumptions of metrics used to processing."""
 
-    def __init__(self, assumptions_path: str = "assumptions.toml") -> None:
+    def __init__(self, assumptions_path: str) -> None:
         """Initialise class instance."""
         self.__dict__ = self.load_config(assumptions_path)
