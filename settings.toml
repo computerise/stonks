@@ -3,6 +3,9 @@
 # Keys
 api_key_names = ["RAPIDAPI_KEY"]
 
+# URLs
+postgres_url = "POSTGRES_URL"
+
 # Display
 outro_duration_seconds = 5
 
