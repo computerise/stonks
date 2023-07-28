@@ -6,9 +6,9 @@ from sys import stdout
 from decouple import config, UndefinedValueError
 from pathlib import Path
 from tomllib import load
-from datetime import datetime
 from typing import Any
 
+from stonks.storage import DataStorage
 from stonks.error_handler import raise_fatal_error
 from stonks.command_line_interface import CommandLineInterface
 
@@ -31,17 +31,17 @@ def create_directory(directory_path: Path) -> bool:
     return False
 
 
-def configure_logging(level: str, log_directory: Path) -> None:
+def configure_logging(level: str, log_directory: Path, date_format: str) -> None:
     """Configure log level and log file name."""
     created_directory = create_directory(log_directory)
     # Save to log directory, ISO format to remove space, remove colons, remove microseconds.
-    log_path = Path(log_directory, f"{str(datetime.now().isoformat()).replace(':','-')[:-7]}.log")
+    log_path = Path(log_directory, DataStorage.timestamped_file("stonks", ".log"))
     file_handler = logging.FileHandler(log_path)
     stdout_handler = logging.StreamHandler(stdout)
     logging.basicConfig(
         encoding="utf-8",
         level=logging.getLevelName(level),
-        datefmt="%Y-%m-%d %H:%M:%S",
+        datefmt=date_format,
         format="%(asctime)s %(levelname)-8s %(message)s",
         handlers=(file_handler, stdout_handler),
     )
@@ -89,11 +89,12 @@ class ApplicationSettings(TOMLConfiguration):
                 settings[key] = Path(value)
         self.__dict__.update(settings)
         self.__dict__.update(self.load_config("pyproject.toml").get("tool").get("poetry"))
+        self.date_format = "%Y-%m-%dT%H:%M:%S"
 
     def configure_application(self) -> None:
         """Configure the application."""
         CommandLineInterface.outro_duration_seconds = self.outro_duration_seconds
-        configure_logging(level=self.log_level, log_directory=self.log_directory)
+        configure_logging(level=self.log_level, log_directory=self.log_directory, date_format=self.date_format)
         create_directory(Path(self.storage_directory))
         create_directory(Path(self.output_directory))
 
