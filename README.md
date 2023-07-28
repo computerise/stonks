@@ -30,7 +30,7 @@
 
 ## Summary
 
-The quantitative analysis component of a [Value Investing](https://www.investopedia.com/terms/v/valueinvesting.asp) approach. See [`docs/design.md`](https://github.com/computerise/stonks/blob/master/input/ftse_all_share.json) for an overview of the current application design.
+The quantitative analysis component of a [Value Investing](https://www.investopedia.com/terms/v/valueinvesting.asp) approach. See [`docs/design.md`](https://github.com/computerise/stonks/blob/master/docs/design.md) for an overview of the current application design.
 
 ## Objectives
 
