@@ -2,10 +2,10 @@
 
 from unittest import TestCase
 
-from stonks.storage import DataStorage
+from stonks.storage import LocalDataStorage
 
 
-class TestDataStorage(TestCase):
+class TestLocalDataStorage(TestCase):
     """Test data storage."""
 
     @classmethod
@@ -16,6 +16,6 @@ class TestDataStorage(TestCase):
     def test_write_json(self) -> None:
         """Test that invalid path and valid data, and invalid path and invalid data raise ValueError."""
         with self.assertRaises(ValueError):
-            DataStorage.write_json(self.invalid_path, "mock_data")
+            LocalDataStorage.write_json(self.invalid_path, "mock_data")
         with self.assertRaises(ValueError):
-            DataStorage.write_json(self.invalid_path, ("tuple_data",))
+            LocalDataStorage.write_json(self.invalid_path, ("tuple_data",))

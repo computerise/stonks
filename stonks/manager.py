@@ -3,7 +3,7 @@
 import logging
 from pathlib import Path
 
-from stonks.storage import DataStorage
+from stonks.storage import LocalDataStorage
 from stonks.configuration import ApplicationSettings, MetricAssumptions, APIKeys
 from stonks.retrieval.api_client import APIClient
 from stonks.retrieval.response_handler import handle_response, YahooFinanceResponse
@@ -47,7 +47,7 @@ class ApplicationManager:
         If `store_new_data` is `False` the data will be discarded.
         """
         candidates = {}
-        tickers = DataStorage.read_json(self.settings.input_file).keys()
+        tickers = LocalDataStorage.read_json(self.settings.input_file).keys()
         # FUTURE: Convert company_data to use Company class and assign calculated metrics as attributes.
         for company in tickers:
             company_data = self.get_company_data(company)
@@ -91,8 +91,8 @@ class ApplicationManager:
 
         logging.info("Candidates:")
         logging.info(candidates)
-        candidates_path = Path(self.settings.output_directory, DataStorage.timestamped_file("candidates", ".json"))
-        DataStorage.write_json(candidates_path, candidates)
+        candidates_path = Path(self.settings.output_directory, LocalDataStorage.timestamped_file("candidates", ".json"))
+        LocalDataStorage.write_json(candidates_path, candidates)
 
     def get_company_data(self, ticker: str) -> None:
         """Get data associated with a company."""
@@ -107,4 +107,4 @@ class ApplicationManager:
             return response.json()
         else:
             logging.info(f"Using archived data for '{ticker}'.")
-            return DataStorage.get_json(self.settings.storage_directory, ticker)
+            return LocalDataStorage.get_json(self.settings.storage_directory, ticker)

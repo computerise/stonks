@@ -6,7 +6,7 @@ from pathlib import Path
 from requests.models import Response
 
 from stonks.error_handler import raise_fatal_error
-from stonks.storage import DataStorage
+from stonks.storage import LocalDataStorage
 
 
 def handle_response(output_path: Path, response: Response, store: bool = True) -> None:
@@ -15,7 +15,7 @@ def handle_response(output_path: Path, response: Response, store: bool = True) -
         logging.warning(f"Endpoint {response.url} responded with error `{body.get('error')}`.")
     elif response.ok:
         if store:
-            DataStorage.write_json(output_path, body)
+            LocalDataStorage.write_json(output_path, body)
             logging.info(f"Successfully wrote output to {output_path}.")
     else:
         raise_fatal_error(

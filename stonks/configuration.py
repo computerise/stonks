@@ -8,7 +8,7 @@ from pathlib import Path
 from tomllib import load
 from typing import Any
 
-from stonks.storage import DataStorage
+from stonks.storage import LocalDataStorage
 from stonks.error_handler import raise_fatal_error
 from stonks.command_line_interface import CommandLineInterface
 
@@ -35,7 +35,7 @@ def configure_logging(level: str, log_directory: Path, date_format: str) -> None
     """Configure log level and log file name."""
     created_directory = create_directory(log_directory)
     # Save to log directory, ISO format to remove space, remove colons, remove microseconds.
-    log_path = Path(log_directory, DataStorage.timestamped_file("stonks", ".log"))
+    log_path = Path(log_directory, LocalDataStorage.timestamped_file("stonks", ".log"))
     file_handler = logging.FileHandler(log_path)
     stdout_handler = logging.StreamHandler(stdout)
     logging.basicConfig(
