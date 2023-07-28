@@ -16,5 +16,5 @@ storage_directory = "data/s&p500/"
 output_directory = "output/"
 
 # Flags
-request_new_data = false
+request_new_data = true
 store_new_data = true
