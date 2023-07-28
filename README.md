@@ -140,23 +140,30 @@ RAPIDAPI_KEY=<rapid-api-key>
 
 ### Settings
 
-Settings are specified in `settings.toml` as a flat object of key-value pairs under `[application]`:
+Settings options related to the general operation of the application are specified in `settings.toml` as a flat object of key-value pairs under `[application]`:
 
-| Key                      | Default Value                 | Value Type  | Group   | Description |
-|--------------------------|-----------------------|-------------|---------|-------------|
-| `api_key_names`          | `["RAPIDAPI_KEY"]`    | `list[str]` | Keys    | The environment variable names of API keys.            |
-| `outro_duration_seconds` | `5`                   | `float`     | Display | The time delay in seconds before terminating the application after execution.             |
-| `log_level`              | `"DEBUG"`             | `str`       | Logs    |  The level of log messages displayed in both `stdout` and log files.           |
-| `input_file`             | `"input/s&p500.json"` | `str`       | Paths   | The path to the JSON input file containing company tickers to evaluate.            |
-| `log_directory`          | `"logs/"`             | `str`       | Paths   | The path to the directory where application logs will be generated.            |
-| `storage_directory`      | `"data/s&p500/"`      | `str`       | Paths   | The path to the directory where raw company data will be stored prior to processing (if `store_new_data` is set to `true`).             |
-| `output_directory`       | `"output/"`           | `str`       | Paths   | The path to the directory where candidate companies will be recorded in a JSON output file.           |
-| `request_new_data`       | `true`                | `bool`      | Flag    | If `true`, new data will be requested from API endpoints during execution. If `false`, the application will attempt to use stored raw data.            |
-| `store_new_data`         | `true`                | `bool`      | Flag    | If `true`, newly requested data will overwrite the corresponding stored data. If `false` new data will not be written to raw data files.             |
+| Key                      | Default Value         | Value Type  | Group   | Description                                                                                                                                 |
+|--------------------------|-----------------------|-------------|---------|---------------------------------------------------------------------------------------------------------------------------------------------|
+| `api_key_names`          | `["RAPIDAPI_KEY"]`    | `list[str]` | Keys    | The environment variable names of API keys.                                                                                                 |
+| `outro_duration_seconds` | `5`                   | `float`     | Display | The time delay in seconds before terminating the application after execution.                                                               |
+| `log_level`              | `"DEBUG"`             | `str`       | Logs    | The level of log messages displayed in both `stdout` and log files.                                                                         |
+| `input_file`             | `"input/s&p500.json"` | `str`       | Paths   | The path to the JSON input file containing company tickers to evaluate.                                                                     |
+| `log_directory`          | `"logs/"`             | `str`       | Paths   | The path to the directory where application logs will be generated.                                                                         |
+| `storage_directory`      | `"data/s&p500/"`      | `str`       | Paths   | The path to the directory where raw company data will be stored prior to processing (if `store_new_data` is set to `true`).                 |
+| `output_directory`       | `"output/"`           | `str`       | Paths   | The path to the directory where candidate companies will be recorded in a JSON output file.                                                 |
+| `request_new_data`       | `true`                | `bool`      | Flag    | If `true`, new data will be requested from API endpoints during execution. If `false`, the application will attempt to use stored raw data. |
+| `store_new_data`         | `true`                | `bool`      | Flag    | If `true`, newly requested data will overwrite the corresponding stored data. If `false` new data will not be written to raw data files.    |
 
 ### Assumptions
 
-The user input file must be a JSON file specified in `settings.toml` with the key `input_file`. The default value for `input_file` is `input.json`. All other application specific settings are specified in `settings.toml`. All necessary assumptions used for calculations are specified in `assumptions.toml`.
+Metric Assumptions represent measurable attributes of a market or economy and include interest rates, tax rates, bond rates, rates of return and credit spreads. Currently these are implemented as constants when modelling each company, though estimating the time-evolution of these values should be considered in the future. Default values for these metrics were last collected on 12th June 2023. Metric assumptions are specified in `assumptions.toml` as a nested object of key-value pairs grouped by country, and further grouped by stock market index:
+
+| Key                        | Value Type | Section       | Description                                                                                                                                                                                                                      |
+|----------------------------|------------|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `risk_free_rate_of_return` | `float`    | Country       | The annualised rate of return offered by the country's [short-term (3-month) government bond](https://www.investopedia.com/terms/r/risk-freerate.asp#toc-why-is-the-us-3-month-t-bill-used-as-the-risk-free-rate), as a decimal. |
+| `corporate_tax_rate`       | `float`    | Country       | The rate of [corporation tax](https://www.investopedia.com/terms/c/corporatetax.asp) in the country, as a decimal.                                                                                                               |
+| `rate_of_return`           | `float`    | Country.Index | The [average annualised rate of return](https://www.investopedia.com/terms/a/aar.asp) of the index, as a decimal.                                                                                                                |
+| `average_credit_spread`    | `float`    | Country.Index | The average range between the [lowest and highest rate debt securities](https://www.investopedia.com/terms/c/creditspread.asp) of the index, as a decimal.                                                                       |
 
 ## Usage
 
