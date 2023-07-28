@@ -14,7 +14,7 @@ class DataStorage:
     @staticmethod
     def formatted_time_now() -> str:
         """Compute a nicely formatted timestamp string."""
-        return str(datetime.now().isoformat())[:-7]
+        return str(datetime.now().isoformat()).replace(":", "-")[:-7]
 
     @staticmethod
     def timestamped_file(name: str, suffix: str) -> Path:
