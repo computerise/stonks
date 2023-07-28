@@ -1,8 +1,36 @@
 # stonks
 
+## Table of Contents
+
+- [stonks](#stonks)
+  - [Table of Contents](#table-of-contents)
+  - [Summary](#summary)
+  - [Objectives](#objectives)
+    - [Method](#method)
+    - [Buy Matrix](#buy-matrix)
+    - [Future](#future)
+  - [Dependency Installation](#dependency-installation)
+    - [Python Installation](#python-installation)
+      - [Python Installation on Windows](#python-installation-on-windows)
+      - [Python Installation on Debian-Based Linux Distributions](#python-installation-on-debian-based-linux-distributions)
+    - [Poetry Installation](#poetry-installation)
+      - [Poetry Installation on Windows](#poetry-installation-on-windows)
+      - [Poetry Installation on Linux](#poetry-installation-on-linux)
+  - [Application Installation](#application-installation)
+    - [Dependencies](#dependencies)
+    - [Environment Variables](#environment-variables)
+  - [Configuration](#configuration)
+    - [Settings](#settings)
+    - [Assumptions](#assumptions)
+  - [Usage](#usage)
+    - [Windows Usage](#windows-usage)
+    - [Linux Usage](#linux-usage)
+  - [Development](#development)
+  - [Test](#test)
+
 ## Summary
 
-The quantitative analysis component of a [Value Investing](https://www.investopedia.com/terms/v/valueinvesting.asp) approach. See `DESIGN.md` for an overview of the current application design.
+The quantitative analysis component of a [Value Investing](https://www.investopedia.com/terms/v/valueinvesting.asp) approach. See [`docs/design.md`](https://github.com/computerise/stonks/blob/master/input/ftse_all_share.json) for an overview of the current application design.
 
 ## Objectives
 
@@ -26,7 +54,7 @@ Scrape company financial data to pick out the most undervalued publicly traded c
 The tricky part here is drawing the lines between undervalued and very undervalued...
 
 |                  | Undervalued | Very undervalued |
-| ---------------- | ----------- | ---------------- |
+|------------------|-------------|------------------|
 | Poor Outlook     | NEUTRAL     | BUY              |
 | Neutral Outlook  | BUY         | STRONG BUY       |
 | Positive Outlook | STRONG BUY  | BARGAIN          |
@@ -92,7 +120,7 @@ curl -sSL https://install.python-poetry.org | python3 -
 
 ### Dependencies
 
-When using the launcher the application and dependencies are automatically installed.
+When using the launcher as prescribed in [Usage](#usage) the application and python dependencies are automatically installed.
 
 To manually install the application from a Command Line Interface (CLI) on Windows or Linux, execute:
 
@@ -102,7 +130,7 @@ poetry install
 
 ### Environment Variables
 
-Create a file in the project root directory called `.env`. Acquire the respective API keys for each provider and save them in `.env` under the names, where `<rapid_api_key>` is replaced by your [personal access key for RapidAPI](https://docs.rapidapi.com/docs/keys):
+Create a file in the project root directory called `.env`. Acquire the respective API keys for each provider and save them in `.env` under the names (where `<rapid_api_key>` is replaced by your [personal access key for RapidAPI](https://docs.rapidapi.com/docs/keys)):
 
 ```text
 RAPIDAPI_KEY=<rapid-api-key>
@@ -110,7 +138,25 @@ RAPIDAPI_KEY=<rapid-api-key>
 
 ## Configuration
 
-The user input file must be a JSON file specified in `settings.toml` as `input_file`. By default `input_file` is `input.json`. All other application specific settings are specified in `settings.toml`. All necessary assumptions used for calculations are specified in `assumptions.toml`.
+### Settings
+
+Settings are specified in `settings.toml` as a flat object of key-value pairs under `[application]`:
+
+| Key                      | Default Value                 | Value Type  | Group   | Description |
+|--------------------------|-----------------------|-------------|---------|-------------|
+| `api_key_names`          | `["RAPIDAPI_KEY"]`    | `list[str]` | Keys    | The environment variable names of API keys.            |
+| `outro_duration_seconds` | `5`                   | `float`     | Display | The time delay in seconds before terminating the application after execution.             |
+| `log_level`              | `"DEBUG"`             | `str`       | Logs    |  The level of log messages displayed in both `stdout` and log files.           |
+| `input_file`             | `"input/s&p500.json"` | `str`       | Paths   | The path to the JSON input file containing company tickers to evaluate.            |
+| `log_directory`          | `"logs/"`             | `str`       | Paths   | The path to the directory where application logs will be generated.            |
+| `storage_directory`      | `"data/s&p500/"`      | `str`       | Paths   | The path to the directory where raw company data will be stored prior to processing (if `store_new_data` is set to `true`).             |
+| `output_directory`       | `"output/"`           | `str`       | Paths   | The path to the directory where candidate companies will be recorded in a JSON output file.           |
+| `request_new_data`       | `true`                | `bool`      | Flag    | If `true`, new data will be requested from API endpoints during execution. If `false`, the application will attempt to use stored raw data.            |
+| `store_new_data`         | `true`                | `bool`      | Flag    | If `true`, newly requested data will overwrite the corresponding stored data. If `false` new data will not be written to raw data files.             |
+
+### Assumptions
+
+The user input file must be a JSON file specified in `settings.toml` with the key `input_file`. The default value for `input_file` is `input.json`. All other application specific settings are specified in `settings.toml`. All necessary assumptions used for calculations are specified in `assumptions.toml`.
 
 ## Usage
 
