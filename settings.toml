@@ -1,16 +1,20 @@
 [application]
 
+# Keys
 api_key_names = ["RAPIDAPI_KEY"]
 
-outro_duration_seconds=5
+# Display
+outro_duration_seconds = 5
 
+# Logs
 log_level = "DEBUG"
+
+# Paths
+input_file = "input/s&p500.json"
 log_directory = "logs/"
+storage_directory = "data/s&p500/"
+output_directory = "output/"
 
-input_directory = "input/"
-input_file = "s&p500.json"
-
-storage_directory = "data/s&p500"
-
+# Flags
 request_new_data = true
 store_new_data = true
