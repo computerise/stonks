@@ -1,5 +1,27 @@
 # stonks Design
 
+## Table of Contents
+
+- [stonks Design](#stonks-design)
+  - [Table of Contents](#table-of-contents)
+  - [Summary](#summary)
+  - [High-Level Architecture](#high-level-architecture)
+  - [Components](#components)
+    - [Input](#input)
+    - [Configuration](#configuration)
+    - [Manager](#manager)
+    - [Retrieval](#retrieval)
+      - [API Client](#api-client)
+      - [Request Builder](#request-builder)
+    - [Processing](#processing)
+      - [Valuation Metrics](#valuation-metrics)
+      - [Valuation Models](#valuation-models)
+        - [Discounted Cash Flow](#discounted-cash-flow)
+      - [Intrinsic Value](#intrinsic-value)
+    - [Storage](#storage)
+    - [Report](#report)
+    - [Output](#output)
+
 ## Summary
 
 Minimal design report.
