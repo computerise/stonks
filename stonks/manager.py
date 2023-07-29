@@ -5,6 +5,7 @@ from pathlib import Path
 
 from stonks.storage import LocalDataStorage, PostgreSQLDatabase
 from stonks.configuration import ApplicationSettings, MetricAssumptions, APIKeys
+from stonks.companies import Company, CompanyCollection
 from stonks.retrieval.api_client import APIClient
 from stonks.retrieval.response_handler import handle_response, YahooFinanceResponse
 from stonks.processing.valuation import discounted_cash_flow_valuation, filter_valuation
@@ -29,7 +30,7 @@ class ApplicationManager:
         self.client = APIClient(api_keys)
         self.settings = application_settings
         self.assumptions = metric_assumptions
-        self.database_connection = PostgreSQLDatabase.connect(self.settings.postgres_url)
+        self.database = PostgreSQLDatabase(self.settings.database_name, self.settings.postgres_url)
         logging.info("Created Application Manager.")
 
     @staticmethod
@@ -109,3 +110,11 @@ class ApplicationManager:
         else:
             logging.info(f"Using archived data for '{ticker}'.")
             return LocalDataStorage.get_json(self.settings.storage_directory, ticker)
+
+    def load_local_data(self) -> CompanyCollection:
+        """Load local data from JSON files as a CompanyCollection."""
+        raise NotImplementedError
+
+    def insert_data(self) -> None:
+        """Insert CompanyCollection to database."""
+        raise NotImplementedError

@@ -84,9 +84,10 @@ class LocalDataStorage:
         )
         cursor.execute(
             """
-            INSERT INTO companies 
+            INSERT INTO companies #MORE HERE 
             """
         )
+        cursor.commit()
 
     @staticmethod
     def update_database_from_local(self):
@@ -103,6 +104,7 @@ class PostgreSQLDatabase:
 
     def build_engine(self, url: str) -> Engine:
         """Connect to the database URL using SQLAlchemy."""
+        logging.info("Building database engine...")
         parsed = urlparse(url)
         database_url = URL.create(
             drivername="postgresql",
@@ -112,7 +114,9 @@ class PostgreSQLDatabase:
             port=parsed.port,
             database=parsed.path[1:],
         )
-        return create_engine(database_url)
+        engine = create_engine(database_url)
+        logging.info("Built database engine.")
+        return engine
 
     def connect(self) -> Connection:
         """Connect to the database via SQLAlchemy engine."""

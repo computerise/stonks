@@ -9,6 +9,7 @@ repository = "https://github.com/computerise/stonks"
 
 [tool.poetry.scripts]
 stonks = "main:main"
+upload = "main:upload_local_data"
 
 [tool.poetry.dependencies]
 python = "^3.11"
