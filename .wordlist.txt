@@ -1,10 +1,12 @@
 api
 APIKeys
 APIs
+ApplicationManager
 capm
 cashflow
 CLI
 CompaniesCollection
+CompanyCollection
 currentPrice
 dcf
 DCF
@@ -29,11 +31,13 @@ noqa
 PostgreSQLDatabase
 PowerShell
 pre
+psycopg2
 rapidapi
 RapidAPI
 RapidAPIRequest
 sp
 sparior
+SQLAlchemy
 stonks
 th
 toml

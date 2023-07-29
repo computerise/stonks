@@ -5,7 +5,7 @@ from pathlib import Path
 
 from stonks.storage import LocalDataStorage, PostgreSQLDatabase
 from stonks.configuration import ApplicationSettings, MetricAssumptions, APIKeys
-from stonks.companies import Company, CompanyCollection
+from stonks.companies import Company, CompanyCollection  # noqa
 from stonks.retrieval.api_client import APIClient
 from stonks.retrieval.response_handler import handle_response, YahooFinanceResponse
 from stonks.processing.valuation import discounted_cash_flow_valuation, filter_valuation

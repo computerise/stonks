@@ -7,10 +7,10 @@ from datetime import datetime
 from urllib.parse import urlparse
 
 # from psycopg2 import connect
-from sqlalchemy import Column, Integer, String, create_engine
+from sqlalchemy import Column, Integer, String, create_engine  # noqa
 from sqlalchemy.engine import URL, Engine, Connection
-from sqlalchemy.orm import sessionmaker
-from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import sessionmaker  # noqa
+from sqlalchemy.ext.declarative import declarative_base  # noqa
 
 
 from stonks.error_handler import raise_fatal_error
@@ -84,7 +84,7 @@ class LocalDataStorage:
         )
         cursor.execute(
             """
-            INSERT INTO companies #MORE HERE 
+            INSERT INTO companies #MORE HERE
             """
         )
         cursor.commit()
