@@ -6,7 +6,12 @@ from typing import Any
 from datetime import datetime
 from urllib.parse import urlparse
 
-from psycopg2 import connect
+# from psycopg2 import connect
+from sqlalchemy import Column, Integer, String, create_engine
+from sqlalchemy.engine import URL, Engine, Connection
+from sqlalchemy.orm import sessionmaker
+from sqlalchemy.ext.declarative import declarative_base
+
 
 from stonks.error_handler import raise_fatal_error
 from stonks.companies import Company, CompanyCollection
@@ -62,25 +67,53 @@ class LocalDataStorage:
         companies = []
         for key in raw_companies_list:
             companies.append(Company(ticker=key, name=raw_companies_list["name"]))
-        company_collection = CompanyCollection("S&P500", "Standard and Poor's 500", companies)  # noqa
+        sp500 = CompanyCollection("S&P500", "Standard and Poor's 500", companies)  # noqa
         cursor = self.database_connection.cursor()  # noqa
-        # cursor.execute("CREATE DATABASE companies (ticker varchar(5), name varchar(255), index varchar(16));")
+
+        cursor.execute(
+            """
+            CREATE DATABASE companies (
+                       ticker VARCHAR(5),
+                       name VARCHAR(255),
+                       index VARCHAR(20),
+                       exchange VARCHAR(20),
+                       sector VARCHAR(50),
+                       industry VARCHAR(50)
+                       );
+            """
+        )
+        cursor.execute(
+            """
+            INSERT INTO companies 
+            """
+        )
 
     @staticmethod
     def update_database_from_local(self):
         raise NotImplementedError
 
 
-class PostgreSQLDataStorage:
-    """Data storage for PostgreSQL."""
+class PostgreSQLDatabase:
+    """Database model for PostgreSQL."""
 
-    def __init__(self, postgres_url: str) -> None:
-        """Initialise PostgreSQLDataStorage."""
-        self.url = postgres_url
+    def __init__(self, name: str, postgres_url: str) -> None:
+        """Initialise PostgreSQLDatabase."""
+        self.name = name
+        self.engine = self.build_engine(postgres_url)
 
-    def connect(self, url: str) -> Any:
-        """Connect to the database URL."""
+    def build_engine(self, url: str) -> Engine:
+        """Connect to the database URL using SQLAlchemy."""
         parsed = urlparse(url)
-        return connect(
-            database=parsed.path[1:], user=parsed.username, password=parsed.password, host=parsed.hostname, port=parsed.port
+        database_url = URL.create(
+            drivername="postgresql",
+            username=parsed.username,
+            password=parsed.password,
+            host=parsed.hostname,
+            port=parsed.port,
+            database=parsed.path[1:],
         )
+        return create_engine(database_url)
+
+    def connect(self) -> Connection:
+        """Connect to the database via SQLAlchemy engine."""
+        return self.engine.connect()

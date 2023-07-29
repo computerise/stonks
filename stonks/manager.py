@@ -3,7 +3,7 @@
 import logging
 from pathlib import Path
 
-from stonks.storage import LocalDataStorage, PostgreSQLDataStorage
+from stonks.storage import LocalDataStorage, PostgreSQLDatabase
 from stonks.configuration import ApplicationSettings, MetricAssumptions, APIKeys
 from stonks.retrieval.api_client import APIClient
 from stonks.retrieval.response_handler import handle_response, YahooFinanceResponse
@@ -29,7 +29,7 @@ class ApplicationManager:
         self.client = APIClient(api_keys)
         self.settings = application_settings
         self.assumptions = metric_assumptions
-        self.database_connection = PostgreSQLDataStorage.connect(self.settings.postgres_url)
+        self.database_connection = PostgreSQLDatabase.connect(self.settings.postgres_url)
         logging.info("Created Application Manager.")
 
     @staticmethod
