@@ -61,7 +61,7 @@ The tricky part here is drawing the lines between undervalued and very undervalu
 
 ### Future
 
-Once the approach is successful, provide a WebUI (or a REST API) to generate reports in-browser (or provide results via an REST API).
+Once the approach is successful, provide a WebUI (or a REST API) to generate reports in-browser (or provide results via a REST API).
 
 ## Dependency Installation
 
