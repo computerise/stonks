@@ -34,8 +34,6 @@ class TestAPIClient(TestCase):
             "adding_headers": {"mock_header": "mock_value"},
         }
         responses.add(**body)
-        response = self.api_client.retrieve(
-            "MOCK", ("asset-profile", "income-statement")
-        )
+        response = self.api_client.retrieve("MOCK", ("asset-profile", "income-statement"))
         self.assertEqual({"error": "reason"}, response.json())
         self.assertEqual(404, response.status_code)

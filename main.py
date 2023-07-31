@@ -5,7 +5,6 @@ from stonks.configuration import ApplicationSettings, MetricAssumptions, APIKeys
 from stonks.manager import ApplicationManager
 from stonks.command_line_interface import CommandLineInterface
 
-
 SETTINGS_FILE_PATH = "settings.toml"
 METRIC_ASSUMPTIONS_FILE_PATH = "assumptions.toml"
 
