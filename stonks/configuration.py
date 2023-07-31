@@ -95,8 +95,8 @@ class ApplicationSettings(TOMLConfiguration):
         """Configure the application."""
         CommandLineInterface.outro_duration_seconds = self.outro_duration_seconds
         configure_logging(level=self.log_level, log_directory_path=self.log_directory_path, date_format=self.date_format)
-        create_directory(Path(self.storage_directory_path))
-        create_directory(Path(self.output_directory_path))
+        create_directory(self.storage_directory_path)
+        create_directory(self.output_directory_path)
 
 
 class MetricAssumptions(TOMLConfiguration):

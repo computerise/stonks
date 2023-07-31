@@ -36,7 +36,7 @@ class ApplicationManager:
     @staticmethod
     def create_path(directory: str, ticker: str) -> Path:
         """Generate a path to the file named according to the stock's ticker."""
-        return Path(directory, f"{ticker}.json")
+        return Path(directory, ticker).with_suffix(".json")
 
     def start(self) -> None:
         """
@@ -113,7 +113,10 @@ class ApplicationManager:
 
     def load_local_data(self) -> CompanyCollection:
         """Load local data from JSON files as a CompanyCollection."""
-        LocalDataStorage.create_company_collection_from_local()
+        company_collection = LocalDataStorage.create_company_collection_from_local(
+            self.settings.input_file_path, "S&P500", "Standard and Poor's 500"
+        )
+        print(company_collection)
 
     def insert_data(self) -> None:
         """Insert CompanyCollection to database."""

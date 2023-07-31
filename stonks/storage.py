@@ -60,33 +60,40 @@ class LocalDataStorage:
             )
 
     @staticmethod
-    def create_company_collection_from_local(self, input_file_path) -> CompanyCollection:
+    def create_company_collection_from_local(
+        input_file_path: str, collection_id: str, collection_name: str
+    ) -> CompanyCollection:
         """Create CompanyCollection from local data."""
-        raw_companies_list = LocalDataStorage.read_json()
-        companies = [Company(ticker=key, name=raw_companies_list["name"]) for key in raw_companies_list]
-        return CompanyCollection("S&P500", "Standard and Poor's 500", companies)
+        raw_companies_list = LocalDataStorage.read_json(input_file_path)
+        # Standardise input files with schema.
+        try:
+            companies = [Company(ticker=key, name=raw_companies_list[key]["security"]) for key in raw_companies_list]
+        except KeyError:
+            companies = [Company(ticker=key, name=raw_companies_list[key]["name"]) for key in raw_companies_list]
+        return CompanyCollection(collection_id, collection_name, companies)
 
     @staticmethod
-    def update_database_from_local(self):
-        cursor = self.database_connection.cursor()  # noqa
-        cursor.execute(
-            """
-            CREATE DATABASE companies (
-                       ticker VARCHAR(5),
-                       name VARCHAR(255),
-                       index VARCHAR(20),
-                       exchange VARCHAR(20),
-                       sector VARCHAR(50),
-                       industry VARCHAR(50)
-                       );
-            """
-        )
-        cursor.execute(
-            """
-            INSERT INTO companies #MORE HERE
-            """
-        )
-        cursor.commit()
+    def update_database_from_local():
+        raise NotImplementedError
+        # cursor = self.database_connection.cursor()  # noqa
+        # cursor.execute(
+        #     """
+        #     CREATE DATABASE companies (
+        #                ticker VARCHAR(5),
+        #                name VARCHAR(255),
+        #                index VARCHAR(20),
+        #                exchange VARCHAR(20),
+        #                sector VARCHAR(50),
+        #                industry VARCHAR(50)
+        #                );
+        #     """
+        # )
+        # cursor.execute(
+        #     """
+        #     INSERT INTO companies #MORE HERE
+        #     """
+        # )
+        # cursor.commit()
 
 
 class PostgreSQLDatabase:
