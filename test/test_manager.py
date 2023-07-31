@@ -15,6 +15,7 @@ class TestApplicationManager(TestCase):
 
     @classmethod
     def setUpClass(cls) -> None:
+        """Set up test case."""
         app_settings = ApplicationSettings(SETTINGS_FILE_PATH)
         metric_assumptions = MetricAssumptions(METRIC_ASSUMPTIONS_FILE_PATH)
         app_settings.configure_application()
@@ -24,5 +25,6 @@ class TestApplicationManager(TestCase):
 
     def test_load_local_data(self) -> None:
         """Test loading local data."""
+        # Errors when envars are not set, need to mock them.
         company_collection = self.manager.load_local_data()
         self.assertIsInstance(company_collection, CompanyCollection)
