@@ -48,7 +48,9 @@ def configure_logging(level: str, log_directory_path: Path, date_format: str) ->
     if created_directory:
         logging.info(f"{SUCCESS_CREATE_DIRECTORY_MESSAGE}`{log_directory_path}`.")
 
+
 def get_envars(envar_names: list[str]) -> dict:
+    """Get environment variables."""
     envars = {}
     for name in envar_names:
         try:
@@ -69,7 +71,7 @@ class APIKeys:
         self.__dict__.update(api_keys)
         logging.info("Loaded API Keys.")
 
-    
+
 class URLs:
     def __init__(self, url_names: list[str]):
         """Set URLs from environment variables, named in settings.toml."""
@@ -77,7 +79,7 @@ class URLs:
         urls = get_envars(url_names)
         self.__dict__.update(urls)
         logging.info("Loaded URLs.")
-    
+
 
 class TOMLConfiguration:
     """Base class for all TOML configuration objects."""
