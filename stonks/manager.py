@@ -51,10 +51,13 @@ class ApplicationManager:
         If `store_new_data` is `False` the data will be discarded.
         """
         candidates = {}
-        tickers = LocalDataStorage.read_json(self.settings.input_file_path).keys()
+        company_collection = LocalDataStorage.create_company_collection_from_local(
+            self.settings.input_file_path, "S&P500", "Standard and Poor's 500"
+        )
         # FUTURE: Convert company_data to use Company class and assign calculated metrics as attributes.
-        for company in tickers:
-            company_data = self.get_company_data(company)
+        for company in company_collection.companies:
+            # This should be a method of Company.
+            company_data = self.get_company_data(company.ticker)
             # Move to retrieval.response_handler. Set required values as attributes of company.
             try:
                 dcf_data = YahooFinanceResponse.get_data_for_discounted_cash_flow(company_data)
@@ -63,11 +66,11 @@ class ApplicationManager:
                     company_data, self.assumptions, "sp500"
                 )
             except (KeyError, TypeError) as exc:
-                logging.warning(f"Failed to extract a company data attribute for `{company}`.")
+                logging.warning(f"Failed to extract a company data attribute for `{company.ticker}`.")
                 logging.debug(exc)
                 continue
 
-            logging.info(f"Cash flow metrics for '{company}':")
+            logging.info(f"Cash flow metrics for '{company.ticker}':")
             debt_cost = cost_of_debt(
                 self.assumptions.usa.get("risk_free_rate_of_return"),
                 self.assumptions.usa.get("sp500").get("average_credit_spread"),
@@ -84,10 +87,10 @@ class ApplicationManager:
             dcf_valuation = discounted_cash_flow_valuation(*dcf_data, wacc)
             logging.info(f"DCF valuation (price per share): {dcf_valuation.get('dcf_valuation_per_share')}")
             if filter_valuation(dcf_valuation):
-                candidates[company] = dcf_valuation
+                candidates[company.ticker] = dcf_valuation
                 logging.info(
                     f"""
-                    Added `{company}` to the candidates list with an absolute discount of
+                    Added `{company.ticker}` to the candidates list with an absolute discount of
                     `{dcf_valuation.get('dcf_discount_per_share')}` per share and a discount ratio of
                     `{dcf_valuation.get('dcf_discount_ratio')}`.
                     """

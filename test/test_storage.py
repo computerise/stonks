@@ -3,6 +3,7 @@
 from unittest import TestCase
 
 from stonks.storage import LocalDataStorage
+from stonks.companies import CompanyCollection
 
 
 class TestLocalDataStorage(TestCase):
@@ -19,3 +20,10 @@ class TestLocalDataStorage(TestCase):
             LocalDataStorage.write_json(self.invalid_path, "mock_data")
         with self.assertRaises(ValueError):
             LocalDataStorage.write_json(self.invalid_path, ("tuple_data",))
+
+    def test_create_company_collection_from_local(self) -> None:
+        """Test creation of CompanyCollections from local data."""
+        company_collection = LocalDataStorage.create_company_collection_from_local(
+            "input/s&p500.json", "S&P500", "Standard and Poor's 500"
+        )
+        self.assertIsInstance(company_collection, CompanyCollection)
