@@ -49,7 +49,7 @@ class ApplicationManager:
         If `store_new_data` is `False` the data will be discarded.
         """
         candidates = {}
-        tickers = LocalDataStorage.read_json(self.settings.input_file).keys()
+        tickers = LocalDataStorage.read_json(self.settings.input_file_path).keys()
         # FUTURE: Convert company_data to use Company class and assign calculated metrics as attributes.
         for company in tickers:
             company_data = self.get_company_data(company)
@@ -93,7 +93,7 @@ class ApplicationManager:
 
         logging.info("Candidates:")
         logging.info(candidates)
-        candidates_path = Path(self.settings.output_directory, LocalDataStorage.timestamped_file("candidates", ".json"))
+        candidates_path = Path(self.settings.output_directory_path, LocalDataStorage.timestamped_file("candidates", ".json"))
         LocalDataStorage.write_json(candidates_path, candidates)
 
     def get_company_data(self, ticker: str) -> None:
@@ -102,18 +102,18 @@ class ApplicationManager:
             logging.info(f"Attempting to acquire new data for '{ticker}'.")
             response = self.client.retrieve(ticker)
             handle_response(
-                self.create_path(self.settings.storage_directory, ticker),
+                self.create_path(self.settings.storage_directory_path, ticker),
                 response,
                 store=self.settings.store_new_data,
             )
             return response.json()
         else:
             logging.info(f"Using archived data for '{ticker}'.")
-            return LocalDataStorage.get_json(self.settings.storage_directory, ticker)
+            return LocalDataStorage.get_json(self.settings.storage_directory_path, ticker)
 
     def load_local_data(self) -> CompanyCollection:
         """Load local data from JSON files as a CompanyCollection."""
-        raise NotImplementedError
+        LocalDataStorage.create_company_collection_from_local()
 
     def insert_data(self) -> None:
         """Insert CompanyCollection to database."""

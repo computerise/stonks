@@ -16,10 +16,10 @@ outro_duration_seconds = 5
 log_level = "DEBUG"
 
 # Paths
-input_file = "input/s&p500.json"
-log_directory = "logs/"
-storage_directory = "data/s&p500/"
-output_directory = "output/"
+input_file_path = "input/s&p500.json"
+log_directory_path = "logs/"
+storage_directory_path = "data/s&p500/"
+output_directory_path = "output/"
 
 # Flags
 request_new_data = true

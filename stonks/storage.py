@@ -60,16 +60,15 @@ class LocalDataStorage:
             )
 
     @staticmethod
-    def create_databases_from_local(self):
-        """Create a new database from local data"""
-        # Generate CompaniesCollection from local data.
-        raw_companies_list = LocalDataStorage.read_json(self.settings.input_file)
-        companies = []
-        for key in raw_companies_list:
-            companies.append(Company(ticker=key, name=raw_companies_list["name"]))
-        sp500 = CompanyCollection("S&P500", "Standard and Poor's 500", companies)  # noqa
-        cursor = self.database_connection.cursor()  # noqa
+    def create_company_collection_from_local(self, input_file_path) -> CompanyCollection:
+        """Create CompanyCollection from local data."""
+        raw_companies_list = LocalDataStorage.read_json()
+        companies = [Company(ticker=key, name=raw_companies_list["name"]) for key in raw_companies_list]
+        return CompanyCollection("S&P500", "Standard and Poor's 500", companies)
 
+    @staticmethod
+    def update_database_from_local(self):
+        cursor = self.database_connection.cursor()  # noqa
         cursor.execute(
             """
             CREATE DATABASE companies (
@@ -88,10 +87,6 @@ class LocalDataStorage:
             """
         )
         cursor.commit()
-
-    @staticmethod
-    def update_database_from_local(self):
-        raise NotImplementedError
 
 
 class PostgreSQLDatabase:

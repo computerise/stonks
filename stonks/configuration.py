@@ -31,11 +31,11 @@ def create_directory(directory_path: Path) -> bool:
     return False
 
 
-def configure_logging(level: str, log_directory: Path, date_format: str) -> None:
+def configure_logging(level: str, log_directory_path: Path, date_format: str) -> None:
     """Configure log level and log file name."""
-    created_directory = create_directory(log_directory)
+    created_directory = create_directory(log_directory_path)
     # Save to log directory, ISO format to remove space, remove colons, remove microseconds.
-    log_path = Path(log_directory, LocalDataStorage.timestamped_file("stonks", ".log"))
+    log_path = Path(log_directory_path, LocalDataStorage.timestamped_file("stonks", ".log"))
     file_handler = logging.FileHandler(log_path)
     stdout_handler = logging.StreamHandler(stdout)
     logging.basicConfig(
@@ -46,7 +46,7 @@ def configure_logging(level: str, log_directory: Path, date_format: str) -> None
         handlers=(file_handler, stdout_handler),
     )
     if created_directory:
-        logging.info(f"{SUCCESS_CREATE_DIRECTORY_MESSAGE}`{log_directory}`.")
+        logging.info(f"{SUCCESS_CREATE_DIRECTORY_MESSAGE}`{log_directory_path}`.")
 
 
 class APIKeys:
@@ -85,7 +85,7 @@ class ApplicationSettings(TOMLConfiguration):
         """Initialise class instance."""
         settings = self.load_config(settings_path).get("application")
         for key, value in settings.items():
-            if key in ("input_file", "log_directory", "storage_directory", "output_directory"):
+            if key in ("input_file_path", "log_directory_path", "storage_directory_path", "output_directory_path"):
                 settings[key] = Path(value)
         self.__dict__.update(settings)
         self.__dict__.update(self.load_config("pyproject.toml").get("tool").get("poetry"))
@@ -94,9 +94,9 @@ class ApplicationSettings(TOMLConfiguration):
     def configure_application(self) -> None:
         """Configure the application."""
         CommandLineInterface.outro_duration_seconds = self.outro_duration_seconds
-        configure_logging(level=self.log_level, log_directory=self.log_directory, date_format=self.date_format)
-        create_directory(Path(self.storage_directory))
-        create_directory(Path(self.output_directory))
+        configure_logging(level=self.log_level, log_directory_path=self.log_directory_path, date_format=self.date_format)
+        create_directory(Path(self.storage_directory_path))
+        create_directory(Path(self.output_directory_path))
 
 
 class MetricAssumptions(TOMLConfiguration):
