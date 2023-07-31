@@ -2,25 +2,30 @@
 
 from dataclasses import dataclass
 
+from sqlalchemy import Column, String, UniqueConstraint
+from sqlalchemy.ext.declarative import declarative_base
 
-@dataclass
-class StaticCompany:
-    """Object containing all static attributes of a company."""
-
-    ticker: str
-    name: str
-    index: str = None
-    exchange: str = None
-    sector: str = None
-    industry: str = None
+Base = declarative_base()
 
 
 @dataclass
-class Company(StaticCompany):
-    """Model containing all dynamic attributes of a company."""
+class Company(Base):
+    """
+    Database model containing all dynamic attributes of a company.
 
-    price: float = None
-    market_cap: float = None
+    Requires:
+    CREATE TABLE companies(ticker VARCHAR(5) UNIQUE, name VARCHAR(100) UNIQUE);
+    """
+
+    __tablename__ = "companies"
+    ticker: str = Column(String(5), primary_key=True)
+    name: str = Column(String)
+    # index: str = Column(String)
+    # exchange: str = Column(String)
+    # sector: str = Column(String)
+    # industry: str = Column(String)
+    # price: float = Column(Float)
+    # market_cap: float = Column(Float)
 
 
 @dataclass

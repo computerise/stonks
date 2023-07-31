@@ -14,7 +14,7 @@ class APIClient:
         """Initialise class instance."""
         logging.info("Creating API Client...")
         self.api_keys = api_keys
-        self.request_factory = request_factory_type(self.api_keys.RAPIDAPI_KEY)
+        self.request_factory = request_factory_type(self.api_keys.rapidapi_key)
         self.start_session()
         logging.info("Created API Client.")
 

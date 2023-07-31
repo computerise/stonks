@@ -15,7 +15,7 @@ class TestAPIClient(TestCase):
 
         class MockAPIKeys:
             def __init__(self):
-                self.RAPIDAPI_KEY = "mock_key"
+                self.rapidapi_key = "mock_key"
 
         cls.api_client = APIClient(MockAPIKeys())
 

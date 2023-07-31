@@ -6,11 +6,9 @@ from typing import Any
 from datetime import datetime
 from urllib.parse import urlparse
 
-# from psycopg2 import connect
-from sqlalchemy import Column, Integer, String, create_engine  # noqa
+from sqlalchemy import create_engine
 from sqlalchemy.engine import URL, Engine, Connection
-from sqlalchemy.orm import sessionmaker  # noqa
-from sqlalchemy.ext.declarative import declarative_base  # noqa
+from sqlalchemy.orm import sessionmaker
 
 
 from stonks.error_handler import raise_fatal_error
@@ -72,37 +70,14 @@ class LocalDataStorage:
             companies = [Company(ticker=key, name=raw_companies_list[key]["name"]) for key in raw_companies_list]
         return CompanyCollection(collection_id, collection_name, companies)
 
-    @staticmethod
-    def update_database_from_local():
-        raise NotImplementedError
-        # cursor = self.database_connection.cursor()  # noqa
-        # cursor.execute(
-        #     """
-        #     CREATE DATABASE companies (
-        #                ticker VARCHAR(5),
-        #                name VARCHAR(255),
-        #                index VARCHAR(20),
-        #                exchange VARCHAR(20),
-        #                sector VARCHAR(50),
-        #                industry VARCHAR(50)
-        #                );
-        #     """
-        # )
-        # cursor.execute(
-        #     """
-        #     INSERT INTO companies #MORE HERE
-        #     """
-        # )
-        # cursor.commit()
-
 
 class PostgreSQLDatabase:
     """Database model for PostgreSQL."""
 
-    def __init__(self, name: str, postgres_url: str) -> None:
+    def __init__(self, name: str, url_names: str) -> None:
         """Initialise PostgreSQLDatabase."""
         self.name = name
-        self.engine = self.build_engine(postgres_url)
+        self.engine = self.build_engine(url_names)
 
     def build_engine(self, url: str) -> Engine:
         """Connect to the database URL using SQLAlchemy."""
@@ -116,10 +91,20 @@ class PostgreSQLDatabase:
             port=parsed.port,
             database=parsed.path[1:],
         )
-        engine = create_engine(database_url)
+        engine = create_engine(database_url, echo=True)
         logging.info("Built database engine.")
         return engine
 
     def connect(self) -> Connection:
         """Connect to the database via SQLAlchemy engine."""
         return self.engine.connect()
+
+    def session(self):
+        """Connect to the database via SQLAlchemy engine."""
+        return sessionmaker(bind=self.engine)()
+
+    def upload_company_collection(self, company_collection: CompanyCollection) -> None:
+        """Upload a CompanyCollection object to the database."""
+        session = self.session()
+        session.add_all(company_collection.companies)
+        session.commit()

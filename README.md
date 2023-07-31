@@ -130,10 +130,11 @@ poetry install
 
 ### Environment Variables
 
-Create a file in the project root directory called `.env`. Acquire the respective API keys for each provider and save them in `.env` under the names (where `<rapid_api_key>` is replaced by your [personal access key for RapidAPI](https://docs.rapidapi.com/docs/keys)):
+Create a file in the project root directory called `.env`. Acquire the respective API keys for each provider and save them in `.env` under the names (where `<rapid-api-key>` is replaced by your [personal access key for RapidAPI](https://docs.rapidapi.com/docs/keys), `<postgres-database-url>` is replaced by the URL to the PostgreSQL Database instance):
 
 ```text
 RAPIDAPI_KEY=<rapid-api-key>
+POSTGRES_URL=<postgres-database-url>
 ```
 
 ## Configuration
@@ -145,7 +146,7 @@ Settings options related to the general operation of the application are specifi
 | Key                      | Default Value         | Value Type  | Group   | Description                                                                                                                                 |
 |--------------------------|-----------------------|-------------|---------|---------------------------------------------------------------------------------------------------------------------------------------------|
 | `api_key_names`          | `["RAPIDAPI_KEY"]`    | `list[str]` | Keys    | The environment variable names of API keys.                                                                                                 |
-| `postgres_url`           | `"POSTGRES_URL"`      | `str`       | URLs    | The URL to the PostgreSQL Database instance.                                                                                                |
+| `url_names`           | `["POSTGRES_URL"]`      | `list[str]`       | URLs    | The environment variables names of URLS.                                                                                                |
 | `database_name`          | `"stonks-dev"`        | `str`       | Names   | The name of the database to be used.                                                                                                        |
 | `outro_duration_seconds` | `5`                   | `float`     | Display | The time delay in seconds before terminating the application after execution.                                                               |
 | `log_level`              | `"DEBUG"`             | `str`       | Logs    | The level of log messages displayed in both `stdout` and log files.                                                                         |

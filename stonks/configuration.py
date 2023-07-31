@@ -48,26 +48,36 @@ def configure_logging(level: str, log_directory_path: Path, date_format: str) ->
     if created_directory:
         logging.info(f"{SUCCESS_CREATE_DIRECTORY_MESSAGE}`{log_directory_path}`.")
 
+def get_envars(envar_names: list[str]) -> dict:
+    envars = {}
+    for name in envar_names:
+        try:
+            envars[name.lower()] = config(name)
+        except UndefinedValueError as exc:
+            raise_fatal_error(
+                f"Environment variable `{name}` is not set. Declare it in a `.env` file as described in `README.md`",
+                from_exception=exc,
+            )
+    return envars
+
 
 class APIKeys:
     def __init__(self, api_key_names: list[str]) -> None:
-        self._set_api_keys(api_key_names)
-
-    def _set_api_keys(self, api_key_names: list[str]) -> None:
         """Set API Keys from environment variables, named in settings.toml."""
         logging.info("Loading API Keys...")
-        api_keys = {}
-        for name in api_key_names:
-            try:
-                api_keys[name] = config(name)
-            except UndefinedValueError as exc:
-                raise_fatal_error(
-                    f"Environment variable `{name}` is not set. Declare it in a `.env` file as described in `README.md`",
-                    from_exception=exc,
-                )
-        self.__dict__ = api_keys
+        api_keys = get_envars(api_key_names)
+        self.__dict__.update(api_keys)
         logging.info("Loaded API Keys.")
 
+    
+class URLs:
+    def __init__(self, url_names: list[str]):
+        """Set URLs from environment variables, named in settings.toml."""
+        logging.info("Loading URLs...")
+        urls = get_envars(url_names)
+        self.__dict__.update(urls)
+        logging.info("Loaded URLs.")
+    
 
 class TOMLConfiguration:
     """Base class for all TOML configuration objects."""

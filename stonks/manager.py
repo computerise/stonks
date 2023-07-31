@@ -4,8 +4,8 @@ import logging
 from pathlib import Path
 
 from stonks.storage import LocalDataStorage, PostgreSQLDatabase
-from stonks.configuration import ApplicationSettings, MetricAssumptions, APIKeys
-from stonks.companies import Company, CompanyCollection  # noqa
+from stonks.configuration import ApplicationSettings, MetricAssumptions, APIKeys, URLs
+from stonks.companies import CompanyCollection
 from stonks.retrieval.api_client import APIClient
 from stonks.retrieval.response_handler import handle_response, YahooFinanceResponse
 from stonks.processing.valuation import discounted_cash_flow_valuation, filter_valuation
@@ -24,13 +24,15 @@ class ApplicationManager:
         application_settings: ApplicationSettings,
         metric_assumptions: MetricAssumptions,
         api_keys: APIKeys,
+        urls: URLs,
     ):
         """Initialise class instance."""
         logging.info("Creating Application Manager...")
         self.client = APIClient(api_keys)
         self.settings = application_settings
         self.assumptions = metric_assumptions
-        self.database = PostgreSQLDatabase(self.settings.database_name, self.settings.postgres_url)
+        self.urls = urls
+        self.database = PostgreSQLDatabase(self.settings.database_name, self.urls.postgres_url)
         logging.info("Created Application Manager.")
 
     @staticmethod
@@ -116,8 +118,8 @@ class ApplicationManager:
         company_collection = LocalDataStorage.create_company_collection_from_local(
             self.settings.input_file_path, "S&P500", "Standard and Poor's 500"
         )
-        print(company_collection)
+        return company_collection
 
-    def insert_data(self) -> None:
+    def insert_data(self, company_collection: CompanyCollection) -> None:
         """Insert CompanyCollection to database."""
-        raise NotImplementedError
+        self.database.upload_company_collection(company_collection)
