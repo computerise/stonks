@@ -107,12 +107,6 @@
         "price": "1,809.00",
         "market_cap": "34,348.4"
     },
-    "PRU": {
-        "name": "Prudential",
-        "index": "FTSE 100",
-        "price": "1,125.00",
-        "market_cap": "30,933.8"
-    },
     "AAL": {
         "name": "Anglo American",
         "index": "FTSE 100",
@@ -587,7 +581,7 @@
         "price": "1,614.00",
         "market_cap": "4,209.4"
     },
-    "BEZ Beazley": {
+    "BEZ": {
         "name": "FTSE 100",
         "index": "612.50",
         "price": "4,111.1",
@@ -1697,7 +1691,7 @@
         "price": "79.10",
         "market_cap": "983.5"
     },
-    "SONG+SONC": {
+    "SONG": {
         "name": "Hipgnosis Songs Fund Ltd",
         "index": "FTSE 250",
         "price": "80.70",
@@ -2225,12 +2219,6 @@
         "price": "1,185.00",
         "market_cap": "605.9"
     },
-    "YNGN": {
-        "name": "Young & Co's Brewery",
-        "index": "FTSE AIM",
-        "price": "807.00",
-        "market_cap": "605.9"
-    },
     "JDG": {
         "name": "Judges Scientific",
         "index": "FTSE AIM",
@@ -2314,12 +2302,6 @@
         "index": "FTSE 250",
         "price": "508.00",
         "market_cap": "569.1"
-    },
-    "FTSE 250 automatic entry position": {
-        "name": null,
-        "index": null,
-        "price": null,
-        "market_cap": null
     },
     "FXPO": {
         "name": "Ferrexpo",
@@ -2734,12 +2716,6 @@
         "index": "FTSE Small Cap",
         "price": "89.20",
         "market_cap": "428.2"
-    },
-    "FTSE 250 automatic exit position": {
-        "name": null,
-        "index": null,
-        "price": null,
-        "market_cap": null
     },
     "TET": {
         "name": "Treatt",
@@ -5237,7 +5213,7 @@
         "price": "307.50",
         "market_cap": "98.5"
     },
-    "CHI+CHIB": {
+    "CHI": {
         "name": "Ct UK High Income Trust",
         "index": "FTSE Fledgling",
         "price": "82.50",
@@ -5345,10 +5321,10 @@
         "price": "38.70",
         "market_cap": "92.6"
     },
-    "HAN+HANA": {
+    "HAN": {
         "name": "Hansa Investment Company Ltd",
         "index": null,
-        "price": "166.00 / 163.00",
+        "price": "166.00",
         "market_cap": "92.5"
     },
     "TV1": {
@@ -5392,12 +5368,6 @@
         "index": null,
         "price": "20.13",
         "market_cap": "89.9"
-    },
-    "FTSE Small Cap entry level = 89.9": {
-        "name": null,
-        "index": null,
-        "price": null,
-        "market_cap": null
     },
     "VIP": {
         "name": "Value & Indexed Property Income Trust",
@@ -5644,12 +5614,6 @@
         "index": "FTSE Fledgling",
         "price": "85.00",
         "market_cap": "78.1"
-    },
-    "SPSC": {
-        "name": "Spectra Systems Corp",
-        "index": "FTSE AIM",
-        "price": "170.00",
-        "market_cap": "77.7"
     },
     "SPSY": {
         "name": "Spectra Systems Corp",
@@ -5921,12 +5885,6 @@
         "price": "1,075.00",
         "market_cap": "65.4"
     },
-    "DWHA": {
-        "name": "Dewhurst",
-        "index": "FTSE AIM",
-        "price": "625.00",
-        "market_cap": "65.4"
-    },
     "EBQ": {
         "name": "Ebiquity",
         "index": "FTSE AIM",
@@ -6034,12 +5992,6 @@
         "index": "FTSE AIM",
         "price": "27.23",
         "market_cap": "59.9"
-    },
-    "FTSE Small Cap exit level = 59.9": {
-        "name": null,
-        "index": null,
-        "price": null,
-        "market_cap": null
     },
     "MIND": {
         "name": "Mind Gym",

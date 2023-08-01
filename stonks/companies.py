@@ -14,7 +14,7 @@ class Company(Base):
     Database model containing all dynamic attributes of a company.
 
     Requires:
-    CREATE TABLE companies(ticker VARCHAR(5) UNIQUE, name VARCHAR(100) UNIQUE);
+    CREATE TABLE companies(ticker VARCHAR(5), name VARCHAR(100), country VARCHAR(100), index VARCHAR(100), PRIMARY KEY (ticker, index));
     """
 
     __tablename__ = "companies"

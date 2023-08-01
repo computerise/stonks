@@ -62,10 +62,17 @@ class LocalDataStorage:
         """Create CompanyCollection from local data."""
         raw_companies_list = LocalDataStorage.read_json(input_file_path)
         # Standardise input files with schema.
+        index = input_file_path.stem
         try:
-            companies = [Company(ticker=key, name=raw_companies_list[key]["security"]) for key in raw_companies_list]
+            companies = [
+                Company(ticker=key, name=raw_companies_list[key]["security"], country="usa", index=index)
+                for key in raw_companies_list
+            ]
         except KeyError:
-            companies = [Company(ticker=key, name=raw_companies_list[key]["name"]) for key in raw_companies_list]
+            companies = [
+                Company(ticker=key, name=raw_companies_list[key]["name"], country="uk", index=index)
+                for key in raw_companies_list
+            ]
         return CompanyCollection(input_file_path.stem, companies)
 
 
