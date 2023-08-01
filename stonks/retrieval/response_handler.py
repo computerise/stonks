@@ -54,7 +54,7 @@ class YahooFinanceResponse:
         return total_equity, total_debt
 
     def get_data_for_capital_asset_pricing_model(
-        company_data: dict[str, Any], assumptions: dict[str, Any], exchange: str
+        company_data: dict[str, Any], assumptions: dict[str, Any], index: str
     ) -> tuple[float, float, float]:
         """
         Extract the relevant data for the Capital Asset Pricing model.
@@ -66,5 +66,5 @@ class YahooFinanceResponse:
         except TypeError:
             raise TypeError('"raw" value for "beta" is invalid.')
         risk_free_rate_of_return = assumptions.usa.get("risk_free_rate_of_return")
-        market_rate_of_return = assumptions.usa.get(exchange).get("rate_of_return")
+        market_rate_of_return = assumptions.usa.get(index).get("rate_of_return")
         return risk_free_rate_of_return, market_rate_of_return, beta

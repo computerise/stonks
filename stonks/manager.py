@@ -51,9 +51,7 @@ class ApplicationManager:
         If `store_new_data` is `False` the data will be discarded.
         """
         candidates = {}
-        company_collection = LocalDataStorage.create_company_collection_from_local(
-            self.settings.input_file_path, "S&P500", "Standard and Poor's 500"
-        )
+        company_collection = LocalDataStorage.create_company_collection_from_local(self.settings.input_file_path)
         # FUTURE: Convert company_data to use Company class and assign calculated metrics as attributes.
         for company in company_collection.companies:
             # This should be a method of Company.
@@ -118,9 +116,7 @@ class ApplicationManager:
 
     def load_local_data(self) -> CompanyCollection:
         """Load local data from JSON files as a CompanyCollection."""
-        company_collection = LocalDataStorage.create_company_collection_from_local(
-            self.settings.input_file_path, "S&P500", "Standard and Poor's 500"
-        )
+        company_collection = LocalDataStorage.create_company_collection_from_local(self.settings.input_file_path)
         return company_collection
 
     def insert_data(self, company_collection: CompanyCollection) -> None:

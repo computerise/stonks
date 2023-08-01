@@ -20,7 +20,8 @@ class Company(Base):
     __tablename__ = "companies"
     ticker: str = Column(String(5), primary_key=True)
     name: str = Column(String)
-    # index: str = Column(String)
+    country: str = Column(String)
+    index: str = Column(String)
     # exchange: str = Column(String)
     # sector: str = Column(String)
     # industry: str = Column(String)
@@ -33,5 +34,4 @@ class CompanyCollection:
     """Company collection model for exchanges and indices."""
 
     id: str
-    name: str
     companies: list[Company]

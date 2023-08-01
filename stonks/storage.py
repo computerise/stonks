@@ -58,9 +58,7 @@ class LocalDataStorage:
             )
 
     @staticmethod
-    def create_company_collection_from_local(
-        input_file_path: str, collection_id: str, collection_name: str
-    ) -> CompanyCollection:
+    def create_company_collection_from_local(input_file_path: Path) -> CompanyCollection:
         """Create CompanyCollection from local data."""
         raw_companies_list = LocalDataStorage.read_json(input_file_path)
         # Standardise input files with schema.
@@ -68,7 +66,7 @@ class LocalDataStorage:
             companies = [Company(ticker=key, name=raw_companies_list[key]["security"]) for key in raw_companies_list]
         except KeyError:
             companies = [Company(ticker=key, name=raw_companies_list[key]["name"]) for key in raw_companies_list]
-        return CompanyCollection(collection_id, collection_name, companies)
+        return CompanyCollection(input_file_path.stem, companies)
 
 
 class PostgreSQLDatabase:
