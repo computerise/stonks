@@ -6,7 +6,7 @@ from pathlib import Path
 from requests.models import Response
 
 from stonks.error_handler import raise_fatal_error
-from stonks.storage import DataStorage
+from stonks.storage import LocalDataStorage
 
 
 def handle_response(output_path: Path, response: Response, store: bool = True) -> None:
@@ -15,7 +15,7 @@ def handle_response(output_path: Path, response: Response, store: bool = True) -
         logging.warning(f"Endpoint {response.url} responded with error `{body.get('error')}`.")
     elif response.ok:
         if store:
-            DataStorage.write_json(output_path, body)
+            LocalDataStorage.write_json(output_path, body)
             logging.info(f"Successfully wrote output to {output_path}.")
     else:
         raise_fatal_error(
@@ -54,7 +54,7 @@ class YahooFinanceResponse:
         return total_equity, total_debt
 
     def get_data_for_capital_asset_pricing_model(
-        company_data: dict[str, Any], assumptions: dict[str, Any], exchange: str
+        company_data: dict[str, Any], assumptions: dict[str, Any], index: str
     ) -> tuple[float, float, float]:
         """
         Extract the relevant data for the Capital Asset Pricing model.
@@ -66,5 +66,5 @@ class YahooFinanceResponse:
         except TypeError:
             raise TypeError('"raw" value for "beta" is invalid.')
         risk_free_rate_of_return = assumptions.usa.get("risk_free_rate_of_return")
-        market_rate_of_return = assumptions.usa.get(exchange).get("rate_of_return")
+        market_rate_of_return = assumptions.usa.get(index).get("rate_of_return")
         return risk_free_rate_of_return, market_rate_of_return, beta

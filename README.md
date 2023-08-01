@@ -130,10 +130,11 @@ poetry install
 
 ### Environment Variables
 
-Create a file in the project root directory called `.env`. Acquire the respective API keys for each provider and save them in `.env` under the names (where `<rapid_api_key>` is replaced by your [personal access key for RapidAPI](https://docs.rapidapi.com/docs/keys)):
+Create a file in the project root directory called `.env`. Acquire the respective API keys for each provider and save them in `.env` under the names (where `<rapid-api-key>` is replaced by your [personal access key for RapidAPI](https://docs.rapidapi.com/docs/keys), `<postgres-database-url>` is replaced by the URL to the PostgreSQL Database instance):
 
 ```text
 RAPIDAPI_KEY=<rapid-api-key>
+POSTGRES_URL=<postgres-database-url>
 ```
 
 ## Configuration
@@ -145,12 +146,14 @@ Settings options related to the general operation of the application are specifi
 | Key                      | Default Value         | Value Type  | Group   | Description                                                                                                                                 |
 |--------------------------|-----------------------|-------------|---------|---------------------------------------------------------------------------------------------------------------------------------------------|
 | `api_key_names`          | `["RAPIDAPI_KEY"]`    | `list[str]` | Keys    | The environment variable names of API keys.                                                                                                 |
+| `url_names`           | `["POSTGRES_URL"]`      | `list[str]`       | URLs    | The environment variables names of URLS.                                                                                                |
+| `database_name`          | `"stonks-dev"`        | `str`       | Names   | The name of the database to be used.                                                                                                        |
 | `outro_duration_seconds` | `5`                   | `float`     | Display | The time delay in seconds before terminating the application after execution.                                                               |
 | `log_level`              | `"DEBUG"`             | `str`       | Logs    | The level of log messages displayed in both `stdout` and log files.                                                                         |
-| `input_file`             | `"input/s&p500.json"` | `str`       | Paths   | The path to the JSON input file containing company tickers to evaluate.                                                                     |
-| `log_directory`          | `"logs/"`             | `str`       | Paths   | The path to the directory where application logs will be generated.                                                                         |
-| `storage_directory`      | `"data/s&p500/"`      | `str`       | Paths   | The path to the directory where raw company data will be stored prior to processing (if `store_new_data` is set to `true`).                 |
-| `output_directory`       | `"output/"`           | `str`       | Paths   | The path to the directory where candidate companies will be recorded in a JSON output file.                                                 |
+| `input_file_path`             | `"input/s&p500.json"` | `str`       | Paths   | The path to the JSON input file containing company tickers to evaluate.                                                                     |
+| `log_directory_path`          | `"logs/"`             | `str`       | Paths   | The path to the directory where application logs will be generated.                                                                         |
+| `storage_directory_path`      | `"data/s&p500/"`      | `str`       | Paths   | The path to the directory where raw company data will be stored prior to processing (if `store_new_data` is set to `true`).                 |
+| `output_directory_path`       | `"output/"`           | `str`       | Paths   | The path to the directory where candidate companies will be recorded in a JSON output file.                                                 |
 | `request_new_data`       | `true`                | `bool`      | Flag    | If `true`, new data will be requested from API endpoints during execution. If `false`, the application will attempt to use stored raw data. |
 | `store_new_data`         | `true`                | `bool`      | Flag    | If `true`, newly requested data will overwrite the corresponding stored data. If `false` new data will not be written to raw data files.    |
 

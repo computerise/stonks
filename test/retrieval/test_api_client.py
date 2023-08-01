@@ -15,7 +15,7 @@ class TestAPIClient(TestCase):
 
         class MockAPIKeys:
             def __init__(self):
-                self.RAPIDAPI_KEY = "mock_key"
+                self.rapidapi_key = "mock_key"
 
         cls.api_client = APIClient(MockAPIKeys())
 
@@ -34,8 +34,6 @@ class TestAPIClient(TestCase):
             "adding_headers": {"mock_header": "mock_value"},
         }
         responses.add(**body)
-        response = self.api_client.retrieve(
-            "MOCK", ("asset-profile", "income-statement")
-        )
+        response = self.api_client.retrieve("MOCK", ("asset-profile", "income-statement"))
         self.assertEqual({"error": "reason"}, response.json())
         self.assertEqual(404, response.status_code)

@@ -3,8 +3,9 @@
 import logging
 from pathlib import Path
 
-from stonks.storage import DataStorage
-from stonks.configuration import ApplicationSettings, MetricAssumptions, APIKeys
+from stonks.storage import LocalDataStorage, PostgreSQLDatabase
+from stonks.configuration import ApplicationSettings, MetricAssumptions, APIKeys, URLs
+from stonks.companies import CompanyCollection
 from stonks.retrieval.api_client import APIClient
 from stonks.retrieval.response_handler import handle_response, YahooFinanceResponse
 from stonks.processing.valuation import discounted_cash_flow_valuation, filter_valuation
@@ -23,18 +24,21 @@ class ApplicationManager:
         application_settings: ApplicationSettings,
         metric_assumptions: MetricAssumptions,
         api_keys: APIKeys,
+        urls: URLs,
     ):
         """Initialise class instance."""
         logging.info("Creating Application Manager...")
         self.client = APIClient(api_keys)
         self.settings = application_settings
         self.assumptions = metric_assumptions
+        self.urls = urls
+        self.database = PostgreSQLDatabase(self.settings.database_name, self.urls.postgres_url)
         logging.info("Created Application Manager.")
 
     @staticmethod
     def create_path(directory: str, ticker: str) -> Path:
         """Generate a path to the file named according to the stock's ticker."""
-        return Path(directory, f"{ticker}.json")
+        return Path(directory, ticker).with_suffix(".json")
 
     def start(self) -> None:
         """
@@ -47,10 +51,11 @@ class ApplicationManager:
         If `store_new_data` is `False` the data will be discarded.
         """
         candidates = {}
-        tickers = DataStorage.read_json(self.settings.input_file).keys()
+        company_collection = LocalDataStorage.create_company_collection_from_local(self.settings.input_file_path)
         # FUTURE: Convert company_data to use Company class and assign calculated metrics as attributes.
-        for company in tickers:
-            company_data = self.get_company_data(company)
+        for company in company_collection.companies:
+            # This should be a method of Company.
+            company_data = self.get_company_data(company.ticker)
             # Move to retrieval.response_handler. Set required values as attributes of company.
             try:
                 dcf_data = YahooFinanceResponse.get_data_for_discounted_cash_flow(company_data)
@@ -59,11 +64,11 @@ class ApplicationManager:
                     company_data, self.assumptions, "sp500"
                 )
             except (KeyError, TypeError) as exc:
-                logging.warning(f"Failed to extract a company data attribute for `{company}`.")
+                logging.warning(f"Failed to extract a company data attribute for `{company.ticker}`.")
                 logging.debug(exc)
                 continue
 
-            logging.info(f"Cash flow metrics for '{company}':")
+            logging.info(f"Cash flow metrics for '{company.ticker}':")
             debt_cost = cost_of_debt(
                 self.assumptions.usa.get("risk_free_rate_of_return"),
                 self.assumptions.usa.get("sp500").get("average_credit_spread"),
@@ -80,10 +85,10 @@ class ApplicationManager:
             dcf_valuation = discounted_cash_flow_valuation(*dcf_data, wacc)
             logging.info(f"DCF valuation (price per share): {dcf_valuation.get('dcf_valuation_per_share')}")
             if filter_valuation(dcf_valuation):
-                candidates[company] = dcf_valuation
+                candidates[company.ticker] = dcf_valuation
                 logging.info(
                     f"""
-                    Added `{company}` to the candidates list with an absolute discount of
+                    Added `{company.ticker}` to the candidates list with an absolute discount of
                     `{dcf_valuation.get('dcf_discount_per_share')}` per share and a discount ratio of
                     `{dcf_valuation.get('dcf_discount_ratio')}`.
                     """
@@ -91,8 +96,8 @@ class ApplicationManager:
 
         logging.info("Candidates:")
         logging.info(candidates)
-        candidates_path = Path(self.settings.output_directory, DataStorage.timestamped_file("candidates", ".json"))
-        DataStorage.write_json(candidates_path, candidates)
+        candidates_path = Path(self.settings.output_directory_path, LocalDataStorage.timestamped_file("candidates", ".json"))
+        LocalDataStorage.write_json(candidates_path, candidates)
 
     def get_company_data(self, ticker: str) -> None:
         """Get data associated with a company."""
@@ -100,11 +105,20 @@ class ApplicationManager:
             logging.info(f"Attempting to acquire new data for '{ticker}'.")
             response = self.client.retrieve(ticker)
             handle_response(
-                self.create_path(self.settings.storage_directory, ticker),
+                self.create_path(self.settings.storage_directory_path, ticker),
                 response,
                 store=self.settings.store_new_data,
             )
             return response.json()
         else:
             logging.info(f"Using archived data for '{ticker}'.")
-            return DataStorage.get_json(self.settings.storage_directory, ticker)
+            return LocalDataStorage.get_json(self.settings.storage_directory_path, ticker)
+
+    def load_local_data(self) -> CompanyCollection:
+        """Load local data from JSON files as a CompanyCollection."""
+        company_collection = LocalDataStorage.create_company_collection_from_local(self.settings.input_file_path)
+        return company_collection
+
+    def insert_data(self, company_collection: CompanyCollection) -> None:
+        """Insert CompanyCollection to database."""
+        self.database.upload_company_collection(company_collection)

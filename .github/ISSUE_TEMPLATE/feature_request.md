@@ -3,9 +3,9 @@ name: Feature request
 about: Suggest an idea for this project
 ---
 
-# Feature Request
+# Feature Title
 
-## Describe Problem
+## Problem Description
 
 A clear and concise description of what the problem is, eg. "X is poorly formatted/designed/written because Y".
 

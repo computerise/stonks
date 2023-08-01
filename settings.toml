@@ -3,6 +3,12 @@
 # Keys
 api_key_names = ["RAPIDAPI_KEY"]
 
+# URLs
+url_names = ["POSTGRES_URL"]
+
+# Names
+database_name = "stonks-dev"
+
 # Display
 outro_duration_seconds = 5
 
@@ -10,10 +16,10 @@ outro_duration_seconds = 5
 log_level = "DEBUG"
 
 # Paths
-input_file = "input/s&p500.json"
-log_directory = "logs/"
-storage_directory = "data/s&p500/"
-output_directory = "output/"
+log_directory_path = "logs/"
+input_file_path = "input/s&p500.json"
+storage_directory_path = "data/s&p500/"
+output_directory_path = "output/"
 
 # Flags
 request_new_data = true
